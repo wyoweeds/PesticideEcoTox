@@ -1,0 +1,112 @@
+---
+title: "BeeREX implementation in R"
+author: "Andrew Kniss"
+output: html_document
+---
+
+From the [EPA description](https://www.epa.gov/pesticide-science-and-assessing-pesticide-risks/models-pesticide-risk-assessment): 
+
+> "The Bee-REX model is a screening level tool that is intended for use in a Tier I risk assessment to assess exposures of bees to pesticides and to calculate risk quotients. This model is individual-based, and is not intended to assess exposures and effects at the colony-level (i.e., for honey bees)."
+
+```{r setup, include=FALSE}
+library(tidyverse)
+### Daily consumption of food for different bee stages (Table 4)
+### to be used in dietary dos and RQ calculations
+diet.table <- data.frame(
+  jelly.mgd = c(1.9, 9.4, 19, 0, 0, 0, 1.9, 9.4, 23, 141, 0, 0, 0, 0, 0, 0, 0, 525),
+  nectar.mgd = c(0, 0, 0, 60, 120, 130, 0, 0, 0, 0, 60, 140, 60, 43.5, 292, 29, 235, 0),
+  pollen.mgd = c(0, 0, 0, 1.8, 3.6, 3.6, 0, 0, 0, 0, 6.65,
+                 9.6, 1.7, 0.041, 0.041, 2, 0.0002, 0),
+  stage = c(rep("larval", 10), rep("adult", 8)))
+
+## EEC calculation functions in ug ai/mg (Table 3)      ##
+## multiply by 1,000 to get EEC in mg ai/kg             ##
+eec.foliar <- function(rate.kgha) {
+  rate.kgha * 98 / 1000
+}
+eec.soil <- function(rate.kgha, log.Kow = 5, Koc = 30) {
+  ((10^(0.95*log.Kow-2.05)+0.82) * 
+     (-0.0648*(log.Kow^2)+0.2431*log.Kow+0.5822) *
+     (1.5/(0.2+1.5*Koc*.01)) * (0.45*rate.kgha)) / 1000
+}
+eec.seed <- function(rate.kgha) {
+  1
+}
+### Total dose function in ug/bee
+### Produces a list of values equal to total dose column in Table 4
+total.dose <- function(EEC.ugmg,
+                       jelly.mgd = diet.table$jelly.mgd,
+                       nectar.mgd = diet.table$nectar.mgd,
+                       pollen.mgd = diet.table$pollen.mgd) {
+  ug.bee <- (EEC.ugmg * pollen.mgd + 
+               EEC.ugmg * nectar.mgd + 
+               EEC.ugmg/100 * jelly.mgd)
+  #names(ug.bee) <- .$pesticide
+  return(ug.bee)
+}
+
+### Input file with necessary data ##
+### (contains data from Tables 1 & 2):     ##
+pestDF <- read.csv("BeeRexInputValues-test1.csv") %>%
+  mutate(rate.kgha = 1,
+         appType = "soil")
+glimpse(pestDF)
+```
+
+This implementation allows rapid calculation of acute and chronic risk quotients (RQ) for many pesticides, as long as the following information is assembled for each pesticide: 
+
+* application rate (kg/ha)
+* application type (foliar, soil, or seed)
+* log K~ow~ (default to 5 if not provided)
+* K~oc~ (defaults to 30 if not provided)
+* adult honeybee contact LD~50~ 
+* adult honeybee oral LD~50~
+* adult honeybee chr2onic NOAEL
+* larval honeybee oral LD~50~
+* larval honeybee chronic NOAEL
+
+An example data set with two pesticides has been included for QA/QC purposes.
+```{r echo=FALSE}
+knitr::kable(pestDF)
+```
+
+Based on those input values, the tool will estimate dietary exposure (in ub per bee) for these two pesticides for a range of honeybee stages:
+
+```{r, echo=FALSE}
+pestDF.2 <- pestDF %>%
+  mutate(eec = case_when(
+    appType == "foliar" ~ eec.foliar(rate.kgha),
+    appType == "soil" ~ eec.soil(rate.kgha, log.Kow, Koc),
+    appType == "seed" ~ eec.seed(rate.kgha))) %>%
+    mutate(tab4dose = {map(.x = .$eec, .f = total.dose)}) 
+```
+
+The dietary exposure values are then divided by the appropriate toxicological endpoint (LD~50~ or NOAEL) to obtain acute and chronic risk quotients. For each stage, the highest RQ value is then selected to be used in subsequent modeling. 
+
+```{r, echo=FALSE, message=FALSE, warning = FALSE}
+pestDF.3 <- pestDF.2 %>%
+    unnest(cols = c(tab4dose)) %>%
+    mutate(stage = rep(diet.table$stage, length(unique(commonName))),
+           RQ.acute = case_when(
+               stage == "larval" ~ tab4dose / LD50.larva.oral,
+               stage == "adult" ~ tab4dose / LD50.adult.oral),
+           RQ.chronic = case_when(
+               stage == "larval" ~ tab4dose / NOAEL.larva.oral,
+               stage == "adult" ~ tab4dose / NOAEL.adult.oral)) %>%
+    group_by(commonName, CAS, stage) %>%
+    summarize(max.acute.RQ = max(RQ.acute, na.rm=TRUE),
+              max.chronic.RQ = max(RQ.chronic, na.rm=TRUE)) %>%
+    pivot_wider(id_cols = c(commonName, CAS),
+                names_from = stage,
+                values_from = c(max.acute.RQ, max.chronic.RQ))
+finalDF <- left_join(pestDF.2, pestDF.3) %>%
+  mutate(max.contact.RQ_adult = 
+         case_when(appType == "foliar" ~ rate.kgha * 2.4 / 
+                     LD50.adult.contact)) %>%
+  select(CAS, commonName, rate.kgha, appType,
+         max.acute.RQ_adult, max.acute.RQ_larval,
+         max.chronic.RQ_adult, max.chronic.RQ_larval,
+         max.contact.RQ_adult) 
+
+knitr::kable(finalDF)
+```
