@@ -1,4 +1,4 @@
-<h1> Pesticide ecotoxicity project. </h1>
+Pesticide ecotoxicity project.
 
 FILES:
 * BeeREX.Rmd is an R implementation of the BeeREX model.
