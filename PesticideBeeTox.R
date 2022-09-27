@@ -16,7 +16,8 @@ glimpse(AgroTrak.CornSoy.dat)
 CornSoy.aiList <- AgroTrak.CornSoy.dat %>%
   select(Active.Ingredient, Type) %>%
   mutate(ai = str_replace_all(Active.Ingredient, " \\(.\\)", "")) %>%
-  distinct()
+  distinct() %>%
+  arrange(Type, ai)
 ## Active.Ingredient = as listed in AgroTrak data
 ## Type = pesticide type as listed in AgroTrak data
 ## ai = same as 'Active.Ingredient' but with (X) removed for searches
@@ -24,11 +25,20 @@ glimpse(CornSoy.aiList)
 ## Write the AI list to a csv file:
 #write.csv(CornSoy.aiList, "AgroTrakCornSoy_aiList.csv")
 
-### Load honey bee toxicity values from ecotox:
+### Use AgroTrak list to search EPA's comptox by ai
+# https://comptox.epa.gov/dashboard/batch-search
+# Website returns the exported file 'CCD-Batch-Search*.csv'
+# Load the exported comptox file:
+compTox.agrotrak <- read.csv("CCD-Batch-Search_2022-09-20_08_11_20.csv") %>%
+  mutate(ai = INPUT) %>%
+  mutate(cas.number  = as.numeric(str_remove_all(CASRN, "-")))
+glimpse(compTox.agrotrak)
+
+### Load honey bee toxicity values from ecotox export:
 ecotox.dat0 <- 
   read_excel("ECOTOX-Terrestrial-Export_20211207_132145 Honey Bee Data.xlsx",
              sheet = "Terrestrial-Export") %>%
-  rename(cas.number = "CAS Number", chemName = "Chemical Name")
+  rename(cas.number = "CAS Number", chemName = "Chemical Name") 
 glimpse(ecotox.dat0)
 ### Create a complete list of active ingredients from the Ecotox data:
 ecotox.chemList <- ecotox.dat0 %>%
@@ -38,13 +48,6 @@ glimpse(ecotox.chemList)
 ### Write the AI list to a CSV file:
 #write.csv(ecotox.chemList, "EcotoxChemList.csv", row.names = FALSE)
 
-### Use AgroTrak list to search EPA's comptox by ai
-# https://comptox.epa.gov/dashboard/batch-search
-# then load the exported comptox files:
-compTox.agrotrak <- read.csv("CCD-Batch-Search_2022-09-20_08_11_20.csv") %>%
-  mutate(ai = INPUT) %>%
-  mutate(cas.number  = as.numeric(str_remove_all(CASRN, "-")))
-glimpse(compTox.agrotrak)
 
 ### Merge comptox names with AgroTrak names:
 CornSoy.aiList.joined <- left_join(CornSoy.aiList, compTox.agrotrak) %>%
@@ -68,23 +71,96 @@ ecotox.dat <- ecotox.dat0 %>%
          Endpoint, 
          ObservedDuration.d = `Observed Duration (Days)`,
          ObsRespMean = `Observed Response Mean`,
-         ToxUnit = `Observed Response Units`)
+         ToxUnit = `Observed Response Units`) %>%
+  filter(Endpoint %in% c("LD50", "NOEL"))
 glimpse(ecotox.dat)  
 
-
 ### Merge AgroTrak with Ecotox values:
-##### THIS IS FUCKING HARD...........
-### Need to figure out how to get the tox data in a format that is useful.
 CornSoy.aiToxList <- left_join(CornSoy.aiList.joined, ecotox.dat) #%>%
-#### Maybe create a standard tox value?? Probably has to be by life stage...
-#  mutate(stdToxValue.ugX = case_when(
-#    ToxUnit == "AI mg/kg food" ~ ObsRespMean * 1,
-#    ToxUnit == "AI ug/kg fd" ~ ObsRespMean * 1000,
-#  ))
 glimpse(CornSoy.aiToxList)
+### There has GOT to be a more efficient way of doing this <crying emoji>
+CornSoyTox.1 <- CornSoy.aiToxList %>%
+  filter(
+    LifeStage == "Adult" 
+    & ExposureType == "Dermal" 
+    & Endpoint == "LD50") %>%
+  select(Active.Ingredient, ai, cas.number,
+         ObsRespMean, ToxUnit) %>%
+  mutate(ToxDataInput = "AdultContact.LD50")
+CornSoyTox.2 <- CornSoy.aiToxList %>%
+  filter(
+    LifeStage == "Adult" 
+    & ExposureType == "Food" 
+    & Endpoint == "LD50") %>%
+  select(Active.Ingredient, ai, cas.number,
+         ObsRespMean, ToxUnit) %>%
+  mutate(ToxDataInput = "AdultOral.LD50")
+CornSoyTox.3 <- CornSoy.aiToxList %>%
+  filter(
+    LifeStage == "Adult" 
+    & ExposureType == "Food" 
+    & Endpoint == "NOEL") %>%
+  select(Active.Ingredient, ai, cas.number,
+         ObsRespMean, ToxUnit) %>%
+  mutate(ToxDataInput = "AdultOral.NOEL")
+CornSoyTox.4 <- CornSoy.aiToxList %>%
+  filter(
+    LifeStage == "Larva" 
+    & ExposureType == "Food" 
+    & Endpoint == "LD50") %>%
+  select(Active.Ingredient, ai, cas.number,
+         ObsRespMean, ToxUnit) %>%
+  mutate(ToxDataInput = "LarvaOral.LD50")
+CornSoyTox.5 <- CornSoy.aiToxList %>%
+  filter(
+    LifeStage == "Larva" 
+    & ExposureType == "Food" 
+    & Endpoint == "NOEL") %>%
+  select(Active.Ingredient, ai, cas.number,
+         ObsRespMean, ToxUnit) %>%
+  mutate(ToxDataInput = "LarvaOral.NOEL")
+CornSoyTox.00 <- bind_rows(
+  CornSoyTox.1,
+  CornSoyTox.2,
+  CornSoyTox.3,
+  CornSoyTox.4,
+  CornSoyTox.5)
 
+CornSoy.tox <- left_join(CornSoy.aiList.joined, CornSoyTox.00)
+write_csv(CornSoy.tox %>%
+            select(Type, ai, cas.number,
+                   Koc, logKow, ToxDataInput,
+                   ObsRespMean, ToxUnit),
+          "CornSoy_aiToxData-modNew.csv")
+### List of all ai:
+write_csv(CornSoy.tox %>% distinct(cas.number), "CASListSearchTox.csv")
+### List of pesticides with no Tox data:
+data.frame(CornSoy.tox %>%
+  filter(is.na(ToxDataInput)) %>%
+  distinct(ai))
+### List of pesticides with complete Tox data:
+CornSoy.tox %>%
+  group_by(ai) %>%
+  summarize(toxN = length(unique(ToxDataInput))) %>%
+  filter(toxN == 5)
 
-### Need to discuss this table among some EPA-informed folks:
-table(CornSoy.aiToxList$ToxUnit, CornSoy.aiToxList$Effect, 
-      CornSoy.aiToxList$LifeStage)
-
+### FOR TESTING::: This didn't change anything...
+# newTox <- read_csv("TerrestrialReport_20200927.csv")
+# glimpse(newTox)
+# 
+# ecotox.dat <- newTox %>%
+#   select(cas.number = `CAS Number`, 
+#          ConcType = `Conc 1 Type (Author)`,
+#          Effect, 
+#          LifeStage = `Organism Lifestage`,
+#          ExposureType = `Exposure Type`, 
+#          Endpoint, 
+#          ObservedDuration.d = `Observed Duration (Days)`,
+#          ObsRespMean = `Observed Response Mean`,
+#          ToxUnit = `Observed Response Units`) %>%
+#   filter(Endpoint %in% c("LD50", "NOEL") &
+#            LifeStage %in% c("Adult", "Larva") &
+#            str_detect(ObsRespMean, "/", negate = TRUE)) %>%
+#   arrange(cas.number, LifeStage, Effect)
+# glimpse(ecotox.dat)  
+# 
