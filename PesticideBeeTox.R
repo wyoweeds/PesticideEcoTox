@@ -135,7 +135,7 @@ write_csv(CornSoy.tox %>%
 ### List of all ai:
 write_csv(CornSoy.tox %>% distinct(cas.number), "CASListSearchTox.csv")
 ### List of pesticides with no Tox data:
-data.frame(CornSoy.tox %>%
+nodatalist <- data.frame(CornSoy.tox %>%
   filter(is.na(ToxDataInput)) %>%
   distinct(ai))
 ### List of pesticides with complete Tox data:
@@ -143,6 +143,26 @@ CornSoy.tox %>%
   group_by(ai) %>%
   summarize(toxN = length(unique(ToxDataInput))) %>%
   filter(toxN == 5)
+
+CornSoy.tox %>%
+  select(Active.Ingredient, cas.number, Koc, logKow, h2o, 
+         ObsRespMean, ToxUnit, ToxDataInput) %>%
+  unite(Mean_ToxUnit, c(ObsRespMean, ToxUnit)) %>%
+  filter(!is.na(ToxDataInput)) %>%
+  pivot_wider(id_cols = c(Active.Ingredient, cas.number, Koc, logKow, h2o),
+              names_from = ToxDataInput,
+              values_from = Mean_ToxUnit) %>%
+  #mutate_if(is.list, ~ length(.) == 0) %>%
+  glimpse()
+  
+
+CornSoy.totals <- AgroTrak.CornSoy.dat %>%
+  mutate(ai = str_replace_all(Active.Ingredient, " \\(.\\)", "")) %>%
+  group_by(ai) %>%
+  summarize(TotalVol = sum(Volume.lbs)) %>%
+  #filter(ai %in% nodatalist$ai) %>%
+  arrange(desc(TotalVol))
+CornSoy.totals
 
 ### FOR TESTING::: This didn't change anything...
 # newTox <- read_csv("TerrestrialReport_20200927.csv")
