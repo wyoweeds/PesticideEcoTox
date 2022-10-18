@@ -144,6 +144,7 @@ CornSoy.tox %>%
   summarize(toxN = length(unique(ToxDataInput))) %>%
   filter(toxN == 5)
 
+  
 CornSoy.tox %>%
   select(Active.Ingredient, cas.number, Koc, logKow, h2o, 
          ObsRespMean, ToxUnit, ToxDataInput) %>%
