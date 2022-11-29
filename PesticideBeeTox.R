@@ -1,5 +1,6 @@
 library(tidyverse)
 library(readxl)
+library(readODS)
 library(cowplot)
 
 ### Load Kynnetec AgroTrak pesticide data:
@@ -29,9 +30,14 @@ glimpse(CornSoy.aiList)
 # https://comptox.epa.gov/dashboard/batch-search
 # Website returns the exported file 'CCD-Batch-Search*.csv'
 # Load the exported comptox file:
-compTox.agrotrak <- read.csv("CCD-Batch-Search_2022-09-20_08_11_20.csv") %>%
+compTox1 <- read.csv("CCD-Batch-Search_2022-09-20_08_11_20.csv") %>%
   mutate(ai = INPUT) %>%
   mutate(cas.number  = as.numeric(str_remove_all(CASRN, "-")))
+# manual search for missing cas numbers, search compTox, returned:
+compTox2 <- read.csv("CCD-Batch-Search_2022-11-15_04_13_54.csv") %>%
+  mutate(cas.number = as.numeric(str_remove_all(CASRN, "-")))
+compTox.agrotrak <- compTox1
+
 glimpse(compTox.agrotrak)
 
 ### Load honey bee toxicity values from ecotox export:
@@ -48,11 +54,22 @@ glimpse(ecotox.chemList)
 ### Write the AI list to a CSV file:
 #write.csv(ecotox.chemList, "EcotoxChemList.csv", row.names = FALSE)
 
+### load a manually created list of names and cas:
+cclist <- read_ods("CornSoy_aiConcordanceList.ods", 
+         sheet = "AgroTrakCornSoy_aiList")
+glimpse(cclist)
 
 ### Merge comptox names with AgroTrak names:
-CornSoy.aiList.joined <- left_join(CornSoy.aiList, compTox.agrotrak) %>%
-  select(Active.Ingredient, Type, ai, PREFERRED_NAME, IUPAC_NAME,
-         CASRN, cas.number, 
+CornSoy.nameList <- CornSoy.aiList %>%
+  select(AgroTrakName = Active.Ingredient, Type) %>%
+  left_join(cclist) %>%
+  mutate(cas.number = as.numeric(str_remove_all(cas, "-")),
+         .keep = "unused")
+glimpse(CornSoy.nameList)
+
+CornSoy.aiList.joined <- left_join(CornSoy.nameList, compTox.agrotrak) %>%
+  select(AgroTrakName, Type, ai, PREFERRED_NAME = CompTox.PREFERRED_NAME,
+         cas.number,
          Koc = SOIL_ADSORPTION_COEFFICIENT_KOC_L.KG_OPERA_PRED,
          logKow = OCTANOL_WATER_PARTITION_LOGP_OPERA_PRED,
          h2o = WATER_SOLUBILITY_MOL.L_OPERA_PRED) %>%
@@ -60,6 +77,17 @@ CornSoy.aiList.joined <- left_join(CornSoy.aiList, compTox.agrotrak) %>%
          logKow = as.numeric(logKow),
          h2o = as.numeric(h2o))
 glimpse(CornSoy.aiList.joined)
+
+# CornSoy.aiList.joined <- left_join(CornSoy.aiList, compTox.agrotrak) %>%
+#   select(Active.Ingredient, Type, ai, PREFERRED_NAME, IUPAC_NAME,
+#          CASRN, cas.number, 
+#          Koc = SOIL_ADSORPTION_COEFFICIENT_KOC_L.KG_OPERA_PRED,
+#          logKow = OCTANOL_WATER_PARTITION_LOGP_OPERA_PRED,
+#          h2o = WATER_SOLUBILITY_MOL.L_OPERA_PRED) %>%
+#   mutate(Koc = as.numeric(Koc),
+#          logKow = as.numeric(logKow),
+#          h2o = as.numeric(h2o))
+# glimpse(CornSoy.aiList.joined)
 
 ### Pare down ecotox values to those used in the model:
 ecotox.dat <- ecotox.dat0 %>%
