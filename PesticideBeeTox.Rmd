@@ -1,0 +1,315 @@
+---
+title: Trends in honey bee toxicity of pesticides used in United States corn and soybean
+  production
+author: "Andrew Kniss (and others)"
+date: "updated `r Sys.Date()`"
+output: html_document
+---
+
+Load data from files:
+
+```{r setup, warning = FALSE, message = FALSE}
+library(tidyverse)
+library(readxl)
+
+### Load Kynnetec AgroTrak pesticide data:
+AgroTrak.CornSoy.dat <- read_excel("AgroTrak_CornSoy_v1.xlsx",
+                          skip = 5) %>%
+  select(Year, Crop,
+         Type = "Pesticide Type",
+         Active.Ingredient = "Active Ingredient",
+         Volume.lbs = "AI volume\r\n(lb)",
+         Base.Area.Treated = "Base Area Treated\r\n(acres)") %>%
+  mutate(ai = str_replace_all(Active.Ingredient, " \\(.\\)", "")) 
+glimpse(AgroTrak.CornSoy.dat)
+
+### Concordance list:
+srcTab <- read_csv("cclistInEcotox.csv")
+glimpse(srcTab)
+
+### Load honey bee toxicity values from ecotox export:
+ecotox.dat0 <- 
+  read_excel("ECOTOX-Terrestrial-Export_20211207_132145 Honey Bee Data.xlsx",
+             sheet = "Terrestrial-Export") %>%
+  rename(cas.number = "CAS Number", chemName = "Chemical Name") 
+### Pare down ecotox values to those used in the model, and join with
+### AgroTrak concordance list:
+### (leaving full ecotox.dat0 just in case needed later)
+ecotox.dat <- ecotox.dat0 %>%
+  select(source,
+         cas.number, 
+         ConcType = `Conc 1 Type (Author)`,
+         Effect, 
+         LifeStage = `Organism Lifestage`,
+         ExposureType = `Exposure Type`, 
+         Endpoint, 
+         ObservedDuration.d = `Observed Duration (Days)`,
+         ObsRespMean = `Observed Response Mean`,
+         ToxUnit = `Observed Response Units`) %>%
+  filter(Endpoint %in% c("LD50", "NOEL")) %>%
+  right_join(srcTab) %>%
+  select(-inEcoTox, -inManualAdd, -CompTox.PREFERRED_NAME)
+glimpse(ecotox.dat)  
+```
+
+Create a ranked list of pesticides by volume applied in AgroTrak:
+
+```{r, warning = FALSE, message = FALSE}
+AgroTrak.Ranked <- AgroTrak.CornSoy.dat %>%
+  group_by(Type, ai) %>%
+  summarize(Volume.lbs = round(sum(Volume.lbs, na.rm = TRUE)),
+            Base.Area.Treated.sum = round(sum(Base.Area.Treated, na.rm = TRUE)),
+            nYears = length(unique(Year)),
+            Base.Area.perYear = round(Base.Area.Treated.sum / nYears),
+            Volume.perYear = round(Volume.lbs / nYears)) %>%
+  arrange(Type, -Volume.lbs)
+```
+
+## Adult Contact LD50
+```{r, warning = FALSE, message = FALSE}
+AdultContactLD50 <- ecotox.dat %>%
+  filter(LifeStage == "Adult" &
+         ExposureType == "Dermal" & 
+         Endpoint == "LD50") %>%
+  group_by(ai) %>%
+  mutate(checkAI = any(grepl("AI|ae", ToxUnit)),
+         hasAI = grepl("AI|ae", ToxUnit)) %>%
+  group_by(ai, hasAI) %>%
+  mutate(min.d.grp = min(abs(2 - ObservedDuration.d) + 2, na.rm = TRUE)) %>%
+  filter(case_when(checkAI == TRUE ~ 
+                     hasAI == TRUE & ObservedDuration.d == min.d.grp,
+                   checkAI == FALSE ~
+                     ObservedDuration.d == min.d.grp)) %>%
+      ungroup() %>%
+      select(-checkAI, -hasAI, -min.d.grp) %>%
+  group_by(ai) %>%
+  slice(which.min(ObsRespMean))
+glimpse(AdultContactLD50)
+unique(AdultContactLD50$ConcType)
+unique(AdultContactLD50$ToxUnit) 
+AgroTrak.AdultContactLD50.Rank <- left_join(AgroTrak.Ranked, AdultContactLD50)
+write_csv(AgroTrak.AdultContactLD50.Rank,
+          "Draft_AdultContactLD50.csv")
+
+AdultContactLD50.summary <- AgroTrak.AdultContactLD50.Rank %>%
+  group_by(Type) %>%
+  mutate(totalVol = sum(Volume.lbs),
+         pctVol = Volume.lbs / totalVol * 100,
+         toxVal = !is.na(ObsRespMean)) %>%
+  #select(Type, ai, Volume.lbs, totalVol, pctVol, toxVal)
+  group_by(Type, toxVal) %>%
+  summarize(toxPct = sum(pctVol)) %>%
+  pivot_wider(names_from = toxVal, 
+              values_from = toxPct) %>%
+  rename("missing Tox value" = `FALSE`,
+         "Tox value present" = `TRUE`)
+```
+
+## Adult Oral LD50
+
+```{r, warning = FALSE, message = FALSE}
+AdultOralLD50 <- ecotox.dat %>%
+  filter(LifeStage == "Adult" &
+         ExposureType == "Food" & 
+         Endpoint == "LD50") %>%
+  group_by(ai) %>%
+  mutate(checkAI = any(grepl("AI|ae", ToxUnit)),
+         hasAI = grepl("AI|ae", ToxUnit)) %>%
+  group_by(ai, hasAI) %>%
+  mutate(min.d.grp = min(abs(2 - ObservedDuration.d) + 2, na.rm = TRUE)) %>%
+  filter(case_when(checkAI == TRUE ~ 
+                     hasAI == TRUE & ObservedDuration.d == min.d.grp,
+                   checkAI == FALSE ~
+                     ObservedDuration.d == min.d.grp)) %>%
+      ungroup() %>%
+      select(-checkAI, -hasAI, -min.d.grp) %>%
+  group_by(ai) %>%
+  slice(which.min(ObsRespMean))
+glimpse(AdultOralLD50)
+unique(AdultOralLD50$ConcType)
+unique(AdultOralLD50$ToxUnit) 
+### ^^ There are some 'ug/bee without AI in this one.
+AgroTrak.AdultOralLD50.Rank <- left_join(AgroTrak.Ranked, AdultOralLD50)
+write_csv(AgroTrak.AdultOralLD50.Rank,
+          "Draft_AdultOralLD50.csv")
+
+AdultOralLD50.summary <- AgroTrak.AdultOralLD50.Rank %>%
+  group_by(Type) %>%
+  mutate(totalVol = sum(Volume.lbs),
+         pctVol = Volume.lbs / totalVol * 100,
+         toxVal = !is.na(ObsRespMean)) %>%
+  #select(Type, ai, Volume.lbs, totalVol, pctVol, toxVal)
+  group_by(Type, toxVal) %>%
+  summarize(toxPct = sum(pctVol)) %>%
+  pivot_wider(names_from = toxVal, 
+              values_from = toxPct) %>%
+  rename("missing Tox value" = `FALSE`,
+         "Tox value present" = `TRUE`)
+```
+
+## Adult Oral NOEL
+
+```{r, warning = FALSE, message = FALSE}
+AdultOralNOEL <- ecotox.dat %>%
+  filter(LifeStage == "Adult" &
+         ExposureType == "Food" & 
+         Endpoint == "NOEL") %>%
+  group_by(ai) %>%
+  mutate(checkAI = any(grepl("AI|ae", ToxUnit)),
+         hasAI = grepl("AI|ae", ToxUnit)) %>%
+  group_by(ai, hasAI) %>%
+  mutate(min.d.grp = min(abs(10 - ObservedDuration.d) + 10, na.rm = TRUE)) %>%
+  filter(case_when(checkAI == TRUE ~ 
+                     hasAI == TRUE & ObservedDuration.d == min.d.grp,
+                   checkAI == FALSE ~
+                     ObservedDuration.d == min.d.grp)) %>%
+      ungroup() %>%
+      select(-checkAI, -hasAI, -min.d.grp) %>%
+  group_by(ai) %>%
+  slice(which.min(ObsRespMean))
+glimpse(AdultOralNOEL)
+unique(AdultOralNOEL$ConcType)
+unique(AdultOralNOEL$ToxUnit)
+AgroTrak.AdultOralNOEL.Rank <- left_join(AgroTrak.Ranked, AdultOralNOEL)
+write_csv(AgroTrak.AdultOralNOEL.Rank,
+          "Draft_AdultOralNOEL.csv")
+
+AdultOralNOEL.summary <- AgroTrak.AdultOralNOEL.Rank %>%
+  group_by(Type) %>%
+  mutate(totalVol = sum(Volume.lbs),
+         pctVol = Volume.lbs / totalVol * 100,
+         toxVal = !is.na(ObsRespMean)) %>%
+  #select(Type, ai, Volume.lbs, totalVol, pctVol, toxVal)
+  group_by(Type, toxVal) %>%
+  summarize(toxPct = sum(pctVol)) %>%
+  pivot_wider(names_from = toxVal, 
+              values_from = toxPct) %>%
+  rename("missing Tox value" = `FALSE`,
+         "Tox value present" = `TRUE`)
+```
+
+## Larval Oral LD50
+
+```{r, warning = FALSE, message = FALSE}
+LarvaOralLD50 <- ecotox.dat %>%
+  filter(LifeStage == "Larva" &
+         ExposureType == "Food" & 
+         Endpoint == "LD50") %>%
+  group_by(ai) %>%
+  mutate(checkAI = any(grepl("AI|ae", ToxUnit)),
+         hasAI = grepl("AI|ae", ToxUnit)) %>%
+  group_by(ai, hasAI) %>%
+  mutate(min.d.grp = min(abs(3 - ObservedDuration.d) + 3, na.rm = TRUE)) %>%
+  filter(case_when(checkAI == TRUE ~ 
+                     hasAI == TRUE & ObservedDuration.d == min.d.grp,
+                   checkAI == FALSE ~
+                     ObservedDuration.d == min.d.grp)) %>%
+      ungroup() %>%
+      select(-checkAI, -hasAI, -min.d.grp) %>%
+  group_by(ai) %>%
+  slice(which.min(ObsRespMean))
+glimpse(LarvaOralLD50)
+unique(LarvaOralLD50$ConcType)
+unique(LarvaOralLD50$ToxUnit)
+AgroTrak.LarvaOralLD50.Rank <- left_join(AgroTrak.Ranked, LarvaOralLD50)
+write_csv(AgroTrak.LarvaOralLD50.Rank,
+          "Draft_LarvaOralLD50.csv")
+
+LarvaOralLD50.summary <- AgroTrak.LarvaOralLD50.Rank %>%
+  group_by(Type) %>%
+  mutate(totalVol = sum(Volume.lbs),
+         pctVol = Volume.lbs / totalVol * 100,
+         toxVal = !is.na(ObsRespMean)) %>%
+  #select(Type, ai, Volume.lbs, totalVol, pctVol, toxVal)
+  group_by(Type, toxVal) %>%
+  summarize(toxPct = sum(pctVol)) %>%
+  pivot_wider(names_from = toxVal, 
+              values_from = toxPct) %>%
+  rename("missing Tox value" = `FALSE`,
+         "Tox value present" = `TRUE`)
+```
+
+## Larval Oral NOEL
+
+```{r, warning = FALSE, message = FALSE}
+LarvaOralNOEL <- ecotox.dat %>%
+  filter(LifeStage == "Larva" &
+         ExposureType == "Food" & 
+         Endpoint == "NOEL") %>%
+  group_by(ai) %>%
+  mutate(checkAI = any(grepl("AI|ae", ToxUnit)),
+         hasAI = grepl("AI|ae", ToxUnit)) %>%
+  group_by(ai, hasAI) %>%
+  mutate(min.d.grp = min(abs(22 - ObservedDuration.d) + 22, na.rm = TRUE)) %>%
+  filter(case_when(checkAI == TRUE ~ 
+                     hasAI == TRUE & ObservedDuration.d == min.d.grp,
+                   checkAI == FALSE ~
+                     ObservedDuration.d == min.d.grp)) %>%
+      ungroup() %>%
+      select(-checkAI, -hasAI, -min.d.grp) %>%
+  group_by(ai) %>%
+  slice(which.min(ObsRespMean))
+glimpse(LarvaOralNOEL)
+unique(LarvaOralNOEL$ConcType)
+unique(LarvaOralNOEL$ToxUnit)
+AgroTrak.LarvaOralNOEL.Rank <- left_join(AgroTrak.Ranked, LarvaOralNOEL)
+write_csv(AgroTrak.LarvaOralNOEL.Rank,
+          "Draft_LarvaOralNOEL.csv")
+
+LarvaOralNOEL.summary <- AgroTrak.LarvaOralNOEL.Rank %>%
+  group_by(Type) %>%
+  mutate(totalVol = sum(Volume.lbs),
+         pctVol = Volume.lbs / totalVol * 100,
+         toxVal = !is.na(ObsRespMean)) %>%
+  #select(Type, ai, Volume.lbs, totalVol, pctVol, toxVal)
+  group_by(Type, toxVal) %>%
+  summarize(toxPct = sum(pctVol)) %>%
+  pivot_wider(names_from = toxVal, 
+              values_from = toxPct) %>%
+  rename("missing Tox value" = `FALSE`,
+         "Tox value present" = `TRUE`)
+```
+
+# Summary of tox data as percentage of pesticide volume:
+```{r}
+AdultContactLD50.summary
+AdultOralLD50.summary
+AdultOralNOEL.summary
+LarvaOralLD50.summary
+LarvaOralNOEL.summary
+```
+
+```{r, include = FALSE}
+CornSoyUseTox.dat <- AgroTrak.CornSoy.dat %>%
+  left_join(srcTab) %>%
+  select(-inEcoTox, -inManualAdd) %>%
+  left_join(ecotox.dat) %>%
+  filter(!grepl("food", ToxUnit))
+glimpse(CornSoyUseTox.dat)
+
+
+```
+
+```{r, include = FALSE}
+playdat1 <- data.frame(
+  tox = c("AI ug/org", "ug/org", "ug/bee", "ae ug/org"),
+  obsD = c(3, 2, 2, 6)
+)
+playdat0 <- data.frame(
+  tox = c("ug/org", "ug/org", "ug/bee", "ug/org"),
+  obsD = c(3, 2, 2, 6)
+)
+
+playdat0 %>%
+  mutate(checkAI = any(grepl("AI|ae", tox)),
+         hasAI = grepl("AI|ae", tox)) %>%
+  group_by(hasAI) %>%
+  mutate(asdf = min(obsD, na.rm = TRUE)) %>%
+  filter(case_when(checkAI == TRUE ~ 
+                     hasAI == TRUE & obsD == asdf,
+                   checkAI == FALSE ~
+                     obsD == asdf)) %>%
+  ungroup() %>%
+  select(-checkAI, -hasAI, -asdf) 
+
+```

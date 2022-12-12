@@ -13,7 +13,7 @@ AgroTrak.CornSoy.dat <- read_excel("AgroTrak_CornSoy_v1.xlsx",
          Base.Area.Treated = "Base Area Treated\r\n(acres)")
 glimpse(AgroTrak.CornSoy.dat)
 
-### Create a complete list of active ingredients from the AgroTrak data:
+### Create a complete list of active ingredients from AgroTrak:
 CornSoy.aiList <- AgroTrak.CornSoy.dat %>%
   select(Active.Ingredient, Type) %>%
   mutate(ai = str_replace_all(Active.Ingredient, " \\(.\\)", "")) %>%
@@ -55,9 +55,9 @@ glimpse(ecotox.chemList)
 #write.csv(ecotox.chemList, "EcotoxChemList.csv", row.names = FALSE)
 
 ### load a manually created list of names and cas:
-cclist <- read_ods("CornSoy_aiConcordanceList.ods", 
-         sheet = "AgroTrakCornSoy_aiList")
-glimpse(cclist)
+#cclist <- read_ods("CornSoy_aiConcordanceList.ods", 
+#         sheet = "AgroTrakCornSoy_aiList")
+#glimpse(cclist)
 
 ### Merge comptox names with AgroTrak names:
 CornSoy.nameList <- CornSoy.aiList %>%

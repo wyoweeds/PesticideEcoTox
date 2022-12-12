@@ -1,0 +1,2105 @@
+cas.number,ConcType,Effect,LifeStage,ExposureType,Endpoint,ObservedDuration.d,ObsRespMean,ToxUnit
+50293,Formulation,Mortality,Adult,Dermal,LD50,2,5.95,ug/bee
+50293,Formulation,Mortality,Adult,Dermal,LD50,2,7.12,ug/bee
+50293,Formulation,Mortality,Adult,Dermal,LD50,2,5.36,ug/bee
+51036,Active ingredient,Mortality,Adult,Dermal,LD50,2,11,AI ug/org
+52686,Formulation,Mortality,Adult,Dermal,LD50,2,59.83,ug/bee
+52857,Formulation,Mortality,Adult,Dermal,LD50,2,0.417,ug/bee
+54115,Formulation,Mortality,Adult,Dermal,LD50,2,8.7,ug/bee
+55389,Formulation,Mortality,Adult,Dermal,LD50,2,0.308,ug/bee
+56382,Formulation,Mortality,Adult,Dermal,LD50,2,0.175,ug/bee
+57749,Formulation,Mortality,Adult,Dermal,LD50,2,5.23,ug/bee
+57749,Formulation,Mortality,Adult,Dermal,LD50,2,3.14,ug/bee
+57749,Formulation,Mortality,Adult,Dermal,LD50,2,8.8,ug/bee
+58899,Formulation,Mortality,Adult,Dermal,LD50,2,0.562,ug/bee
+60515,Formulation,Mortality,Adult,Dermal,LD50,2,0.188,ug/bee
+60571,Formulation,Mortality,Adult,Dermal,LD50,2,0.139,ug/bee
+61314,Active ingredient,Mortality,Adult,Food,LD50,2,127,AI ug/org
+61314,Active ingredient,Mortality,Adult,Dermal,LD50,2,96.7,AI ug/org
+61825,Formulation,Mortality,Adult,Dermal,LD50,2,12.09,ug/bee
+61825,Formulation,Mortality,Adult,Dermal,LD50,3,200,AI ug/org
+61825,Formulation,Mortality,Adult,Food,LD50,3,200,AI ug/org
+61825,Formulation,Mortality,Adult,Food,NOEL,3,100,AI ug/org
+61825,Formulation,Mortality,Adult,Dermal,NOEL,3,200,AI ug/org
+62737,Formulation,Mortality,Adult,Dermal,LD50,2,0.495,ug/bee
+63252,Formulation,Mortality,Adult,Dermal,LD50,2,1.34,ug/bee
+63252,Formulation,Mortality,Adult,Dermal,LD50,2,1.88,ug/bee
+63252,Active ingredient,Mortality,Adult,Food,LD50,2,46,AI ug/org
+63252,Formulation,Mortality,Adult,Dermal,LD50,2,1.02,ug/bee
+63252,Formulation,Mortality,Adult,Dermal,LD50,2,1.34,ug/bee
+63252,Active ingredient,Mortality,Adult,Food,NOEL,2,46,AI ug/org
+65850,Active ingredient,Mortality,Adult,Dermal,LD50,2,12.5,AI ug/org
+66819,Formulation,Mortality,Adult,Dermal,LD50,2,241.72,ug/bee
+72208,Formulation,Mortality,Adult,Dermal,LD50,2,2.02,ug/bee
+72435,Formulation,Mortality,Adult,Dermal,LD50,2,23.57,ug/bee
+72548,Formulation,Mortality,Adult,Dermal,LD50,2,161,ug/bee
+72560,Formulation,Mortality,Adult,Dermal,LD50,2,4.47,ug/bee
+75605,Formulation,Mortality,Adult,Dermal,LD50,2,157.12,ug/bee
+75990,Formulation,Mortality,Adult,Dermal,LD50,2,24.17,ug/bee
+76062,Active ingredient,Mortality,Adult,Dermal,LD50,2,100,AI ug/org
+76062,Active ingredient,Mortality,Adult,Dermal,NOEL,2,50,AI ug/org
+76448,Formulation,Mortality,Adult,Dermal,LD50,2,0.526,ug/bee
+76879,Formulation,Mortality,Adult,Dermal,LD50,2,114.82,ug/bee
+78342,Formulation,Mortality,Adult,Dermal,LD50,2,21.27,ug/bee
+78579,Formulation,Mortality,Adult,Dermal,LD50,2,11.06,ug/bee
+82688,Active ingredient,Mortality,Adult,Dermal,LD50,2,100,AI ug/org
+82688,Active ingredient,Mortality,Adult,Dermal,LD50,2,100,AI ug/org
+83794,Formulation,Mortality,Adult,Dermal,LD50,2,2.42,ug/bee
+86500,Formulation,Mortality,Adult,Dermal,LD50,2,0.423,ug/bee
+86873,Active ingredient,Mortality,Larva,Food,LD50,8,25,AI ug/org/d
+86873,Active ingredient,Mortality,Larva,Food,NOEL,8,25,AI ug/org/d
+86873,Active ingredient,Development,Larva,Food,NOEL,22,25,AI ug/org/d
+86873,Active ingredient,Mortality,Larva,Food,NOEL,15,25,AI ug/org/d
+86873,Active ingredient,Growth,Larva,Food,NOEL,22,25,AI ug/org/d
+87865,Formulation,Mortality,Adult,Dermal,LD50,2,48.34,ug/bee
+88857,Formulation,Mortality,Adult,Dermal,LD50,2,36.26,AI ug/org
+93652,Formulation,Mortality,Adult,Dermal,LD50,2,18.13,ug/bee
+93721,Formulation,Mortality,Adult,Dermal,LD50,2,241.72,ug/bee
+93754,Formulation,Mortality,Adult,Dermal,LD50,2,121,AI ug/org
+94746,Active ingredient,Mortality,Adult,Food,LD50,2,194,AI ug/org
+94746,Active ingredient,Mortality,Adult,Dermal,LD50,2,194,AI ug/org
+94746,Active ingredient,Mortality,Larva,Food,LD50,3,34.6,AI ug/org
+94746,Active ingredient,Mortality,Larva,Food,LD50,8,93.9,AI ug/org/d
+94746,Formulation,Mortality,Adult,Dermal,LD50,2,24.17,ug/bee
+94746,Active ingredient,Development,Larva,Food,NOEL,22,5.64,AI ug/org/d
+94746,Active ingredient,Growth,Larva,Food,NOEL,22,46.2,AI ug/org/d
+94746,Active ingredient,Mortality,Larva,Food,NOEL,15,11.6,AI ug/org/d
+94746,Active ingredient,Mortality,Larva,Food,NOEL,8,11.6,AI ug/org/d
+94757,Active ingredient,Mortality,Larva,Food,LD50,8,6,AI ug/org/d
+94757,Formulation,Mortality,Adult,Dermal,LD50,2,18.13,ug/bee
+94757,Active ingredient,Development,Larva,Food,NOEL,22,3.25,AI ug/org/d
+94757,Active ingredient,Growth,Larva,Food,NOEL,22,3.25,AI ug/org/d
+94757,Active ingredient,Mortality,Larva,Food,NOEL,22,3.25,AI ug/org/d
+94757,Active ingredient,Mortality,Larva,Food,NOEL,15,3.25,AI ug/org/d
+94757,Active ingredient,Mortality,Larva,Food,NOEL,8,6.5,AI ug/org/d
+98011,Active ingredient,Mortality,Adult,Food,LD50,4,100,AI ug/org
+98011,Active ingredient,Mortality,Adult,Dermal,LD50,2,100,AI ug/org
+98011,Active ingredient,Mortality,Adult,Dermal,NOEL,2,100,AI ug/org
+98500,Active ingredient,Mortality,Adult,Dermal,LD50,2,100,AI ug/org
+98500,Active ingredient,Mortality,Adult,Dermal,LD50,4,100,AI ug/org
+98500,Active ingredient,Mortality,Adult,Dermal,NOEL,2,100,AI ug/org
+99309,Formulation,Mortality,Adult,Dermal,LD50,2,181.29,ug/bee
+101213,Formulation,Mortality,Adult,Dermal,LD50,2,36.26,ug/bee
+107493,Formulation,Mortality,Adult,Dermal,LD50,2,0.001,ug/bee
+112050,Active ingredient,Mortality,Adult,Dermal,LD50,2,25,AI ug/org
+114261,Formulation,Mortality,Adult,Dermal,LD50,2,1.35,ug/bee
+115297,Formulation,Mortality,Adult,Dermal,LD50,2,7.81,ug/bee
+115297,Formulation,Mortality,Adult,Dermal,LD50,2,16.14,AI ug/org
+115322,Formulation,Mortality,Adult,Dermal,LD50,2,145,ug/bee
+115902,Formulation,Mortality,Adult,Dermal,LD50,2,0.35,ug/bee
+116063,Formulation,Mortality,Adult,Dermal,LD50,2,0.285,ug/bee
+117806,Formulation,Mortality,Adult,Dermal,LD50,2,7.25,ug/bee
+119380,Formulation,Mortality,Adult,Dermal,LD50,2,0.471,ug/bee
+119642,Formulation,Mortality,Adult,Dermal,LD50,2,0.336,ug/bee
+121755,Active ingredient,Mortality,Adult,Food,LD50,4,1.66,AI ug/org
+121755,Active ingredient,Mortality,Adult,Food,LD50,2,1.66,AI ug/org
+121755,Formulation,Mortality,Adult,Dermal,LD50,4,0.19,AI ug/org
+121755,Formulation,Mortality,Adult,Dermal,LD50,2,0.709,ug/bee
+121755,Formulation,Mortality,Adult,Food,LD50,4,0.4,AI ug/org
+121755,Active ingredient,Mortality,Adult,Dermal,LD50,4,0.156,AI ug/org
+122101,Formulation,Mortality,Adult,Dermal,LD50,2,0.743,ug/bee
+122145,Formulation,Mortality,Adult,Dermal,LD50,2,0.383,ug/bee
+122349,Formulation,Mortality,Adult,Dermal,LD50,2,96.69,ug/bee
+122429,Formulation,Mortality,Adult,Dermal,LD50,2,604,AI ug/org
+123331,Formulation,Mortality,Adult,Dermal,LD50,2,36.26,ug/bee
+126750,Formulation,Mortality,Adult,Dermal,LD50,2,1.49,ug/bee
+131895,Formulation,Mortality,Adult,Dermal,LD50,2,2175,AI ug/org
+132672,Formulation,Mortality,Adult,Dermal,LD50,2,113.2,ug/bee
+133062,Active ingredient,Mortality,Adult,Food,LD50,3,107,AI ug/org
+133062,Active ingredient,Mortality,Larva,Food,LD50,7,6,AI ug/org/d
+133062,Formulation,Mortality,Adult,Dermal,LD50,2,215,ug/bee
+133073,Formulation,Mortality,Adult,Dermal,LD50,2,12.09,ug/bee
+134203,Active ingredient,Mortality,Adult,Dermal,LD50,2,25,AI ug/org
+137268,Formulation,Mortality,Adult,Dermal,LD50,2,73.72,ug/bee
+137304,Formulation,Mortality,Adult,Dermal,LD50,2,46.65,ug/bee
+137304,Active ingredient,Mortality,Adult,Dermal,LD50,2,98.5,AI ug/org
+139402,Formulation,Mortality,Adult,Dermal,LD50,2,96.69,ug/bee
+141662,Formulation,Mortality,Adult,Dermal,LD50,2,0.3,ug/bee
+142596,Formulation,Mortality,Adult,Dermal,LD50,2,12.09,ug/bee
+143500,Formulation,Mortality,Adult,Dermal,LD50,2,10.39,ug/bee
+144218,Formulation,Mortality,Adult,Dermal,LD50,2,20.7,AI ug/org
+144218,Formulation,Mortality,Adult,Dermal,NOEL,2,20.7,AI ug/org
+148798,Active ingredient,Mortality,Adult,Food,LD50,2,4,AI ug/org
+148798,Active ingredient,Mortality,Adult,Dermal,LD50,2,34,AI ug/org
+148798,Active ingredient,Mortality,Larva,Food,LD50,3,7.26,AI ug/org
+148798,Active ingredient,Mortality,Larva,Food,LD50,8,0.98,AI ug/org/d
+148798,Active ingredient,Development,Larva,Food,NOEL,22,0.98,AI ug/org/d
+148798,Active ingredient,Behavior,Adult,Food,NOEL,10,0.148,AI ug/org/d
+148798,Active ingredient,Mortality,Larva,Food,NOEL,8,0.98,AI ug/org/d
+148798,Active ingredient,Mortality,Adult,Food,NOEL,2,4,AI ug/org
+148798,Active ingredient,Mortality,Adult,Dermal,NOEL,2,34,AI ug/org
+148798,Active ingredient,Mortality,Larva,Food,NOEL,15,0.98,AI ug/org/d
+148798,Active ingredient,Mortality,Adult,Food,NOEL,10,2.57,AI ug/org/d
+150685,Formulation,Mortality,Adult,Dermal,LD50,2,110,ug/bee
+297972,Formulation,Mortality,Adult,Dermal,LD50,2,0.042,ug/bee
+298000,Formulation,Mortality,Adult,Dermal,LD50,2,0.291,ug/bee
+298022,Formulation,Mortality,Adult,Dermal,LD50,2,10.07,ug/bee
+298044,Active ingredient,Mortality,Adult,Dermal,LD50,2,1.11,AI ug/org
+298044,Formulation,Mortality,Adult,Dermal,LD50,2,5.14,ug/bee
+298044,Active ingredient,Mortality,Adult,Dermal,LD50,2,0.96,AI ug/org
+299843,Formulation,Mortality,Adult,Dermal,LD50,2,5.74,ug/bee
+299843,Formulation,Mortality,Adult,Dermal,LD50,2,5.62,ug/bee
+300765,Formulation,Mortality,Adult,Dermal,LD50,2,0.48,ug/bee
+301122,Formulation,Mortality,Adult,Dermal,LD50,2,3,ug/bee
+309002,Formulation,Mortality,Adult,Dermal,LD50,2,0.353,ug/bee
+314409,Formulation,Mortality,Adult,Dermal,LD50,2,193.38,ug/bee
+315184,Formulation,Mortality,Adult,Dermal,LD50,2,0.308,ug/bee
+327980,Formulation,Mortality,Adult,Dermal,LD50,2,2.33,ug/bee
+330541,Formulation,Mortality,Adult,Dermal,LD50,2,145.03,ug/bee
+330541,Formulation,Mortality,Adult,Dermal,LD50,2,145.03,ug/bee
+330552,Formulation,Mortality,Adult,Dermal,LD50,2,120.86,ug/bee
+333415,Formulation,Mortality,Adult,Dermal,LD50,2,0.372,ug/bee
+420042,Formulation,Mortality,Adult,Dermal,LD50,4,36.2,AI ug/org
+420042,Formulation,Mortality,Adult,Dermal,NOEL,4,12,AI ug/org
+485314,Formulation,Mortality,Adult,Dermal,LD50,2,11.6,ug/bee
+510156,Formulation,Mortality,Adult,Dermal,LD50,2,9.67,ug/bee
+510156,Formulation,Mortality,Adult,Dermal,LD50,2,1849,ug/bee
+563122,Formulation,Mortality,Adult,Dermal,LD50,2,20.55,ug/bee
+584792,Formulation,Mortality,Adult,Dermal,LD50,2,0.314,ug/bee
+608731,Formulation,Mortality,Adult,Dermal,LD50,2,0.562,AI ug/org
+624920,Active ingredient,Mortality,Adult,Dermal,LD50,2,100,AI ug/org
+624920,Active ingredient,Mortality,Adult,Dermal,NOEL,2,100,AI ug/org
+639587,Formulation,Mortality,Adult,Dermal,LD50,2,96.69,AI ug/org
+644644,Formulation,Mortality,Adult,Dermal,LD50,2,5.84,ug/bee
+709988,Active ingredient,Mortality,Adult,Dermal,LD50,2,99.8,AI ug/org
+709988,Formulation,Mortality,Adult,Dermal,LD50,2,24.17,ug/bee
+709988,Active ingredient,Mortality,Adult,Food,LD50,2,99.8,AI ug/org
+709988,Active ingredient,Mortality,Larva,Food,LD50,3,99.1,AI ug/org
+709988,Active ingredient,Mortality,Larva,Food,LD50,8,22,AI ug/org/d
+709988,Active ingredient,Mortality,Adult,Food,LD50,2,6.13,AI ug/org
+709988,Active ingredient,Growth,Larva,Food,NOEL,22,22,AI ug/org/d
+709988,Active ingredient,Mortality,Larva,Food,NOEL,15,12,AI ug/org/d
+709988,Active ingredient,Mortality,Adult,Food,NOEL,10,238,AI ug/org/d
+709988,Active ingredient,Behavior,Adult,Food,NOEL,10,28.4,AI ug/org/d
+709988,Active ingredient,Development,Larva,Food,NOEL,22,12,AI ug/org/d
+709988,Active ingredient,Mortality,Larva,Food,NOEL,8,22,AI ug/org/d
+732116,Formulation,Mortality,Adult,Dermal,LD50,2,1.064,ug/bee
+741582,Formulation,Mortality,Adult,Dermal,LD50,2,24.17,ug/bee
+759944,Formulation,Mortality,Adult,Dermal,LD50,2,12.09,ug/bee
+759944,Active ingredient,Mortality,Adult,Dermal,LD50,3,72.5,AI ug/org
+759944,Active ingredient,Mortality,Larva,Food,LD50,3,11,AI ug/org
+786196,Formulation,Mortality,Adult,Dermal,LD50,2,4.47,ug/bee
+834128,Active ingredient,Mortality,Adult,Dermal,LD50,2,100,AI ug/org
+834128,Formulation,Mortality,Adult,Dermal,LD50,2,96.69,ug/bee
+886500,Formulation,Mortality,Adult,Dermal,LD50,2,236.4,ug/bee
+947024,Formulation,Mortality,Adult,Dermal,LD50,2,4.23,ug/bee
+950107,Formulation,Mortality,Adult,Dermal,LD50,2,3.51,ug/bee
+950378,Formulation,Mortality,Adult,Dermal,LD50,2,0.236,ug/bee
+950378,Formulation,Mortality,Adult,Dermal,LD50,2,0.236,AI ug/org
+953173,Formulation,Mortality,Adult,Dermal,LD50,2,1.46,ug/bee
+959988,Formulation,Mortality,Adult,Dermal,LD50,2,17.42,AI ug/org
+973217,Formulation,Mortality,Adult,Dermal,LD50,2,48.42,ug/bee
+999815,Formulation,Mortality,Adult,Food,LD50,2,123,ug/bee
+999815,Formulation,Mortality,Adult,Dermal,LD50,2,100,ug/bee
+999815,Formulation,Mortality,Adult,Dermal,NOEL,2,100,ug/bee
+999815,Formulation,Mortality,Adult,Food,NOEL,2,123,ug/bee
+1071836,Formulation,Mortality,Adult,Food,LD50,2,100,ug/bee
+1071836,Formulation,Mortality,Adult,Dermal,LD50,2,100,ug/bee
+1071836,Active ingredient,Mortality,Adult,Dermal,LD50,2,103,ae ug/org
+1071836,Active ingredient,Mortality,Adult,Food,LD50,2,182,AI ug/org
+1071836,Active ingredient,Mortality,Adult,Food,NOEL,2,182,AI ug/org
+1071836,Active ingredient,Mortality,Adult,Dermal,NOEL,2,103,ae ug/org
+1079330,Formulation,Mortality,Adult,Dermal,LD50,2,0.423,ug/bee
+1134232,Active ingredient,Mortality,Larva,Food,LD50,8,8.4,AI ug/org/d
+1134232,Active ingredient,Mortality,Larva,Food,LD50,3,10,AI ug/org
+1134232,Formulation,Mortality,Adult,Dermal,LD50,2,29.01,ug/bee
+1134232,Active ingredient,Mortality,Larva,Food,NOEL,15,4.8,AI ug/org/d
+1134232,Active ingredient,Growth,Adult,Food,NOEL,10,5.3,AI ug/org/d
+1134232,Active ingredient,Development,Larva,Food,NOEL,22,1.7,AI ug/org/d
+1134232,Active ingredient,Growth,Larva,Food,NOEL,22,4.8,AI ug/org/d
+1134232,Active ingredient,Mortality,Adult,Food,NOEL,10,2.7,AI ug/org/d
+1134232,Active ingredient,Behavior,Adult,Food,NOEL,10,2.7,AI ug/org/d
+1134232,Active ingredient,Mortality,Larva,Food,NOEL,8,4.8,AI ug/org/d
+1194656,Formulation,Mortality,Adult,Dermal,LD50,2,120.86,ug/bee
+1214397,Active ingredient,Mortality,Adult,Dermal,LD50,4,25,AI ug/org
+1214397,Active ingredient,Mortality,Adult,Dermal,NOEL,4,25,AI ug/org
+1317391,Active ingredient,Mortality,Adult,Dermal,LD50,2,25,AI ug/org
+1344816,Formulation,Mortality,Adult,Dermal,LD50,2,25,AI ug/org
+1344816,Formulation,Mortality,Adult,Dermal,NOEL,2,25,AI ug/org
+1403663,Formulation,Mortality,Adult,Dermal,LD50,2,25.4,AI ug/org
+1563662,Formulation,Mortality,Adult,Dermal,LD50,2,0.16,ug/bee
+1582098,Formulation,Mortality,Adult,Dermal,LD50,2,24.17,ug/bee
+1610180,Active ingredient,Mortality,Adult,Dermal,LD50,2,36,AI ug/org
+1610180,Active ingredient,Mortality,Adult,Dermal,NOEL,2,13,AI ug/org
+1689845,Active ingredient,Mortality,Adult,Food,LD50,2,3.3,AI ug/org
+1689845,Active ingredient,Mortality,Adult,Dermal,LD50,2,159,AI ug/org
+1689845,Formulation,Mortality,Adult,Dermal,LD50,2,14.5,ug/bee
+1689845,Active ingredient,Mortality,Adult,Food,NOEL,10,5.74,AI ug/org/d
+1689845,Active ingredient,Mortality,Adult,Food,NOEL,10,3.5,AI ug/org/d
+1689845,Active ingredient,Behavior,Adult,Food,NOEL,10,27.9,AI ug/org/d
+1689845,Active ingredient,Behavior,Adult,Food,NOEL,10,3.5,AI ug/org/d
+1689992,Active ingredient,Mortality,Larva,Food,LD50,4,60,AI ug/org
+1698608,Formulation,Mortality,Adult,Dermal,LD50,2,193.38,ug/bee
+1702176,Active ingredient,Mortality,Larva,Food,LD50,8,25.8,AI ug/org/d
+1702176,Active ingredient,Development,Larva,Food,NOEL,22,25.8,AI ug/org/d
+1702176,Active ingredient,Mortality,Larva,Food,NOEL,15,25.8,AI ug/org/d
+1702176,Active ingredient,Mortality,Larva,Food,NOEL,8,25.8,AI ug/org/d
+1702176,Active ingredient,Mortality,Adult,Food,NOEL,10,71.69,AI ug/org/d
+1702176,Active ingredient,Growth,Adult,Food,NOEL,10,71.69,AI ug/org/d
+1702176,Active ingredient,Behavior,Adult,Food,NOEL,10,71.69,AI ug/org/d
+1702176,Active ingredient,Growth,Larva,Food,NOEL,22,25.8,AI ug/org/d
+1757182,Formulation,Mortality,Adult,Dermal,LD50,2,2.66,ug/bee
+1836755,Formulation,Mortality,Adult,Dermal,LD50,2,275,AI ug/org
+1861401,Active ingredient,Mortality,Adult,Dermal,LD50,2,101,AI ug/org
+1861401,Active ingredient,Mortality,Adult,Dermal,NOEL,2,101,AI ug/org
+1897456,Formulation,Mortality,Adult,Dermal,LD50,2,181.29,ug/bee
+1910425,Formulation,Mortality,Adult,Food,LD50,2,43,AI ug/org
+1910425,Formulation,Mortality,Adult,Dermal,LD50,2,101,AI ug/org
+1910425,Active ingredient,Mortality,Adult,Food,LD50,2,70,AI ug/org
+1910425,Active ingredient,Mortality,Adult,Dermal,LD50,2,198,AI ug/org
+1912249,Formulation,Mortality,Adult,Dermal,LD50,2,96.69,ug/bee
+1918009,Formulation,Mortality,Adult,Dermal,LD50,2,90.65,ug/bee
+1918009,Active ingredient,Mortality,Larva,Food,LD50,8,21,AI ug/org/d
+1918009,Active ingredient,Mortality,Larva,Food,NOEL,8,21,AI ug/org/d
+1918009,Active ingredient,Development,Larva,Food,NOEL,22,5.1,AI ug/org/d
+1918009,Active ingredient,Mortality,Larva,Food,NOEL,15,5.1,AI ug/org/d
+1918021,Formulation,Mortality,Adult,Dermal,LD50,2,14.5,ug/bee
+1918167,Active ingredient,Mortality,Adult,Dermal,LD50,2,25,AI ug/org
+1918167,Formulation,Mortality,Adult,Dermal,LD50,2,311,AI ug/org
+1928434,Active ingredient,Mortality,Adult,Dermal,LD50,3,100,AI ug/org
+1928434,Active ingredient,Mortality,Adult,Dermal,NOEL,3,50,AI ug/org
+1929824,Active ingredient,Mortality,Adult,Dermal,LD50,2,100,AI ug/org
+1929824,Active ingredient,Mortality,Adult,Food,LD50,2,100,AI ug/org
+1982496,Active ingredient,Mortality,Adult,Dermal,LD50,2,100,AI ug/org
+1982496,Formulation,Mortality,Adult,Dermal,LD50,2,120.86,ug/bee
+1982496,Active ingredient,Mortality,Adult,Dermal,NOEL,2,100,AI ug/org
+2008415,Formulation,Mortality,Adult,Dermal,LD50,2,26.01,ug/bee
+2032599,Formulation,Mortality,Adult,Dermal,LD50,2,1.12,ug/bee
+2032599,Formulation,Mortality,Adult,Dermal,LD50,2,1.16,ug/bee
+2032657,Formulation,Mortality,Adult,Dermal,LD50,2,0.375,AI ug/org
+2039465,Formulation,Mortality,Adult,Dermal,LD50,2,25,ug/bee
+2039465,Formulation,Behavior,Adult,Food,NOEL,10,134,ae ug/org/d
+2039465,Formulation,Mortality,Adult,Food,NOEL,10,42.2,ae ug/org/d
+2039465,Formulation,Mortality,Adult,Dermal,NOEL,2,25,ug/bee
+2104645,Formulation,Mortality,Adult,Dermal,LD50,2,0.245,ug/bee
+2163806,Formulation,Mortality,Adult,Dermal,LD50,2,24.17,ug/bee
+2163806,Formulation,Mortality,Adult,Dermal,LD50,2,68,AI ug/org
+2164172,Formulation,Mortality,Adult,Dermal,LD50,2,100,AI ug/org
+2164172,Formulation,Mortality,Adult,Food,LD50,2,100,AI ug/org
+2164172,Active ingredient,Mortality,Larva,Food,LD50,8,5.05,AI ug/org/d
+2164172,Active ingredient,Mortality,Larva,Food,LD50,8,5.87,AI ug/org/d
+2164172,Active ingredient,Mortality,Adult,Dermal,LD50,2,100,AI ug/org
+2164172,Active ingredient,Mortality,Larva,Food,LD50,3,22,AI ug/org
+2164172,Formulation,Mortality,Adult,Dermal,LD50,2,193.38,ug/bee
+2164172,Active ingredient,Mortality,Adult,Food,LD50,2,34.02,AI ug/org
+2164172,Active ingredient,Mortality,Adult,Food,LD50,2,96,AI ug/org
+2164172,Active ingredient,Development,Larva,Food,NOEL,22,2.21,AI ug/org/d
+2164172,Active ingredient,Mortality,Larva,Food,NOEL,8,2.21,AI ug/org/d
+2164172,Formulation,Mortality,Adult,Food,NOEL,10,11.2,AI ug/org/d
+2164172,Active ingredient,Development,Larva,Food,NOEL,22,2,AI ug/org/d
+2164172,Active ingredient,Behavior,Adult,Food,NOEL,10,1.73,AI ug/org/d
+2164172,Active ingredient,Mortality,Adult,Food,NOEL,10,12.6,AI ug/org/d
+2164172,Active ingredient,Behavior,Adult,Food,NOEL,10,11.2,AI ug/org/d
+2164172,Active ingredient,Mortality,Larva,Food,NOEL,15,0.81,AI ug/org/d
+2164172,Active ingredient,Mortality,Adult,Food,NOEL,10,11.2,AI ug/org/d
+2164172,Active ingredient,Mortality,Larva,Food,NOEL,15,2.21,AI ug/org/d
+2164172,Active ingredient,Mortality,Larva,Food,NOEL,8,5.05,AI ug/org/d
+2164172,Formulation,Behavior,Adult,Food,NOEL,10,11.2,AI ug/org/d
+2212671,Formulation,Mortality,Adult,Dermal,LD50,2,29.01,ug/bee
+2303175,Formulation,Mortality,Adult,Dermal,LD50,2,36.26,ug/bee
+2303175,Active ingredient,Mortality,Adult,Dermal,LD50,2,25,AI ug/org
+2310170,Formulation,Mortality,Adult,Dermal,LD50,2,8.94,ug/bee
+2312358,Active ingredient,Mortality,Larva,Food,LD50,3,25.31,AI ug/org/d
+2312358,Active ingredient,Mortality,Adult,Dermal,LD50,2,15,ug/bee
+2312358,Formulation,Mortality,Adult,Food,LD50,2,100,AI ug/org
+2312358,Active ingredient,Mortality,Adult,Dermal,LD50,4,51.33,AI ug/org
+2312358,Active ingredient,Mortality,Adult,Food,LD50,2,100,AI ug/org
+2312358,Formulation,Mortality,Adult,Dermal,LD50,4,62.19,AI ug/org
+2312358,Active ingredient,Mortality,Larva,Food,LD50,8,4.8,AI ug/org/d
+2312358,Active ingredient,Mortality,Adult,Dermal,NOEL,2,9.8,ug/bee
+2312358,Active ingredient,Development,Larva,Food,NOEL,22,1.3,AI ug/org/d
+2312358,Formulation,Mortality,Adult,Dermal,NOEL,4,25,AI ug/org
+2312358,Active ingredient,Mortality,Larva,Food,NOEL,8,2.5,AI ug/org/d
+2312358,Active ingredient,Mortality,Larva,Food,NOEL,22,1.3,AI ug/org/d
+2312358,Active ingredient,Mortality,Adult,Food,NOEL,10,1,AI ug/org/d
+2312358,Formulation,Mortality,Adult,Food,NOEL,2,100,AI ug/org
+2312358,Active ingredient,Mortality,Larva,Food,NOEL,15,1.3,AI ug/org/d
+2312358,Active ingredient,Mortality,Adult,Dermal,NOEL,4,25,AI ug/org
+2312358,Active ingredient,Mortality,Adult,Food,NOEL,2,100,AI ug/org
+2312358,Active ingredient,Behavior,Adult,Food,NOEL,10,1,AI ug/org/d
+2385855,Formulation,Mortality,Adult,Dermal,LD50,2,7.15,ug/bee
+2439012,Formulation,Mortality,Adult,Dermal,LD50,2,66.47,ug/bee
+2439103,Formulation,Mortality,Adult,Dermal,LD50,2,12.09,ug/bee
+2439103,Active ingredient,Mortality,Adult,Dermal,LD50,1,200,AI ug/org
+2439103,Active ingredient,Mortality,Adult,Food,LD50,1,200,AI ug/org
+2536314,Formulation,Mortality,Adult,Dermal,LD50,2,25,ug/bee
+2545600,Formulation,Mortality,Adult,Dermal,LD50,2,100,AI ug/org
+2545600,Formulation,Mortality,Adult,Dermal,NOEL,2,22,AI ug/org
+2593159,Active ingredient,Behavior,Adult,Food,NOEL,10,4.8,AI ug/org/d
+2593159,Active ingredient,Mortality,Adult,Food,NOEL,10,8.6,AI ug/org/d
+2593159,Active ingredient,Growth,Adult,Food,NOEL,10,8.6,AI ug/org/d
+2597037,Formulation,Mortality,Adult,Dermal,LD50,2,0.306,ug/bee
+2631370,Formulation,Mortality,Adult,Dermal,LD50,2,1.13,ug/bee
+2631405,Formulation,Mortality,Adult,Dermal,LD50,2,26.59,AI ug/org
+2642719,Formulation,Mortality,Adult,Dermal,LD50,2,0.981,ug/bee
+2669321,Formulation,Mortality,Adult,Dermal,LD50,2,0.55,ug/bee
+2702729,Formulation,Mortality,Adult,Dermal,LD50,2,24.17,ug/bee
+2758421,Formulation,Mortality,Adult,Dermal,LD50,2,14.5,ug/bee
+2921882,Formulation,Mortality,Adult,Dermal,LD50,2,0.114,AI ug/org
+3244904,Formulation,Mortality,Adult,Dermal,LD50,2,17.43,AI ug/org
+3254635,Formulation,Mortality,Adult,Dermal,LD50,2,0.178,ug/bee
+3383968,Formulation,Mortality,Adult,Dermal,LD50,2,1.55,ug/bee
+3547339,Active ingredient,Mortality,Adult,Dermal,LD50,2,56.9,AI ug/org
+3547339,Active ingredient,Mortality,Adult,Dermal,NOEL,2,12.5,AI ug/org
+3572063,Formulation,Mortality,Adult,Dermal,LD50,2,100,AI ug/org
+4301502,Formulation,Mortality,Adult,Dermal,LD50,2,16.62,AI ug/org
+4685147,Formulation,Mortality,Adult,Dermal,LD50,2,6.04,ug/bee
+5234684,Active ingredient,Mortality,Adult,Dermal,LD50,2,100,AI ug/org
+5234684,Active ingredient,Mortality,Adult,Food,LD50,2,104.44,AI ug/org
+5234684,Formulation,Mortality,Adult,Dermal,LD50,2,181.29,ug/bee
+5234684,Active ingredient,Mortality,Larva,Food,LD50,3,75,AI ug/org/d
+5234684,Active ingredient,Mortality,Adult,Food,NOEL,10,18,AI ug/org/d
+5234684,Active ingredient,Behavior,Adult,Food,NOEL,10,9.2,AI ug/org/d
+5598130,Formulation,Mortality,Adult,Dermal,LD50,2,0.383,ug/bee
+5902512,Formulation,Mortality,Adult,Dermal,LD50,2,193.38,ug/bee
+6062266,Formulation,Mortality,Adult,Dermal,LD50,2,25,ug/bee
+6062266,Formulation,Mortality,Adult,Dermal,LD50,2,237.37,ug/bee
+6062266,Formulation,Mortality,Adult,Dermal,NOEL,2,25,ug/bee
+6923224,Formulation,Mortality,Adult,Dermal,LD50,2,0.35,ug/bee
+6923224,Formulation,Mortality,Adult,Dermal,LD50,2,0.35,AI ug/org
+6980183,Formulation,Mortality,Adult,Dermal,LD50,3,100,AI ug/org
+6988212,Formulation,Mortality,Adult,Dermal,LD50,2,2.21,ug/bee
+7287196,Formulation,Mortality,Adult,Dermal,LD50,2,96.69,ug/bee
+7632000,Active ingredient,Mortality,Adult,Dermal,LD50,2,182,AI ug/org
+7700176,Formulation,Mortality,Adult,Dermal,LD50,2,2.26,ug/bee
+7704349,Formulation,Mortality,Adult,Dermal,LD50,2,1051,ug/bee
+7775099,Active ingredient,Mortality,Larva,Food,LD50,8,20.8,AI ug/org/d
+7775099,Active ingredient,Mortality,Adult,Dermal,LD50,2,116,AI ug/org
+7775099,Active ingredient,Mortality,Adult,Food,LD50,2,75,AI ug/org
+7775099,Active ingredient,Mortality,Larva,Food,NOEL,8,20.8,AI ug/org/d
+7775099,Active ingredient,Mortality,Adult,Food,NOEL,2,75,AI ug/org
+7775099,Active ingredient,Mortality,Larva,Food,NOEL,15,20.8,AI ug/org/d
+7775099,Active ingredient,Mortality,Adult,Dermal,NOEL,2,116,AI ug/org
+7775099,Active ingredient,Development,Larva,Food,NOEL,22,20.8,AI ug/org/d
+7778441,Formulation,Mortality,Adult,Dermal,LD50,2,78.56,ug/bee
+7786347,Formulation,Mortality,Adult,Dermal,LD50,2,0.36,ug/bee
+8001352,Formulation,Mortality,Adult,Dermal,LD50,2,50.4,ug/bee
+8003347,Formulation,Mortality,Adult,Dermal,LD50,2,0.63,ug/bee
+8012699,Formulation,Mortality,Adult,Dermal,LD50,2,14.5,ug/bee
+8012951,Active ingredient,Mortality,Adult,Dermal,LD50,2,100,AI ug/org
+8012951,Active ingredient,Mortality,Adult,Dermal,LD50,2,1830,AI ug/org
+8012951,Active ingredient,Mortality,Adult,Dermal,NOEL,2,1830,AI ug/org
+8027007,Formulation,Mortality,Adult,Dermal,LD50,2,40.49,ug/bee
+8029296,Formulation,Mortality,Adult,Dermal,LD50,2,25.68,AI ug/org
+8046740,Formulation,Mortality,Adult,Food,LD50,2,48.5,AI ug/org
+8046740,Formulation,Mortality,Adult,Dermal,LD50,2,50.5,AI ug/org
+8051023,Formulation,Mortality,Adult,Dermal,LD50,2,12.33,ug/bee
+8051023,Formulation,Mortality,Adult,Dermal,LD50,2,14.5,ug/bee
+8065369,Formulation,Mortality,Adult,Dermal,LD50,2,1.66,ug/bee
+8065483,Formulation,Mortality,Adult,Dermal,LD50,2,2.6,ug/bee
+9006422,Formulation,Mortality,Adult,Food,LD50,2,110.1,AI ug/org
+9006422,Formulation,Mortality,Adult,Dermal,LD50,2,100,AI ug/org
+9006422,Formulation,Mortality,Adult,Dermal,LD50,2,437,ug/bee
+10004441,Active ingredient,Mortality,Adult,Food,LD50,2,100,AI ug/org
+10004441,Active ingredient,Mortality,Adult,Dermal,LD50,2,100,AI ug/org
+10028225,Formulation,Mortality,Adult,Dermal,LD50,4,100,AI ug/org
+10028225,Formulation,Mortality,Adult,Dermal,NOEL,4,25,AI ug/org
+10124659,Formulation,Mortality,Adult,Dermal,LD50,2,0.4975,AI ug/org
+10124659,Formulation,Mortality,Adult,Dermal,LD50,2,25,ug/bee
+10124659,Formulation,Mortality,Adult,Dermal,NOEL,2,25,ug/bee
+10265926,Formulation,Mortality,Adult,Dermal,LD50,2,1.37,ug/bee
+10311849,Formulation,Mortality,Adult,Dermal,LD50,2,34.45,ug/bee
+10453868,Formulation,Mortality,Adult,Dermal,LD50,2,0.063,ug/bee
+10605217,Active ingredient,Mortality,Adult,Dermal,LD50,2,50,AI ug/org
+11141176,Formulation,Mortality,Adult,Dermal,LD50,2,2.5,AI ug/org
+11141176,Formulation,Mortality,Adult,Dermal,NOEL,2,2.5,AI ug/org
+12427382,Formulation,Mortality,Adult,Dermal,LD50,2,12.09,ug/bee
+12771685,Active ingredient,Mortality,Adult,Dermal,LD50,2,100,AI ug/org
+12771685,Active ingredient,Mortality,Adult,Dermal,NOEL,2,100,AI ug/org
+13071799,Formulation,Mortality,Adult,Dermal,LD50,2,4.09,ug/bee
+13121705,Formulation,Mortality,Adult,Dermal,LD50,2,40.49,ug/bee
+13121705,Formulation,Mortality,Adult,Dermal,LD50,2,38.19,AI ug/org
+13171216,Formulation,Mortality,Adult,Dermal,LD50,2,1.46,ug/bee
+13194484,Active ingredient,Mortality,Adult,Dermal,LD50,2,2.58,AI ug/org
+13194484,Formulation,Mortality,Adult,Dermal,LD50,2,2.58,ug/bee
+13356086,Formulation,Mortality,Adult,Dermal,LD50,2,3982,AI ug/org
+13457186,Formulation,Mortality,Adult,Dermal,LD50,2,1.85,ug/bee
+13684565,Active ingredient,Mortality,Adult,Food,LD50,2,50,AI ug/org
+13684565,Active ingredient,Mortality,Adult,Dermal,LD50,2,50,AI ug/org
+13684634,Formulation,Mortality,Adult,Food,LD50,3,273.76,AI ug/org
+13684634,Formulation,Mortality,Adult,Food,LD50,2,104.8,AI ug/org
+13684634,Formulation,Mortality,Adult,Dermal,LD50,2,241.72,ug/bee
+13684634,Active ingredient,Mortality,Adult,Food,LD50,2,108.2,AI ug/org
+13684634,Formulation,Mortality,Adult,Dermal,LD50,2,100,AI ug/org
+13684634,Formulation,Mortality,Adult,Dermal,LD50,2,200,AI ug/org
+13684634,Active ingredient,Mortality,Adult,Dermal,LD50,2,100,AI ug/org
+13684634,Active ingredient,Mortality,Larva,Food,LD50,8,14,AI ug/org/d
+13684634,Formulation,Mortality,Adult,Food,LD50,2,93.8,AI ug/org
+13684634,Formulation,Mortality,Adult,Dermal,LD50,3,100,AI ug/org
+13684634,Active ingredient,Mortality,Larva,Food,NOEL,8,9.5,AI ug/org/d
+13684634,Active ingredient,Development,Larva,Food,NOEL,22,9.5,AI ug/org/d
+13684634,Active ingredient,Mortality,Larva,Food,NOEL,15,4.5,AI ug/org/d
+13684634,Active ingredient,Mortality,Adult,Dermal,LD50,2,100,AI ug/org
+14816183,Formulation,Mortality,Adult,Dermal,LD50,2,0.305,ug/bee
+15096523,Formulation,Mortality,Adult,Dermal,LD50,2,217.55,ug/bee
+15165670,Active ingredient,Mortality,Larva,Food,LD50,3,23.3,ae ug/org
+15165670,Active ingredient,Mortality,Larva,Food,LD50,3,23.3,ae ug/org
+15972608,Formulation,Mortality,Adult,Dermal,LD50,2,36.26,ug/bee
+16484778,Active ingredient,Mortality,Larva,Food,LD50,3,87.2,ae ug/org
+16484778,Formulation,Behavior,Adult,Food,NOEL,10,212,ae ug/org/d
+16484778,Formulation,Mortality,Adult,Food,NOEL,10,43.2,ae ug/org/d
+16672870,Formulation,Mortality,Adult,Dermal,LD50,2,100,AI ug/org
+16672870,Formulation,Mortality,Adult,Food,LD50,2,116.5,AI ug/org
+16672870,Formulation,Mortality,Adult,Dermal,LD50,2,12.09,ug/bee
+16672870,Formulation,Mortality,Adult,Dermal,NOEL,2,100,AI ug/org
+16672870,Formulation,Mortality,Adult,Food,NOEL,2,116.5,AI ug/org
+16752775,Active ingredient,Mortality,Larva,Food,LD50,3,3.48,AI ug/org/d
+16752775,Formulation,Mortality,Adult,Dermal,LD50,2,1.29,ug/bee
+16752775,Formulation,Mortality,Adult,Dermal,LD50,2,1.51,ug/bee
+16752775,Active ingredient,Mortality,Adult,Food,NOEL,10,0.0106,AI ug/org/d
+16752775,Active ingredient,Behavior,Adult,Food,NOEL,10,0.0106,AI ug/org/d
+16752775,Active ingredient,Mortality,Adult,Food,LD50,2,34.3,AI ug/org
+16752775,Active ingredient,Mortality,Adult,Dermal,LD50,2,34.3,AI ug/org
+17375416,Active ingredient,Mortality,Adult,Dermal,LD50,2,100,AI ug/org
+17375416,Active ingredient,Mortality,Adult,Dermal,NOEL,2,100,AI ug/org
+17375416,Active ingredient,Mortality,Adult,Dermal,NOEL,4,25,AI ug/org
+17781316,Formulation,Mortality,Adult,Dermal,LD50,2,2.42,ug/bee
+17804352,Formulation,Mortality,Adult,Dermal,LD50,2,120.86,ug/bee
+18181709,Formulation,Mortality,Adult,Dermal,LD50,2,3.99,ug/bee
+19666309,Active ingredient,Mortality,Adult,Dermal,LD50,2,25,AI ug/org
+19666309,Active ingredient,Mortality,Larva,Food,LD50,8,37.5,AI ug/org/d
+19666309,Formulation,Mortality,Adult,Dermal,LD50,2,21.7,ug/bee
+19666309,Active ingredient,Mortality,Larva,Food,NOEL,15,37.5,AI ug/org/d
+19666309,Active ingredient,Mortality,Adult,Dermal,NOEL,2,25,AI ug/org
+19666309,Formulation,Behavior,Adult,Food,NOEL,10,43.4,AI ug/org/d
+19666309,Active ingredient,Development,Larva,Food,NOEL,22,37.5,AI ug/org/d
+19666309,Active ingredient,Mortality,Larva,Food,NOEL,8,37.5,AI ug/org/d
+19666309,Formulation,Mortality,Adult,Food,NOEL,10,43.4,AI ug/org/d
+21609905,Formulation,Mortality,Adult,Dermal,LD50,2,2.19,ug/bee
+22224926,Formulation,Mortality,Adult,Dermal,LD50,2,1.87,ug/bee
+22248799,Formulation,Mortality,Adult,Dermal,LD50,2,1.37,ug/bee
+22259309,Formulation,Mortality,Adult,Dermal,LD50,2,14.27,AI ug/org
+22781233,Formulation,Mortality,Adult,Dermal,LD50,2,0.428,ug/bee
+23031369,Formulation,Mortality,Adult,Dermal,LD50,2,0.185,AI ug/org
+23031369,Active ingredient,Mortality,Adult,Dermal,LD50,2,0.028,AI ug/org
+23103982,Formulation,Mortality,Adult,Dermal,LD50,2,18.72,AI ug/org
+23103982,Formulation,Mortality,Adult,Food,LD50,2,11.31,AI ug/org
+23103982,Active ingredient,Mortality,Adult,Food,LD50,5,3.01,AI ug/org
+23103982,Active ingredient,Mortality,Adult,Dermal,LD50,5,12.56,AI ug/org
+23103982,Active ingredient,Mortality,Adult,Food,NOEL,5,1,AI ug/org
+23103982,Active ingredient,Mortality,Adult,Dermal,NOEL,5,5,AI ug/org
+23135220,Active ingredient,Mortality,Adult,Dermal,LD50,2,0.466,AI ug/org
+23135220,Active ingredient,Mortality,Larva,Food,LD50,3,0.931,AI ug/org
+23135220,Formulation,Mortality,Adult,Food,LD50,2,0.312,AI ug/org
+23135220,Active ingredient,Mortality,Adult,Food,LD50,2,0.379,AI ug/org
+23135220,Formulation,Mortality,Adult,Dermal,LD50,2,0.231,AI ug/org
+23135220,Formulation,Mortality,Adult,Dermal,LD50,2,10.32,ug/bee
+23135220,Active ingredient,Mortality,Adult,Food,NOEL,10,0.07,AI ug/org/d
+23135220,Active ingredient,Mortality,Adult,Food,LD50,2,0.343,AI ug/org
+23135220,Active ingredient,Mortality,Adult,Dermal,LD50,2,39.3,AI ug/org
+23422539,Active ingredient,Mortality,Adult,Dermal,LD50,2,1,AI ug/org
+23422539,Active ingredient,Mortality,Adult,Food,LD50,2,0.16,AI ug/org
+23422539,Active ingredient,Mortality,Larva,Food,LD50,8,0.11,AI ug/org/d
+23422539,Active ingredient,Mortality,Larva,Food,NOEL,15,0.03,AI ug/org/d
+23422539,Active ingredient,Development,Larva,Food,NOEL,22,0.03,AI ug/org/d
+23422539,Active ingredient,Behavior,Adult,Food,NOEL,10,0.23,AI ug/org/d
+23422539,Active ingredient,Mortality,Adult,Food,NOEL,10,0.087,AI ug/org/d
+23422539,Active ingredient,Mortality,Larva,Food,NOEL,8,0.03,AI ug/org/d
+23505411,Formulation,Mortality,Adult,Dermal,LD50,2,0.614,ug/bee
+23564058,Formulation,Mortality,Adult,Food,LD50,2,114.68,AI ug/org
+23564058,Formulation,Mortality,Adult,Dermal,LD50,2,100,AI ug/org
+23564058,Active ingredient,Mortality,Larva,Food,LD50,8,4.16,AI ug/org/d
+23564058,Active ingredient,Mortality,Larva,Food,LD50,3,52,AI ug/org/d
+23564058,Active ingredient,Mortality,Adult,Food,LD50,2,88,AI ug/org
+23564058,Active ingredient,Mortality,Larva,Food,NOEL,8,4.16,AI ug/org/d
+23564058,Active ingredient,Development,Larva,Food,NOEL,22,4.16,AI ug/org/d
+23564058,Active ingredient,Behavior,Adult,Food,NOEL,10,6.5,AI ug/org/d
+23564058,Active ingredient,Mortality,Larva,Food,NOEL,22,4.16,AI ug/org/d
+23564058,Active ingredient,Mortality,Adult,Food,NOEL,10,47.29,AI ug/org/d
+24017478,Formulation,Mortality,Adult,Dermal,LD50,2,0.268,AI ug/org
+24353615,Formulation,Mortality,Adult,Dermal,LD50,2,0.519,ug/bee
+25171635,Formulation,Mortality,Adult,Dermal,LD50,2,12,AI ug/org
+25311711,Active ingredient,Mortality,Adult,Dermal,LD50,2,0.05,AI ug/org
+25311711,Active ingredient,Mortality,Adult,Dermal,NOEL,2,0.01,AI ug/org
+25606411,Formulation,Mortality,Adult,Dermal,LD50,2,100,ug/bee
+25606411,Formulation,Mortality,Adult,Dermal,NOEL,2,50,ug/bee
+25939053,Formulation,Mortality,Adult,Dermal,LD50,2,5.75,ug/bee
+25954136,Active ingredient,Mortality,Adult,Dermal,LD50,2,200,AI ug/org
+26002802,Active ingredient,Mortality,Adult,Dermal,LD50,4,0.067,AI ug/org
+26002802,Active ingredient,Mortality,Adult,Dermal,NOEL,4,0.048,AI ug/org
+26225796,Active ingredient,Mortality,Larva,Food,LD50,8,22,AI ug/org/d
+26225796,Active ingredient,Mortality,Larva,Food,NOEL,8,1.5,AI ug/org/d
+26225796,Active ingredient,Mortality,Larva,Food,NOEL,15,1.5,AI ug/org/d
+26225796,Active ingredient,Mortality,Adult,Food,NOEL,10,3.8,AI ug/org/d
+26225796,Active ingredient,Development,Larva,Food,NOEL,22,5.8,AI ug/org/d
+26644462,Active ingredient,Mortality,Adult,Dermal,LD50,2,100,AI ug/org
+26644462,Active ingredient,Mortality,Adult,Food,LD50,2,100,AI ug/org
+26644462,Active ingredient,Mortality,Adult,Food,NOEL,2,100,AI ug/org
+26644462,Active ingredient,Mortality,Adult,Dermal,NOEL,2,100,AI ug/org
+26952205,Active ingredient,Mortality,Adult,Dermal,LD50,2,25,AI ug/org
+26952205,Active ingredient,Mortality,Adult,Dermal,NOEL,2,25,AI ug/org
+28249776,Active ingredient,Mortality,Adult,Dermal,LD50,2,100,AI ug/org
+28249776,Active ingredient,Mortality,Adult,Food,LD50,2,100,AI ug/org
+28249776,Active ingredient,Mortality,Adult,Dermal,NOEL,2,100,AI ug/org
+28249776,Active ingredient,Mortality,Adult,Food,NOEL,2,100,AI ug/org
+29091212,Active ingredient,Mortality,Adult,Dermal,LD50,2,100,AI ug/org
+29232937,Formulation,Mortality,Adult,Dermal,LD50,2,0.639,ug/bee
+29450451,Formulation,Mortality,Adult,Food,LD50,2,119.24,ae ug/org
+29450451,Formulation,Mortality,Adult,Dermal,LD50,2,100,AI ug/org
+29450451,Formulation,Mortality,Adult,Food,NOEL,2,119.24,ae ug/org
+29450451,Formulation,Mortality,Adult,Dermal,NOEL,2,100,AI ug/org
+30560191,Formulation,Mortality,Adult,Dermal,LD50,2,1.2,ug/bee
+33213659,Formulation,Mortality,Adult,Dermal,LD50,2,21.79,AI ug/org
+33629479,Formulation,Mortality,Adult,Food,LD50,2,92.8,AI ug/org
+33629479,Formulation,Mortality,Adult,Dermal,LD50,2,100,AI ug/org
+33629479,Formulation,Mortality,Adult,Food,NOEL,2,45.6,AI ug/org
+34014181,Active ingredient,Mortality,Adult,Dermal,LD50,2,100,AI ug/org
+34256821,Active ingredient,Mortality,Adult,Food,LD50,2,100,AI ug/org
+34256821,Active ingredient,Mortality,Adult,Dermal,LD50,2,200,AI ug/org
+34256821,Active ingredient,Mortality,Larva,Food,LD50,8,21.8,AI ug/org/d
+34256821,Formulation,Mortality,Adult,Dermal,LD50,2,200,AI ug/org
+34256821,Active ingredient,Mortality,Larva,Food,LD50,3,26.5,AI ug/org
+34256821,Active ingredient,Mortality,Larva,Food,LD50,8,11.8,AI ug/org/d
+34256821,Active ingredient,Mortality,Larva,Food,NOEL,8,6.43,AI ug/org/d
+34256821,Active ingredient,Development,Larva,Food,NOEL,22,4.65,AI ug/org/d
+34256821,Active ingredient,Mortality,Larva,Food,NOEL,15,4.65,AI ug/org/d
+34256821,Active ingredient,Growth,Larva,Food,NOEL,22,25.8,AI ug/org/d
+34256821,Active ingredient,Mortality,Larva,Food,NOEL,8,4.65,AI ug/org/d
+34256821,Active ingredient,Mortality,Larva,Food,NOEL,15,6.43,AI ug/org/d
+34256821,Active ingredient,Development,Larva,Food,NOEL,22,6.43,AI ug/org/d
+35367385,Formulation,Mortality,Adult,Food,LD50,2,85.6,AI ug/org
+35367385,Active ingredient,Mortality,Adult,Food,LD50,2,9.1,AI ug/org
+35367385,Active ingredient,Mortality,Larva,Food,LD50,8,0.044,AI ug/org/d
+35367385,Active ingredient,Mortality,Adult,Dermal,LD50,2,74.2,AI ug/org
+35367385,Active ingredient,Mortality,Larva,Food,LD50,8,0.0624,AI ug/org
+35367385,Formulation,Mortality,Adult,Dermal,LD50,2,100,AI ug/org
+35367385,Active ingredient,Mortality,Larva,Food,NOEL,22,0.0064,AI ug/org/d
+35367385,Formulation,Mortality,Adult,Food,NOEL,10,93.5,AI ug/org/d
+35367385,Active ingredient,Mortality,Adult,Food,NOEL,10,0.0012,AI ug/org/d
+35367385,Active ingredient,Mortality,Larva,Food,NOEL,15,0.0064,AI ug/org/d
+35367385,Active ingredient,Development,Larva,Food,NOEL,22,0.0064,AI ug/org/d
+35367385,Active ingredient,Development,Larva,Food,NOEL,22,0.0088,AI ug/org
+35367385,Active ingredient,Mortality,Larva,Food,NOEL,8,0.038,AI ug/org
+35367385,Formulation,Behavior,Adult,Food,NOEL,10,11.1,AI ug/org/d
+35367385,Active ingredient,Mortality,Larva,Food,NOEL,8,0.0064,AI ug/org/d
+35367385,Active ingredient,Mortality,Larva,Food,NOEL,22,0.0088,AI ug/org
+35367385,Active ingredient,Behavior,Adult,Food,NOEL,10,0.0012,AI ug/org/d
+36734197,Active ingredient,Mortality,Larva,Food,LD50,8,150,AI ug/org
+36734197,Active ingredient,Mortality,Larva,Food,NOEL,15,43,AI ug/org
+36734197,Active ingredient,Mortality,Larva,Food,NOEL,8,150,AI ug/org
+36734197,Active ingredient,Development,Larva,Food,NOEL,22,30,AI ug/org
+37273919,Active ingredient,Mortality,Adult,Food,LD50,2,87,AI ug/org
+37273919,Active ingredient,Mortality,Adult,Dermal,LD50,2,113,AI ug/org
+38641940,Formulation,Mortality,Adult,Food,LD50,2,100,ug/bee
+38641940,Formulation,Mortality,Adult,Dermal,LD50,2,100,ug/bee
+38641940,Formulation,Mortality,Adult,Dermal,LD50,2,100,AI ug/org
+38641940,Formulation,Mortality,Adult,Food,LD50,2,100,ug/bee
+38641940,Formulation,Mortality,Adult,Food,NOEL,2,50,ug/bee
+39148248,Active ingredient,Mortality,Adult,Food,LD50,3,535,AI ug/org
+39148248,Active ingredient,Mortality,Adult,Food,LD50,2,709,AI ug/org
+39148248,Active ingredient,Mortality,Adult,Dermal,LD50,2,986,AI ug/org
+39148248,Formulation,Mortality,Adult,Dermal,LD50,2,100,ug/bee
+39148248,Formulation,Mortality,Adult,Dermal,LD50,2,310,AI ug/org
+39148248,Formulation,Mortality,Adult,Food,LD50,2,349,AI ug/org
+39148248,Active ingredient,Mortality,Adult,Food,LD50,4,455,AI ug/org
+39148248,Formulation,Mortality,Adult,Dermal,NOEL,2,310,AI ug/org
+39148248,Formulation,Mortality,Adult,Food,NOEL,2,264,AI ug/org
+39300453,Formulation,Mortality,Adult,Dermal,LD50,2,33.39,AI ug/org
+40487421,Active ingredient,Mortality,Adult,Food,LD50,2,101.2,AI ug/org
+40487421,Active ingredient,Mortality,Adult,Dermal,LD50,2,100,AI ug/org
+40487421,Active ingredient,Mortality,Adult,Dermal,NOEL,2,100,AI ug/org
+40487421,Active ingredient,Mortality,Adult,Food,NOEL,2,101.2,AI ug/org
+41198087,Active ingredient,Mortality,Adult,Dermal,LD50,2,0.0953,AI ug/org
+42874033,Active ingredient,Mortality,Adult,Food,LD50,2,109,AI ug/org
+42874033,Active ingredient,Mortality,Adult,Dermal,LD50,2,100,AI ug/org
+42874033,Active ingredient,Mortality,Larva,Food,LD50,8,23,AI ug/org/d
+42874033,Formulation,Mortality,Adult,Dermal,LD50,4,100,ug/bee
+42874033,Active ingredient,Growth,Larva,Food,NOEL,22,23,AI ug/org/d
+42874033,Active ingredient,Mortality,Adult,Food,NOEL,10,8.58,AI ug/org/d
+42874033,Active ingredient,Mortality,Larva,Food,NOEL,8,23,AI ug/org/d
+42874033,Active ingredient,Mortality,Larva,Food,NOEL,15,23,AI ug/org/d
+42874033,Active ingredient,Behavior,Adult,Food,NOEL,10,0.18,AI ug/org/d
+42874033,Active ingredient,Development,Larva,Food,NOEL,22,23,AI ug/org/d
+43121433,Active ingredient,Mortality,Adult,Dermal,LD50,2,25,AI ug/org
+43121433,Active ingredient,Mortality,Adult,Dermal,NOEL,2,12.5,AI ug/org
+51218452,Active ingredient,Mortality,Adult,Dermal,LD50,2,110,AI ug/org
+51218452,Active ingredient,Mortality,Adult,Food,LD50,2,110,AI ug/org
+51235042,Active ingredient,Mortality,Adult,Dermal,LD50,2,100,AI ug/org
+51235042,Active ingredient,Mortality,Adult,Dermal,NOEL,2,100,AI ug/org
+51707552,Formulation,Mortality,Adult,Dermal,LD50,3,98.1,AI ug/org
+51707552,Active ingredient,Mortality,Adult,Dermal,LD50,2,100,AI ug/org
+51707552,Active ingredient,Mortality,Adult,Food,LD50,2,105.25,AI ug/org
+51707552,Formulation,Mortality,Adult,Dermal,NOEL,3,98.1,AI ug/org
+51707552,Active ingredient,Mortality,Adult,Dermal,NOEL,2,100,AI ug/org
+51707552,Active ingredient,Mortality,Adult,Food,NOEL,2,105.25,AI ug/org
+52315078,Formulation,Mortality,Adult,Dermal,LD50,2,0.13,ug/bee
+52315078,Formulation,Mortality,Adult,Food,LD50,2,0.56,ug/bee
+52315078,Active ingredient,Mortality,Adult,Food,LD50,2,0.172,AI ug/org
+52315078,Formulation,Mortality,Adult,Food,LD50,2,0.114,AI ug/org
+52315078,Formulation,Mortality,Adult,Food,NOEL,2,0.125,ug/bee
+52315078,Formulation,Mortality,Adult,Dermal,NOEL,2,0.025,ug/bee
+52508357,Active ingredient,Mortality,Adult,Food,LD50,2,91,AI ug/org
+52508357,Formulation,Mortality,Adult,Dermal,LD50,2,81,AI ug/org
+52508357,Active ingredient,Mortality,Larva,Food,LD50,3,66,AI ug/org
+52508357,Active ingredient,Mortality,Larva,Food,LD50,8,7.3,AI ug/org/d
+52508357,Active ingredient,Mortality,Larva,Food,NOEL,8,7.3,AI ug/org/d
+52508357,Active ingredient,Growth,Adult,Food,NOEL,10,110,AI ug/org/d
+52508357,Active ingredient,Mortality,Larva,Food,NOEL,3,66,AI ug/org
+52508357,Active ingredient,Growth,Larva,Food,NOEL,22,4.3,AI ug/org/d
+52508357,Formulation,Mortality,Adult,Dermal,NOEL,2,81,AI ug/org
+52508357,Active ingredient,Mortality,Adult,Food,NOEL,10,110,AI ug/org/d
+52508357,Active ingredient,Mortality,Larva,Food,NOEL,15,7.3,AI ug/org/d
+52508357,Active ingredient,Development,Larva,Food,NOEL,22,7.3,AI ug/org/d
+52508357,Active ingredient,Behavior,Adult,Food,NOEL,10,110,AI ug/org/d
+52645531,Active ingredient,Mortality,Adult,Food,LD50,2,0.131,AI ug/org
+52645531,Active ingredient,Mortality,Adult,Dermal,LD50,2,0.025,AI ug/org
+52645531,Active ingredient,Mortality,Adult,Dermal,NOEL,2,0.005,AI ug/org
+52645531,Active ingredient,Mortality,Adult,Food,NOEL,2,0.02,AI ug/org
+52918635,Active ingredient,Mortality,Adult,Food,LD50,3,0.191,AI ug/org
+52918635,Active ingredient,Mortality,Adult,Dermal,LD50,2,0.0015,AI ug/org
+52918635,Active ingredient,Mortality,Adult,Dermal,LD50,3,0.112,AI ug/org
+52918635,Active ingredient,Mortality,Adult,Dermal,NOEL,2,6.3e-4,AI ug/org
+53112280,Active ingredient,Mortality,Adult,Food,LD50,2,100,AI ug/org
+53112280,Active ingredient,Mortality,Adult,Dermal,LD50,2,100,AI ug/org
+53112280,Active ingredient,Mortality,Adult,Food,NOEL,2,100,AI ug/org
+53112280,Active ingredient,Mortality,Adult,Dermal,NOEL,2,100,AI ug/org
+53780362,Formulation,Mortality,Adult,Dermal,LD50,2,25,AI ug/org
+53780362,Formulation,Mortality,Adult,Dermal,NOEL,2,12.5,AI ug/org
+54593838,Active ingredient,Mortality,Adult,Dermal,LD50,2,0.09,ug/bee
+55219653,Active ingredient,Mortality,Adult,Dermal,LD50,2,200,AI ug/org
+55219653,Active ingredient,Mortality,Adult,Food,LD50,2,224.8,AI ug/org
+55219653,Active ingredient,Mortality,Adult,Dermal,NOEL,2,200,AI ug/org
+55219653,Active ingredient,Mortality,Adult,Food,NOEL,2,224.8,AI ug/org
+55283686,Active ingredient,Mortality,Adult,Food,LD50,2,97,AI ug/org
+55290647,Formulation,Mortality,Adult,Food,LD50,2,100,ug/bee
+55290647,Formulation,Mortality,Adult,Dermal,LD50,2,100,ug/bee
+55335063,Active ingredient,Mortality,Larva,Food,LD50,8,22,AI ug/org/d
+55335063,Active ingredient,Mortality,Adult,Food,LD50,2,99,AI ug/org
+55335063,Active ingredient,Mortality,Adult,Dermal,LD50,2,100,AI ug/org
+55335063,Active ingredient,Behavior,Adult,Food,NOEL,10,14.3,AI ug/org/d
+55335063,Active ingredient,Mortality,Larva,Food,NOEL,15,0.58,AI ug/org/d
+55335063,Active ingredient,Mortality,Larva,Food,NOEL,8,3.6,AI ug/org/d
+55335063,Active ingredient,Mortality,Adult,Food,NOEL,10,22.3,AI ug/org/d
+55335063,Active ingredient,Development,Larva,Food,NOEL,22,1.5,AI ug/org/d
+55512339,Active ingredient,Mortality,Larva,Food,LD50,8,1.44,AI ug/org/d
+55512339,Active ingredient,Mortality,Larva,Food,LD50,8,3.5,AI ug/org/d
+55512339,Active ingredient,Development,Larva,Food,NOEL,22,0.18,AI ug/org/d
+55512339,Active ingredient,Mortality,Larva,Food,NOEL,8,3.5,AI ug/org/d
+55512339,Active ingredient,Mortality,Adult,Food,NOEL,10,21.2,AI ug/org/d
+55512339,Active ingredient,Mortality,Larva,Food,NOEL,15,1.5,AI ug/org/d
+56425913,Active ingredient,Mortality,Adult,Dermal,LD50,2,100,AI ug/org
+57018049,Active ingredient,Mortality,Adult,Dermal,LD50,2,100,AI ug/org
+57754855,Formulation,Mortality,Adult,Dermal,LD50,2,100,AI ug/org
+57754855,Formulation,Mortality,Adult,Dermal,NOEL,2,100,AI ug/org
+57837191,Formulation,Mortality,Adult,Dermal,LD50,2,100,ug/bee
+57960197,Active ingredient,Mortality,Larva,Food,LD50,8,0.43,AI ug/org/d
+57960197,Active ingredient,Mortality,Adult,Dermal,LD50,2,100,AI ug/org
+57960197,Formulation,Mortality,Adult,Dermal,LD50,3,350,AI ug/org
+57960197,Formulation,Mortality,Adult,Food,LD50,3,315,AI ug/org
+57960197,Active ingredient,Mortality,Larva,Food,LD50,3,1.2,AI ug/org
+57960197,Active ingredient,Mortality,Larva,Food,NOEL,8,0.43,AI ug/org/d
+57960197,Active ingredient,Mortality,Adult,Dermal,NOEL,2,100,AI ug/org
+57960197,Active ingredient,Behavior,Adult,Food,NOEL,10,0.81,AI ug/org/d
+57960197,Formulation,Mortality,Adult,Food,NOEL,3,43.8,AI ug/org
+57960197,Active ingredient,Mortality,Larva,Food,NOEL,15,0.43,AI ug/org/d
+57960197,Active ingredient,Development,Larva,Food,NOEL,22,0.43,AI ug/org/d
+57960197,Active ingredient,Mortality,Larva,Food,NOEL,22,0.43,AI ug/org/d
+57960197,Formulation,Mortality,Adult,Dermal,NOEL,3,175,AI ug/org
+57960197,Active ingredient,Mortality,Adult,Food,NOEL,10,0.47,AI ug/org/d
+57966957,Active ingredient,Mortality,Larva,Food,LD50,3,99.3,AI ug/org
+57966957,Active ingredient,Mortality,Adult,Dermal,LD50,2,25,AI ug/org
+57966957,Active ingredient,Mortality,Adult,Dermal,NOEL,2,25,AI ug/org
+59669260,Active ingredient,Mortality,Adult,Dermal,LD50,2,2.11,AI ug/org
+59669260,Active ingredient,Mortality,Adult,Food,LD50,2,0.13,AI ug/org
+59669260,Active ingredient,Mortality,Adult,Dermal,LD50,2,25,AI ug/org
+59669260,Active ingredient,Mortality,Adult,Dermal,NOEL,2,3.1,AI ug/org
+59756604,Active ingredient,Mortality,Adult,Dermal,LD50,2,100,AI ug/org
+59756604,Active ingredient,Mortality,Adult,Dermal,NOEL,2,100,AI ug/org
+60168889,Active ingredient,Mortality,Adult,Dermal,LD50,2,100,AI ug/org
+60168889,Active ingredient,Mortality,Adult,Food,LD50,2,10,AI ug/org
+60168889,Active ingredient,Mortality,Adult,Dermal,NOEL,2,100,AI ug/org
+60168889,Active ingredient,Mortality,Adult,Food,NOEL,2,10,AI ug/org
+60207901,Active ingredient,Mortality,Adult,Dermal,LD50,2,25,AI ug/org
+60207901,Active ingredient,Mortality,Larva,Food,LD50,8,34,AI ug/org/d
+60207901,Formulation,Mortality,Larva,Food,LD50,8,13.5,ae ug/org/d
+60207901,Active ingredient,Development,Larva,Food,NOEL,22,2.6,AI ug/org/d
+60207901,Active ingredient,Mortality,Larva,Food,NOEL,8,12,AI ug/org/d
+60207901,Formulation,Mortality,Larva,Food,NOEL,8,4,AI ug/org/d
+60207901,Active ingredient,Mortality,Larva,Food,NOEL,15,12,AI ug/org/d
+61790532,Formulation,Mortality,Adult,Dermal,LD50,2,241.72,ug/bee
+62476599,Active ingredient,Mortality,Adult,Dermal,LD50,2,100,AI ug/org
+62476599,Active ingredient,Mortality,Adult,Dermal,NOEL,2,100,AI ug/org
+62924703,Active ingredient,Mortality,Adult,Dermal,LD50,2,11,AI ug/org
+62924703,Formulation,Mortality,Adult,Food,LD50,2,17.1,AI ug/org
+62924703,Active ingredient,Mortality,Adult,Dermal,LD50,2,105.3,AI ug/org
+62924703,Formulation,Mortality,Adult,Dermal,LD50,2,17.1,AI ug/org
+62924703,Active ingredient,Mortality,Adult,Food,LD50,2,218.9,AI ug/org
+62924703,Active ingredient,Mortality,Larva,Food,LD50,8,25,AI ug/org/d
+62924703,Active ingredient,Development,Larva,Food,NOEL,22,13,AI ug/org/d
+62924703,Active ingredient,Mortality,Larva,Food,NOEL,8,25,AI ug/org/d
+62924703,Active ingredient,Mortality,Larva,Food,NOEL,15,13,AI ug/org/d
+62924703,Formulation,Mortality,Adult,Food,NOEL,10,6.3,AI ug/org/d
+62924703,Formulation,Behavior,Adult,Food,NOEL,10,30,AI ug/org/d
+62924703,Active ingredient,Mortality,Adult,Dermal,NOEL,2,12.5,AI ug/org
+64700567,Active ingredient,Mortality,Adult,Dermal,LD50,2,100,AI ug/org
+64902723,Active ingredient,Mortality,Adult,Dermal,LD50,2,25,AI ug/org
+64902723,Active ingredient,Mortality,Adult,Dermal,NOEL,2,25,AI ug/org
+66215278,Active ingredient,Mortality,Adult,Dermal,LD50,2,25,AI ug/org
+66230044,Active ingredient,Mortality,Adult,Dermal,LD50,2,0.017,AI ug/org
+66332965,Formulation,Mortality,Larva,Food,LD50,8,3.75,AI ug/org/d
+66332965,Formulation,Mortality,Larva,Food,NOEL,15,2.4,AI ug/org/d
+66332965,Formulation,Mortality,Larva,Food,NOEL,8,2.4,AI ug/org/d
+66332965,Formulation,Development,Larva,Food,NOEL,22,2.4,AI ug/org/d
+66841256,Active ingredient,Mortality,Adult,Dermal,LD50,2,0.126,AI ug/org
+67485294,Active ingredient,Mortality,Adult,Dermal,LD50,2,68,AI ug/org
+67564914,Active ingredient,Mortality,Adult,Food,LD50,2,95.6,AI ug/org
+67564914,Active ingredient,Mortality,Adult,Dermal,LD50,2,100,AI ug/org
+67564914,Active ingredient,Mortality,Adult,Food,NOEL,2,6.25,AI ug/org
+67564914,Active ingredient,Mortality,Adult,Dermal,NOEL,2,100,AI ug/org
+67762394,Active ingredient,Mortality,Adult,Dermal,LD50,2,25,AI ug/org
+67762394,Active ingredient,Mortality,Adult,Dermal,NOEL,2,25,AI ug/org
+68157608,Active ingredient,Mortality,Adult,Dermal,LD50,2,25,AI ug/org
+68157608,Active ingredient,Mortality,Larva,Food,LD50,3,15,AI ug/org/d
+68157608,Active ingredient,Mortality,Larva,Food,LD50,3,15,AI ug/org
+68157608,Active ingredient,Mortality,Larva,Food,LD50,8,4.23,AI ug/org/d
+68157608,Active ingredient,Development,Larva,Food,NOEL,22,1.47,AI ug/org/d
+68157608,Active ingredient,Growth,Larva,Food,NOEL,22,5.6,AI ug/org/d
+68157608,Active ingredient,Mortality,Larva,Food,NOEL,3,8.2,AI ug/org/d
+68157608,Active ingredient,Mortality,Larva,Food,NOEL,15,1.47,AI ug/org/d
+68157608,Active ingredient,Mortality,Larva,Food,NOEL,8,1.47,AI ug/org/d
+68157608,Active ingredient,Mortality,Adult,Dermal,NOEL,2,25,AI ug/org
+68694111,Active ingredient,Mortality,Adult,Dermal,LD50,2,160,AI ug/org
+69327760,Active ingredient,Mortality,Adult,Dermal,LD50,3,200,AI ug/org
+69327760,Active ingredient,Mortality,Larva,Food,LD50,8,14.51,AI ug/org/d
+69327760,Active ingredient,Mortality,Adult,Dermal,NOEL,3,100,AI ug/org
+69327760,Active ingredient,Mortality,Larva,Food,NOEL,8,14.51,AI ug/org/d
+69327760,Active ingredient,Growth,Larva,Food,NOEL,22,7.98,AI ug/org/d
+69327760,Active ingredient,Development,Larva,Food,NOEL,22,5.06,AI ug/org/d
+69327760,Active ingredient,Mortality,Larva,Food,NOEL,15,5.06,AI ug/org/d
+69409945,Active ingredient,Mortality,Adult,Dermal,LD50,2,1.16,AI ug/org
+69409945,Active ingredient,Mortality,Adult,Dermal,LD50,2,1.78,AI ug/org
+69409945,Active ingredient,Mortality,Adult,Dermal,LD50,2,0.2,ug/bee
+69409945,Formulation,Mortality,Adult,Dermal,LD50,2,0.78,AI ug/org
+70630170,Active ingredient,Mortality,Adult,Dermal,LD50,2,25,AI ug/org
+71283802,Formulation,Mortality,Adult,Dermal,LD50,2,58,AI ug/org
+71283802,Active ingredient,Mortality,Adult,Food,LD50,2,191.4,AI ug/org
+71283802,Active ingredient,Mortality,Adult,Dermal,LD50,2,192.4,AI ug/org
+71283802,Active ingredient,Mortality,Adult,Dermal,NOEL,2,192.4,AI ug/org
+71751412,Active ingredient,Mortality,Larva,Food,LD50,3,0.0011,AI ug/org
+71751412,Active ingredient,Mortality,Adult,Dermal,LD50,1,0.0023,AI ug/org
+71751412,Active ingredient,Mortality,Larva,Food,LD50,8,6.2e-5,AI ug/org/d
+71751412,Active ingredient,Mortality,Larva,Food,LD50,8,4.98e-4,AI ug/org/d
+71751412,Active ingredient,Mortality,Adult,Food,LD50,1,0.0044,AI ug/org
+71751412,Active ingredient,Mortality,Larva,Food,NOEL,8,6.23e-4,AI ug/org/d
+71751412,Active ingredient,Behavior,Adult,Food,NOEL,10,8.4e-5,AI ug/org/d
+71751412,Active ingredient,Mortality,Adult,Food,NOEL,10,1.66e-4,AI ug/org/d
+71751412,Active ingredient,Development,Larva,Food,NOEL,22,3e-6,AI ug/org/d
+71751412,Active ingredient,Mortality,Larva,Food,NOEL,8,2.3e-5,AI ug/org/d
+72490018,Active ingredient,Mortality,Adult,Dermal,LD50,2,100,AI ug/org
+72490018,Active ingredient,Mortality,Adult,Dermal,NOEL,2,22,AI ug/org
+72963725,Active ingredient,Mortality,Adult,Dermal,LD50,2,0.52,AI ug/org
+72963725,Active ingredient,Mortality,Adult,Dermal,NOEL,2,0.13,AI ug/org
+74051802,Active ingredient,Mortality,Larva,Food,LD50,8,21,AI ug/org/d
+74051802,Active ingredient,Mortality,Adult,Dermal,LD50,2,200.2,AI ug/org
+74051802,Active ingredient,Mortality,Adult,Dermal,LD50,2,10,AI ug/org
+74051802,Active ingredient,Mortality,Adult,Food,LD50,2,200.2,AI ug/org
+74051802,Active ingredient,Behavior,Adult,Food,NOEL,10,4.38,AI ug/org/d
+74051802,Active ingredient,Behavior,Adult,Food,NOEL,10,4.38,AI ug/org/d
+74051802,Active ingredient,Mortality,Larva,Food,NOEL,8,21,AI ug/org/d
+74051802,Active ingredient,Mortality,Larva,Food,NOEL,15,21,AI ug/org/d
+74051802,Active ingredient,Development,Larva,Food,NOEL,22,21,AI ug/org/d
+74051802,Active ingredient,Mortality,Adult,Food,NOEL,10,30.8,AI ug/org/d
+74115245,Formulation,Mortality,Larva,Food,LD50,8,25,AI ug/org/d
+74115245,Formulation,Development,Larva,Food,NOEL,22,2,AI ug/org/d
+74115245,Formulation,Mortality,Larva,Food,NOEL,8,25,AI ug/org/d
+74115245,Formulation,Mortality,Larva,Food,NOEL,15,2,AI ug/org/d
+74222972,Active ingredient,Mortality,Adult,Dermal,LD50,2,100,AI ug/org
+74222972,Active ingredient,Mortality,Adult,Dermal,NOEL,2,100,AI ug/org
+74223646,Active ingredient,Mortality,Larva,Food,LD50,8,4.83,AI ug/org/d
+74223646,Active ingredient,Mortality,Adult,Dermal,LD50,2,25,AI ug/org
+74223646,Active ingredient,Development,Larva,Food,NOEL,22,4.83,AI ug/org/d
+74223646,Active ingredient,Mortality,Larva,Food,NOEL,8,4.83,AI ug/org/d
+74223646,Active ingredient,Mortality,Larva,Food,NOEL,15,4.83,AI ug/org/d
+76578126,Active ingredient,Mortality,Adult,Dermal,LD50,2,50,AI ug/org
+76578126,Active ingredient,Mortality,Adult,Dermal,NOEL,2,50,AI ug/org
+76674210,Active ingredient,Mortality,Adult,Dermal,LD50,2,50,AI ug/org
+76674210,Active ingredient,Mortality,Adult,Food,LD50,2,50,ug/org
+76674210,Formulation,Mortality,Adult,Dermal,LD50,3,198,ug/bee
+76674210,Formulation,Mortality,Adult,Dermal,LD50,2,10.5,AI ug/org
+76674210,Formulation,Mortality,Adult,Food,LD50,1,198,ug/bee
+76674210,Formulation,Mortality,Adult,Dermal,LD50,2,52.5,AI ug/org
+76674210,Formulation,Mortality,Adult,Food,LD50,2,47,ug/org
+76674210,Active ingredient,Mortality,Adult,Food,LD50,2,2,AI ug/org
+76674210,Formulation,Mortality,Adult,Food,NOEL,2,20,ug/org
+76674210,Active ingredient,Mortality,Adult,Food,NOEL,2,20,ug/org
+76703623,Formulation,Mortality,Adult,Dermal,LD50,2,0.03,ug/bee
+76703623,Active ingredient,Mortality,Adult,Dermal,LD50,2,0.0061,AI ug/org
+76703623,Active ingredient,Mortality,Adult,Dermal,NOEL,2,0.0013,AI ug/org
+76703623,Formulation,Mortality,Adult,Dermal,NOEL,2,0.0063,ug/bee
+76738620,Formulation,Mortality,Adult,Food,LD50,2,237,AI ug/org
+76738620,Formulation,Mortality,Adult,Dermal,LD50,2,235,AI ug/org
+76738620,Formulation,Mortality,Adult,Dermal,NOEL,2,235,AI ug/org
+76738620,Formulation,Mortality,Adult,Food,NOEL,2,35.5,AI ug/org
+77182822,Formulation,Mortality,Adult,Food,LD50,2,100,ug/bee
+77182822,Formulation,Mortality,Adult,Dermal,LD50,2,100,ug/bee
+77501634,Formulation,Mortality,Adult,Dermal,LD50,2,124,AI ug/org
+78587050,Active ingredient,Mortality,Larva,Food,LD50,3,71,AI ug/org
+78587050,Formulation,Mortality,Adult,Dermal,LD50,2,200,AI ug/org
+78587050,Active ingredient,Mortality,Adult,Food,NOEL,10,51,AI ug/org/d
+79241466,Active ingredient,Mortality,Larva,Food,LD50,8,9.049,AI ug/org/d
+79241466,Active ingredient,Mortality,Larva,Food,LD50,3,5.34,AI ug/org
+79241466,Active ingredient,Behavior,Adult,Food,NOEL,10,13.18,AI ug/org/d
+79241466,Active ingredient,Mortality,Larva,Food,NOEL,15,0.871,AI ug/org/d
+79241466,Active ingredient,Development,Larva,Food,NOEL,22,0.871,AI ug/org/d
+79241466,Active ingredient,Mortality,Larva,Food,NOEL,8,0.871,AI ug/org/d
+79241466,Active ingredient,Mortality,Adult,Food,NOEL,10,7.914,AI ug/org/d
+79277273,Active ingredient,Mortality,Adult,Dermal,LD50,2,12.5,AI ug/org
+79277273,Active ingredient,Mortality,Adult,Dermal,LD50,2,12.5,AI ug/org
+79277273,Formulation,Mortality,Larva,Food,LD50,8,36.2,AI ug/org/d
+79277273,Formulation,Development,Larva,Food,NOEL,22,5.45,AI ug/org/d
+79277273,Formulation,Mortality,Larva,Food,NOEL,15,5.45,AI ug/org/d
+79277273,Formulation,Mortality,Larva,Food,NOEL,8,14.2,AI ug/org/d
+79538322,Active ingredient,Mortality,Adult,Food,LD50,2,1.74,AI ug/org
+79538322,Active ingredient,Mortality,Adult,Dermal,LD50,2,0.17,AI ug/org
+80844071,Active ingredient,Mortality,Adult,Dermal,LD50,3,0.0145,AI ug/org
+80844071,Active ingredient,Mortality,Adult,Dermal,NOEL,3,0.005,AI ug/org
+81052291,Active ingredient,Mortality,Adult,Food,LD50,2,100,AI ug/org
+81052291,Active ingredient,Mortality,Adult,Dermal,LD50,2,200,AI ug/org
+81052291,Active ingredient,Mortality,Adult,Dermal,NOEL,2,200,AI ug/org
+81052291,Active ingredient,Mortality,Adult,Food,NOEL,2,100,AI ug/org
+81335377,Active ingredient,Mortality,Larva,Food,LD50,8,22.12,AI ug/org/d
+81335377,Active ingredient,Behavior,Adult,Food,NOEL,10,7.17,AI ug/org/d
+81335377,Active ingredient,Development,Larva,Food,NOEL,22,5.427,AI ug/org/d
+81335377,Active ingredient,Mortality,Adult,Food,NOEL,10,39.2,AI ug/org/d
+81335377,Active ingredient,Mortality,Larva,Food,NOEL,15,10.88,AI ug/org/d
+81335377,Active ingredient,Mortality,Larva,Food,NOEL,8,22.12,AI ug/org/d
+81335775,Active ingredient,Mortality,Adult,Dermal,LD50,2,98,AI ug/org
+81335775,Active ingredient,Mortality,Adult,Food,LD50,2,100,AI ug/org
+81335775,Active ingredient,Mortality,Larva,Food,LD50,8,91.1,AI ug/org/d
+81335775,Active ingredient,Mortality,Larva,Food,NOEL,22,91.1,AI ug/org/d
+81335775,Active ingredient,Behavior,Adult,Food,NOEL,10,18.7,AI ug/org/d
+81335775,Active ingredient,Mortality,Larva,Food,NOEL,8,91.1,AI ug/org/d
+81335775,Active ingredient,Mortality,Larva,Food,NOEL,15,91.1,AI ug/org/d
+81335775,Active ingredient,Development,Larva,Food,NOEL,22,91.1,AI ug/org/d
+81335775,Active ingredient,Mortality,Adult,Food,NOEL,10,34.3,AI ug/org/d
+81406373,Formulation,Mortality,Adult,Food,LD50,2,73.7,AI ug/org
+81406373,Active ingredient,Mortality,Adult,Dermal,LD50,2,100,AI ug/org
+81406373,Active ingredient,Mortality,Adult,Dermal,LD50,2,25,AI ug/org
+81406373,Active ingredient,Mortality,Larva,Food,LD50,8,24.4,AI ug/org/d
+81406373,Formulation,Mortality,Adult,Food,LD50,2,51.2,ae ug/org
+81406373,Active ingredient,Mortality,Adult,Dermal,LD50,2,25,AI ug/org
+81406373,Active ingredient,Mortality,Adult,Dermal,LD50,2,100,AI ug/org
+81406373,Active ingredient,Mortality,Adult,Food,LD50,2,100,AI ug/org
+81406373,Active ingredient,Mortality,Larva,Food,NOEL,8,7.75,AI ug/org/d
+81406373,Active ingredient,Mortality,Adult,Food,NOEL,10,20.7,AI ug/org/d
+81406373,Active ingredient,Mortality,Larva,Food,NOEL,15,0.315,AI ug/org/d
+81406373,Active ingredient,Development,Larva,Food,NOEL,22,0.928,AI ug/org/d
+81406373,Active ingredient,Behavior,Adult,Food,NOEL,10,20.7,AI ug/org/d
+81406373,Active ingredient,Mortality,Larva,Food,NOEL,22,0.928,AI ug/org/d
+81406373,Active ingredient,Mortality,Adult,Dermal,NOEL,2,25,AI ug/org
+81777891,Active ingredient,Mortality,Adult,Food,LD50,2,85.29,AI ug/org
+81777891,Active ingredient,Mortality,Adult,Dermal,LD50,2,100,AI ug/org
+82097505,Active ingredient,Mortality,Adult,Dermal,LD50,2,100,ug/bee
+82697710,Formulation,Mortality,Adult,Dermal,LD50,2,100,AI ug/org
+82697710,Formulation,Mortality,Adult,Food,LD50,2,100,AI ug/org
+84087014,Formulation,Mortality,Adult,Dermal,LD50,4,181.29,ug/bee
+84087014,Active ingredient,Mortality,Adult,Dermal,LD50,4,357,AI ug/org
+84776330,Formulation,Mortality,Adult,Dermal,LD50,2,100,AI ug/org
+84776330,Formulation,Mortality,Adult,Dermal,LD50,2,262,AI ug/org
+84776330,Formulation,Mortality,Adult,Food,LD50,2,108.94,AI ug/org
+86209510,Active ingredient,Mortality,Adult,Dermal,LD50,2,100,AI ug/org
+86479063,Active ingredient,Mortality,Adult,Dermal,LD50,2,99.6,AI ug/org
+86479063,Active ingredient,Mortality,Adult,Food,LD50,2,100,AI ug/org
+86479063,Formulation,Mortality,Adult,Dermal,LD50,2,5.83,AI ug/org
+86479063,Formulation,Mortality,Adult,Food,LD50,2,5.68,AI ug/org
+86479063,Formulation,Mortality,Adult,Food,NOEL,2,3.4,AI ug/org
+86479063,Formulation,Mortality,Adult,Dermal,NOEL,2,3.4,AI ug/org
+87392129,Active ingredient,Mortality,Adult,Food,LD50,3,85,AI ug/org
+87392129,Active ingredient,Mortality,Larva,Food,LD50,8,33.75,AI ug/org/d
+87392129,Active ingredient,Mortality,Adult,Dermal,LD50,3,200,AI ug/org
+87392129,Active ingredient,Mortality,Larva,Food,LD50,8,14,AI ug/org/d
+87392129,Active ingredient,Mortality,Larva,Food,NOEL,8,28,AI ug/org/d
+87392129,Active ingredient,Behavior,Adult,Food,NOEL,10,12.1,AI ug/org/d
+87392129,Active ingredient,Mortality,Adult,Food,NOEL,3,85,AI ug/org
+87392129,Active ingredient,Mortality,Larva,Food,NOEL,8,14,AI ug/org/d
+87392129,Active ingredient,Mortality,Adult,Food,NOEL,10,70.8,AI ug/org/d
+87392129,Active ingredient,Behavior,Adult,Food,NOEL,10,388,AI mg/kg food
+87392129,Active ingredient,Mortality,Larva,Food,NOEL,15,6,AI ug/org/d
+87392129,Active ingredient,Mortality,Adult,Dermal,NOEL,3,200,AI ug/org
+87392129,Active ingredient,Development,Larva,Food,NOEL,22,6,AI ug/org/d
+87392129,Active ingredient,Mortality,Larva,Food,NOEL,22,6,AI ug/org/d
+87546187,Active ingredient,Mortality,Adult,Dermal,LD50,2,106,ug/bee
+87546187,Active ingredient,Mortality,Adult,Dermal,NOEL,2,106,ug/bee
+87674688,Active ingredient,Mortality,Larva,Food,LD50,8,25,AI ug/org/d
+87674688,Active ingredient,Mortality,Larva,Food,LD50,3,53,AI ug/org
+87674688,Active ingredient,Mortality,Adult,Dermal,LD50,2,94,AI ug/org
+87674688,Active ingredient,Mortality,Adult,Food,LD50,2,94,AI ug/org
+87674688,Active ingredient,Development,Larva,Food,NOEL,22,6.3,AI ug/org/d
+87674688,Active ingredient,Mortality,Adult,Food,NOEL,10,2.455,AI ug/org/d
+87674688,Active ingredient,Mortality,Larva,Food,NOEL,8,13,AI ug/org/d
+87674688,Active ingredient,Behavior,Adult,Food,NOEL,10,2.455,AI ug/org/d
+87674688,Active ingredient,Mortality,Larva,Food,NOEL,15,13,AI ug/org/d
+87820880,Active ingredient,Mortality,Adult,Dermal,LD50,2,100,AI ug/org
+88671890,Active ingredient,Mortality,Larva,Food,LD50,8,14.2,AI ug/org/d
+88671890,Active ingredient,Mortality,Adult,Food,LD50,2,500,AI ug/org
+88671890,Active ingredient,Mortality,Adult,Dermal,LD50,2,500,AI ug/org
+88671890,Active ingredient,Growth,Larva,Food,NOEL,22,14.2,AI ug/org/d
+88671890,Active ingredient,Development,Larva,Food,NOEL,22,6.08,AI ug/org/d
+88671890,Active ingredient,Behavior,Adult,Food,NOEL,10,0.8119,AI ug/org/d
+88671890,Active ingredient,Mortality,Larva,Food,NOEL,8,2.55,AI ug/org/d
+88671890,Active ingredient,Mortality,Larva,Food,NOEL,15,6.08,AI ug/org/d
+90982324,Active ingredient,Mortality,Adult,Dermal,LD50,2,12.5,ug/bee
+91465086,Active ingredient,Mortality,Adult,Dermal,LD50,1,0.051,AI ug/org
+91465086,Active ingredient,Mortality,Adult,Food,LD50,2,0.909,AI ug/org
+91465086,Formulation,Mortality,Adult,Food,LD50,2,0.483,AI ug/org
+91465086,Active ingredient,Mortality,Adult,Dermal,LD50,2,0.038,AI ug/org
+94125345,Active ingredient,Mortality,Larva,Food,LD50,8,21,AI ug/org/d
+94125345,Active ingredient,Mortality,Larva,Food,LD50,3,26,AI ug/org/d
+94125345,Active ingredient,Mortality,Adult,Dermal,LD50,2,100,AI ug/org
+94125345,Active ingredient,Development,Larva,Food,NOEL,22,5.8,AI ug/org/d
+94125345,Active ingredient,Mortality,Larva,Food,NOEL,8,5.8,AI ug/org/d
+94125345,Active ingredient,Mortality,Adult,Food,NOEL,10,0.6,AI ug/org/d
+94125345,Active ingredient,Behavior,Adult,Food,NOEL,10,0.6,AI ug/org/d
+94125345,Active ingredient,Mortality,Larva,Food,NOEL,15,5.8,AI ug/org/d
+94125345,Active ingredient,Mortality,Adult,Dermal,NOEL,2,100,AI ug/org
+94361065,Active ingredient,Mortality,Adult,Dermal,LD50,1,100,AI ug/org
+94361065,Active ingredient,Mortality,Adult,Food,LD50,1,100,AI ug/org
+94361065,Formulation,Mortality,Larva,Food,LD50,8,11.2,AI ug/org/d
+94361065,Formulation,Mortality,Adult,Dermal,LD50,1,100,AI ug/org
+94361065,Active ingredient,Mortality,Larva,Food,LD50,8,14.8,AI ug/org/d
+94361065,Active ingredient,Mortality,Larva,Food,NOEL,8,9.6,AI ug/org/d
+94361065,Active ingredient,Development,Larva,Food,NOEL,22,9.6,AI ug/org/d
+94361065,Formulation,Mortality,Larva,Food,NOEL,8,8.79,AI ug/org/d
+94361065,Active ingredient,Behavior,Adult,Food,NOEL,10,0.42,AI ug/org/d
+94361065,Active ingredient,Mortality,Larva,Food,NOEL,15,9.6,AI ug/org/d
+94361065,Active ingredient,Mortality,Adult,Food,NOEL,10,4.31,AI ug/org/d
+95266403,Active ingredient,Mortality,Adult,Food,LD50,2,193.6,AI ug/org
+95266403,Active ingredient,Mortality,Adult,Dermal,LD50,2,47,AI ug/org
+95266403,Active ingredient,Mortality,Adult,Dermal,LD50,2,193.6,AI ug/org
+95737681,Active ingredient,Mortality,Adult,Food,LD50,2,72.8,AI ug/org
+95737681,Active ingredient,Mortality,Larva,Food,LD50,8,2,AI ug/org/d
+95737681,Active ingredient,Mortality,Adult,Dermal,LD50,2,100,AI ug/org
+95737681,Active ingredient,Mortality,Larva,Food,NOEL,15,2,AI ug/org/d
+95737681,Active ingredient,Development,Larva,Food,NOEL,22,0.042,AI ug/org/d
+95737681,Active ingredient,Mortality,Larva,Food,NOEL,8,2,AI ug/org/d
+95737681,Active ingredient,Mortality,Adult,Food,NOEL,10,26.7,AI ug/org/d
+95737681,Active ingredient,Behavior,Adult,Food,NOEL,10,101,AI ug/org/d
+95737681,Active ingredient,Growth,Larva,Food,NOEL,22,0.042,AI ug/org/d
+96489713,Active ingredient,Mortality,Adult,Dermal,LD50,1.8333,0.024,AI ug/org
+96489713,Active ingredient,Mortality,Adult,Food,LD50,2,2.63,AI ug/org
+96489713,Active ingredient,Mortality,Adult,Dermal,LD50,2,1.81,AI ug/org
+96489713,Active ingredient,Mortality,Adult,Dermal,NOEL,1.8333,0.008,AI ug/org
+97886458,Active ingredient,Mortality,Adult,Dermal,LD50,2,100,AI ug/org
+97886458,Active ingredient,Mortality,Adult,Dermal,LD50,2,81,AI ug/org
+97886458,Active ingredient,Mortality,Adult,Food,LD50,2,119,AI ug/org
+98886443,Active ingredient,Mortality,Adult,Dermal,LD50,2,0.247,AI ug/org
+98967409,Active ingredient,Mortality,Adult,Dermal,LD50,2,100,AI ug/org
+99485764,Active ingredient,Mortality,Adult,Dermal,LD50,2,25,AI ug/org
+100784201,Active ingredient,Mortality,Adult,Dermal,LD50,2,100,AI ug/org
+100784201,Active ingredient,Mortality,Adult,Dermal,NOEL,2,100,AI ug/org
+101200480,Active ingredient,Mortality,Adult,Dermal,LD50,2,100,AI ug/org
+103361097,Active ingredient,Mortality,Adult,Dermal,LD50,2,105,ug/bee
+103361097,Active ingredient,Mortality,Adult,Dermal,NOEL,2,105,ug/bee
+104040780,Active ingredient,Mortality,Adult,Dermal,LD50,2,100,AI ug/org
+104040780,Active ingredient,Mortality,Adult,Food,LD50,2,100,AI ug/org
+104040780,Active ingredient,Mortality,Adult,Food,NOEL,2,100,AI ug/org
+104040780,Active ingredient,Mortality,Adult,Dermal,NOEL,2,100,AI ug/org
+104098488,Active ingredient,Mortality,Larva,Food,LD50,8,28.5,AI ug/org/d
+104098488,Active ingredient,Development,Larva,Food,NOEL,22,13.1,AI ug/org/d
+104098488,Active ingredient,Mortality,Larva,Food,NOEL,15,13.1,AI ug/org/d
+104098488,Active ingredient,Mortality,Larva,Food,NOEL,8,13.1,AI ug/org/d
+104206828,Active ingredient,Mortality,Adult,Food,LD50,2,11,AI ug/org
+104206828,Formulation,Mortality,Larva,Food,LD50,3,24.9,AI ug/org/d
+104206828,Active ingredient,Mortality,Adult,Dermal,LD50,2,100,AI ug/org
+104206828,Active ingredient,Mortality,Larva,Food,LD50,8,10.6,AI ug/org/d
+104206828,Active ingredient,Mortality,Larva,Food,NOEL,15,10.6,AI ug/org/d
+104206828,Active ingredient,Mortality,Larva,Food,NOEL,8,10.6,AI ug/org/d
+104206828,Active ingredient,Mortality,Adult,Dermal,NOEL,2,100,AI ug/org
+104206828,Formulation,Mortality,Larva,Food,NOEL,3,14.5,AI ug/org/d
+104206828,Active ingredient,Development,Larva,Food,NOEL,22,10.6,AI ug/org/d
+104206828,Active ingredient,Mortality,Adult,Food,NOEL,2,11,AI ug/org
+105512069,Active ingredient,Mortality,Adult,Dermal,LD50,2,100,AI ug/org
+105512069,Active ingredient,Mortality,Adult,Dermal,NOEL,2,100,AI ug/org
+106700292,Formulation,Mortality,Larva,Food,LD50,8,31.1,AI ug/org/d
+106700292,Formulation,Behavior,Adult,Food,NOEL,10,5,AI ug/org/d
+106700292,Formulation,Mortality,Larva,Food,NOEL,8,20.9,AI ug/org/d
+106700292,Formulation,Mortality,Adult,Food,NOEL,10,20.6,AI ug/org/d
+107534963,Active ingredient,Mortality,Larva,Food,LD50,8,7.9,AI ug/org/d
+107534963,Active ingredient,Mortality,Larva,Food,LD50,8,4.7,AI ug/org/d
+107534963,Active ingredient,Mortality,Larva,Food,NOEL,15,1.67,AI ug/org/d
+107534963,Active ingredient,Development,Larva,Food,NOEL,22,1.67,AI ug/org/d
+107534963,Active ingredient,Mortality,Larva,Food,NOEL,8,1.67,AI ug/org/d
+107534963,Active ingredient,Development,Larva,Food,NOEL,22,4.7,AI ug/org/d
+107534963,Active ingredient,Mortality,Larva,Food,NOEL,15,4.7,AI ug/org/d
+107534963,Active ingredient,Mortality,Larva,Food,NOEL,8,4.7,AI ug/org/d
+109293972,Active ingredient,Mortality,Adult,Dermal,LD50,2,25,AI ug/org
+109293972,Active ingredient,Mortality,Adult,Dermal,NOEL,2,25,AI ug/org
+110488705,Formulation,Mortality,Adult,Food,LD50,2,50,AI ug/org
+110488705,Formulation,Mortality,Adult,Dermal,LD50,2,50,AI ug/org
+110488705,Formulation,Mortality,Adult,Food,LD50,4,50,AI ug/org
+110488705,Formulation,Mortality,Adult,Dermal,LD50,4,50,AI ug/org
+110488705,Formulation,Mortality,Adult,Food,NOEL,4,50,AI ug/org
+110488705,Formulation,Mortality,Adult,Food,NOEL,2,50,AI ug/org
+110488705,Formulation,Mortality,Adult,Dermal,NOEL,2,50,AI ug/org
+110488705,Formulation,Mortality,Adult,Dermal,NOEL,4,50,AI ug/org
+111353845,Active ingredient,Mortality,Adult,Dermal,LD50,2,12.5,AI ug/org
+111353845,Active ingredient,Mortality,Adult,Dermal,NOEL,2,6,AI ug/org
+111578326,Active ingredient,Mortality,Adult,Dermal,LD50,2,100,AI ug/org
+111988499,Formulation,Mortality,Adult,Food,LD50,2,12.8,ug/bee
+111988499,Active ingredient,Mortality,Adult,Food,LD50,2,17.94,AI ug/org
+111988499,Active ingredient,Mortality,Adult,Dermal,LD50,2,37.83,AI ug/org
+111988499,Formulation,Mortality,Adult,Dermal,LD50,2,43.59,ug/bee
+111988499,Formulation,Mortality,Adult,Dermal,NOEL,2,25,ug/bee
+111988499,Formulation,Mortality,Adult,Food,NOEL,2,7.6,ug/bee
+111991094,Active ingredient,Mortality,Adult,Dermal,LD50,2,20,AI ug/org
+112281773,Active ingredient,Mortality,Larva,Food,LD50,8,76,AI ug/org/d
+112281773,Active ingredient,Mortality,Larva,Food,LD50,8,28.3,AI ug/org/d
+112281773,Active ingredient,Mortality,Larva,Food,NOEL,15,1.63,AI ug/org/d
+112281773,Active ingredient,Mortality,Larva,Food,NOEL,8,28.3,AI ug/org/d
+112281773,Active ingredient,Behavior,Adult,Food,NOEL,10,0.21,AI ug/org/d
+112281773,Active ingredient,Mortality,Larva,Food,NOEL,8,32,AI ug/org/d
+112281773,Active ingredient,Mortality,Adult,Food,NOEL,10,0.36,AI ug/org/d
+112281773,Active ingredient,Development,Larva,Food,NOEL,22,1.63,AI ug/org/d
+112410238,Active ingredient,Mortality,Adult,Dermal,LD50,2,234,AI ug/org
+112410238,Active ingredient,Mortality,Adult,Dermal,LD50,4,234,AI ug/org
+113136779,Active ingredient,Mortality,Adult,Dermal,LD50,2,100,AI ug/org
+113136779,Active ingredient,Mortality,Adult,Food,LD50,2,89.5,AI ug/org
+114311329,Active ingredient,Mortality,Larva,Food,LD50,8,23.6,AI ug/org/d
+114311329,Active ingredient,Mortality,Adult,Dermal,LD50,2,58,AI ug/org
+114311329,Active ingredient,Mortality,Larva,Food,LD50,3,93.6,AI ug/org/d
+114311329,Active ingredient,Mortality,Adult,Food,LD50,2,40,AI ug/org
+114311329,Active ingredient,Mortality,Adult,Food,NOEL,10,101,AI ug/org/d
+114311329,Active ingredient,Development,Larva,Food,NOEL,22,5.53,AI ug/org/d
+114311329,Active ingredient,Mortality,Larva,Food,NOEL,15,5.53,AI ug/org/d
+114311329,Active ingredient,Behavior,Adult,Food,NOEL,10,101,AI ug/org/d
+114311329,Active ingredient,Mortality,Larva,Food,NOEL,8,23.6,AI ug/org/d
+114369436,Active ingredient,Mortality,Larva,Food,LD50,8,3.04,AI ug/org/d
+114369436,Active ingredient,Mortality,Larva,Food,NOEL,15,3.04,AI ug/org/d
+114369436,Active ingredient,Growth,Larva,Food,NOEL,22,3.04,AI ug/org/d
+114369436,Active ingredient,Development,Larva,Food,NOEL,22,1.11,AI ug/org/d
+114369436,Active ingredient,Mortality,Larva,Food,NOEL,8,3.04,AI ug/org/d
+115136533,Active ingredient,Mortality,Adult,Dermal,LD50,2,100,AI ug/org
+115136533,Active ingredient,Mortality,Adult,Dermal,NOEL,2,36,AI ug/org
+116714466,Active ingredient,Mortality,Larva,Food,LD50,8,0.0048,AI ug/org/d
+116714466,Active ingredient,Mortality,Adult,Food,LD50,2,100,AI ug/org
+116714466,Formulation,Mortality,Adult,Food,LD50,2,200,ug/bee
+116714466,Active ingredient,Mortality,Adult,Dermal,LD50,2,100,AI ug/org
+116714466,Formulation,Mortality,Adult,Dermal,LD50,2,200,ug/bee
+116714466,Active ingredient,Mortality,Larva,Food,NOEL,8,0.0048,AI ug/org/d
+116714466,Active ingredient,Growth,Larva,Food,NOEL,22,6.3e-4,AI ug/org/d
+116714466,Active ingredient,Mortality,Adult,Food,NOEL,2,100,AI ug/org
+116714466,Formulation,Mortality,Adult,Food,NOEL,2,200,ug/bee
+116714466,Active ingredient,Mortality,Adult,Dermal,NOEL,2,100,AI ug/org
+116714466,Formulation,Mortality,Adult,Dermal,NOEL,2,200,ug/bee
+116714466,Active ingredient,Development,Larva,Food,NOEL,22,6.3e-4,AI ug/org/d
+117337196,Active ingredient,Mortality,Adult,Dermal,LD50,2,100,AI ug/org
+117428225,Formulation,Mortality,Larva,Food,LD50,3,7.83,AI ug/org
+117428225,Formulation,Mortality,Adult,Dermal,LD50,2,200,AI ug/org
+117428225,Active ingredient,Mortality,Adult,Dermal,LD50,2,200,AI ug/org
+117428225,Formulation,Mortality,Adult,Food,LD50,2,200,AI ug/org
+117428225,Active ingredient,Mortality,Adult,Dermal,NOEL,2,200,AI ug/org
+117428225,Formulation,Mortality,Adult,Food,NOEL,2,200,AI ug/org
+117428225,Formulation,Mortality,Adult,Food,NOEL,10,5.15,AI ug/org/d
+117428225,Formulation,Behavior,Adult,Food,NOEL,10,5.15,AI ug/org/d
+117428225,Formulation,Mortality,Adult,Dermal,NOEL,2,200,AI ug/org
+117718602,Active ingredient,Mortality,Adult,Dermal,LD50,2,100,AI ug/org
+117718602,Active ingredient,Mortality,Adult,Dermal,NOEL,2,100,AI ug/org
+118134308,Active ingredient,Mortality,Adult,Food,LD50,2,100,AI ug/org
+118134308,Active ingredient,Mortality,Adult,Dermal,LD50,2,4.22,AI ug/org
+118712893,Active ingredient,Mortality,Adult,Dermal,LD50,2,0.0239,AI ug/org
+118712893,Active ingredient,Mortality,Adult,Food,LD50,2,0.5,AI ug/org
+119446683,Active ingredient,Mortality,Adult,Dermal,LD50,2,100,AI ug/org
+119446683,Formulation,Mortality,Larva,Food,LD50,8,1.79,AI ug/org/d
+119446683,Active ingredient,Mortality,Larva,Food,LD50,8,20.9,AI ug/org/d
+119446683,Active ingredient,Mortality,Larva,Food,NOEL,8,9.28,AI ug/org/d
+119446683,Formulation,Mortality,Larva,Food,NOEL,8,1.31,AI ug/org/d
+119446683,Active ingredient,Mortality,Adult,Dermal,NOEL,2,100,AI ug/org
+119446683,Active ingredient,Development,Larva,Food,NOEL,22,9.28,AI ug/org/d
+119446683,Active ingredient,Behavior,Adult,Food,NOEL,10,13,AI ug/org/d
+119446683,Active ingredient,Mortality,Larva,Food,NOEL,15,9.28,AI ug/org/d
+119446683,Formulation,Behavior,Adult,Food,NOEL,10,21.3,AI ug/org/d
+119446683,Formulation,Mortality,Adult,Food,NOEL,10,10.6,AI ug/org/d
+119446683,Active ingredient,Mortality,Adult,Food,NOEL,10,13,AI ug/org/d
+120068373,Active ingredient,Mortality,Larva,Food,LD50,3,0.0238,AI ug/org
+120068373,Active ingredient,Mortality,Larva,Food,LD50,4,0.0218,AI ug/org
+120068373,Active ingredient,Mortality,Adult,Dermal,LD50,2,0.006,AI ug/org
+120068373,Active ingredient,Mortality,Adult,Food,LD50,2,0.00405,AI ug/org
+120116883,Formulation,Mortality,Larva,Food,LD50,8,28,AI ug/org/d
+120116883,Formulation,Mortality,Larva,Food,LD50,3,66,AI ug/org/d
+120116883,Active ingredient,Mortality,Adult,Dermal,LD50,2,100,AI ug/org
+120116883,Active ingredient,Mortality,Adult,Food,LD50,2,151.7,AI ug/org
+120116883,Formulation,Mortality,Larva,Food,NOEL,15,28,ug/org/d
+120116883,Formulation,Mortality,Larva,Food,NOEL,8,28,ug/org/d
+120116883,Formulation,Behavior,Adult,Food,NOEL,10,110,AI ug/org/d
+120116883,Active ingredient,Mortality,Adult,Food,NOEL,2,151.7,AI ug/org
+120116883,Active ingredient,Mortality,Adult,Dermal,NOEL,2,100,AI ug/org
+120116883,Formulation,Growth,Larva,Food,NOEL,22,5.8,ug/org/d
+120116883,Formulation,Development,Larva,Food,NOEL,22,28,ug/org/d
+120116883,Formulation,Mortality,Adult,Food,NOEL,10,110,AI ug/org/d
+120928098,Active ingredient,Mortality,Larva,Food,LD50,3,0.347,AI ug/org
+120928098,Active ingredient,Mortality,Adult,Dermal,LD50,2,1.1,AI ug/org
+120928098,Active ingredient,Mortality,Adult,Food,LD50,2,5.8,AI ug/org
+120928098,Active ingredient,Mortality,Adult,Dermal,LD50,2,8.1,AI ug/org
+120928098,Active ingredient,Mortality,Adult,Food,LD50,2,7.3,AI ug/org
+120928098,Active ingredient,Mortality,Adult,Food,NOEL,2,0.31,AI ug/org
+120928098,Active ingredient,Behavior,Adult,Food,NOEL,10,29,AI ug/org/d
+120928098,Active ingredient,Mortality,Adult,Dermal,NOEL,2,0.375,AI ug/org
+120928098,Active ingredient,Mortality,Adult,Food,NOEL,10,0.69,AI ug/org/d
+120928098,Active ingredient,Mortality,Adult,Food,NOEL,2,2.5,AI ug/org
+120928098,Active ingredient,Mortality,Adult,Dermal,NOEL,2,2.5,AI ug/org
+121552612,Active ingredient,Mortality,Adult,Dermal,LD50,2,784,AI ug/org
+122008859,Active ingredient,Mortality,Adult,Dermal,LD50,1,100,AI ug/org
+122008859,Active ingredient,Mortality,Adult,Dermal,LD50,2,100,AI ug/org
+122008859,Active ingredient,Mortality,Adult,Food,LD50,1,100,AI ug/org
+122008859,Active ingredient,Mortality,Adult,Dermal,NOEL,2,100,AI ug/org
+122453730,Active ingredient,Mortality,Adult,Dermal,LD50,2,0.11,AI ug/org
+122453730,Active ingredient,Mortality,Adult,Dermal,NOEL,2,0.02,AI ug/org
+122548338,Active ingredient,Mortality,Adult,Dermal,LD50,2,20,AI ug/org
+122548338,Active ingredient,Mortality,Adult,Food,LD50,2,20,AI ug/org
+122548338,Active ingredient,Mortality,Adult,Food,LD50,2,45.9,AI ug/org
+122548338,Active ingredient,Mortality,Adult,Dermal,LD50,2,59.9,AI ug/org
+122548338,Active ingredient,Mortality,Adult,Food,NOEL,2,20,AI ug/org
+122548338,Active ingredient,Mortality,Adult,Food,NOEL,2,35.2,AI ug/org
+122548338,Active ingredient,Mortality,Adult,Dermal,NOEL,2,20,AI ug/org
+122548338,Active ingredient,Mortality,Adult,Dermal,NOEL,2,35.2,AI ug/org
+122836355,Active ingredient,Mortality,Adult,Dermal,LD50,2,25.1,AI ug/org
+122931480,Active ingredient,Mortality,Larva,Food,LD50,3,27.3,AI ug/org
+123312890,Active ingredient,Mortality,Adult,Dermal,LD50,2,200,AI ug/org
+123312890,Active ingredient,Mortality,Adult,Food,LD50,2,117,AI ug/org
+123312890,Active ingredient,Mortality,Adult,Food,LD50,4,62.71,AI ug/org
+123312890,Active ingredient,Mortality,Adult,Dermal,LD50,4,100,AI ug/org
+123312890,Active ingredient,Mortality,Adult,Dermal,NOEL,2,200,AI ug/org
+123343168,Active ingredient,Mortality,Adult,Dermal,LD50,2,25,AI ug/org
+123343168,Active ingredient,Mortality,Adult,Dermal,NOEL,2,25,AI ug/org
+124495187,Active ingredient,Mortality,Adult,Dermal,LD50,2,100,AI ug/org
+124495187,Active ingredient,Mortality,Larva,Food,LD50,8,19.38,AI ug/org/d
+124495187,Active ingredient,Mortality,Adult,Dermal,LD50,1.9167,25,AI ug/org
+124495187,Active ingredient,Mortality,Adult,Dermal,NOEL,1.9167,25,AI ug/org
+124495187,Active ingredient,Mortality,Larva,Food,NOEL,22,0.77,AI ug/org/d
+124495187,Active ingredient,Mortality,Larva,Food,NOEL,15,0.77,AI ug/org/d
+124495187,Active ingredient,Mortality,Adult,Dermal,NOEL,2,100,AI ug/org
+124495187,Active ingredient,Mortality,Larva,Food,NOEL,8,0.77,AI ug/org/d
+125116236,Active ingredient,Mortality,Larva,Food,LD50,3,101,AI ug/org/d
+125116236,Active ingredient,Mortality,Adult,Dermal,LD50,4,95.3,AI ug/org
+125116236,Active ingredient,Mortality,Adult,Food,LD50,4,88,AI ug/org
+125116236,Active ingredient,Mortality,Larva,Food,LD50,8,21,AI ug/org/d
+125116236,Active ingredient,Mortality,Larva,Food,NOEL,15,2.9,AI ug/org/d
+125116236,Active ingredient,Behavior,Adult,Food,NOEL,10,5.43,AI ug/org/d
+125116236,Active ingredient,Mortality,Adult,Food,NOEL,10,5.43,AI ug/org/d
+125116236,Active ingredient,Mortality,Adult,Food,NOEL,4,11,AI ug/org
+125116236,Active ingredient,Mortality,Larva,Food,NOEL,8,2.9,AI ug/org/d
+125116236,Active ingredient,Mortality,Adult,Dermal,NOEL,4,95.3,AI ug/org
+125116236,Active ingredient,Development,Larva,Food,NOEL,22,2.9,AI ug/org/d
+125225287,Active ingredient,Mortality,Larva,Food,LD50,8,14,AI ug/org/d
+125225287,Active ingredient,Mortality,Larva,Food,LD50,8,22,AI ug/org
+125225287,Active ingredient,Mortality,Adult,Food,NOEL,10,62,AI ug/org/d
+125225287,Active ingredient,Behavior,Adult,Food,NOEL,10,62,AI ug/org/d
+125225287,Active ingredient,Mortality,Larva,Food,NOEL,15,8.5,AI ug/org/d
+125225287,Active ingredient,Mortality,Larva,Food,NOEL,8,8.5,AI ug/org/d
+125225287,Active ingredient,Growth,Larva,Food,NOEL,22,8.5,AI ug/org/d
+125225287,Active ingredient,Development,Larva,Food,NOEL,22,8.5,AI ug/org/d
+125401925,Active ingredient,Mortality,Adult,Food,LD50,2,78,AI ug/org
+125401925,Active ingredient,Mortality,Adult,Dermal,LD50,2,25,AI ug/org
+125401925,Active ingredient,Mortality,Larva,Food,LD50,8,25,AI ug/org/d
+125401925,Active ingredient,Mortality,Adult,Dermal,NOEL,2,25,AI ug/org
+125401925,Active ingredient,Behavior,Adult,Food,NOEL,10,30,AI ug/org/d
+125401925,Active ingredient,Development,Larva,Food,NOEL,22,25,AI ug/org/d
+125401925,Active ingredient,Mortality,Larva,Food,NOEL,22,25,AI ug/org/d
+125401925,Active ingredient,Mortality,Larva,Food,NOEL,8,25,AI ug/org/d
+125401925,Active ingredient,Mortality,Adult,Food,NOEL,10,30,AI ug/org/d
+125401925,Active ingredient,Growth,Larva,Food,NOEL,22,1.6,AI ug/org/d
+126535157,Active ingredient,Mortality,Adult,Dermal,LD50,2,25,AI ug/org
+126833178,Active ingredient,Mortality,Larva,Food,LD50,8,79,AI ug/org/d
+126833178,Active ingredient,Mortality,Adult,Dermal,LD50,2,0.215,AI ug/org
+126833178,Active ingredient,Mortality,Adult,Food,LD50,2,100,AI ug/org
+126833178,Active ingredient,Mortality,Larva,Food,NOEL,8,79,AI ug/org/d
+126833178,Active ingredient,Growth,Larva,Food,NOEL,22,79,AI ug/org/d
+126833178,Active ingredient,Mortality,Larva,Food,NOEL,15,79,AI ug/org/d
+126833178,Active ingredient,Mortality,Adult,Dermal,NOEL,2,0.03,AI ug/org
+126833178,Active ingredient,Mortality,Larva,Food,NOEL,22,9.8,AI ug/org/d
+126833178,Active ingredient,Development,Larva,Food,NOEL,22,9.8,AI ug/org/d
+127277536,Active ingredient,Mortality,Adult,Food,LD50,2,100,AI ug/org
+127277536,Active ingredient,Mortality,Adult,Dermal,LD50,2,100,AI ug/org
+128621727,Active ingredient,Mortality,Adult,Dermal,LD50,1,200,AI ug/org
+128621727,Active ingredient,Mortality,Adult,Dermal,NOEL,1,200,AI ug/org
+128639021,Formulation,Mortality,Adult,Food,LD50,1,200,AI ug/org
+128639021,Active ingredient,Mortality,Adult,Dermal,LD50,2,27.9,AI ug/org
+128639021,Formulation,Mortality,Adult,Food,NOEL,1,200,AI ug/org
+128639021,Active ingredient,Mortality,Adult,Dermal,NOEL,2,27.9,AI ug/org
+129558765,Active ingredient,Mortality,Larva,Food,LD50,8,0.014,AI ug/org/d
+129558765,Active ingredient,Mortality,Adult,Food,LD50,2,0.63,AI ug/org
+129558765,Active ingredient,Mortality,Adult,Dermal,LD50,4,0.47,AI ug/org
+129558765,Active ingredient,Mortality,Larva,Food,LD50,3,0.044,AI ug/org
+129558765,Active ingredient,Mortality,Adult,Dermal,NOEL,4,0.3,AI ug/org
+129558765,Active ingredient,Mortality,Larva,Food,NOEL,8,0.013,AI ug/org/d
+129558765,Active ingredient,Mortality,Adult,Food,NOEL,10,0.075,AI ug/org/d
+129558765,Active ingredient,Mortality,Adult,Food,NOEL,2,0.27,AI ug/org
+129558765,Active ingredient,Mortality,Larva,Food,NOEL,15,0.0275,AI ug/org/d
+129558765,Active ingredient,Mortality,Larva,Food,NOEL,22,0.013,AI ug/org/d
+129558765,Active ingredient,Development,Larva,Food,NOEL,22,0.013,AI ug/org/d
+129558765,Active ingredient,Behavior,Adult,Food,NOEL,10,0.042,AI ug/org/d
+129558765,Active ingredient,Growth,Larva,Food,NOEL,22,0.0275,AI ug/org/d
+129630199,Active ingredient,Mortality,Larva,Food,LD50,3,100,AI ug/org
+129630199,Active ingredient,Mortality,Larva,Food,LD50,8,20,AI ug/org/d
+129630199,Active ingredient,Mortality,Adult,Dermal,LD50,2,100,AI ug/org
+129630199,Active ingredient,Mortality,Adult,Food,LD50,2,111.99,AI ug/org
+129630199,Active ingredient,Mortality,Adult,Food,NOEL,2,111.99,AI ug/org
+129630199,Active ingredient,Mortality,Adult,Dermal,NOEL,2,100,AI ug/org
+129630199,Active ingredient,Mortality,Larva,Food,NOEL,22,3,AI ug/org/d
+129630199,Active ingredient,Growth,Larva,Food,NOEL,22,23,AI ug/org/d
+129630199,Active ingredient,Development,Larva,Food,NOEL,22,3,AI ug/org/d
+129630199,Active ingredient,Behavior,Adult,Food,NOEL,10,12,AI ug/org/d
+129630199,Active ingredient,Mortality,Adult,Food,NOEL,10,12,AI ug/org/d
+129630199,Active ingredient,Mortality,Larva,Food,NOEL,8,6,AI ug/org/d
+129909906,Active ingredient,Mortality,Adult,Dermal,LD50,2,200,AI ug/org
+129909906,Active ingredient,Mortality,Larva,Food,LD50,8,5.2,AI ug/org/d
+129909906,Active ingredient,Mortality,Larva,Food,LD50,3,45,AI ug/org
+129909906,Active ingredient,Mortality,Adult,Food,LD50,2,24.4,AI ug/org
+129909906,Active ingredient,Mortality,Adult,Dermal,NOEL,2,200,AI ug/org
+129909906,Active ingredient,Growth,Larva,Food,NOEL,22,6.9,AI ug/org/d
+129909906,Active ingredient,Mortality,Larva,Food,NOEL,15,2.4,AI ug/org/d
+129909906,Active ingredient,Mortality,Adult,Food,NOEL,10,1.2,AI ug/org/d
+129909906,Active ingredient,Mortality,Larva,Food,NOEL,8,2.4,AI ug/org/d
+129909906,Active ingredient,Development,Larva,Food,NOEL,22,2.4,AI ug/org/d
+129909906,Active ingredient,Behavior,Adult,Food,NOEL,10,0.6,AI ug/org/d
+129909906,Active ingredient,Mortality,Adult,Food,NOEL,10,1.1,AI ug/org/d
+129909906,Active ingredient,Mortality,Adult,Food,NOEL,2,9.9,AI ug/org
+131341861,Active ingredient,Mortality,Adult,Dermal,LD50,2,25,AI ug/org
+131341861,Formulation,Mortality,Adult,Food,NOEL,10,44.06,AI ug/org/d
+131807573,Active ingredient,Mortality,Adult,Dermal,LD50,2,97.3,AI ug/org
+131807573,Active ingredient,Mortality,Larva,Food,LD50,8,7.51,AI ug/org/d
+131807573,Active ingredient,Mortality,Adult,Dermal,LD50,2,25,AI ug/org
+131807573,Active ingredient,Mortality,Adult,Food,LD50,2,0.92,AI ug/org
+131807573,Active ingredient,Development,Larva,Food,NOEL,22,7.51,AI ug/org/d
+131807573,Active ingredient,Mortality,Adult,Dermal,NOEL,2,25,AI ug/org
+131807573,Active ingredient,Mortality,Larva,Food,NOEL,15,7.51,AI ug/org/d
+131807573,Active ingredient,Behavior,Adult,Food,NOEL,10,7.21,AI ug/org/d
+131807573,Active ingredient,Mortality,Larva,Food,NOEL,8,7.51,AI ug/org/d
+131807573,Active ingredient,Mortality,Adult,Food,NOEL,10,7.21,AI ug/org/d
+131807573,Active ingredient,Mortality,Larva,Food,NOEL,8,20,AI ug/org/d
+131860338,Formulation,Mortality,Adult,Dermal,LD50,2,200,AI ug/org
+131860338,Formulation,Mortality,Adult,Food,LD50,2,200,AI ug/org
+131983727,Active ingredient,Mortality,Larva,Food,LD50,8,7.3,AI ug/org/d
+131983727,Active ingredient,Mortality,Adult,Dermal,LD50,2,24,AI ug/org
+131983727,Active ingredient,Mortality,Larva,Food,NOEL,15,2.1,AI ug/org/d
+131983727,Active ingredient,Mortality,Adult,Food,NOEL,10,16.6,AI ug/org/d
+131983727,Active ingredient,Mortality,Adult,Dermal,NOEL,2,24,AI ug/org
+131983727,Active ingredient,Development,Larva,Food,NOEL,22,2.1,AI ug/org/d
+131983727,Active ingredient,Mortality,Larva,Food,NOEL,8,2.1,AI ug/org/d
+131983727,Active ingredient,Behavior,Adult,Food,NOEL,10,16.6,AI ug/org/d
+134098616,Active ingredient,Mortality,Larva,Food,LD50,3,0.2,AI ug/org
+134098616,Formulation,Mortality,Adult,Dermal,LD50,3,479.8,AI ug/org
+134098616,Formulation,Mortality,Larva,Food,LD50,8,0.031,AI ug/org/d
+134098616,Active ingredient,Mortality,Larva,Food,LD50,8,0.029,AI ug/org/d
+134098616,Active ingredient,Mortality,Adult,Dermal,LD50,3,15.8,AI ug/org
+134098616,Formulation,Mortality,Larva,Food,NOEL,8,0.0032,AI ug/org/d
+134098616,Active ingredient,Growth,Larva,Food,NOEL,22,0.03,AI ug/org/d
+134098616,Active ingredient,Mortality,Larva,Food,NOEL,3,0.12,AI ug/org
+134098616,Formulation,Behavior,Adult,Food,NOEL,10,3.03,AI ug/org/d
+134098616,Active ingredient,Mortality,Larva,Food,NOEL,15,0.011,AI ug/org/d
+134098616,Active ingredient,Mortality,Larva,Food,NOEL,8,0.0038,AI ug/org/d
+134098616,Formulation,Mortality,Adult,Food,NOEL,10,0.615,AI ug/org/d
+134098616,Active ingredient,Development,Larva,Food,NOEL,22,0.011,AI ug/org/d
+134098616,Active ingredient,Behavior,Adult,Food,NOEL,10,0.18,AI ug/org/d
+134098616,Formulation,Mortality,Adult,Dermal,NOEL,3,239.9,AI ug/org
+134098616,Active ingredient,Mortality,Adult,Food,NOEL,10,0.073,AI ug/org/d
+134605644,Active ingredient,Mortality,Adult,Dermal,LD50,2,100,AI ug/org
+134605644,Active ingredient,Mortality,Adult,Dermal,NOEL,2,100,AI ug/org
+135158542,Active ingredient,Mortality,Adult,Food,LD50,2,128.3,AI ug/org
+135158542,Active ingredient,Mortality,Adult,Dermal,LD50,2,100,AI ug/org
+135158542,Active ingredient,Mortality,Larva,Food,LD50,8,21,AI ug/org
+135158542,Active ingredient,Development,Larva,Food,NOEL,22,21,AI ug/org
+135158542,Active ingredient,Mortality,Larva,Food,NOEL,8,5.1,AI ug/org
+135158542,Active ingredient,Mortality,Larva,Food,NOEL,15,21,AI ug/org
+135158542,Active ingredient,Mortality,Adult,Food,NOEL,2,128.3,AI ug/org
+135158542,Active ingredient,Growth,Larva,Food,NOEL,22,21,AI ug/org
+135158542,Active ingredient,Mortality,Adult,Dermal,NOEL,2,100,AI ug/org
+135410207,Active ingredient,Mortality,Adult,Dermal,LD50,3,12.5,AI ug/org
+135410207,Active ingredient,Mortality,Adult,Food,LD50,3,10.21,AI ug/org
+135410207,Active ingredient,Mortality,Larva,Food,LD50,3,1.16,AI ug/org
+135410207,Formulation,Mortality,Adult,Food,LD50,2,8.96,AI ug/org
+135410207,Active ingredient,Mortality,Larva,Food,LD50,7,5.43,AI ug/org/d
+135410207,Formulation,Mortality,Adult,Dermal,LD50,2,10.53,AI ug/org
+135410207,Active ingredient,Mortality,Larva,Food,LD50,3,0.96,AI ug/org/d
+135410207,Active ingredient,Mortality,Larva,Food,NOEL,8,0.35,AI ug/org/d
+135410207,Active ingredient,Mortality,Adult,Dermal,NOEL,3,6.25,AI ug/org
+135410207,Active ingredient,Mortality,Larva,Food,NOEL,15,0.12,AI ug/org/d
+135410207,Active ingredient,Mortality,Larva,Food,NOEL,7,1.47,AI ug/org/d
+135410207,Active ingredient,Mortality,Larva,Food,NOEL,22,0.12,AI ug/org/d
+135410207,Active ingredient,Development,Larva,Food,NOEL,22,0.12,AI ug/org/d
+135410207,Active ingredient,Mortality,Adult,Food,NOEL,10,2.42,AI ug/org/d
+135410207,Formulation,Mortality,Adult,Dermal,LD50,2,100,AI ug/org
+135410207,Formulation,Mortality,Adult,Food,LD50,2,22.2,AI ug/org
+135410207,Formulation,Mortality,Adult,Food,NOEL,2,10.37,AI ug/org
+135410207,Formulation,Mortality,Adult,Dermal,NOEL,2,100,AI ug/org
+138261413,Active ingredient,Mortality,Adult,Dermal,LD50,2,0.078,AI ug/org
+138261413,Active ingredient,Mortality,Adult,Food,LD50,2,0.0039,AI ug/org
+138261413,Active ingredient,Mortality,Adult,Food,NOEL,2,0.0015,AI ug/org
+138261413,Active ingredient,Mortality,Adult,Dermal,NOEL,2,0.05,AI ug/org
+139968493,Active ingredient,Mortality,Adult,Dermal,LD50,2,106,AI ug/org
+139968493,Active ingredient,Mortality,Adult,Food,LD50,4,2.43,AI ug/org
+139968493,Active ingredient,Mortality,Adult,Dermal,LD50,4,1.65,AI ug/org
+139968493,Active ingredient,Mortality,Adult,Food,NOEL,4,1.38,AI ug/org
+139968493,Active ingredient,Mortality,Adult,Dermal,NOEL,4,1,AI ug/org
+139968493,Active ingredient,Mortality,Adult,Dermal,NOEL,2,106,AI ug/org
+141517217,Active ingredient,Mortality,Adult,Food,LD50,2,200,AI ug/org
+141517217,Active ingredient,Mortality,Adult,Dermal,LD50,2,200,AI ug/org
+141517217,Active ingredient,Mortality,Adult,Food,NOEL,2,200,AI ug/org
+141517217,Active ingredient,Mortality,Adult,Dermal,NOEL,2,200,AI ug/org
+141776321,Active ingredient,Mortality,Adult,Food,LD50,2,30,AI ug/org
+141776321,Active ingredient,Mortality,Adult,Dermal,LD50,2,25,AI ug/org
+141776321,Active ingredient,Mortality,Adult,Food,NOEL,2,30,AI ug/org
+141776321,Active ingredient,Mortality,Adult,Dermal,NOEL,2,25,AI ug/org
+142459583,Active ingredient,Mortality,Adult,Food,LD50,2,109.2,AI ug/org
+142459583,Active ingredient,Mortality,Adult,Dermal,LD50,2,193.8,AI ug/org
+142459583,Formulation,Mortality,Adult,Food,LD50,2,340.4,AI ug/org
+142459583,Formulation,Mortality,Adult,Dermal,LD50,2,400,AI ug/org
+142459583,Active ingredient,Mortality,Adult,Dermal,LD50,2,25,AI ug/org
+142459583,Active ingredient,Mortality,Adult,Food,LD50,2,170.12,AI ug/org
+142459583,Active ingredient,Mortality,Adult,Dermal,LD50,2,100,AI ug/org
+142459583,Active ingredient,Mortality,Adult,Dermal,NOEL,2,25,AI ug/org
+142459583,Active ingredient,Mortality,Adult,Food,NOEL,10,4.03,AI ug/org/d
+142459583,Active ingredient,Mortality,Adult,Dermal,LD50,2,100,AI ug/org
+142459583,Active ingredient,Mortality,Adult,Dermal,NOEL,2,100,AI ug/org
+143390890,Active ingredient,Mortality,Adult,Dermal,LD50,2,25,ug/bee
+144171619,Formulation,Mortality,Adult,Dermal,LD50,4,0.64,AI ug/org
+144171619,Formulation,Mortality,Adult,Food,LD50,4,0.0912,AI ug/org
+144550367,Active ingredient,Mortality,Adult,Dermal,NOEL,3,100,AI ug/org
+145701219,Active ingredient,Mortality,Adult,Dermal,LD50,2,25,AI ug/org
+145701219,Active ingredient,Mortality,Larva,Food,LD50,8,1.1,AI ug/org/d
+145701219,Active ingredient,Mortality,Larva,Food,LD50,3,16.7,AI ug/org
+145701219,Active ingredient,Mortality,Adult,Food,LD50,2,202,AI ug/org
+145701219,Active ingredient,Mortality,Adult,Dermal,NOEL,2,25,AI ug/org
+145701219,Active ingredient,Mortality,Larva,Food,NOEL,15,27.9,AI ug/org/d
+145701219,Active ingredient,Mortality,Adult,Food,NOEL,10,11.82,AI ug/org/d
+145701219,Active ingredient,Behavior,Adult,Food,NOEL,10,11.82,AI ug/org/d
+145701219,Active ingredient,Mortality,Larva,Food,NOEL,22,1.1,AI ug/org/d
+145701219,Active ingredient,Mortality,Larva,Food,NOEL,15,1.1,AI ug/org/d
+145701219,Active ingredient,Mortality,Larva,Food,NOEL,8,1.1,AI ug/org/d
+145701231,Active ingredient,Mortality,Adult,Dermal,LD50,2,100,AI ug/org
+145701231,Active ingredient,Mortality,Larva,Food,LD50,8,3.85,AI ug/org/d
+145701231,Active ingredient,Mortality,Adult,Dermal,NOEL,2,100,AI ug/org
+145701231,Active ingredient,Mortality,Adult,Food,NOEL,10,5.3,AI ug/org/d
+145701231,Active ingredient,Mortality,Larva,Food,NOEL,15,0.215,AI ug/org/d
+145701231,Active ingredient,Growth,Larva,Food,NOEL,22,3.85,AI ug/org/d
+145701231,Active ingredient,Behavior,Adult,Food,NOEL,10,9.4,AI ug/org/d
+145701231,Active ingredient,Growth,Adult,Food,NOEL,10,9.4,AI ug/org/d
+145701231,Active ingredient,Mortality,Larva,Food,NOEL,8,0.215,AI ug/org/d
+145701231,Active ingredient,Development,Larva,Food,NOEL,22,0.215,AI ug/org/d
+147150354,Active ingredient,Mortality,Adult,Dermal,LD50,2,25,AI ug/org
+147150354,Active ingredient,Mortality,Adult,Dermal,NOEL,2,25,AI ug/org
+148477718,Formulation,Mortality,Adult,Dermal,LD50,2,100,AI ug/org
+148477718,Active ingredient,Mortality,Adult,Dermal,LD50,2,200,AI ug/org
+148477718,Formulation,Mortality,Adult,Food,LD50,2,100,AI ug/org
+148477718,Active ingredient,Mortality,Adult,Food,LD50,2,196,AI ug/org
+148477718,Formulation,Mortality,Adult,Dermal,NOEL,2,100,AI ug/org
+148477718,Formulation,Mortality,Adult,Food,NOEL,2,100,AI ug/org
+148477718,Active ingredient,Mortality,Adult,Dermal,NOEL,2,200,AI ug/org
+148477718,Active ingredient,Mortality,Adult,Food,NOEL,2,196,AI ug/org
+149877418,Active ingredient,Mortality,Adult,Dermal,LD50,2,7.8,AI ug/org
+149877418,Active ingredient,Mortality,Adult,Dermal,NOEL,2,2.7,AI ug/org
+150114719,Active ingredient,Mortality,Adult,Dermal,LD50,2,100,AI ug/org
+150114719,Active ingredient,Mortality,Adult,Dermal,NOEL,2,100,AI ug/org
+153233911,Active ingredient,Mortality,Adult,Food,LD50,2,200,AI ug/org
+153233911,Active ingredient,Mortality,Adult,Dermal,LD50,2,200,AI ug/org
+153233911,Active ingredient,Mortality,Larva,Food,LD50,8,1,AI ug/org/d
+153233911,Active ingredient,Development,Larva,Food,NOEL,22,0.35,AI ug/org/d
+153233911,Active ingredient,Growth,Larva,Food,NOEL,22,1,AI ug/org/d
+153233911,Active ingredient,Growth,Adult,Food,NOEL,10,19,AI ug/org/d
+153233911,Active ingredient,Mortality,Adult,Food,NOEL,2,200,AI ug/org
+153233911,Active ingredient,Mortality,Adult,Food,NOEL,10,19,AI ug/org/d
+153233911,Active ingredient,Mortality,Adult,Dermal,NOEL,2,200,AI ug/org
+153233911,Active ingredient,Behavior,Adult,Food,NOEL,10,7.1,AI ug/org/d
+153233911,Active ingredient,Mortality,Larva,Food,NOEL,8,1,AI ug/org/d
+153719234,Active ingredient,Mortality,Adult,Dermal,LD50,2,0.024,AI ug/org
+153719234,Active ingredient,Mortality,Adult,Food,LD50,2,0.005,AI ug/org
+153719234,Active ingredient,Mortality,Larva,Food,LD50,8,0.78,AI ug/org/d
+153719234,Formulation,Mortality,Adult,Dermal,LD50,2,0.46,AI ug/org
+153719234,Active ingredient,Mortality,Larva,Food,LD50,8,0.12,AI ug/org/d
+153719234,Formulation,Mortality,Adult,Dermal,LD50,2,0.093,ug/bee
+153719234,Formulation,Mortality,Adult,Dermal,LD50,2,0.0198,AI ug/org
+153719234,Active ingredient,Mortality,Adult,Food,LD50,4,4.4,AI ng/org
+153719234,Active ingredient,Mortality,Adult,Dermal,LD50,4,34.4,AI ng/org
+153719234,Formulation,Mortality,Adult,Dermal,LD50,2,0.023,AI ug/org
+153719234,Formulation,Mortality,Adult,Food,LD50,2,0.00309,AI ug/org
+153719234,Active ingredient,Mortality,Larva,Food,NOEL,15,0.028,AI ug/org/d
+153719234,Active ingredient,Mortality,Adult,Food,NOEL,2,0.002,AI ug/org
+153719234,Active ingredient,Mortality,Adult,Food,NOEL,10,0.00251,AI ug/org/d
+153719234,Active ingredient,Behavior,Adult,Food,NOEL,10,0.00117,AI ug/org/d
+153719234,Active ingredient,Mortality,Larva,Food,NOEL,8,0.004,AI ug/org/d
+153719234,Active ingredient,Behavior,Adult,Food,NOEL,10,0.00898,AI ug/org/d
+153719234,Formulation,Mortality,Adult,Food,NOEL,10,2e-4,AI mg/kg food
+153719234,Active ingredient,Mortality,Larva,Food,NOEL,8,0.12,AI ug/org/d
+153719234,Active ingredient,Development,Larva,Food,NOEL,22,0.004,AI ug/org/d
+153719234,Active ingredient,Mortality,Larva,Food,NOEL,22,0.004,AI ug/org/d
+153719234,Active ingredient,Mortality,Adult,Food,NOEL,10,0.00898,AI ug/org/d
+153719234,Active ingredient,Mortality,Adult,Dermal,NOEL,2,0.005,AI ug/org
+153719234,Formulation,Behavior,Adult,Food,NOEL,10,2e-4,AI mg/kg food
+153719234,Formulation,Mortality,Adult,Food,LD50,3,0.02,AI ug/org
+153719234,Formulation,Mortality,Adult,Dermal,LD50,3,0.11,AI ug/org
+155569918,Formulation,Mortality,Adult,Dermal,LD50,2,0.0048,AI ug/org
+155569918,Formulation,Mortality,Adult,Food,LD50,2,0.0068,AI ug/org
+155569918,Formulation,Mortality,Adult,Dermal,LD50,4,0.0028,AI ug/org
+155569918,Active ingredient,Mortality,Adult,Dermal,LD50,2,0.0035,AI ug/org
+155569918,Formulation,Mortality,Adult,Dermal,NOEL,4,0.0025,AI ug/org
+155569918,Formulation,Mortality,Adult,Food,NOEL,2,0.002,AI ug/org
+155569918,Formulation,Mortality,Adult,Dermal,NOEL,2,0.0025,AI ug/org
+156052685,Active ingredient,Mortality,Adult,Dermal,LD50,2,100,AI ug/org
+156052685,Formulation,Mortality,Adult,Dermal,LD50,3,44.7,AI ug/org
+156052685,Formulation,Mortality,Adult,Food,LD50,3,32.9,AI ug/org
+156052685,Active ingredient,Mortality,Larva,Food,LD50,3,97.1,AI ug/org/d
+156052685,Active ingredient,Mortality,Larva,Food,LD50,8,28,AI ug/org/d
+156052685,Active ingredient,Mortality,Larva,Food,NOEL,8,28,AI ug/org/d
+156052685,Active ingredient,Mortality,Adult,Dermal,NOEL,2,100,AI ug/org
+156052685,Active ingredient,Growth,Larva,Food,NOEL,22,28,AI ug/org/d
+156052685,Active ingredient,Development,Larva,Food,NOEL,22,28,AI ug/org/d
+156052685,Formulation,Mortality,Adult,Food,NOEL,10,174.8,AI ug/org/d
+156052685,Formulation,Behavior,Adult,Food,NOEL,10,174.8,AI ug/org/d
+156052685,Active ingredient,Mortality,Larva,Food,NOEL,15,28,AI ug/org/d
+156963665,Active ingredient,Mortality,Adult,Dermal,LD50,3,200,AI ug/org
+156963665,Active ingredient,Mortality,Adult,Food,LD50,3,200,AI ug/org
+158062670,Formulation,Mortality,Adult,Dermal,LD50,4,83.7,AI ug/org
+158062670,Active ingredient,Mortality,Adult,Food,LD50,4,42,AI ug/org
+158062670,Active ingredient,Mortality,Adult,Dermal,LD50,2,100,AI ug/org
+158062670,Formulation,Mortality,Adult,Dermal,LD50,4,65.1,AI ug/org
+158062670,Active ingredient,Mortality,Adult,Food,LD50,4,60.5,ae ug/org
+158062670,Active ingredient,Mortality,Adult,Dermal,LD50,4,100,AI ug/org
+158062670,Formulation,Mortality,Adult,Food,LD50,4,60,AI ug/org
+158062670,Active ingredient,Mortality,Larva,Food,LD50,3,63,AI ug/org
+158062670,Active ingredient,Mortality,Larva,Food,LD50,8,25,AI ug/org/d
+158062670,Formulation,Mortality,Adult,Dermal,LD50,2,100,ug/bee
+158062670,Formulation,Mortality,Adult,Food,LD50,4,57,AI ug/org
+158062670,Formulation,Mortality,Adult,Food,LD50,4,13.6,AI ug/org
+158062670,Active ingredient,Mortality,Larva,Food,NOEL,15,12,AI ug/org/d
+158062670,Active ingredient,Mortality,Adult,Dermal,NOEL,2,100,AI ug/org
+158062670,Formulation,Mortality,Adult,Dermal,NOEL,2,100,ug/bee
+158062670,Active ingredient,Mortality,Larva,Food,NOEL,8,12,AI ug/org/d
+158062670,Formulation,Mortality,Adult,Food,NOEL,4,6.8,ug/bee
+158062670,Active ingredient,Development,Larva,Food,NOEL,22,3,AI ug/org/d
+158062670,Active ingredient,Growth,Larva,Food,NOEL,22,25,AI ug/org/d
+161050584,Active ingredient,Mortality,Larva,Food,LD50,3,3.69,AI ug/org
+161050584,Active ingredient,Mortality,Larva,Food,LD50,3,3.69,AI ug/org
+161050584,Active ingredient,Mortality,Adult,Dermal,LD50,2,100,AI ug/org
+161050584,Active ingredient,Mortality,Larva,Food,LD50,3,3.69,AI ug/org
+161050584,Active ingredient,Mortality,Adult,Dermal,NOEL,2,100,AI ug/org
+161326347,Active ingredient,Mortality,Adult,Dermal,LD50,3,82.3,AI ug/org
+161326347,Active ingredient,Mortality,Adult,Food,LD50,4,159.8,AI ug/org
+161326347,Active ingredient,Mortality,Larva,Food,LD50,8,0.84,AI ug/org/d
+161326347,Formulation,Mortality,Larva,Food,LD50,7,7.56,AI ug/org
+161326347,Active ingredient,Mortality,Adult,Dermal,LD50,4,47.1,AI ug/org
+161326347,Active ingredient,Mortality,Adult,Dermal,NOEL,4,12.5,AI ug/org
+161326347,Active ingredient,Mortality,Larva,Food,NOEL,8,0.84,AI ug/org/d
+161326347,Formulation,Behavior,Adult,Food,NOEL,10,0.4,AI ug/org/d
+161326347,Active ingredient,Mortality,Adult,Food,NOEL,4,79.2,AI ug/org
+161326347,Active ingredient,Development,Larva,Food,NOEL,22,0.118,AI ug/org/d
+161326347,Active ingredient,Mortality,Adult,Dermal,NOEL,3,12.5,AI ug/org
+161326347,Formulation,Mortality,Adult,Food,NOEL,10,0.77,AI ug/org/d
+162650773,Active ingredient,Mortality,Adult,Food,LD50,2,111.8,AI ug/org
+162650773,Active ingredient,Mortality,Larva,Food,LD50,3,100,AI ug/org
+162650773,Active ingredient,Mortality,Adult,Dermal,LD50,2,111.8,AI ug/org
+165252700,Active ingredient,Mortality,Larva,Food,LD50,8,15,AI ug/org
+165252700,Active ingredient,Mortality,Larva,Food,LD50,3,3.3,AI ug/org
+165252700,Formulation,Mortality,Adult,Dermal,LD50,2,0.024,AI ug/org
+165252700,Active ingredient,Mortality,Adult,Dermal,LD50,2,0.047,AI ug/org
+165252700,Formulation,Mortality,Adult,Dermal,LD50,2,0.061,AI ug/org
+165252700,Active ingredient,Mortality,Adult,Food,LD50,2,0.023,AI ug/org
+165252700,Formulation,Mortality,Adult,Food,LD50,2,0.0076,AI ug/org
+165252700,Formulation,Mortality,Adult,Food,LD50,2,0.032,AI ug/org
+165252700,Active ingredient,Behavior,Adult,Food,NOEL,10,0.0015,AI ug/org/d
+165252700,Active ingredient,Growth,Larva,Food,NOEL,22,15,AI ug/org
+165252700,Active ingredient,Mortality,Adult,Food,NOEL,10,0.0035,AI ug/org/d
+165252700,Formulation,Mortality,Adult,Dermal,NOEL,2,0.032,AI ug/org
+165252700,Formulation,Mortality,Adult,Food,NOEL,2,0.0032,AI ug/org
+165252700,Active ingredient,Mortality,Larva,Food,NOEL,15,15,AI ug/org
+165252700,Active ingredient,Mortality,Larva,Food,NOEL,8,0.13,AI ug/org
+165252700,Active ingredient,Mortality,Adult,Food,NOEL,2,0.003,AI ug/org
+165252700,Active ingredient,Mortality,Adult,Dermal,NOEL,2,0.0063,AI ug/org
+165252700,Formulation,Mortality,Adult,Dermal,NOEL,2,0.0125,AI ug/org
+165252700,Active ingredient,Development,Larva,Food,NOEL,22,15,AI ug/org
+165252700,Formulation,Mortality,Adult,Food,NOEL,2,0.005,AI ug/org
+168316958,Active ingredient,Mortality,Adult,Dermal,LD50,2,0.0029,AI ug/org
+173159574,Active ingredient,Mortality,Adult,Food,NOEL,3,163,AI ug/org
+173159574,Active ingredient,Mortality,Adult,Dermal,NOEL,3,1.9,AI ug/org
+173584446,Formulation,Mortality,Adult,Food,LD50,3,0.478,AI ug/org
+173584446,Active ingredient,Mortality,Adult,Dermal,LD50,2,0.0682,AI ug/org
+173584446,Formulation,Mortality,Adult,Food,LD50,10,0.0403,AI ug/org/d
+173584446,Formulation,Mortality,Larva,Food,LD50,8,14,AI ug/org
+173584446,Formulation,Mortality,Adult,Dermal,LD50,3,0.566,AI ug/org
+173584446,Active ingredient,Mortality,Adult,Dermal,LD50,2,0.18,AI ug/org
+173584446,Active ingredient,Mortality,Adult,Food,LD50,2,0.204,AI ug/org
+173584446,Formulation,Mortality,Adult,Dermal,LD50,3,1.5,AI ug/org
+173584446,Formulation,Mortality,Adult,Food,LD50,3,0.528,AI ug/org
+173584446,Formulation,Mortality,Larva,Food,LD50,3,18.1,AI ug/org
+173584446,Formulation,Mortality,Larva,Food,LD50,8,10,AI ug/org
+173584446,Active ingredient,Mortality,Larva,Food,NOEL,15,0.0168,AI ug/org/d
+173584446,Formulation,Behavior,Adult,Food,NOEL,10,0.00834,AI ug/org/d
+173584446,Formulation,Mortality,Adult,Food,NOEL,3,0.043,AI ug/org
+173584446,Active ingredient,Development,Larva,Food,NOEL,22,0.0168,AI ug/org/d
+173584446,Active ingredient,Mortality,Larva,Food,NOEL,8,0.0168,AI ug/org/d
+173584446,Formulation,Mortality,Larva,Food,NOEL,8,0.0279,AI ug/org/d
+173584446,Formulation,Mortality,Adult,Food,NOEL,10,0.00834,AI ug/org/d
+173584446,Formulation,Mortality,Larva,Food,NOEL,15,0.0279,AI ug/org/d
+173584446,Active ingredient,Mortality,Larva,Food,NOEL,22,0.0168,AI ug/org/d
+173584446,Formulation,Mortality,Adult,Food,NOEL,10,0.0078,AI ug/org/d
+173584446,Formulation,Mortality,Adult,Dermal,NOEL,3,0.1,AI ug/org
+173584446,Formulation,Mortality,Larva,Food,NOEL,22,0.0279,AI ug/org/d
+173584446,Active ingredient,Mortality,Adult,Dermal,LD50,4,0.23,AI ug/org
+173584446,Formulation,Mortality,Adult,Dermal,LD50,4,0.56,AI ug/org
+173584446,Formulation,Mortality,Adult,Food,LD50,4,0.0842,AI ug/org
+173584446,Formulation,Mortality,Adult,Dermal,LD50,4,0.31,AI ug/org
+173584446,Active ingredient,Mortality,Adult,Food,LD50,4,0.065,AI ug/org
+173584446,Formulation,Mortality,Adult,Food,LD50,4,0.11,AI ug/org
+173584446,Formulation,Mortality,Adult,Food,NOEL,4,0.0548,AI ug/org
+173584446,Formulation,Mortality,Adult,Dermal,NOEL,4,0.25,AI ug/org
+173584446,Active ingredient,Mortality,Adult,Food,NOEL,4,0.02,AI ug/org
+173584446,Active ingredient,Mortality,Adult,Dermal,NOEL,4,0.025,AI ug/org
+173662970,Active ingredient,Mortality,Larva,Food,LD50,8,28,AI ug/org/d
+173662970,Active ingredient,Behavior,Adult,Food,NOEL,10,45,AI ug/org/d
+173662970,Active ingredient,Mortality,Adult,Food,NOEL,10,45,AI ug/org/d
+173662970,Active ingredient,Growth,Adult,Food,NOEL,10,45,AI ug/org/d
+173662970,Active ingredient,Development,Larva,Food,NOEL,22,28,AI ug/org/d
+173662970,Active ingredient,Growth,Larva,Food,NOEL,22,13,AI ug/org/d
+173662970,Active ingredient,Mortality,Larva,Food,NOEL,15,13,AI ug/org/d
+173662970,Active ingredient,Mortality,Larva,Food,NOEL,8,6.9,AI ug/org/d
+175013180,Active ingredient,Mortality,Adult,Dermal,LD50,2,100,AI ug/org
+175013180,Active ingredient,Mortality,Adult,Dermal,LD50,2,100,AI ug/org
+175013180,Active ingredient,Mortality,Adult,Food,LD50,2,110,AI ug/org
+175013180,Active ingredient,Mortality,Larva,Food,LD50,8,4.8,AI ug/org/d
+175013180,Active ingredient,Mortality,Larva,Food,NOEL,15,2.9,AI ug/org/d
+175013180,Active ingredient,Behavior,Adult,Food,NOEL,10,0.8,AI ug/org/d
+175013180,Active ingredient,Development,Larva,Food,NOEL,22,2.9,AI ug/org/d
+175013180,Active ingredient,Mortality,Adult,Food,NOEL,10,1,AI ug/org/d
+175013180,Formulation,Behavior,Adult,Food,NOEL,10,4.89,AI ug/org/d
+175013180,Formulation,Mortality,Adult,Food,NOEL,10,4.89,AI ug/org/d
+175013180,Active ingredient,Mortality,Larva,Food,NOEL,8,2.9,AI ug/org/d
+175013180,Active ingredient,Mortality,Adult,Dermal,NOEL,2,100,AI ug/org
+178928706,Active ingredient,Mortality,Larva,Food,LD50,8,5.2,AI ug/org/d
+178928706,Formulation,Mortality,Adult,Dermal,LD50,2,200,ug/bee
+178928706,Active ingredient,Mortality,Adult,Food,LD50,2,71,AI ug/org
+178928706,Active ingredient,Mortality,Adult,Dermal,LD50,2,200,AI ug/org
+178928706,Active ingredient,Mortality,Larva,Food,LD50,3,58,AI ug/org/d
+178928706,Formulation,Mortality,Adult,Food,LD50,2,232,ug/bee
+178928706,Active ingredient,Mortality,Larva,Food,NOEL,8,5.2,AI ug/org/d
+178928706,Active ingredient,Development,Larva,Food,NOEL,22,2,AI ug/org/d
+178928706,Formulation,Mortality,Adult,Food,NOEL,10,3.19,AI ug/org/d
+178928706,Active ingredient,Mortality,Larva,Food,NOEL,15,5.2,AI ug/org/d
+178928706,Active ingredient,Mortality,Adult,Food,NOEL,2,71,AI ug/org
+178928706,Formulation,Behavior,Adult,Food,NOEL,10,8.95,AI ug/org/d
+178928706,Formulation,Behavior,Adult,Food,NOEL,10,8.95,AI ug/org/d
+178928706,Formulation,Mortality,Adult,Food,NOEL,10,26.1,AI ug/org/d
+178928706,Formulation,Mortality,Adult,Dermal,NOEL,2,200,ug/bee
+178928706,Formulation,Mortality,Adult,Food,NOEL,2,232,ug/bee
+178928706,Active ingredient,Mortality,Adult,Dermal,NOEL,2,200,AI ug/org
+178928706,Active ingredient,Mortality,Adult,Dermal,LD50,2,100,AI ug/org
+179101816,Active ingredient,Mortality,Adult,Dermal,LD50,2,25,AI ug/org
+179101816,Active ingredient,Mortality,Adult,Dermal,NOEL,2,25,AI ug/org
+180409603,Active ingredient,Mortality,Adult,Food,LD50,2,100,AI ug/org
+180409603,Active ingredient,Mortality,Adult,Dermal,LD50,2,100,AI ug/org
+180409603,Formulation,Mortality,Adult,Dermal,LD50,2,100,AI ug/org
+180409603,Formulation,Mortality,Adult,Food,LD50,2,100,AI ug/org
+180409603,Formulation,Mortality,Adult,Food,NOEL,2,100,AI ug/org
+180409603,Formulation,Mortality,Adult,Dermal,NOEL,2,100,AI ug/org
+180409603,Active ingredient,Mortality,Adult,Dermal,NOEL,2,100,AI ug/org
+180409603,Active ingredient,Mortality,Adult,Food,NOEL,2,100,AI ug/org
+181274157,Active ingredient,Mortality,Adult,Dermal,LD50,2,200,AI ug/org
+181274157,Active ingredient,Mortality,Adult,Dermal,NOEL,2,200,AI ug/org
+181274179,Active ingredient,Mortality,Adult,Food,LD50,2,445,AI ug/org
+181274179,Active ingredient,Mortality,Adult,Dermal,LD50,2,200,AI ug/org
+183675823,Formulation,Mortality,Adult,Food,LD50,2,56.7,AI ug/org
+183675823,Active ingredient,Mortality,Adult,Dermal,LD50,2,500,AI ug/org
+183675823,Formulation,Mortality,Adult,Food,LD50,4,50.68,AI ug/org
+183675823,Formulation,Mortality,Adult,Dermal,LD50,4,23.49,AI ug/org
+183675823,Formulation,Mortality,Adult,Dermal,LD50,2,30.94,AI ug/org
+183675823,Formulation,Mortality,Adult,Food,LD50,2,107.21,AI ug/org
+183675823,Formulation,Mortality,Adult,Dermal,LD50,2,100,AI ug/org
+183675823,Formulation,Mortality,Adult,Dermal,NOEL,4,1.07,AI ug/org
+183675823,Formulation,Mortality,Adult,Dermal,NOEL,2,100,AI ug/org
+183675823,Formulation,Mortality,Adult,Food,NOEL,2,6.63,AI ug/org
+183675823,Formulation,Mortality,Adult,Food,NOEL,4,6.63,AI ug/org
+183675823,Formulation,Mortality,Adult,Dermal,NOEL,2,1.07,AI ug/org
+183675823,Formulation,Mortality,Adult,Food,NOEL,2,107.21,AI ug/org
+183675823,Active ingredient,Mortality,Adult,Dermal,NOEL,2,500,AI ug/org
+188425856,Active ingredient,Mortality,Adult,Dermal,LD50,2,200,AI ug/org
+188425856,Active ingredient,Mortality,Adult,Food,LD50,2,166,AI ug/org
+188425856,Active ingredient,Mortality,Larva,Food,LD50,8,11,AI ug/org/d
+188425856,Active ingredient,Mortality,Larva,Food,NOEL,8,11,AI ug/org/d
+188425856,Active ingredient,Development,Larva,Food,NOEL,22,11,AI ug/org/d
+188425856,Active ingredient,Mortality,Adult,Food,NOEL,2,166,AI ug/org
+188425856,Active ingredient,Mortality,Adult,Dermal,NOEL,2,200,AI ug/org
+188425856,Active ingredient,Mortality,Larva,Food,NOEL,15,11,AI ug/org/d
+188489078,Active ingredient,Mortality,Adult,Dermal,LD50,2,25,AI ug/org
+199119589,Active ingredient,Mortality,Adult,Dermal,LD50,2,25,AI ug/org
+199119589,Active ingredient,Mortality,Adult,Dermal,NOEL,2,25,AI ug/org
+203313251,Formulation,Mortality,Adult,Food,LD50,2,109,AI ug/org
+203313251,Formulation,Mortality,Adult,Dermal,LD50,2,100,AI ug/org
+203313251,Formulation,Behavior,Adult,Food,NOEL,10,0.28,AI ug/org/d
+203313251,Formulation,Mortality,Adult,Food,NOEL,10,0.28,AI ug/org/d
+208465218,Active ingredient,Mortality,Adult,Dermal,LD50,3,13,AI ug/org
+208465218,Active ingredient,Mortality,Adult,Food,LD50,3,5.6,AI ug/org
+208465218,Active ingredient,Mortality,Adult,Dermal,NOEL,3,13,AI ug/org
+210631688,Active ingredient,Mortality,Larva,Food,LD50,8,62.8,AI ug/org/d
+210631688,Formulation,Mortality,Adult,Dermal,LD50,2,100,ug/bee
+210631688,Active ingredient,Mortality,Adult,Dermal,LD50,2,100,AI ug/org
+210631688,Formulation,Mortality,Adult,Food,LD50,2,108.3,ug/bee
+210631688,Active ingredient,Mortality,Adult,Dermal,NOEL,2,100,AI ug/org
+210631688,Formulation,Mortality,Adult,Food,NOEL,2,108.3,ug/bee
+210631688,Formulation,Mortality,Adult,Dermal,NOEL,2,100,ug/bee
+210631688,Active ingredient,Mortality,Larva,Food,NOEL,15,13.8,AI ug/org/d
+210631688,Active ingredient,Development,Larva,Food,NOEL,22,6.46,AI ug/org/d
+210631688,Active ingredient,Mortality,Larva,Food,NOEL,8,27.7,AI ug/org/d
+210880925,Active ingredient,Mortality,Adult,Food,LD50,2,0.00368,AI ug/org
+210880925,Active ingredient,Mortality,Larva,Food,LD50,8,0.00528,AI ug/org
+210880925,Active ingredient,Mortality,Adult,Dermal,LD50,2,0.0275,AI ug/org
+210880925,Active ingredient,Mortality,Adult,Dermal,LD50,2,0.0439,AI ug/org
+210880925,Active ingredient,Mortality,Adult,Food,LD50,2,0.0157,AI ug/org
+210880925,Active ingredient,Mortality,Adult,Food,NOEL,2,9e-4,AI ug/org
+210880925,Active ingredient,Mortality,Larva,Food,NOEL,8,0.00528,AI ug/org
+210880925,Active ingredient,Mortality,Adult,Dermal,NOEL,2,0.0095,AI ug/org
+210880925,Active ingredient,Mortality,Adult,Food,NOEL,10,3.6e-4,AI ug/org/d
+213464778,Active ingredient,Mortality,Larva,Food,LD50,3,100,AI ug/org/d
+213464778,Active ingredient,Mortality,Adult,Dermal,LD50,2,100,AI ug/org
+213464778,Active ingredient,Mortality,Adult,Food,LD50,2,109.4,AI ug/org
+213464778,Active ingredient,Mortality,Larva,Food,LD50,8,53,AI ug/org/d
+213464778,Active ingredient,Mortality,Larva,Food,NOEL,15,5,AI ug/org/d
+213464778,Active ingredient,Development,Larva,Food,NOEL,22,5,AI ug/org/d
+213464778,Active ingredient,Mortality,Larva,Food,NOEL,8,5,AI ug/org/d
+213464778,Active ingredient,Behavior,Adult,Food,NOEL,10,41,AI ug/org/d
+213464778,Active ingredient,Mortality,Adult,Food,NOEL,10,41,AI ug/org/d
+213464778,Active ingredient,Mortality,Adult,Food,NOEL,2,109.4,AI ug/org
+213464778,Active ingredient,Growth,Larva,Food,NOEL,22,5,AI ug/org/d
+213464778,Active ingredient,Growth,Adult,Food,NOEL,10,41,AI ug/org/d
+213464778,Active ingredient,Mortality,Adult,Dermal,NOEL,2,100,AI ug/org
+219714962,Active ingredient,Mortality,Larva,Food,LD50,3,8.48,AI ug/org
+219714962,Active ingredient,Mortality,Adult,Dermal,LD50,2,100,AI ug/org
+219714962,Formulation,Mortality,Adult,Food,LD50,2,21.2,AI ug/org
+219714962,Active ingredient,Mortality,Larva,Food,LD50,8,3.4,AI ug/org/d
+219714962,Active ingredient,Mortality,Adult,Food,LD50,2,85.3,AI ug/org
+219714962,Formulation,Mortality,Adult,Dermal,LD50,2,21.9,AI ug/org
+219714962,Active ingredient,Mortality,Larva,Food,NOEL,8,3.4,AI ug/org/d
+219714962,Active ingredient,Growth,Larva,Food,NOEL,22,0.29,AI ug/org/d
+219714962,Active ingredient,Mortality,Larva,Food,NOEL,15,3.4,AI ug/org/d
+219714962,Active ingredient,Development,Larva,Food,NOEL,22,3.4,AI ug/org/d
+219714962,Active ingredient,Growth,Adult,Food,NOEL,10,0.87,AI ug/org/d
+219714962,Active ingredient,Behavior,Adult,Food,NOEL,10,1.93,AI ug/org/d
+219714962,Active ingredient,Mortality,Adult,Dermal,NOEL,2,100,AI ug/org
+219714962,Active ingredient,Mortality,Adult,Food,NOEL,10,2.79,AI ug/org/d
+219714962,Formulation,Mortality,Adult,Food,NOEL,2,21.2,AI ug/org
+220899036,Formulation,Mortality,Adult,Dermal,LD50,2,100,AI ug/org
+220899036,Active ingredient,Mortality,Adult,Dermal,LD50,2,95.86,AI ug/org
+220899036,Formulation,Mortality,Adult,Food,LD50,2,27.7,AI ug/org
+220899036,Active ingredient,Mortality,Adult,Food,LD50,2,109,AI ug/org
+220899036,Active ingredient,Mortality,Adult,Dermal,NOEL,2,95.86,AI ug/org
+220899036,Formulation,Mortality,Adult,Dermal,NOEL,2,100,AI ug/org
+220899036,Formulation,Mortality,Adult,Food,NOEL,2,27.7,AI ug/org
+220899036,Active ingredient,Mortality,Adult,Food,NOEL,2,109,AI ug/org
+221205909,Active ingredient,Mortality,Adult,Dermal,LD50,2,25,AI ug/org
+221205909,Active ingredient,Mortality,Adult,Food,LD50,2,100,AI ug/org
+221205909,Active ingredient,Mortality,Larva,Food,LD50,8,20,AI ug/org/d
+221205909,Active ingredient,Mortality,Larva,Food,LD50,3,100,AI ug/org
+221205909,Active ingredient,Mortality,Larva,Food,NOEL,8,20,AI ug/org/d
+221205909,Active ingredient,Behavior,Adult,Food,NOEL,10,36,AI ug/org/d
+221205909,Active ingredient,Mortality,Larva,Food,NOEL,22,20,AI ug/org/d
+221205909,Active ingredient,Mortality,Adult,Food,NOEL,10,36,AI ug/org/d
+221205909,Active ingredient,Mortality,Adult,Food,NOEL,2,100,AI ug/org
+221205909,Active ingredient,Mortality,Larva,Food,NOEL,15,20,AI ug/org/d
+221205909,Active ingredient,Development,Larva,Food,NOEL,22,20,AI ug/org/d
+239110157,Active ingredient,Mortality,Adult,Dermal,LD50,3,100,AI ug/org
+243973208,Active ingredient,Mortality,Adult,Dermal,LD50,2,100,AI ug/org
+243973208,Formulation,Mortality,Adult,Food,LD50,2,220,AI ug/org
+243973208,Active ingredient,Mortality,Larva,Food,LD50,3,5.2,AI ug/org
+243973208,Formulation,Mortality,Adult,Dermal,LD50,2,84,AI ug/org
+243973208,Formulation,Mortality,Adult,Dermal,LD50,2,200,AI ug/org
+243973208,Active ingredient,Mortality,Adult,Food,LD50,2,88,AI ug/org
+243973208,Formulation,Mortality,Adult,Food,LD50,2,93,AI ug/org
+243973208,Active ingredient,Mortality,Larva,Food,LD50,8,1.4,AI ug/org/d
+243973208,Active ingredient,Development,Larva,Food,NOEL,22,0.55,AI ug/org/d
+243973208,Formulation,Mortality,Adult,Food,NOEL,2,53.9,AI ug/org
+243973208,Formulation,Mortality,Adult,Food,NOEL,2,14.7,AI ug/org
+243973208,Active ingredient,Mortality,Larva,Food,NOEL,15,0.55,AI ug/org/d
+243973208,Active ingredient,Mortality,Adult,Dermal,NOEL,2,6.3,AI ug/org
+243973208,Formulation,Mortality,Adult,Dermal,NOEL,2,30.8,AI ug/org
+243973208,Active ingredient,Behavior,Adult,Food,NOEL,10,24,AI ug/org/d
+243973208,Active ingredient,Mortality,Adult,Food,NOEL,10,24,AI ug/org/d
+243973208,Active ingredient,Mortality,Larva,Food,NOEL,8,0.55,AI ug/org/d
+243973208,Formulation,Mortality,Adult,Dermal,NOEL,2,100,AI ug/org
+272451657,Formulation,Mortality,Adult,Food,LD50,2,200,AI ug/org
+272451657,Formulation,Mortality,Adult,Dermal,LD50,2,200,AI ug/org
+272451657,Active ingredient,Mortality,Adult,Dermal,LD50,2,200,AI ug/org
+272451657,Active ingredient,Mortality,Adult,Food,LD50,2,200,AI ug/org
+272451657,Active ingredient,Mortality,Adult,Food,NOEL,2,200,AI ug/org
+272451657,Formulation,Mortality,Adult,Food,NOEL,2,200,AI ug/org
+272451657,Active ingredient,Mortality,Adult,Dermal,NOEL,2,200,AI ug/org
+272451657,Formulation,Mortality,Adult,Dermal,NOEL,2,200,AI ug/org
+274671613,Active ingredient,Mortality,Adult,Dermal,LD50,2,25,AI ug/org
+283159900,Active ingredient,Mortality,Larva,Food,LD50,8,19.5,AI ug/org/d
+283159900,Active ingredient,Mortality,Larva,Food,LD50,8,19.5,AI ug/org/d
+283159900,Active ingredient,Mortality,Adult,Dermal,LD50,2,100,AI ug/org
+283159900,Active ingredient,Mortality,Adult,Food,LD50,2,106.6,AI ug/org
+283159900,Active ingredient,Mortality,Larva,Food,NOEL,15,0.276,AI ug/org/d
+283159900,Active ingredient,Mortality,Larva,Food,NOEL,8,0.276,AI ug/org/d
+283159900,Active ingredient,Mortality,Larva,Food,NOEL,8,4.43,AI ug/org/d
+283159900,Active ingredient,Development,Larva,Food,NOEL,22,0.881,AI ug/org/d
+283159900,Active ingredient,Mortality,Larva,Food,NOEL,22,0.881,AI ug/org/d
+283159900,Active ingredient,Mortality,Adult,Dermal,LD50,2,100,AI ug/org
+283159900,Active ingredient,Mortality,Adult,Food,LD50,2,55,AI ug/org
+283594901,Formulation,Mortality,Adult,Food,LD50,2,64.1,AI ug/org
+283594901,Active ingredient,Mortality,Larva,Food,LD50,8,0.07,AI ug/org/d
+283594901,Active ingredient,Mortality,Larva,Food,LD50,3,0.06,AI ug/org/d
+283594901,Formulation,Mortality,Larva,Food,LD50,8,0.3,AI ug/org/d
+283594901,Active ingredient,Mortality,Adult,Dermal,LD50,2,200,AI ug/org
+283594901,Formulation,Mortality,Adult,Dermal,LD50,2,200,AI ug/org
+283594901,Active ingredient,Mortality,Adult,Food,LD50,2,792.4,AI ug/org
+283594901,Formulation,Behavior,Adult,Food,NOEL,10,42,AI ug/org/d
+283594901,Formulation,Mortality,Adult,Dermal,NOEL,2,200,AI ug/org
+283594901,Formulation,Development,Larva,Food,NOEL,22,0.3,AI ug/org/d
+283594901,Active ingredient,Mortality,Adult,Dermal,NOEL,2,200,AI ug/org
+283594901,Active ingredient,Mortality,Adult,Food,NOEL,2,166.1,AI ug/org
+283594901,Formulation,Mortality,Adult,Food,NOEL,10,30,AI ug/org/d
+283594901,Formulation,Mortality,Larva,Food,NOEL,8,0.3,AI ug/org/d
+283594901,Active ingredient,Mortality,Larva,Food,NOEL,8,0.07,AI ug/org/d
+283594901,Formulation,Mortality,Adult,Food,NOEL,2,25,AI ug/org
+283594901,Active ingredient,Development,Larva,Food,NOEL,22,0.07,AI ug/org/d
+318290981,Formulation,Mortality,Adult,Food,LD50,2,83.7,AI ug/org
+318290981,Formulation,Mortality,Adult,Dermal,LD50,2,200,AI ug/org
+318290981,Active ingredient,Mortality,Adult,Food,LD50,2,190,AI ug/org
+318290981,Active ingredient,Mortality,Adult,Dermal,LD50,2,167,AI ug/org
+318290981,Formulation,Mortality,Adult,Food,NOEL,2,47.9,AI ug/org
+318290981,Formulation,Mortality,Adult,Dermal,NOEL,2,100,AI ug/org
+318290981,Active ingredient,Mortality,Adult,Dermal,NOEL,2,50,AI ug/org
+318290981,Active ingredient,Mortality,Adult,Food,NOEL,2,190,AI ug/org
+330459319,Active ingredient,Mortality,Adult,Food,LD50,2,0.41,AI ug/org
+330459319,Active ingredient,Mortality,Adult,Dermal,LD50,2,100,AI ug/org
+330459319,Active ingredient,Mortality,Adult,Dermal,NOEL,2,100,AI ug/org
+337458272,Formulation,Mortality,Adult,Dermal,LD50,4,35,AI ug/org
+337458272,Active ingredient,Mortality,Adult,Dermal,LD50,4,100,AI ug/org
+337458272,Active ingredient,Mortality,Adult,Dermal,LD50,2,100,AI ug/org
+337458272,Active ingredient,Mortality,Larva,Food,LD50,8,5.4,AI ug/org/d
+337458272,Formulation,Mortality,Adult,Food,LD50,4,4.7,AI ug/org
+337458272,Active ingredient,Behavior,Adult,Food,NOEL,10,6.9,AI ug/org/d
+337458272,Active ingredient,Mortality,Larva,Food,NOEL,8,1.7,AI ug/org/d
+337458272,Formulation,Mortality,Adult,Food,NOEL,4,0.1,AI ug/org
+337458272,Active ingredient,Development,Larva,Food,NOEL,22,1.7,AI ug/org/d
+337458272,Active ingredient,Growth,Larva,Food,NOEL,22,1.7,AI ug/org/d
+337458272,Formulation,Mortality,Adult,Dermal,NOEL,4,0.01,AI ug/org
+337458272,Active ingredient,Mortality,Adult,Food,NOEL,10,1.2,AI ug/org/d
+337458272,Active ingredient,Mortality,Larva,Food,NOEL,15,1.7,AI ug/org/d
+352010685,Formulation,Mortality,Adult,Food,LD50,2,195.2,AI ug/org
+352010685,Active ingredient,Mortality,Larva,Food,LD50,3,100,AI ug/org
+352010685,Formulation,Mortality,Adult,Dermal,LD50,2,197,AI ug/org
+352010685,Active ingredient,Mortality,Adult,Dermal,LD50,2,200,AI ug/org
+352010685,Active ingredient,Mortality,Adult,Food,LD50,2,212.2,AI ug/org
+352010685,Active ingredient,Mortality,Larva,Food,LD50,8,11.4,AI ug/org/d
+352010685,Active ingredient,Mortality,Adult,Food,NOEL,2,212.2,AI ug/org
+352010685,Active ingredient,Mortality,Larva,Food,NOEL,8,6.84,AI ug/org/d
+352010685,Active ingredient,Behavior,Adult,Food,NOEL,10,22,AI ug/org/d
+352010685,Active ingredient,Mortality,Adult,Dermal,NOEL,2,200,AI ug/org
+352010685,Active ingredient,Mortality,Adult,Food,NOEL,10,22,AI ug/org/d
+352010685,Active ingredient,Development,Larva,Food,NOEL,22,6.84,AI ug/org/d
+361377299,Active ingredient,Mortality,Larva,Food,LD50,3,80,AI ug/org
+361377299,Active ingredient,Mortality,Larva,Food,LD50,8,25,AI ug/org/d
+361377299,Active ingredient,Mortality,Adult,Dermal,LD50,2,200,AI ug/org
+361377299,Active ingredient,Mortality,Adult,Food,LD50,2,843.3,AI ug/org
+361377299,Active ingredient,Development,Larva,Food,NOEL,22,4.4,AI ug/org/d
+361377299,Active ingredient,Mortality,Adult,Dermal,NOEL,2,200,AI ug/org
+361377299,Formulation,Behavior,Adult,Food,NOEL,10,12.4,AI ug/org/d
+361377299,Active ingredient,Mortality,Adult,Food,NOEL,2,843.3,AI ug/org
+361377299,Active ingredient,Mortality,Larva,Food,NOEL,8,4.4,AI ug/org/d
+361377299,Formulation,Mortality,Adult,Food,NOEL,10,39.2,AI ug/org/d
+361377299,Active ingredient,Mortality,Larva,Food,NOEL,15,4.4,AI ug/org/d
+365400119,Active ingredient,Mortality,Adult,Dermal,LD50,3,75,AI ug/org
+365400119,Active ingredient,Mortality,Adult,Food,LD50,3,120,AI ug/org
+365400119,Active ingredient,Mortality,Adult,Food,NOEL,3,120,AI ug/org
+365400119,Active ingredient,Mortality,Adult,Dermal,NOEL,3,75,AI ug/org
+372137354,Formulation,Mortality,Adult,Food,LD50,2,120.9,AI ug/org
+372137354,Formulation,Mortality,Adult,Dermal,LD50,2,100,AI ug/org
+372137354,Active ingredient,Mortality,Adult,Dermal,LD50,2,100,AI ug/org
+372137354,Formulation,Mortality,Adult,Dermal,NOEL,2,100,AI ug/org
+372137354,Formulation,Mortality,Adult,Food,NOEL,2,120.9,AI ug/org
+372137354,Active ingredient,Mortality,Adult,Dermal,NOEL,2,100,AI ug/org
+374726622,Active ingredient,Mortality,Adult,Food,LD50,4,160,AI ug/org
+374726622,Active ingredient,Mortality,Adult,Dermal,LD50,4,200,AI ug/org
+374726622,Active ingredient,Mortality,Adult,Dermal,NOEL,4,200,AI ug/org
+374726622,Active ingredient,Mortality,Adult,Food,NOEL,4,160,AI ug/org
+403640277,Active ingredient,Mortality,Larva,Food,LD50,7,76.23,AI ug/org/d
+403640277,Active ingredient,Mortality,Adult,Food,LD50,2,100,AI ug/org
+403640277,Active ingredient,Mortality,Larva,Food,LD50,8,42.6,AI ug/org/d
+403640277,Active ingredient,Mortality,Larva,Food,LD50,7,87,AI ug/org/d
+403640277,Active ingredient,Mortality,Larva,Food,LD50,7,87,AI ug/org/d
+403640277,Active ingredient,Mortality,Adult,Dermal,LD50,2,100,AI ug/org
+403640277,Active ingredient,Mortality,Adult,Food,NOEL,10,0.219,AI ug/org/d
+403640277,Active ingredient,Development,Larva,Food,NOEL,22,42.6,AI ug/org/d
+403640277,Active ingredient,Mortality,Larva,Food,NOEL,8,42.6,AI ug/org/d
+403640277,Active ingredient,Mortality,Larva,Food,NOEL,15,42.6,AI ug/org/d
+403640277,Active ingredient,Growth,Larva,Food,NOEL,22,21.6,AI ug/org/d
+422556089,Active ingredient,Mortality,Adult,Food,LD50,2,107.4,AI ug/org
+422556089,Active ingredient,Mortality,Adult,Dermal,LD50,2,100,AI ug/org
+447399555,Active ingredient,Mortality,Adult,Dermal,LD50,2,100,AI ug/org
+473798593,Active ingredient,Mortality,Adult,Food,LD50,2,100,AI ug/org
+473798593,Active ingredient,Mortality,Adult,Dermal,LD50,3,100,AI ug/org
+473798593,Active ingredient,Mortality,Adult,Food,NOEL,2,25,AI ug/org
+473798593,Active ingredient,Mortality,Adult,Dermal,NOEL,3,21,AI ug/org
+500008457,Formulation,Mortality,Larva,Food,LD50,8,0.193,AI ug/org/d
+500008457,Formulation,Mortality,Larva,Food,LD50,8,0.119,AI ug/org/d
+500008457,Formulation,Mortality,Larva,Food,LD50,3,1.6,AI ug/org/d
+500008457,Formulation,Mortality,Larva,Food,NOEL,8,0.087,AI ug/org/d
+500008457,Formulation,Development,Larva,Food,NOEL,22,0.043,AI ug/org/d
+500008457,Formulation,Mortality,Larva,Food,NOEL,15,0.069,AI ug/org/d
+500008457,Formulation,Mortality,Larva,Food,NOEL,8,0.069,AI ug/org/d
+500008457,Formulation,Development,Larva,Food,NOEL,22,0.069,AI ug/org/d
+500008457,Formulation,Behavior,Adult,Food,NOEL,10,9.03,AI ug/org/d
+500008457,Formulation,Mortality,Adult,Food,NOEL,10,9.03,AI ug/org/d
+500008457,Formulation,Mortality,Larva,Food,NOEL,15,0.043,AI ug/org/d
+500008457,Formulation,Mortality,Adult,Food,LD50,3,0.427,AI ug/org
+500008457,Formulation,Mortality,Adult,Food,LD50,3,0.459,AI ug/org
+500008457,Formulation,Mortality,Adult,Dermal,LD50,2,255,AI ug/org
+500207045,Active ingredient,Mortality,Adult,Food,LD50,2,96.8,AI ug/org
+500207045,Active ingredient,Mortality,Larva,Food,LD50,8,12.2,AI ug/org/d
+500207045,Active ingredient,Mortality,Larva,Food,LD50,8,100,AI ug/org
+500207045,Active ingredient,Development,Larva,Food,NOEL,22,5.6,AI ug/org/d
+500207045,Active ingredient,Mortality,Larva,Food,NOEL,8,5.6,AI ug/org/d
+500207045,Active ingredient,Behavior,Adult,Food,NOEL,10,37,AI ug/org/d
+500207045,Active ingredient,Mortality,Adult,Food,NOEL,10,37,AI ug/org/d
+500207045,Active ingredient,Mortality,Larva,Food,NOEL,15,5.6,AI ug/org/d
+581809463,Active ingredient,Mortality,Adult,Food,LD50,2,121.4,AI ug/org
+581809463,Active ingredient,Mortality,Adult,Dermal,LD50,2,100,AI ug/org
+581809463,Active ingredient,Mortality,Larva,Food,LD50,3,100,AI ug/org
+581809463,Active ingredient,Mortality,Adult,Food,NOEL,10,8.26,AI ug/org/d
+581809463,Active ingredient,Behavior,Adult,Food,NOEL,10,17.3,AI ug/org/d
+658066354,Formulation,Mortality,Adult,Food,LD50,2,110.3,AI ug/org
+658066354,Formulation,Mortality,Adult,Food,LD50,2,107.1,AI ug/org
+658066354,Formulation,Mortality,Adult,Dermal,LD50,2,100,AI ug/org
+658066354,Formulation,Mortality,Adult,Dermal,LD50,2,100,AI ug/org
+658066354,Active ingredient,Mortality,Larva,Food,LD50,3,60,AI ug/org
+658066354,Formulation,Mortality,Adult,Food,NOEL,10,46.6,AI ug/org/d
+658066354,Formulation,Behavior,Adult,Food,NOEL,10,80.6,AI ug/org/d
+658066354,Active ingredient,Mortality,Adult,Food,LD50,2,92.5,AI ug/org
+658066354,Active ingredient,Mortality,Adult,Dermal,LD50,2,100,AI ug/org
+688046619,Active ingredient,Mortality,Adult,Dermal,LD50,2,100,AI ug/org
+688046619,Active ingredient,Mortality,Larva,Food,LD50,8,27.5,AI ug/org/d
+688046619,Active ingredient,Mortality,Adult,Food,LD50,2,100,AI ug/org
+688046619,Active ingredient,Growth,Larva,Food,NOEL,22,27.5,AI ug/org/d
+688046619,Active ingredient,Mortality,Adult,Food,NOEL,10,54,AI ug/org/d
+688046619,Active ingredient,Mortality,Adult,Food,NOEL,10,0.26,AI ug/org/d
+688046619,Active ingredient,Behavior,Adult,Food,NOEL,10,54,AI ug/org/d
+688046619,Active ingredient,Development,Larva,Food,NOEL,22,27.5,AI ug/org/d
+688046619,Active ingredient,Mortality,Adult,Food,NOEL,10,27,AI ug/org/d
+688046619,Active ingredient,Mortality,Larva,Food,NOEL,15,27.5,AI ug/org/d
+688046619,Active ingredient,Mortality,Larva,Food,NOEL,22,27.5,AI ug/org/d
+688046619,Active ingredient,Mortality,Larva,Food,NOEL,8,27.5,AI ug/org/d
+688046619,Active ingredient,Growth,Adult,Food,NOEL,10,54,AI ug/org/d
+736994631,Formulation,Mortality,Adult,Dermal,LD50,2,0.55,AI ug/org
+736994631,Formulation,Mortality,Larva,Food,LD50,3,0.0374,AI ug/org
+736994631,Formulation,Mortality,Adult,Food,LD50,4,0.404,AI ug/org
+736994631,Formulation,Mortality,Adult,Food,LD50,3,0.491,AI ug/org
+736994631,Formulation,Mortality,Adult,Food,LD50,2,0.116,AI ug/org
+736994631,Formulation,Mortality,Adult,Dermal,LD50,3,1.45,AI ug/org
+736994631,Active ingredient,Mortality,Adult,Food,LD50,2,0.1055,AI ug/org
+736994631,Formulation,Mortality,Adult,Food,LD50,3,0.39,AI ug/org
+736994631,Formulation,Mortality,Adult,Food,LD50,4,0.92,AI ug/org
+736994631,Formulation,Mortality,Adult,Dermal,LD50,2,3.03,AI ug/org
+736994631,Formulation,Mortality,Adult,Dermal,LD50,2,1.2,AI ug/org
+736994631,Active ingredient,Mortality,Adult,Dermal,LD50,2,0.0934,AI ug/org
+736994631,Formulation,Mortality,Adult,Food,NOEL,3,0.086,AI ug/org
+736994631,Formulation,Behavior,Adult,Food,NOEL,10,0.03,AI ug/org/d
+736994631,Formulation,Mortality,Adult,Dermal,NOEL,2,0.5,AI ug/org
+736994631,Formulation,Mortality,Adult,Dermal,NOEL,2,0.025,AI ug/org
+736994631,Formulation,Mortality,Adult,Food,NOEL,3,0.09,AI ug/org
+736994631,Active ingredient,Mortality,Adult,Dermal,NOEL,2,0.0243,AI ug/org
+736994631,Formulation,Mortality,Adult,Dermal,NOEL,3,0.1,AI ug/org
+736994631,Formulation,Mortality,Adult,Food,NOEL,4,0.034,AI ug/org
+736994631,Formulation,Mortality,Adult,Food,NOEL,10,0.1,AI ug/org/d
+736994631,Formulation,Mortality,Adult,Dermal,NOEL,2,0.19,AI ug/org
+736994631,Active ingredient,Mortality,Adult,Food,LD50,2,0.281,AI ug/org
+736994631,Formulation,Mortality,Adult,Food,LD50,2,0.53,AI ug/org
+736994631,Formulation,Mortality,Adult,Dermal,LD50,2,100,AI ug/org
+736994631,Active ingredient,Mortality,Adult,Dermal,LD50,2,0.0934,AI ug/org
+736994631,Formulation,Mortality,Adult,Dermal,LD50,2,100,AI ug/org
+736994631,Formulation,Mortality,Adult,Dermal,LD50,3,84.1,AI ug/org
+736994631,Formulation,Mortality,Adult,Food,LD50,2,0.47,AI ug/org
+736994631,Formulation,Mortality,Adult,Food,LD50,3,45.3,AI ug/org
+736994631,Active ingredient,Mortality,Adult,Dermal,NOEL,2,0.0934,AI ug/org
+736994631,Formulation,Mortality,Adult,Food,NOEL,3,1.68,AI ug/org
+736994631,Formulation,Mortality,Adult,Dermal,NOEL,3,25,AI ug/org
+736994631,Formulation,Mortality,Adult,Dermal,NOEL,2,50,AI ug/org
+736994631,Formulation,Mortality,Adult,Dermal,NOEL,2,12.5,AI ug/org
+736994631,Formulation,Mortality,Adult,Food,NOEL,2,0.12,AI ug/org
+736994631,Active ingredient,Mortality,Adult,Food,NOEL,2,0.281,AI ug/org
+736994631,Formulation,Mortality,Adult,Food,NOEL,2,0.03,AI ug/org
+861229154,Formulation,Mortality,Adult,Dermal,LD50,2,200,AI ug/org
+861229154,Formulation,Mortality,Adult,Food,LD50,2,200,AI ug/org
+861229154,Formulation,Mortality,Adult,Food,NOEL,2,200,AI ug/org
+861229154,Formulation,Mortality,Adult,Dermal,NOEL,2,200,AI ug/org
+865363399,Active ingredient,Mortality,Adult,Dermal,LD50,2,25,AI ug/org
+874967676,Active ingredient,Mortality,Adult,Food,LD50,2,4.22,AI ug/org
+874967676,Active ingredient,Mortality,Adult,Dermal,LD50,2,98.2,AI ug/org
+875915789,Formulation,Mortality,Larva,Food,LD50,3,75.5,AI ug/org
+875915789,Formulation,Mortality,Adult,Food,NOEL,10,79,AI ug/org/d
+875915789,Formulation,Mortality,Larva,Food,NOEL,15,8,AI ug/org/d
+875915789,Formulation,Mortality,Larva,Food,NOEL,22,8,AI ug/org/d
+915972177,Formulation,Mortality,Larva,Food,LD50,8,21.95,AI ug/org
+915972177,Active ingredient,Mortality,Adult,Dermal,LD50,2,200,AI ug/org
+915972177,Formulation,Mortality,Adult,Dermal,LD50,2,20.3,AI ug/org
+915972177,Formulation,Mortality,Adult,Food,LD50,4,49.8,AI ug/org
+915972177,Formulation,Mortality,Adult,Dermal,LD50,4,49.4,AI ug/org
+915972177,Active ingredient,Mortality,Adult,Food,LD50,2,100,AI ug/org
+915972177,Formulation,Mortality,Adult,Food,LD50,2,20.8,AI ug/org
+915972177,Formulation,Mortality,Larva,Food,LD50,4,37.57,AI ug/org
+915972177,Formulation,Development,Larva,Food,NOEL,22,4.04,AI ug/org
+915972177,Active ingredient,Mortality,Adult,Food,NOEL,10,73.31,AI ug/org/d
+915972177,Formulation,Mortality,Larva,Food,NOEL,8,16.51,AI ug/org
+915972177,Formulation,Mortality,Larva,Food,NOEL,15,4.04,AI ug/org
+915972177,Active ingredient,Mortality,Adult,Dermal,LD50,4,100,AI ug/org
+935545747,Formulation,Mortality,Adult,Food,LD50,4,0.11,AI ug/org
+935545747,Formulation,Mortality,Adult,Dermal,LD50,2,0.024,AI ug/org
+935545747,Formulation,Mortality,Adult,Dermal,NOEL,2,0.0065,AI ug/org
+935545747,Formulation,Mortality,Adult,Food,NOEL,4,0.066,AI ug/org
+943831989,Active ingredient,Mortality,Adult,Food,LD50,2,108,AI ug/org
+943831989,Active ingredient,Mortality,Larva,Food,LD50,8,5.34,AI ug/org/d
+943831989,Active ingredient,Mortality,Adult,Dermal,LD50,2,98.1,AI ug/org
+943831989,Active ingredient,Mortality,Adult,Food,NOEL,10,4.6,AI ug/org/d
+943831989,Active ingredient,Growth,Adult,Food,NOEL,10,4.6,AI ug/org/d
+943831989,Active ingredient,Behavior,Adult,Food,NOEL,10,0.26,AI ug/org/d
+943831989,Active ingredient,Mortality,Adult,Food,NOEL,2,108,AI ug/org
+943831989,Active ingredient,Development,Larva,Food,NOEL,22,0.149,AI ug/org/d
+943831989,Active ingredient,Mortality,Adult,Dermal,NOEL,2,98.1,AI ug/org
+943831989,Active ingredient,Mortality,Larva,Food,NOEL,8,5.34,AI ug/org/d
+943831989,Active ingredient,Mortality,Larva,Food,NOEL,15,0.149,AI ug/org/d
+943831989,Active ingredient,Growth,Larva,Food,NOEL,22,0.367,AI ug/org/d
+946578003,Formulation,Mortality,Adult,Food,LD50,2,0.0515,AI ug/org
+946578003,Active ingredient,Mortality,Larva,Food,LD50,7,2.65,AI ug/org
+946578003,Active ingredient,Mortality,Adult,Food,LD50,2,0.146,AI ug/org
+946578003,Active ingredient,Mortality,Larva,Food,LD50,7,0.247,AI ug/org
+946578003,Active ingredient,Mortality,Larva,Food,LD50,8,0.4147,AI ug/org/d
+946578003,Formulation,Mortality,Adult,Dermal,LD50,2,0.13,AI ug/org
+946578003,Active ingredient,Mortality,Adult,Dermal,LD50,3,0.379,AI ug/org
+946578003,Formulation,Mortality,Adult,Dermal,LD50,2,0.224,AI ug/org
+946578003,Active ingredient,Mortality,Larva,Food,NOEL,22,0.212,AI ug/org/d
+946578003,Active ingredient,Behavior,Adult,Food,NOEL,10,0.00539,AI ug/org/d
+946578003,Active ingredient,Mortality,Adult,Food,NOEL,10,0.0116,AI ug/org/d
+946578003,Active ingredient,Mortality,Adult,Food,NOEL,10,0.00998,AI ug/org/d
+946578003,Active ingredient,Development,Larva,Food,NOEL,22,0.212,AI ug/org/d
+946578003,Active ingredient,Behavior,Adult,Food,NOEL,10,0.0116,AI ug/org/d
+946578003,Active ingredient,Mortality,Larva,Food,NOEL,8,0.4147,AI ug/org/d
+946578003,Active ingredient,Mortality,Larva,Food,NOEL,15,0.4147,AI ug/org/d
+950782862,Formulation,Mortality,Adult,Food,LD50,2,119.7,AI ug/org
+950782862,Formulation,Mortality,Larva,Food,LD50,8,25,AI ug/org/d
+950782862,Active ingredient,Mortality,Adult,Food,LD50,2,120,AI ug/org
+950782862,Formulation,Mortality,Adult,Dermal,LD50,2,100,AI ug/org
+950782862,Active ingredient,Mortality,Adult,Dermal,LD50,2,100,AI ug/org
+950782862,Formulation,Mortality,Adult,Dermal,NOEL,2,100,AI ug/org
+950782862,Formulation,Mortality,Adult,Food,NOEL,2,119.7,AI ug/org
+950782862,Formulation,Development,Larva,Food,NOEL,22,2.7,AI ug/org/d
+950782862,Active ingredient,Mortality,Adult,Food,NOEL,2,120,AI ug/org
+950782862,Formulation,Mortality,Larva,Food,NOEL,8,25,AI ug/org/d
+950782862,Formulation,Mortality,Larva,Food,NOEL,15,8.2,AI ug/org/d
+950782862,Active ingredient,Mortality,Adult,Dermal,NOEL,2,100,AI ug/org
+951659408,Formulation,Mortality,Adult,Food,LD50,2,3.4,AI ug/org
+951659408,Formulation,Mortality,Adult,Dermal,LD50,2,137.3,AI ug/org
+951659408,Formulation,Mortality,Adult,Dermal,LD50,4,68.6,AI ug/org
+951659408,Formulation,Mortality,Adult,Dermal,LD50,3,11.5,AI ug/org
+951659408,Formulation,Mortality,Adult,Food,LD50,2,1.49,AI ug/org
+951659408,Active ingredient,Mortality,Adult,Food,LD50,2,8.52,AI ug/org
+951659408,Active ingredient,Mortality,Adult,Food,NOEL,2,4.17,AI ug/org
+958647104,Formulation,Mortality,Larva,Food,LD50,5,10.4,AI ug/org
+958647104,Formulation,Mortality,Adult,Dermal,LD50,2,50,AI ug/org
+958647104,Formulation,Mortality,Larva,Food,LD50,3,8.19,AI ug/org
+958647104,Formulation,Mortality,Adult,Food,LD50,2,21.7,AI ug/org
+958647104,Active ingredient,Mortality,Adult,Dermal,LD50,2,100,AI ug/org
+958647104,Active ingredient,Mortality,Adult,Food,LD50,2,100,AI ug/org
+958647104,Formulation,Mortality,Adult,Food,NOEL,10,22,AI ug/org/d
+958647104,Formulation,Mortality,Larva,Food,NOEL,3,4.6,AI ug/org
+1003318679,Active ingredient,Mortality,Adult,Dermal,LD50,2,1075.3,AI ug/org
+1003318679,Active ingredient,Mortality,Adult,Food,LD50,2,42.02,AI ug/org
+1003318679,Active ingredient,Mortality,Adult,Food,LD50,2,1344.3,AI ug/org
+1003318679,Formulation,Mortality,Adult,Food,LD50,2,137.44,AI ug/org
+1003318679,Formulation,Mortality,Adult,Dermal,LD50,2,100,AI ug/org
+1003318679,Active ingredient,Mortality,Adult,Dermal,LD50,2,104.39,AI ug/org
+1003318679,Active ingredient,Mortality,Adult,Food,NOEL,2,1344.3,AI ug/org
+1003318679,Active ingredient,Mortality,Adult,Dermal,NOEL,2,104.39,AI ug/org
+1003318679,Active ingredient,Mortality,Adult,Food,NOEL,2,42.02,AI ug/org
+1003318679,Active ingredient,Mortality,Adult,Dermal,NOEL,2,1075.3,AI ug/org
+1031756985,Formulation,Mortality,Adult,Food,LD50,4,0.2,AI ug/org
+1031756985,Active ingredient,Mortality,Adult,Dermal,LD50,4,0.952,AI ug/org
+1031756985,Active ingredient,Mortality,Larva,Food,LD50,3,0.16,AI ug/org
+1031756985,Active ingredient,Mortality,Adult,Food,LD50,4,0.702,AI ug/org
+1031756985,Formulation,Mortality,Adult,Dermal,LD50,4,0.507,AI ug/org
+1031756985,Active ingredient,Development,Larva,Food,NOEL,22,0.16,AI ug/org/d
+1031756985,Active ingredient,Mortality,Larva,Food,NOEL,15,0.16,AI ug/org/d
+1031756985,Active ingredient,Mortality,Larva,Food,NOEL,8,0.16,AI ug/org/d
+1031756985,Active ingredient,Mortality,Larva,Food,NOEL,22,0.16,AI ug/org/d
+1048373723,Formulation,Mortality,Adult,Dermal,LD50,2,89.4,ae ug/org
+1048373723,Formulation,Mortality,Adult,Food,LD50,2,62.6,ae ug/org
+1048373723,Formulation,Mortality,Adult,Dermal,NOEL,2,89.4,ae ug/org
+1048373723,Formulation,Mortality,Adult,Food,NOEL,2,42,ae ug/org
+1072957711,Active ingredient,Mortality,Adult,Dermal,LD50,2,100,AI ug/org
+1072957711,Active ingredient,Mortality,Adult,Food,LD50,2,109,AI ug/org
+1072957711,Active ingredient,Mortality,Larva,Food,LD50,8,5.38,AI ug/org/d
+1072957711,Active ingredient,Mortality,Larva,Food,NOEL,15,5.38,AI ug/org/d
+1072957711,Active ingredient,Mortality,Larva,Food,NOEL,8,5.38,AI ug/org/d
+1072957711,Active ingredient,Development,Larva,Food,NOEL,22,5.38,AI ug/org/d
+1101132675,Active ingredient,Mortality,Larva,Food,LD50,8,15.5,AI ug/org/d
+1101132675,Active ingredient,Growth,Larva,Food,NOEL,22,25,AI ug/org/d
+1101132675,Active ingredient,Mortality,Larva,Food,NOEL,8,12.5,AI ug/org/d
+1101132675,Active ingredient,Development,Larva,Food,NOEL,22,12.5,AI ug/org/d
+1101132675,Active ingredient,Mortality,Larva,Food,NOEL,15,25,AI ug/org/d
+1101132675,Active ingredient,Mortality,Larva,Food,NOEL,22,12.5,AI ug/org/d
+1220411299,Active ingredient,Mortality,Larva,Food,LD50,8,5.63,AI ug/org/d
+1220411299,Active ingredient,Mortality,Larva,Food,LD50,3,4.6,AI ug/org
+1220411299,Active ingredient,Mortality,Larva,Food,NOEL,3,4.6,AI ug/org
+1220411299,Active ingredient,Growth,Larva,Food,NOEL,22,5.63,AI ug/org/d
+1220411299,Active ingredient,Mortality,Larva,Food,NOEL,8,5.63,AI ug/org/d
+1220411299,Active ingredient,Mortality,Larva,Food,NOEL,15,5.63,AI ug/org/d
+1220411299,Active ingredient,Behavior,Adult,Food,NOEL,10,6,AI ug/org/d
+1220411299,Active ingredient,Mortality,Adult,Food,NOEL,10,22,AI ug/org/d
+1220411299,Active ingredient,Development,Larva,Food,NOEL,22,5.63,AI ug/org/d
+1228284647,Formulation,Mortality,Larva,Food,LD50,8,7.6,AI ug/org/d
+1228284647,Active ingredient,Mortality,Adult,Food,LD50,2,116,AI ug/org
+1228284647,Active ingredient,Mortality,Adult,Dermal,LD50,2,100,AI ug/org
+1228284647,Active ingredient,Mortality,Larva,Food,LD50,8,0.0035,AI ug/org/d
+1228284647,Formulation,Mortality,Adult,Food,NOEL,10,141,AI ug/org/d
+1228284647,Active ingredient,Mortality,Larva,Food,NOEL,22,0.0035,AI ug/org/d
+1228284647,Formulation,Mortality,Larva,Food,NOEL,15,0.046,AI ug/org/d
+1228284647,Active ingredient,Development,Larva,Food,NOEL,22,0.0035,AI ug/org/d
+1228284647,Formulation,Mortality,Larva,Food,NOEL,8,0.41,AI ug/org/d
+1228284647,Active ingredient,Mortality,Larva,Food,NOEL,8,0.0035,AI ug/org/d
+1228284647,Formulation,Mortality,Larva,Food,NOEL,22,0.016,AI ug/org/d
+1228284647,Formulation,Development,Larva,Food,NOEL,22,0.016,AI ug/org/d
+1228284647,Active ingredient,Mortality,Larva,Food,NOEL,15,0.0035,AI ug/org/d
+1229654663,Active ingredient,Mortality,Larva,Food,LD50,4,0.013,AI ug/org
+1229654663,Formulation,Mortality,Adult,Food,LD50,4,0.045,AI ug/org
+1229654663,Active ingredient,Mortality,Adult,Food,LD50,3,0.0103,AI ug/org
+1229654663,Active ingredient,Mortality,Adult,Dermal,LD50,2,1.249,AI ug/org
+1229654663,Formulation,Mortality,Adult,Dermal,LD50,2,0.969,AI ug/org
+1229654663,Formulation,Mortality,Adult,Food,LD50,2,0.106,AI ug/org
+1229654663,Active ingredient,Mortality,Adult,Food,LD50,2,0.0103,AI ug/org
+1229654663,Active ingredient,Mortality,Adult,Dermal,LD50,4,0.39,AI ug/org
+1229654663,Formulation,Mortality,Adult,Food,LD50,4,0.0557,AI ug/org
+1229654663,Formulation,Mortality,Adult,Dermal,LD50,4,0.09,AI ug/org
+1229654663,Formulation,Mortality,Adult,Dermal,LD50,4,0.406,AI ug/org
+1229654663,Formulation,Mortality,Adult,Dermal,LD50,4,0.0662,AI ug/org
+1229654663,Active ingredient,Mortality,Adult,Food,LD50,1,0.0123,AI ug/org
+1229654663,Active ingredient,Mortality,Larva,Food,LD50,8,0.0046,AI ug/org/d
+1229654663,Formulation,Mortality,Adult,Food,LD50,4,0.0479,AI ug/org
+1229654663,Active ingredient,Mortality,Larva,Food,NOEL,8,8.8e-4,AI ug/org/d
+1229654663,Formulation,Behavior,Adult,Food,NOEL,10,0.00723,AI ug/org/d
+1229654663,Active ingredient,Mortality,Larva,Food,NOEL,22,8.8e-4,AI ug/org/d
+1229654663,Formulation,Mortality,Adult,Food,NOEL,10,0.00723,AI ug/org/d
+1229654663,Active ingredient,Development,Larva,Food,NOEL,22,8.8e-4,AI ug/org/d
+1229654663,Formulation,Mortality,Adult,Dermal,LD50,4,85,AI ug/org
+1229654663,Formulation,Mortality,Adult,Food,LD50,2,0.046,AI ug/org
+1229654663,Active ingredient,Mortality,Adult,Dermal,LD50,4,23.1,AI ug/org
+1229654663,Active ingredient,Mortality,Adult,Food,LD50,3,0.043,AI ug/org
+1390661729,Active ingredient,Mortality,Adult,Food,LD50,2,105.4,AI ug/org
+1390661729,Active ingredient,Mortality,Adult,Dermal,LD50,2,100,AI ug/org
+1390661729,Formulation,Mortality,Larva,Food,LD50,8,3.7,AI ug/org/d
+1390661729,Formulation,Mortality,Larva,Food,NOEL,15,1.2,AI ug/org/d
+1390661729,Formulation,Mortality,Adult,Food,NOEL,10,3.76,AI ug/org/d
+1390661729,Formulation,Development,Larva,Food,NOEL,22,1.2,AI ug/org/d
+1390661729,Formulation,Growth,Larva,Food,NOEL,22,1.2,AI ug/org/d
+1390661729,Formulation,Mortality,Larva,Food,NOEL,8,1.2,AI ug/org/d
+1390661729,Formulation,Behavior,Adult,Food,NOEL,10,1.65,AI ug/org/d
+1417782036,Active ingredient,Mortality,Adult,Food,LD50,2,100,AI ug/org
+1417782036,Active ingredient,Mortality,Larva,Food,LD50,3,47.6,AI ug/org
+1417782036,Active ingredient,Mortality,Larva,Food,LD50,8,11,AI ug/org/d
+1417782036,Active ingredient,Mortality,Adult,Dermal,LD50,2,100,AI ug/org
+1417782036,Formulation,Mortality,Adult,Food,LD50,2,100,AI ug/org
+1417782036,Formulation,Mortality,Adult,Dermal,LD50,2,100,AI ug/org
+1417782036,Formulation,Mortality,Adult,Dermal,LD50,4,30,AI ug/org
+1417782036,Formulation,Mortality,Adult,Food,LD50,2,52,AI ug/org
+1417782036,Active ingredient,Mortality,Larva,Food,NOEL,15,6.4,AI ug/org/d
+1417782036,Active ingredient,Mortality,Adult,Food,NOEL,10,110.5,AI ug/org/d
+1417782036,Active ingredient,Development,Larva,Food,NOEL,22,6.4,AI ug/org/d
+1417782036,Active ingredient,Behavior,Adult,Food,NOEL,10,110.5,AI ug/org/d
+1417782036,Active ingredient,Mortality,Larva,Food,NOEL,8,11,AI ug/org/d
+1417782036,Active ingredient,Mortality,Adult,Dermal,LD50,4,200,AI ug/org
+1417782036,Active ingredient,Mortality,Adult,Food,LD50,4,195.4,AI ug/org
