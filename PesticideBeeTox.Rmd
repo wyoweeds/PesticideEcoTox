@@ -11,6 +11,7 @@ Load data from files:
 ```{r setup, warning = FALSE, message = FALSE, results = 'hide'}
 library(tidyverse)
 library(readxl)
+library(openxlsx)
 library(plotly)
 
 ### Load Kynnetec AgroTrak pesticide data:
@@ -92,8 +93,8 @@ glimpse(AdultContactLD50)
 unique(AdultContactLD50$ConcType)
 unique(AdultContactLD50$ToxUnit) 
 AgroTrak.AdultContactLD50.Rank <- left_join(AgroTrak.Ranked, AdultContactLD50)
-write_csv(AgroTrak.AdultContactLD50.Rank,
-          "Draft_AdultContactLD50.csv")
+write.xlsx(AgroTrak.AdultContactLD50.Rank,
+          file = "Draft_AdultContactLD50.xlsx", asTable = TRUE)
 
 AdultContactLD50.summary <- AgroTrak.AdultContactLD50.Rank %>%
   group_by(Type) %>%
@@ -138,8 +139,8 @@ unique(AdultOralLD50$ConcType)
 unique(AdultOralLD50$ToxUnit) 
 ### ^^ There are some 'ug/bee without AI in this one.
 AgroTrak.AdultOralLD50.Rank <- left_join(AgroTrak.Ranked, AdultOralLD50)
-write_csv(AgroTrak.AdultOralLD50.Rank,
-          "Draft_AdultOralLD50.csv")
+write.xlsx(AgroTrak.AdultOralLD50.Rank,
+          file = "Draft_AdultOralLD50.xlsx", asTable = TRUE)
 
 AdultOralLD50.summary <- AgroTrak.AdultOralLD50.Rank %>%
   group_by(Type) %>%
@@ -183,8 +184,8 @@ glimpse(AdultOralNOEL)
 unique(AdultOralNOEL$ConcType)
 unique(AdultOralNOEL$ToxUnit)
 AgroTrak.AdultOralNOEL.Rank <- left_join(AgroTrak.Ranked, AdultOralNOEL)
-write_csv(AgroTrak.AdultOralNOEL.Rank,
-          "Draft_AdultOralNOEL.csv")
+write.xlsx(AgroTrak.AdultOralNOEL.Rank,
+          file = "Draft_AdultOralNOEL.xlsx", asTable = TRUE)
 
 AdultOralNOEL.summary <- AgroTrak.AdultOralNOEL.Rank %>%
   group_by(Type) %>%
@@ -228,8 +229,8 @@ glimpse(LarvaOralLD50)
 unique(LarvaOralLD50$ConcType)
 unique(LarvaOralLD50$ToxUnit)
 AgroTrak.LarvaOralLD50.Rank <- left_join(AgroTrak.Ranked, LarvaOralLD50)
-write_csv(AgroTrak.LarvaOralLD50.Rank,
-          "Draft_LarvaOralLD50.csv")
+write.xlsx(AgroTrak.LarvaOralLD50.Rank,
+          file = "Draft_LarvaOralLD50.xlsx", asTable = TRUE)
 
 LarvaOralLD50.summary <- AgroTrak.LarvaOralLD50.Rank %>%
   group_by(Type) %>%
@@ -273,8 +274,8 @@ glimpse(LarvaOralNOEL)
 unique(LarvaOralNOEL$ConcType)
 unique(LarvaOralNOEL$ToxUnit)
 AgroTrak.LarvaOralNOEL.Rank <- left_join(AgroTrak.Ranked, LarvaOralNOEL)
-write_csv(AgroTrak.LarvaOralNOEL.Rank,
-          "Draft_LarvaOralNOEL.csv")
+write.xlsx(AgroTrak.LarvaOralNOEL.Rank,
+          file = "Draft_LarvaOralNOEL.xlsx", asTable = TRUE)
 
 LarvaOralNOEL.summary <- AgroTrak.LarvaOralNOEL.Rank %>%
   group_by(Type) %>%
