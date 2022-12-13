@@ -1,16 +1,17 @@
 ---
-title: Trends in honey bee toxicity of pesticides used in United States corn and soybean
-  production
-author: "Andrew Kniss (and others)"
+title: Trends in honey bee toxicity of pesticides used in United States corn and soybean production
 date: "updated `r Sys.Date()`"
 output: html_document
 ---
 
+---
+
 Load data from files:
 
-```{r setup, warning = FALSE, message = FALSE}
+```{r setup, warning = FALSE, message = FALSE, results = 'hide'}
 library(tidyverse)
 library(readxl)
+library(plotly)
 
 ### Load Kynnetec AgroTrak pesticide data:
 AgroTrak.CornSoy.dat <- read_excel("AgroTrak_CornSoy_v1.xlsx",
@@ -26,10 +27,11 @@ glimpse(AgroTrak.CornSoy.dat)
 ### Concordance list:
 srcTab <- read_csv("cclistInEcotox.csv")
 glimpse(srcTab)
+srcTab %>% filter(ai == "ABAMECTIN")
 
 ### Load honey bee toxicity values from ecotox export:
 ecotox.dat0 <- 
-  read_excel("ECOTOX-Terrestrial-Export_20211207_132145 Honey Bee Data.xlsx",
+  read_excel("ECOTOX-Terrestrial-Export_20211207_plusManualAdd.xlsx",
              sheet = "Terrestrial-Export") %>%
   rename(cas.number = "CAS Number", chemName = "Chemical Name") 
 ### Pare down ecotox values to those used in the model, and join with
@@ -54,11 +56,12 @@ glimpse(ecotox.dat)
 
 Create a ranked list of pesticides by volume applied in AgroTrak:
 
-```{r, warning = FALSE, message = FALSE}
+```{r, warning = FALSE, message = FALSE, results = 'hide'}
 AgroTrak.Ranked <- AgroTrak.CornSoy.dat %>%
   group_by(Type, ai) %>%
   summarize(Volume.lbs = round(sum(Volume.lbs, na.rm = TRUE)),
-            Base.Area.Treated.sum = round(sum(Base.Area.Treated, na.rm = TRUE)),
+            Base.Area.Treated.sum = round(sum(Base.Area.Treated, 
+                                              na.rm = TRUE)),
             nYears = length(unique(Year)),
             Base.Area.perYear = round(Base.Area.Treated.sum / nYears),
             Volume.perYear = round(Volume.lbs / nYears)) %>%
@@ -66,22 +69,23 @@ AgroTrak.Ranked <- AgroTrak.CornSoy.dat %>%
 ```
 
 ## Adult Contact LD50
-```{r, warning = FALSE, message = FALSE}
+```{r, warning = FALSE, message = FALSE, results = 'hide'}
 AdultContactLD50 <- ecotox.dat %>%
   filter(LifeStage == "Adult" &
-         ExposureType == "Dermal" & 
-         Endpoint == "LD50") %>%
+           ExposureType == "Dermal" & 
+           Endpoint == "LD50") %>%
   group_by(ai) %>%
-  mutate(checkAI = any(grepl("AI|ae", ToxUnit)),
-         hasAI = grepl("AI|ae", ToxUnit)) %>%
+  mutate(checkAI = any(grepl("AI|ai|ae", ToxUnit)),
+         hasAI = grepl("AI|ai|ae", ToxUnit)) %>%
   group_by(ai, hasAI) %>%
-  mutate(min.d.grp = min(abs(2 - ObservedDuration.d) + 2, na.rm = TRUE)) %>%
+  mutate(min.d.grp = min(abs(2 - ObservedDuration.d) + 2, 
+                         na.rm = TRUE)) %>%
   filter(case_when(checkAI == TRUE ~ 
-                     hasAI == TRUE & ObservedDuration.d == min.d.grp,
+                     hasAI == TRUE & ObservedDuration.d <= min.d.grp + 2,
                    checkAI == FALSE ~
-                     ObservedDuration.d == min.d.grp)) %>%
-      ungroup() %>%
-      select(-checkAI, -hasAI, -min.d.grp) %>%
+                     ObservedDuration.d <= min.d.grp +2 )) %>%
+  ungroup() %>%
+  select(-checkAI, -hasAI, -min.d.grp) %>%
   group_by(ai) %>%
   slice(which.min(ObsRespMean))
 glimpse(AdultContactLD50)
@@ -104,19 +108,23 @@ AdultContactLD50.summary <- AgroTrak.AdultContactLD50.Rank %>%
   rename("missing Tox value" = `FALSE`,
          "Tox value present" = `TRUE`)
 ```
+```{r, warning = FALSE, message = FALSE}
+AdultContactLD50.summary
+```
 
 ## Adult Oral LD50
 
-```{r, warning = FALSE, message = FALSE}
+```{r, warning = FALSE, message = FALSE, results = 'hide'}
 AdultOralLD50 <- ecotox.dat %>%
   filter(LifeStage == "Adult" &
          ExposureType == "Food" & 
          Endpoint == "LD50") %>%
   group_by(ai) %>%
-  mutate(checkAI = any(grepl("AI|ae", ToxUnit)),
-         hasAI = grepl("AI|ae", ToxUnit)) %>%
+  mutate(checkAI = any(grepl("AI|ai|ae", ToxUnit)),
+         hasAI = grepl("AI|ai|ae", ToxUnit)) %>%
   group_by(ai, hasAI) %>%
-  mutate(min.d.grp = min(abs(2 - ObservedDuration.d) + 2, na.rm = TRUE)) %>%
+  mutate(min.d.grp = min(abs(2 - ObservedDuration.d) + 2, 
+                         na.rm = TRUE)) %>%
   filter(case_when(checkAI == TRUE ~ 
                      hasAI == TRUE & ObservedDuration.d == min.d.grp,
                    checkAI == FALSE ~
@@ -146,19 +154,23 @@ AdultOralLD50.summary <- AgroTrak.AdultOralLD50.Rank %>%
   rename("missing Tox value" = `FALSE`,
          "Tox value present" = `TRUE`)
 ```
+```{r, warning = FALSE, message = FALSE}
+AdultOralLD50.summary
+```
 
 ## Adult Oral NOEL
 
-```{r, warning = FALSE, message = FALSE}
+```{r, warning = FALSE, message = FALSE, results = 'hide'}
 AdultOralNOEL <- ecotox.dat %>%
   filter(LifeStage == "Adult" &
          ExposureType == "Food" & 
          Endpoint == "NOEL") %>%
   group_by(ai) %>%
-  mutate(checkAI = any(grepl("AI|ae", ToxUnit)),
-         hasAI = grepl("AI|ae", ToxUnit)) %>%
+  mutate(checkAI = any(grepl("AI|ai|ae", ToxUnit)),
+         hasAI = grepl("AI|ai|ae", ToxUnit)) %>%
   group_by(ai, hasAI) %>%
-  mutate(min.d.grp = min(abs(10 - ObservedDuration.d) + 10, na.rm = TRUE)) %>%
+  mutate(min.d.grp = min(abs(10 - ObservedDuration.d) + 10, 
+                         na.rm = TRUE)) %>%
   filter(case_when(checkAI == TRUE ~ 
                      hasAI == TRUE & ObservedDuration.d == min.d.grp,
                    checkAI == FALSE ~
@@ -187,19 +199,23 @@ AdultOralNOEL.summary <- AgroTrak.AdultOralNOEL.Rank %>%
   rename("missing Tox value" = `FALSE`,
          "Tox value present" = `TRUE`)
 ```
+```{r, warning = FALSE, message = FALSE}
+AdultOralNOEL.summary
+```
 
 ## Larval Oral LD50
 
-```{r, warning = FALSE, message = FALSE}
+```{r, warning = FALSE, message = FALSE, results = 'hide'}
 LarvaOralLD50 <- ecotox.dat %>%
   filter(LifeStage == "Larva" &
          ExposureType == "Food" & 
          Endpoint == "LD50") %>%
   group_by(ai) %>%
-  mutate(checkAI = any(grepl("AI|ae", ToxUnit)),
-         hasAI = grepl("AI|ae", ToxUnit)) %>%
+  mutate(checkAI = any(grepl("AI|ai|ae", ToxUnit)),
+         hasAI = grepl("AI|ai|ae", ToxUnit)) %>%
   group_by(ai, hasAI) %>%
-  mutate(min.d.grp = min(abs(3 - ObservedDuration.d) + 3, na.rm = TRUE)) %>%
+  mutate(min.d.grp = min(abs(3 - ObservedDuration.d) + 3, 
+                         na.rm = TRUE)) %>%
   filter(case_when(checkAI == TRUE ~ 
                      hasAI == TRUE & ObservedDuration.d == min.d.grp,
                    checkAI == FALSE ~
@@ -228,19 +244,23 @@ LarvaOralLD50.summary <- AgroTrak.LarvaOralLD50.Rank %>%
   rename("missing Tox value" = `FALSE`,
          "Tox value present" = `TRUE`)
 ```
+```{r, warning = FALSE, message = FALSE}
+LarvaOralLD50.summary
+```
 
 ## Larval Oral NOEL
 
-```{r, warning = FALSE, message = FALSE}
+```{r, warning = FALSE, message = FALSE, results = 'hide'}
 LarvaOralNOEL <- ecotox.dat %>%
   filter(LifeStage == "Larva" &
          ExposureType == "Food" & 
          Endpoint == "NOEL") %>%
   group_by(ai) %>%
-  mutate(checkAI = any(grepl("AI|ae", ToxUnit)),
-         hasAI = grepl("AI|ae", ToxUnit)) %>%
+  mutate(checkAI = any(grepl("AI|ai|ae", ToxUnit)),
+         hasAI = grepl("AI|ai|ae", ToxUnit)) %>%
   group_by(ai, hasAI) %>%
-  mutate(min.d.grp = min(abs(22 - ObservedDuration.d) + 22, na.rm = TRUE)) %>%
+  mutate(min.d.grp = min(abs(22 - ObservedDuration.d) + 22, 
+                         na.rm = TRUE)) %>%
   filter(case_when(checkAI == TRUE ~ 
                      hasAI == TRUE & ObservedDuration.d == min.d.grp,
                    checkAI == FALSE ~
@@ -269,47 +289,205 @@ LarvaOralNOEL.summary <- AgroTrak.LarvaOralNOEL.Rank %>%
   rename("missing Tox value" = `FALSE`,
          "Tox value present" = `TRUE`)
 ```
-
-# Summary of tox data as percentage of pesticide volume:
-```{r}
-AdultContactLD50.summary
-AdultOralLD50.summary
-AdultOralNOEL.summary
-LarvaOralLD50.summary
+```{r, warning = FALSE, message = FALSE}
 LarvaOralNOEL.summary
 ```
 
+# Analysis of Adult Contact LD50 RQs for Corn & Soybean
+
 ```{r, include = FALSE}
-CornSoyUseTox.dat <- AgroTrak.CornSoy.dat %>%
-  left_join(srcTab) %>%
-  select(-inEcoTox, -inManualAdd) %>%
-  left_join(ecotox.dat) %>%
-  filter(!grepl("food", ToxUnit))
-glimpse(CornSoyUseTox.dat)
+CornSoyAdultContact.dat <- AgroTrak.CornSoy.dat %>%
+  left_join(AdultContactLD50) %>%
+  mutate(Year = as.numeric(Year),
+    lbs.acre = Volume.lbs / Base.Area.Treated,
+    BeeREX.RQ = Volume.lbs * 2.7 / ObsRespMean,
+    BeeREX.RQ.acre = lbs.acre * 2.7 / ObsRespMean) %>%
+  group_by(Crop, Year, Type) %>%
+  mutate(totalVol = sum(Volume.lbs, na.rm = TRUE),
+         totalRQ = sum(BeeREX.RQ, na.rm = TRUE)) %>%
+  ungroup() %>%
+  mutate(Volume.pctOfType = Volume.lbs / totalVol * 100,
+         RQ.pctOfType = BeeREX.RQ / totalRQ * 100) %>%
+  select(-totalVol, -totalRQ)
+glimpse(CornSoyAdultContact.dat)
+```
 
+List of active ingredients that made up greater than 1% of a group's volume in any single year but has no adult dermal LD50 value:
 
+```{r}
+CornSoyAdultContact.dat %>%
+  filter(is.na(RQ.pctOfType) & Volume.pctOfType > 1) %>%
+  distinct(Type, ai) %>%
+  arrange(Type)
 ```
 
 ```{r, include = FALSE}
-playdat1 <- data.frame(
-  tox = c("AI ug/org", "ug/org", "ug/bee", "ae ug/org"),
-  obsD = c(3, 2, 2, 6)
-)
-playdat0 <- data.frame(
-  tox = c("ug/org", "ug/org", "ug/bee", "ug/org"),
-  obsD = c(3, 2, 2, 6)
-)
+CornSoyAdultContact.YearSums <- CornSoyAdultContact.dat %>%
+  group_by(Crop, Year, Type) %>%
+  summarize(Volume.lbs = sum(Volume.lbs, na.rm = TRUE),
+            Volume.acre = mean(lbs.acre, na.rm = TRUE),
+            RQ = sum(BeeREX.RQ, na.rm = TRUE),
+            RQ.Acre = sum(BeeREX.RQ.acre, na.rm = TRUE))
+glimpse(CornSoyAdultContact.YearSums)
 
-playdat0 %>%
-  mutate(checkAI = any(grepl("AI|ae", tox)),
-         hasAI = grepl("AI|ae", tox)) %>%
-  group_by(hasAI) %>%
-  mutate(asdf = min(obsD, na.rm = TRUE)) %>%
-  filter(case_when(checkAI == TRUE ~ 
-                     hasAI == TRUE & obsD == asdf,
-                   checkAI == FALSE ~
-                     obsD == asdf)) %>%
-  ungroup() %>%
-  select(-checkAI, -hasAI, -asdf) 
+plotA <- ggplot(CornSoyAdultContact.YearSums, 
+       aes(x = Year, y = Volume.lbs)) +
+  geom_point(aes(color = Type, shape = Type), alpha = .5) +
+  stat_smooth(aes(color = Type), se = FALSE, span = .9) +
+  facet_grid(. ~ Crop) +
+  cowplot::theme_minimal_hgrid() +
+  theme(legend.title = element_blank()) +
+  ylab("Total Volume\n(lbs)")
 
+plotB <- ggplot(CornSoyAdultContact.YearSums, 
+       aes(x = Year, y = Volume.acre)) +
+  geom_point(aes(color = Type, shape = Type), alpha = .5) +
+  stat_smooth(aes(color = Type), se = FALSE, span = .9) +
+  facet_grid(. ~ Crop) +
+  cowplot::theme_minimal_hgrid() +
+  theme(legend.title = element_blank()) +
+  ylab("Volume per Treated\nAcre (lbs)")
+
+plotC <- ggplot(CornSoyAdultContact.YearSums, 
+       aes(x = Year, y = RQ)) +
+  geom_point(aes(color = Type, shape = Type), alpha = .5) +
+  stat_smooth(aes(color = Type), se = FALSE, span = .9) +
+  facet_grid(. ~ Crop) +
+  cowplot::theme_minimal_hgrid() +
+  theme(legend.title = element_blank()) +
+  ylab("Total Honey Bee RQ")
+
+plotD <- ggplot(CornSoyAdultContact.YearSums, 
+       aes(x = Year, y = RQ.Acre)) +
+  geom_point(aes(color = Type, shape = Type), alpha = .5) +
+  stat_smooth(aes(color = Type), se = FALSE, span = 1.2) +
+  facet_grid(. ~ Crop) +
+  cowplot::theme_minimal_hgrid() +
+  theme(legend.title = element_blank()) +
+  ylab("Total Honey Bee RQ\nper Treated Acre")
+
+cowplot::plot_grid(plotA, plotB, plotC, plotD,
+                   ncol = 1, 
+                   align = "v") -> plot.4panel
+ggsave("Plot_4Panel-CornSoy.png", plot.4panel,
+       width = 7, height = 10, units = "in", dpi = 600)
+
+plotC.sep <- plotC +
+  facet_grid(Type ~ Crop, scales = "free_y") +
+  theme(legend.position = "none") +
+  ylim(c(0,NA))
+plotD.sep <- plotD +
+  facet_grid(Type ~ Crop, scales = "free_y") +
+  theme(legend.position = "none") +
+  ylim(c(0,NA))
+
+cowplot::plot_grid(plotC.sep, plotD.sep, 
+          nrow = 1,
+          align = "h") -> plotFacets
+ggsave("Plot_RQ-CornSoy.png", plotFacets,
+       width = 10, height = 7, units = "in", dpi = 600)
+
+```
+
+# Figures
+
+**Total pesticide volume applied.**
+
+```{r, echo = FALSE, warning = FALSE, message = FALSE, fig.width = 7, fig.height = 2.5}
+plotA
+```
+
+---
+
+**Pesticide volume applied per treated acre.**
+
+```{r, echo = FALSE, warning = FALSE, message = FALSE, fig.width = 7, fig.height = 2.5}
+plotB
+```
+
+---
+
+**Summed honey bee risk quotient values for all pesticides.**
+
+```{r, echo = FALSE, warning = FALSE, message = FALSE, fig.width = 7, fig.height = 2.5}
+plotC
+```
+
+---
+
+**Summed honey bee risk quotient values per treated acre.**
+
+```{r, echo = FALSE, warning = FALSE, message = FALSE, fig.width = 7, fig.height = 2.5}
+plotD
+```
+
+---
+
+**Same RQ plots, faceted & scaled to see fungicide & herbicide trends.**
+
+```{r, echo = FALSE, warning = FALSE, message = FALSE, fig.width = 5, fig.height = 5}
+plotC.sep + geom_hline(yintercept = 0)
+plotD.sep + geom_hline(yintercept = 0)
+```
+
+---
+
+# Next steps:
+
+* Since Adult Contact LD50 is the only tox group with sufficient data to evaluate overall trends, we should focus on that.
+  * Determine if we can find any additional missing tox data for this endpoint.
+  * Look at proportion of total RQ contributed by each pesticide to identify largest contributors.
+  * Look back in AgroTrak data to determine if there are obvious pests driving use of those products - thos seem like targets for non-chemical management research. 
+  
+---
+
+```{r, include = FALSE}
+glimpse(CornSoyAdultContact.dat)
+
+CornSoyAdultContact.post2005 <- CornSoyAdultContact.dat %>%
+  filter(Year > 2005) %>%
+  group_by(Crop, Type, ai) %>%
+  summarize(VolumeContrib = round(mean(Volume.pctOfType, na.rm = TRUE), 1),
+            RQContrib = round(mean(RQ.pctOfType, na.rm = TRUE),1)) %>%
+  mutate(Diff.11 = RQContrib - VolumeContrib) %>%
+  arrange(-Diff.11)
+```
+
+## Insecticides used since 2005:
+
+```{r, echo = FALSE, fig.width = 7, fig.height = 3, warning = FALSE}
+jkl <- ggplot(CornSoyAdultContact.post2005 %>% 
+         filter(Type == "Insecticide"),
+       aes(x = VolumeContrib, y = RQContrib, text = ai)) +
+  facet_grid(Type ~ Crop) +
+  geom_abline(intercept = 0, slope = 1, color = "blue") +
+  geom_point(aes(size = RQContrib, 
+                 color = abs(Diff.11) < 5), 
+             alpha = 0.3) +
+  ylab("") +
+  xlab("") +
+  cowplot::theme_minimal_grid() +
+  theme(legend.position = "none")
+
+ggplotly(jkl, tooltip = "text") %>%
+  layout(xaxis = list(title = "Volume Contribution (%)"),
+         yaxis = list(title = "RQ Contribution (%)"))
+```
+
+---
+
+### Corn Insecticides:
+
+```{r, echo = FALSE}
+knitr::kable(
+CornSoyAdultContact.post2005 %>%
+  filter(Crop == "Corn", Type == "Insecticide"))
+```
+
+### Soybean Insecticides:
+
+```{r, echo = FALSE}
+knitr::kable(
+CornSoyAdultContact.post2005 %>%
+  filter(Crop == "Soybeans", Type == "Insecticide"))
 ```
