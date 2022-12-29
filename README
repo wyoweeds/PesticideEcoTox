@@ -1,7 +1,9 @@
 Pesticide ecotoxicity project.
 
+This repository is a work in progress. **All data, figures, and code hosted here should be considered DRAFT, and may have substantive errors or inaccuracies.**
+
 FILES:
 * BeeREX.Rmd is an R implementation of the BeeREX model.
-* BeeRexInputValues-test1.csv CSV file with test variables for previous Rmd file.
-* PesticideBeeTox.R - code to analyze pesticide use data. This code will not run without the AgroTrak data file, which is not housed on Github. 
+* PesticideBeeTox.Rmd - Rmarkdown file containing latest (hopefully functional) code to analyze pesticide use and bee toxicity data. This code will not run without the pesticide use data file, which is not housed on Github.
+* PesticideBeeTox.html - knitted file containing current version of the analysis.
 
