@@ -133,7 +133,7 @@ CornSoyAdultContact.dat <- AgroTrak.CornSoy.dat %>%
 glimpse(CornSoyAdultContact.dat)
 ```
 
-List of active ingredients that made up greater than 1% of a group's volume in any single year but has no adult dermal LD50 value:
+List of active ingredients that made up greater than 1% of a group's volume in any single year but have no adult dermal LD50 value:
 
 ```{r}
 CornSoyAdultContact.dat %>%

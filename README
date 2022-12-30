@@ -7,5 +7,5 @@ FILES:
 * PesticideBeeTox.Rmd - Rmarkdown file containing latest (hopefully functional) code to analyze pesticide use and bee toxicity data. This code will not run without the pesticide use data file, which is not housed on Github.
 * PesticideBeeTox.html - knitted file containing current version of the analysis.
 
-[Click here to see the most recent HTML analysis file.](https://wyoweeds.github.io/PesticideEcoTox/PesticideBeeTox.html)
+View the most recent HTML analysis file: https://wyoweeds.github.io/PesticideEcoTox/PesticideBeeTox.html
 
