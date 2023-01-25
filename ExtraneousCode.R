@@ -178,3 +178,62 @@ LarvaOralNOEL.summary <- AgroTrak.LarvaOralNOEL.Rank %>%
 ```{r, warning = FALSE, message = FALSE}
 LarvaOralNOEL.summary
 ```
+
+
+## Insecticides used since 2005:
+
+```{r, echo = FALSE, fig.width = 7, fig.height = 3, warning = FALSE}
+jkl <- ggplot(CornSoyAdultContact.post2005 %>% 
+                filter(Type == "Insecticide"),
+              aes(x = VolumeContrib, y = RQContrib, text = ai)) +
+  facet_grid(Type ~ Crop) +
+  geom_abline(intercept = 0, slope = 1, color = "blue") +
+  geom_point(aes(size = RQContrib, 
+                 color = abs(Diff.11) < 5), 
+             alpha = 0.3) +
+  ylab("") +
+  xlab("") +
+  cowplot::theme_minimal_grid() +
+  theme(legend.position = "none")
+
+ggplotly(jkl, tooltip = "text") %>%
+  layout(xaxis = list(title = "Volume Contribution (%)"),
+         yaxis = list(title = "RQ Contribution (%)"))
+```
+
+---
+  
+  ### Corn Insecticides:
+  
+  ```{r, echo = FALSE}
+knitr::kable(
+  CornSoyAdultContact.post2005 %>%
+    filter(Crop == "Corn", Type == "Insecticide"))
+```
+
+### Soybean Insecticides:
+
+```{r, echo = FALSE}
+knitr::kable(
+  CornSoyAdultContact.post2005 %>%
+    filter(Crop == "Soybeans", Type == "Insecticide"))
+```
+
+AgroTrak.SoyPest.dat %>%
+  mutate(Active.Ingredient = factor(Active.Ingredient,
+                                    levels = soy.aiOrder$Active.Ingredient)) %>%
+  group_by(Active.Ingredient, Pest) %>%
+  summarize(Base.Area.Treated = mean(Base.Area.Treated, na.rm = TRUE)/1000,
+            BeeREX.RQ = mean(BeeREX.RQ, na.rm = TRUE)) %>%
+  group_by(Active.Ingredient) %>%
+  filter(Pest != "No Answer Insect") %>%
+  slice_max(Base.Area.Treated, n = 10) %>%
+  ggplot(aes(x = Base.Area.Treated, 
+             y = reorder_within(Pest, Base.Area.Treated, Active.Ingredient))) +
+  scale_y_reordered() +
+  #scale_x_continuous(limits = c(0, NA)) +
+  facet_wrap(~ Active.Ingredient, scales = "free", ncol = 2) +
+  geom_point() +
+  xlab("Annual base acres treated (thousands)") +
+  ylab(element_blank())
+ggsave("SoybeanPestTargets.png", width = 12, height = 12, units = "in", dpi = 300)
