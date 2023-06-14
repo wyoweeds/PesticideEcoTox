@@ -4,8 +4,10 @@ This repository is a work in progress. **All data, figures, and code hosted here
 
 FILES:
 * BeeREX.Rmd is an R implementation of the BeeREX model.
-* PesticideBeeTox.Rmd - Rmarkdown file containing latest (hopefully functional) code to analyze pesticide use and bee toxicity data. This code will not run without the pesticide use data file, which is not housed on Github.
-* PesticideBeeTox.html - knitted file containing current version of the analysis.
+* PesticideBeeTox.Rmd - Rmarkdown file containing latest (hopefully functional) code to analyze pesticide use and bee toxicity data. This code will not run without the pesticide use data file, which contains proprietary data and is not housed on Github.
+* PesticideBeeTox.html - knitted file containing the most recent functional version of the analysis.
+* finalToxData.csv - file containing the honey bee adult acute contact LD50 values used in the risk quotient calculations. These data were combined from ECOTOX and other sources.
+* testData.R - is a scratch file to test and debug code.
 
 View the most recent HTML analysis file: https://wyoweeds.github.io/PesticideEcoTox/PesticideBeeTox.html
 
