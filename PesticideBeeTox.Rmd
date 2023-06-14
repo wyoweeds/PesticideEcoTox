@@ -209,14 +209,54 @@ RQ.summary <- AgroTrak.ecotox %>%
   summarize(RQ = sum(RQ, na.rm = TRUE)/1000000) %>%
   group_by(Crop) %>% 
   mutate(cropRQ = sum(RQ),
-         cropRQ.pct = signif(RQ / cropRQ*100, 2)) %>%
-  select(-cropRQ)
+         cropRQ.pct = signif(RQ / cropRQ*100, 2))
+
+RQ.cropTotals <- RQ.summary %>% 
+  group_by(Crop) %>% 
+  summarize(cropRQ = unique(cropRQ)) %>%
+  pivot_wider(names_from = Crop, values_from = cropRQ) %>%
+  mutate(propDiff = Corn / Soybeans)
+
+cropType.summary <- RQ.summary %>% 
+  group_by(Crop, Type) %>%
+  summarize(cropRQ.pct = sum(cropRQ.pct))
 ```
 
-Pesticide use data were separated into pesticides applied before crop emergence (PRE) and pesticides applied after crop emergence (POST). For each ai applied to each crop in each year, the volume applied was divided by the $LD_{50}$ to derive a risk quotient (RQ). 
-```{r, echo = FALSE, warning = FALSE, message = FALSE}
+Pesticide use data were separated into pesticides applied before crop emergence (PRE) and pesticides applied after crop emergence (POST). For each ai applied to each crop in each year, the volume applied $P_{vol}$ in kg was divided by the acute contact $LD_{50}$ for adult honey bees expressed in $\mu$g / bee to derive a risk quotient (RQ). [this was also divided by 1 million solely to make numbers easier to read in the figs... probably need to discuss that choice.]
+
+$$RQ = (\frac{P_{vol}}{LD_{50}}) * 10^{-6}$$
+
+```{r, echo = FALSE, warning = FALSE, message = FALSE, fig.width = 8, fig.height = 3, fig.cap = "**Figure 1. Summed honey bee RQ applied to corn or soybean during the period 1998 through 2020 by pesticide type and application timing.**"}
+ggplot(RQ.summary, 
+       aes(x = RQ, y = Type)) +
+  facet_grid(Crop ~ Timing) + 
+  geom_bar(stat = "identity",
+           aes(fill = Crop)) +
+  ylab(element_blank()) +
+  xlab("Honeybee acute RQ") +
+  theme_minimal_grid() +
+  theme(legend.position = "none")
+```
+
+* The summed honey bee RQ over all years was `r round(RQ.cropTotals$propDiff, 1)`-times greater in corn compared to soybean.  
+* `r cornTot <- RQ.summary %>% filter(Crop == "Corn" & Timing == "PRE") %>% summarize(a = sum(cropRQ.pct))
+round(cornTot[[2]])`% of the summed honey bee risk quotient applied to corn was applied *before* crop emergence, when relative risk to honey bees and many other pollinator species is expected to be lower. 
+* `r soyTot <- RQ.summary %>% filter(Crop == "Soybeans" & Timing == "POST") %>% summarize(a = sum(cropRQ.pct))
+round(soyTot[[2]])`% of the summed honey bee risk quotient applied to soybean was applied *after* crop emergence, when relative risk to honey bees and many other pollinator species is expected to be higher.
+* In corn, insecticides were responsible for `r corn.i <- cropType.summary %>% filter(Crop == "Corn" & Type == "Insecticide")
+corn.i[[3]]`% of the summed RQ, compared to `r corn.h <- cropType.summary %>% filter(Crop == "Corn" & Type == "Herbicide")
+corn.h[[3]]`% for herbicides, and `r corn.f <- cropType.summary %>% filter(Crop == "Corn" & Type == "Fungicide")
+corn.f[[3]]`% for fungicides.
+* In soybean, insecticides were responsible for `r soy.i <- cropType.summary %>% filter(Crop == "Soybeans" & Type == "Insecticide")
+soy.i[[3]]`% of the summed RQ, compared to `r soy.h <- cropType.summary %>% filter(Crop == "Soybeans" & Type == "Herbicide")
+soy.h[[3]]`% for herbicides, and `r soy.f <- cropType.summary %>% filter(Crop == "Soybeans" & Type == "Fungicide")
+soy.f[[3]]`% for fungicides.
+
+---
+
+```{r, include = FALSE, warning = FALSE, message = FALSE}
 options(scipen = 10)
-knitr::kable(RQ.summary %>%
+knitr::kable(RQ.summary %>% select(-cropRQ) %>%
                pivot_wider(id_cols = c(Type, Timing),
                            names_from = Crop,
                            values_from = cropRQ.pct) %>%
@@ -226,18 +266,6 @@ knitr::kable(RQ.summary %>%
 
 
 
-```{r, include = FALSE, warning = FALSE, message = FALSE, fig.width = 8, fig.height = 3, fig.cap = "**Figure 1**"}
-ggplot(RQ.summary, 
-       aes(x = RQ, y = Type)) +
-  facet_grid(Crop ~ Timing) + 
-  geom_bar(stat = "identity",
-           aes(fill = Crop)) +
-  ylab(element_blank()) +
-  xlab("Honeybee acute RQ") +
-  #theme_minimal_grid() +
-  theme_gray(base_size = 20) +
-  theme(legend.position = "none")
-```
 
 ```{r, echo = FALSE, warning = FALSE, message = FALSE}
 RQ.plot <- function(data = RQ.summary.yr, crop, timing, excludeType = "none") {
@@ -255,13 +283,13 @@ RQ.plot <- function(data = RQ.summary.yr, crop, timing, excludeType = "none") {
 }
 ```
 
-```{r, echo = FALSE, warning = FALSE, message = FALSE, fig.width = 8, fig.height = 6, fig.cap = "**Figure 1. Honey bee adult acute contact risk quotient for pesticides applied to corn or soybean *before* crop emergence.**"}
+```{r, echo = FALSE, warning = FALSE, message = FALSE, fig.width = 8, fig.height = 6, fig.cap = "**Figure 2. Honey bee adult acute contact risk quotient for pesticides applied to corn or soybean *before* crop emergence.**"}
 plot_grid(RQ.plot(crop = "Corn", timing = "PRE", excludeType = "Fungicide"),
           RQ.plot(crop = "Soybeans", timing = "PRE", excludeType = "Fungicide"),
           nrow = 1)
 ```
 
-```{r, echo = FALSE, warning = FALSE, message = FALSE, fig.width = 8, fig.height = 9, fig.cap = "**Figure 2. Honey bee adult acute contact risk quotient for pesticides applied to corn or soybean *after* crop emergence.**"}
+```{r, echo = FALSE, warning = FALSE, message = FALSE, fig.width = 8, fig.height = 9, fig.cap = "**Figure 3. Honey bee adult acute contact risk quotient for pesticides applied to corn or soybean *after* crop emergence.**"}
 plot_grid(RQ.plot(crop = "Corn", timing = "POST"),
           RQ.plot(crop = "Soybeans", timing = "POST"),
           nrow = 1)
