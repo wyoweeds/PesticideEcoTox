@@ -479,7 +479,8 @@ $$TI_{pest} = (P_{pest} / P_{total}) * (TI_{area.ai} / TI_{area.group})$$
 AgroTrak.PestToxIndex %>%
   filter(Type == "Insecticide" & 
            Timing == "POST" &
-           Crop == "Corn") %>%
+           Crop == "Corn" &
+           TaxonGroup != "Unknown" & !is.na(TaxonGroup)) %>%
   group_by(Crop, Year, TaxonGroup) %>%
   summarize(pestToxIndex.sum = sum(pestToxIndex, na.rm = TRUE)) %>%
   group_by(Crop, TaxonGroup) %>%
@@ -496,7 +497,8 @@ AgroTrak.PestToxIndex %>%
 AgroTrak.PestToxIndex %>%
   filter(Type == "Insecticide" & 
            Timing == "POST" &
-           Crop == "Soybeans") %>%
+           Crop == "Soybeans" &
+           TaxonGroup != "Unknown" & !is.na(TaxonGroup)) %>%
   group_by(Crop, Year, TaxonGroup) %>%
   summarize(pestToxIndex.sum = sum(pestToxIndex, na.rm = TRUE)) %>%
   group_by(Crop, TaxonGroup) %>%
