@@ -412,6 +412,43 @@ ToxIndex.post2015 %>%
 ```
 
 ```{r, include = FALSE}
+### I don't remember what I was going to do with this?
+```
+
+# Pest Index
+
+```{r, include = FALSE}
+## Currently only includes insects
+pestList <- read_excel("DATA/PestLists.xlsx",
+                       sheet = "PestList") %>%
+  select(Crop, Pest, TaxonGroup)
+
+AgroTrak.PestTiming.dat <- read_excel(
+  "DATA/US AgroTrak Chemical Use Timing and Pests.xlsx",
+  skip = 5) %>%
+  select(Year, Crop,
+         Timing0 = `Application Timing`,
+         Type = `Pesticide Type`,
+         Active.Ingredient = `Active Ingredient`,
+         Pest = Pests,
+         Volume.lbs = `AI volume\r\n(lb)`,
+         Base.Area.Treated = `Base Area Treated\r\n(acres)`,
+         Total.Area.Treated = `Total Area Treated\r\n(acres)`) %>%
+  mutate(Year = as.numeric(Year),
+         ai = str_replace_all(Active.Ingredient, " \\(.\\)", ""),
+         Timing = case_when(
+           Timing0 %in% c("At Planting", "Before Crop Emergence",
+                          "Last Fall", "Prior to Planting") ~ "PRE",
+           Timing0 %in% c("Early Post (Herbicides)", "Late Post (Herbicides)",
+                          "Postemergence (Non-Herbicides)",
+                          "Foliar atTasseling (Fungicides)", 
+                          "Foliar before Tasseling (Fungicides)") ~ "POST"),
+         Volume.kg = Volume.lbs * 454,
+         Treated.ha = Base.Area.Treated / 2.47,
+         AppRate.kgha = Volume.kg / Treated.ha) %>%
+  left_join(pestList)
+glimpse(AgroTrak.PestTiming.dat)
+
 groupToxIndex <- AgroTrak.ecotox %>%
   group_by(Year, Crop, Timing) %>%
   mutate(ToxIndex.groupSum = sum(ToxIndex.area, na.rm = TRUE),
@@ -419,4 +456,56 @@ groupToxIndex <- AgroTrak.ecotox %>%
   select(Year, Crop, Timing, ai, 
          ToxIndex.groupProp)
 glimpse(groupToxIndex)
+
+AgroTrak.PestToxIndex <- AgroTrak.PestTiming.dat %>%
+  left_join(groupToxIndex) %>% 
+  select(-Timing0) %>%
+  group_by(Year, Crop, Timing, ai) %>%
+  mutate(ai.pestVol = Volume.kg / sum(Volume.kg)) %>%
+  select(Year, Crop, Type, ai, Timing, Pest, TaxonGroup, 
+         ToxIndex.groupProp, ai.pestVol) %>%
+  ungroup() %>%
+  mutate(pestToxIndex = ToxIndex.groupProp * ai.pestVol)
+glimpse(AgroTrak.PestToxIndex)
+```
+
+A pesticide target toxicity index was calculated using the following formula
+For each active ingredient (applied in each year, crop, and timing), the volume applied targeting a particular pest was divided by the total volume of the active ingredient applied. This proportion was then multiplied by the proportion that active ingredient contributed to the area toxicity index $TI_{area}$.
+
+$$TI_{pest} = (P_{pest} / P_{total}) * (TI_{area.ai} / TI_{area.group})$$
+[this equation needs to be converted to sigma notation to be accurate....]
+
+```{r, echo = FALSE, warning = FALSE, message = FALSE, fig.width = 8, fig.height = 6, fig.cap = "**Figure 6. Contribution of insect pests to the honey bee adult acute contact toxicity index; corn pesticides applied *after* crop emergence, 1998-2020.**"}
+AgroTrak.PestToxIndex %>%
+  filter(Type == "Insecticide" & 
+           Timing == "POST" &
+           Crop == "Corn") %>%
+  group_by(Crop, Year, TaxonGroup) %>%
+  summarize(pestToxIndex.sum = sum(pestToxIndex, na.rm = TRUE)) %>%
+  group_by(Crop, TaxonGroup) %>%
+  mutate(taxonKeep = length(!is.na(pestToxIndex.sum)) > 4) %>%
+  filter(taxonKeep == TRUE) %>%
+  ggplot(aes(x = Year, y = pestToxIndex.sum)) +
+  geom_point() + stat_smooth(method = "lm", se = FALSE) +
+  facet_wrap(~ TaxonGroup) +
+  ggtitle("Corn POST Insecticide Targets") +
+  ylab("Total Pest Toxicity Index")
+```
+
+```{r, echo = FALSE, warning = FALSE, message = FALSE, fig.width = 8, fig.height = 6, fig.cap = "**Figure 7. Contribution of insect pests to the honey bee adult acute contact toxicity index; soybean pesticides applied *after* crop emergence, 1998-2020.**"}
+AgroTrak.PestToxIndex %>%
+  filter(Type == "Insecticide" & 
+           Timing == "POST" &
+           Crop == "Soybeans") %>%
+  group_by(Crop, Year, TaxonGroup) %>%
+  summarize(pestToxIndex.sum = sum(pestToxIndex, na.rm = TRUE)) %>%
+  group_by(Crop, TaxonGroup) %>%
+  mutate(taxonKeep = length(!is.na(pestToxIndex.sum)) > 4) %>%
+  filter(taxonKeep == TRUE) %>%
+  ggplot(aes(x = Year, y = pestToxIndex.sum)) +
+  geom_point() + stat_smooth(method = "lm", se = FALSE) +
+  facet_wrap(~ TaxonGroup) +
+  ggtitle("Soybean POST Insecticide Targets") +
+  ylab("Total Pest Toxicity Index")
+
 ```

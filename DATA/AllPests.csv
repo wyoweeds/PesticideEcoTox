@@ -1,0 +1,1534 @@
+Type,Crop,Pest
+Herbicide,Corn,"BROADLEAVES, ALL"
+Herbicide,Corn,BURNDOWN
+Herbicide,Corn,BUTTONWEED
+Herbicide,Corn,CLOVER
+Herbicide,Corn,COCKLEBUR
+Herbicide,Corn,CRABGRASS
+Herbicide,Corn,"CUCUMBER, WILD"
+Herbicide,Corn,DANDELION
+Herbicide,Corn,"DOCK, CURLY"
+Herbicide,Corn,EVENINGPRIMROSE
+Herbicide,Corn,FOXTAIL
+Herbicide,Corn,"FOXTAIL, GIANT"
+Herbicide,Corn,"FOXTAIL, GREEN"
+Herbicide,Corn,LAMBSQUARTERS
+Herbicide,Corn,MARESTAIL
+Herbicide,Corn,MILKWEED
+Herbicide,Corn,MORNINGGLORY
+Herbicide,Corn,"NIGHTSHADE, BLACK"
+Herbicide,Corn,"PIGWEED, REDROOT"
+Herbicide,Corn,RAGWEED
+Herbicide,Corn,"RAGWEED, GIANT"
+Herbicide,Corn,SHEPHERD'S-PURSE
+Herbicide,Corn,SICKLEPOD
+Herbicide,Corn,"SIDA, PRICKLY"
+Herbicide,Corn,SMARTWEED
+Herbicide,Corn,"SMARTWEED, PENNSYLVANIA"
+Herbicide,Corn,SPURGE
+Herbicide,Corn,SUNFLOWER
+Herbicide,Corn,THISTLE
+Herbicide,Corn,"THISTLE, CANADA"
+Herbicide,Corn,VELVETLEAF
+Herbicide,Corn,"WATERHEMP, COMMON"
+Herbicide,Corn,ALL WEEDS
+Herbicide,Corn,BARNYARDGRASS
+Herbicide,Corn,BEGGARTICKS
+Herbicide,Corn,"BINDWEED, FIELD"
+Herbicide,Corn,"BLUEGRASS, ANNUAL"
+Herbicide,Corn,BUFFALOBUR
+Herbicide,Corn,BURCUCUMBER
+Herbicide,Corn,"COCKLE, CORN"
+Herbicide,Corn,COPPERLEAF
+Herbicide,Corn,"CORN, VOLUNTEER"
+Herbicide,Corn,"CRAZYWEED, LAMBERT"
+Herbicide,Corn,CUPGRASS
+Herbicide,Corn,"CUPGRASS, WOOLLY"
+Herbicide,Corn,"CUTGRASS, RICE"
+Herbicide,Corn,DEVIL'S-CLAW
+Herbicide,Corn,"FOXTAIL, YELLOW"
+Herbicide,Corn,"GRASSES, ALL"
+Herbicide,Corn,HORSEWEED
+Herbicide,Corn,JIMSONWEED
+Herbicide,Corn,JOHNSONGRASS
+Herbicide,Corn,KNAPWEED
+Herbicide,Corn,KNOTWEED
+Herbicide,Corn,KOCHIA
+Herbicide,Corn,"MILLET, WILD-PROSO"
+Herbicide,Corn,"MULLEIN, TURKEY"
+Herbicide,Corn,"NIGHTSHADE,  AMERICAN BLACK"
+Herbicide,Corn,No Answer Weed
+Herbicide,Corn,NUTSEDGE
+Herbicide,Corn,"NUTSEDGE, YELLOW"
+Herbicide,Corn,PANICUM
+Herbicide,Corn,"PANICUM, FALL"
+Herbicide,Corn,"PANICUM, TEXAS"
+Herbicide,Corn,PARAGRASS
+Herbicide,Corn,PEPPERWEED
+Herbicide,Corn,QUACKGRASS
+Herbicide,Corn,SANDBUR
+Herbicide,Corn,SHATTERCANE
+Herbicide,Corn,SICKLEGRASS
+Herbicide,Corn,"SIGNALGRASS, BROADLEAF"
+Herbicide,Corn,"SUNFLOWER, VOLUNTEER"
+Herbicide,Corn,"THISTLE, RUSSIAN"
+Herbicide,Corn,WATERGRASS
+Herbicide,Corn,"WATERHEMP, TALL"
+Herbicide,Corn,BUFFALOGRASS
+Herbicide,Corn,CHEAT
+Herbicide,Corn,CROWFOOTGRASS
+Herbicide,Corn,ECLIPTA
+Herbicide,Corn,FIELDCRESS
+Herbicide,Corn,FIREWEED
+Herbicide,Corn,"MUHLY, WIRESTEM"
+Herbicide,Corn,"MUSTARD, WILD"
+Herbicide,Corn,"OAT, WILD"
+Herbicide,Corn,"SESBANIA, HEMP"
+Herbicide,Corn,"ALFALFA, VOLUNTEER"
+Herbicide,Corn,ALGAE
+Herbicide,Corn,BULLNETTLE
+Herbicide,Corn,CORNFLOWER
+Herbicide,Corn,"CROTON, WOOLLY"
+Herbicide,Corn,CUTGRASS
+Herbicide,Corn,DOGBANE
+Herbicide,Corn,FESCUE
+Herbicide,Corn,GOOSEGRASS
+Herbicide,Corn,GORSE
+Herbicide,Corn,GUINEAGRASS
+Herbicide,Corn,GUMWEED
+Herbicide,Corn,HENBIT
+Herbicide,Corn,HONEYSUCKLE
+Herbicide,Corn,INDIGO
+Herbicide,Corn,"MARIGOLD, DWARF"
+Herbicide,Corn,MONEYWORT
+Herbicide,Corn,"MORNINGGLORY, BIGROOT"
+Herbicide,Corn,NETTLE
+Herbicide,Corn,"NIGHTSHADE, PURPLE"
+Herbicide,Corn,"ONION, WILD"
+Herbicide,Corn,ORCHARDGRASS
+Herbicide,Corn,PARSLEY
+Herbicide,Corn,"PASPALUM, SOUR"
+Herbicide,Corn,PURSLANE
+Herbicide,Corn,"RADISH, WILD"
+Herbicide,Corn,"RAGWORT, TANSY"
+Herbicide,Corn,REDWEED
+Herbicide,Corn,"RICE, RED"
+Herbicide,Corn,RYEGRASS
+Herbicide,Corn,SAGE
+Herbicide,Corn,STARTHISTLE
+Herbicide,Corn,TRUMPETCREEPER
+Herbicide,Corn,"VELVETGRASS, COMMON"
+Herbicide,Corn,VINE
+Herbicide,Corn,"WHEAT, VOLUNTEER"
+Herbicide,Corn,WHEATGRASS
+Herbicide,Corn,BEGGARWEED
+Herbicide,Corn,"BURDOCK, COMMON"
+Herbicide,Corn,COGONGRASS
+Herbicide,Corn,"PLANTAIN, BROADLEAF"
+Herbicide,Corn,BERMUDAGRASS
+Herbicide,Corn,BLACKBERRY
+Herbicide,Corn,CHICKWEED
+Herbicide,Corn,DOGFENNEL
+Herbicide,Corn,"PANICUM, BROWNTOP"
+Herbicide,Corn,"BARLEY, WILD"
+Herbicide,Corn,BUTTERCUP
+Herbicide,Corn,TIMOTHY
+Herbicide,Corn,WINDGRASS
+Herbicide,Corn,POKEWEED
+Insecticide,Corn,CUTWORM
+Insecticide,Corn,"ROOTWORM, CORN"
+Insecticide,Corn,BEETLE
+Insecticide,Corn,GRUB
+Insecticide,Corn,"MAGGOT, SEED"
+Insecticide,Corn,APHID
+Insecticide,Corn,"BORER, CORNSTALK"
+Insecticide,Corn,"BORER, EUROPEAN CORN"
+Insecticide,Corn,"BUG, BILL"
+Insecticide,Corn,"BUG, CHINCH"
+Insecticide,Corn,"FRUITWORM, GREEN"
+Insecticide,Corn,"GRUB, JAPANESE BEETLE"
+Insecticide,Corn,MOTH
+Insecticide,Corn,No Answer Insect
+Insecticide,Corn,WIREWORM
+Insecticide,Corn,WORM
+Insecticide,Corn,"WORM, BOLL"
+Insecticide,Corn,"WORM, BUD"
+Insecticide,Corn,"WORM, CORN EAR"
+Insecticide,Corn,"BEETLE, CORN"
+Insecticide,Corn,"BEETLE, FLEA"
+Insecticide,Corn,BORER
+Insecticide,Corn,"CUTWORM, BLACK"
+Insecticide,Corn,"GRUB, WHITE"
+Insecticide,Corn,"ROOTWORM, WESTERN CORN"
+Insecticide,Corn,SLUG
+Insecticide,Corn,"WEEVIL, RICE WATER"
+Insecticide,Corn,"WEEVIL, ROOT"
+Insecticide,Corn,ALL INSECTS
+Insecticide,Corn,"ANT, FIRE"
+Insecticide,Corn,ARMYWORM
+Insecticide,Corn,"ARMYWORM, BEET"
+Insecticide,Corn,"BEETLE, LADY"
+Insecticide,Corn,"BEETLE, SEEDCORN"
+Insecticide,Corn,"BORER, CANE"
+Insecticide,Corn,BUG
+Insecticide,Corn,"BUG, PLANT"
+Insecticide,Corn,"BUG, SQUASH"
+Insecticide,Corn,CRAYFISH
+Insecticide,Corn,"FIREWORM, BLACKHEADED"
+Insecticide,Corn,GRASSHOPPER
+Insecticide,Corn,KATYDID
+Insecticide,Corn,LEAFMINER
+Insecticide,Corn,MAGGOT
+Insecticide,Corn,MIDGE
+Insecticide,Corn,"MITE, SPIDER"
+Insecticide,Corn,"ROOTWORM, NORTHERN CORN"
+Insecticide,Corn,"ROOTWORM, SOUTHERN CORN"
+Insecticide,Corn,SYMPHYLAN
+Insecticide,Corn,THRIP
+Insecticide,Corn,"THRIP, ONION"
+Insecticide,Corn,TIPWORM
+Insecticide,Corn,"WEBWORM, SOD"
+Insecticide,Corn,"WORM, BAG"
+Insecticide,Corn,"WORM, LEAF"
+Insecticide,Corn,"WORM, REDNECKED PEANUT"
+Insecticide,Corn,LEAFHOPPER
+Insecticide,Corn,PODWORM
+Insecticide,Corn,"WORM, SPLIT"
+Insecticide,Corn,"BORER, SOUTHWESTERN CORN"
+Insecticide,Corn,"APHID, APPLE"
+Insecticide,Corn,"BILLBUG, BLUEGRASS"
+Insecticide,Corn,"BEETLE, JAPANESE"
+Insecticide,Corn,"BORER, COMMON STALK"
+Insecticide,Corn,"BORER, TWIG"
+Insecticide,Corn,LARVAE
+Insecticide,Corn,"MOTH, SUNFLOWER"
+Insecticide,Corn,LICE
+Insecticide,Corn,"MAGGOT, ROOT"
+Insecticide,Corn,"APHID, ROOT"
+Insecticide,Corn,"BEETLE, DARKLING GROUND"
+Insecticide,Corn,FLY
+Insecticide,Corn,"FLY, HUSK"
+Insecticide,Corn,WEBWORM
+Insecticide,Corn,WEEVIL
+Insecticide,Corn,ANT
+Insecticide,Corn,"APHID, CORN LEAF"
+Insecticide,Corn,"APHID, RUSSIAN WHEAT"
+Insecticide,Corn,"ARMYWORM, YELLOWSTRIPE"
+Insecticide,Corn,"BEETLE, MEXICAN BEAN"
+Insecticide,Corn,"BEETLE, SPOTTED CUCUMBER"
+Insecticide,Corn,"BORER, LESSER CORNSTALK"
+Insecticide,Corn,"BUG, STINK"
+Insecticide,Corn,"BUG, TARNISHED PLANT"
+Insecticide,Corn,PILLBUG
+Insecticide,Corn,SPIDER
+Insecticide,Corn,"WORM, HORN"
+Insecticide,Corn,"WORM, PIN"
+Herbicide,Corn,BALLOONVINE
+Herbicide,Corn,"BEAN, VOLUNTEER"
+Herbicide,Corn,"BURSAGE, WOOLLYLEAF"
+Herbicide,Corn,"GARLIC, WILD"
+Herbicide,Corn,MARIJUANA
+Herbicide,Corn,SMELLMELON
+Herbicide,Corn,"THISTLE, FLODMAN"
+Herbicide,Corn,"THISTLE, MUSK"
+Herbicide,Corn,Unidentified Weed
+Herbicide,Corn,"VETCH, HAIRY"
+Herbicide,Corn,BAHIAGRASS
+Herbicide,Corn,"BUCKWHEAT, WILD"
+Herbicide,Corn,"CUTGRASS, GIANT"
+Herbicide,Corn,"DOCK, SOUR"
+Herbicide,Corn,"MALLOW, COMMON"
+Herbicide,Corn,PENNYCRESS
+Herbicide,Corn,PENNYWORT
+Herbicide,Corn,"PIGWEED, TUMBLE"
+Herbicide,Corn,POISON-HEMLOCK
+Herbicide,Corn,SUMPWEED
+Herbicide,Corn,WATERHEMLOCK
+Herbicide,Corn,WHITETOP
+Herbicide,Corn,WITCHGRASS
+Herbicide,Corn,"YARROW, COMMON"
+Herbicide,Corn,"BROME, DOWNY"
+Herbicide,Corn,CEDAR
+Herbicide,Corn,FLEABANE
+Herbicide,Corn,PARTRIDGEPEA
+Herbicide,Corn,SAWGRASS
+Herbicide,Corn,SWITCHGRASS
+Herbicide,Corn,"WILDRYE, VIRGINIA"
+Herbicide,Corn,BLACKGRASS
+Herbicide,Corn,"CHAMOMILE, CORN"
+Herbicide,Corn,CITRONMELON
+Herbicide,Corn,"COPPERLEAF, VIRGINIA"
+Herbicide,Corn,"FLAX, VOLUNTEER"
+Herbicide,Corn,"GOATGRASS, JOINTED"
+Herbicide,Corn,GOLDENROD
+Herbicide,Corn,HAWKWEED
+Herbicide,Corn,HORSENETTLE
+Herbicide,Corn,IRONWEED
+Herbicide,Corn,ITCHGRASS
+Herbicide,Corn,KNOTGRASS
+Herbicide,Corn,MEXICANWEED
+Herbicide,Corn,"MUSTARD, BLACK"
+Herbicide,Corn,"OAT, VOLUNTEER"
+Herbicide,Corn,"PASPALUM, BULL"
+Herbicide,Corn,PEAVINE
+Herbicide,Corn,"PEPPERWEED, PERENNIAL"
+Herbicide,Corn,"PUSLEY, FLORIDA"
+Herbicide,Corn,"ROCKET, YELLOW"
+Herbicide,Corn,"SMARTWEED, SWAMP"
+Herbicide,Corn,TANSY
+Herbicide,Corn,"THISTLE, BULL"
+Herbicide,Corn,"TARO, WILD"
+Herbicide,Corn,WOODY BRUSH
+Herbicide,Corn,POISON-OAK
+Herbicide,Corn,"WINTERCRESS, EARLY"
+Herbicide,Corn,"HENBANE, BLACK"
+Herbicide,Corn,"MALLOW, VENICE"
+Herbicide,Corn,"NUTSEDGE, PURPLE"
+Herbicide,Corn,PLANTAIN
+Herbicide,Corn,TANSYMUSTARD
+Herbicide,Corn,"ADONIS, PHEASANTEYE"
+Herbicide,Corn,"BARLEY, FOXTAIL"
+Herbicide,Corn,BLUEWEED
+Herbicide,Corn,FOGFRUIT
+Herbicide,Corn,"MILLET, FOXTAIL"
+Insecticide,Corn,MITE
+Insecticide,Corn,"FLY, HORSE"
+Insecticide,Corn,"MITE, 2-SPOTTED"
+Insecticide,Corn,MEALYBUG
+Herbicide,Corn,"ARTICHOKE, JERUSALEM"
+Herbicide,Corn,"GALINSOGA, SMALLFLOWER"
+Herbicide,Corn,"BEGGARWEED, FLORIDA"
+Herbicide,Corn,"BLUESTEM, LITTLE"
+Herbicide,Corn,"CARROT, WILD"
+Herbicide,Corn,"CROTON, TROPIC"
+Herbicide,Corn,DALLISGRASS
+Herbicide,Corn,GALINSOGA
+Herbicide,Corn,HUCKLEBERRY
+Herbicide,Corn,PICKERELWEED
+Herbicide,Corn,"POINSETTIA, WILD"
+Herbicide,Corn,RESCUEGRASS
+Herbicide,Corn,"SENNA, COFFEE"
+Herbicide,Corn,"STARBUR, BRISTLY"
+Herbicide,Corn,TALLOWWEED
+Herbicide,Corn,TARWEED
+Herbicide,Corn,TEXASWEED
+Herbicide,Corn,"SPURRY, CORN"
+Herbicide,Corn,CALADIUM
+Herbicide,Corn,"GROMWELL, CORN"
+Herbicide,Corn,KUDZU
+Herbicide,Corn,LADYSTHUMB
+Herbicide,Corn,POISON-IVY
+Herbicide,Corn,POVERTYWEED
+Herbicide,Corn,"CANARYGRASS, REED"
+Herbicide,Corn,"SUMAC, SMOOTH"
+Herbicide,Corn,CHICORY
+Herbicide,Corn,BROME
+Herbicide,Corn,CANARYGRASS
+Herbicide,Corn,"BEAN, WILD PEA"
+Herbicide,Corn,BRIAR
+Herbicide,Corn,COPPERWEED
+Herbicide,Corn,DAISY
+Herbicide,Corn,"IVY, GROUND"
+Herbicide,Corn,SOWTHISTLE
+Herbicide,Corn,TREE
+Herbicide,Corn,"VINE, MILKWEED"
+Herbicide,Corn,CHOLLA
+Herbicide,Corn,BROOMWEED
+Herbicide,Corn,ALLIGATORWEED
+Herbicide,Corn,BEARDGRASS
+Herbicide,Corn,BELLFLOWER
+Herbicide,Corn,"BUCKWHEAT, TARTARY"
+Herbicide,Corn,"CAMPION, WHITE"
+Herbicide,Corn,CENTIPEDEGRASS
+Herbicide,Corn,COWCOCKLE
+Herbicide,Corn,CROTON
+Herbicide,Corn,CUDWEED
+Herbicide,Corn,"CUPGRASS, PRAIRIE"
+Herbicide,Corn,DOVEWEED
+Herbicide,Corn,DUCKWEED
+Herbicide,Corn,HAWTHORN
+Herbicide,Corn,ONIONGRASS
+Herbicide,Corn,"POPPY, FIELD"
+Herbicide,Corn,"SNEEZEWEED, BITTER"
+Herbicide,Corn,"SORGHUM, VOLUNTEER"
+Herbicide,Corn,SPANISHNEEDLES
+Herbicide,Corn,SPRANGLETOP
+Herbicide,Corn,STINKWEED
+Herbicide,Corn,WORMWOOD
+Herbicide,Corn,"SNAKEWEED, BROOM"
+Herbicide,Corn,ST. JOHNSWORT
+Herbicide,Corn,CROWNBEARD
+Herbicide,Corn,CAMPHORWEED
+Herbicide,Corn,GREENBRIAR
+Herbicide,Corn,LILY
+Herbicide,Corn,"STICKTIGHT, EUROPEAN"
+Herbicide,Corn,"ROSE, MULTIFLORA"
+Herbicide,Corn,BLACKEYED-SUSAN
+Herbicide,Corn,GOOSEFOOT
+Herbicide,Corn,PERIWINKLE
+Herbicide,Corn,"BARLEY, VOLUNTEER"
+Herbicide,Corn,SMUTGRASS
+Herbicide,Corn,"OAK, SHINNERY"
+Herbicide,Corn,"FESCUE, RED"
+Herbicide,Corn,HORSETAIL
+Herbicide,Corn,"KNAPWEED, RUSSIAN"
+Herbicide,Corn,"VERVAIN, BLUE"
+Herbicide,Corn,WATERPURSLANE
+Herbicide,Corn,CARPETWEED
+Insecticide,Corn,"MITE, BANKS GRASS"
+Insecticide,Corn,"MITE, GRASS"
+Insecticide,Corn,"LEAFHOPPER, POTATO"
+Insecticide,Corn,"APHID, BLACK"
+Insecticide,Corn,"CUTWORM, WESTERN BEAN"
+Insecticide,Corn,"BEETLE, LEAF"
+Insecticide,Corn,"MITE, EUROPEAN RED"
+Insecticide,Corn,"MITE, PACIFIC SPIDER"
+Insecticide,Corn,"MITE, RED SPIDER"
+Herbicide,Corn,"ACACIA, CATCLAW"
+Herbicide,Corn,GROUNDSEL
+Herbicide,Corn,BENTGRASS
+Herbicide,Corn,VASEYGRASS
+Herbicide,Corn,"BROME, RIPGUT"
+Herbicide,Corn,BROOMSEDGE
+Herbicide,Corn,COWPEA
+Herbicide,Corn,DICHONDRA
+Herbicide,Corn,LEADPLANT
+Herbicide,Corn,MINT
+Herbicide,Corn,POORJOE
+Herbicide,Corn,"POTATO, VOLUNTEER"
+Herbicide,Corn,STINKGRASS
+Herbicide,Corn,"CEREAL, VOLUNTEER"
+Herbicide,Corn,"EVERLASTING, PEARLY"
+Herbicide,Corn,NAPIERGRASS
+Herbicide,Corn,"ASPARAGUS, VOLUNTEER"
+Herbicide,Corn,VETCH
+Herbicide,Corn,TUMBLEGRASS
+Herbicide,Corn,ASTER
+Insecticide,Corn,CENTIPEDE
+Insecticide,Corn,"CUTWORM, CLIMBING"
+Herbicide,Soybeans,"BROADLEAVES, ALL"
+Herbicide,Soybeans,BURNDOWN
+Herbicide,Soybeans,BUTTONWEED
+Herbicide,Soybeans,COCKLEBUR
+Herbicide,Soybeans,"FOXTAIL, GIANT"
+Herbicide,Soybeans,"FOXTAIL, GREEN"
+Herbicide,Soybeans,"FOXTAIL, YELLOW"
+Herbicide,Soybeans,GROUNDSEL
+Herbicide,Soybeans,LAMBSQUARTERS
+Herbicide,Soybeans,QUACKGRASS
+Herbicide,Soybeans,RAGWEED
+Herbicide,Soybeans,"RAGWEED, GIANT"
+Herbicide,Soybeans,SMARTWEED
+Herbicide,Soybeans,STINKWEED
+Herbicide,Soybeans,"THISTLE, CANADA"
+Herbicide,Soybeans,MORNINGGLORY
+Herbicide,Soybeans,ALL WEEDS
+Herbicide,Soybeans,BARNYARDGRASS
+Herbicide,Soybeans,BLACKBERRY
+Herbicide,Soybeans,CRABGRASS
+Herbicide,Soybeans,CROWFOOTGRASS
+Herbicide,Soybeans,FOXTAIL
+Herbicide,Soybeans,"GRASSES, ALL"
+Herbicide,Soybeans,JOHNSONGRASS
+Herbicide,Soybeans,MARESTAIL
+Herbicide,Soybeans,"PANICUM, FALL"
+Herbicide,Soybeans,"PIGWEED, REDROOT"
+Herbicide,Soybeans,REDWEED
+Herbicide,Soybeans,SANDBUR
+Herbicide,Soybeans,SHATTERCANE
+Herbicide,Soybeans,"SIGNALGRASS, BROADLEAF"
+Herbicide,Soybeans,"SMARTWEED, PENNSYLVANIA"
+Herbicide,Soybeans,VELVETLEAF
+Herbicide,Soybeans,WATERGRASS
+Herbicide,Soybeans,"WATERHEMP, COMMON"
+Herbicide,Soybeans,BAHIAGRASS
+Herbicide,Soybeans,"DEADNETTLE, PURPLE"
+Herbicide,Soybeans,DOGBANE
+Herbicide,Soybeans,GUMWEED
+Herbicide,Soybeans,JIMSONWEED
+Herbicide,Soybeans,KOCHIA
+Herbicide,Soybeans,MILKWEED
+Herbicide,Soybeans,"MILLET, WILD-PROSO"
+Herbicide,Soybeans,"MUSTARD, WILD"
+Herbicide,Soybeans,NETTLE
+Herbicide,Soybeans,"NIGHTSHADE, BLACK"
+Herbicide,Soybeans,No Answer Weed
+Herbicide,Soybeans,NUTSEDGE
+Herbicide,Soybeans,"ONION, WILD"
+Herbicide,Soybeans,"PANICUM, TEXAS"
+Herbicide,Soybeans,"ROCKET, YELLOW"
+Herbicide,Soybeans,"SESBANIA, HEMP"
+Herbicide,Soybeans,SICKLEPOD
+Herbicide,Soybeans,"SIDA, PRICKLY"
+Herbicide,Soybeans,SUNFLOWER
+Herbicide,Soybeans,"TOBACCO, WILD"
+Herbicide,Soybeans,VINE
+Herbicide,Soybeans,"WATERHEMP, TALL"
+Herbicide,Soybeans,RYEGRASS
+Herbicide,Soybeans,BERMUDAGRASS
+Herbicide,Soybeans,"CUPGRASS, WOOLLY"
+Herbicide,Soybeans,ITCHGRASS
+Herbicide,Soybeans,"MALLOW, VENICE"
+Herbicide,Soybeans,"MULLEIN, TURKEY"
+Herbicide,Soybeans,SAGE
+Herbicide,Soybeans,TEXASWEED
+Herbicide,Soybeans,THISTLE
+Herbicide,Soybeans,BUFFALOBUR
+Herbicide,Soybeans,"NUTSEDGE, YELLOW"
+Herbicide,Soybeans,"RICE, RED"
+Herbicide,Soybeans,GOOSEFOOT
+Herbicide,Soybeans,"PLANTAIN, BROADLEAF"
+Herbicide,Soybeans,TRUMPETCREEPER
+Herbicide,Soybeans,"BINDWEED, FIELD"
+Herbicide,Soybeans,BLACKGRASS
+Herbicide,Soybeans,CLOVER
+Herbicide,Soybeans,COPPERLEAF
+Herbicide,Soybeans,"CUCUMBER, WILD"
+Herbicide,Soybeans,"DOCK, SOUR"
+Herbicide,Soybeans,GOOSEGRASS
+Herbicide,Soybeans,HORSEWEED
+Herbicide,Soybeans,HUCKLEBERRY
+Herbicide,Soybeans,KNOTGRASS
+Herbicide,Soybeans,MARIJUANA
+Herbicide,Soybeans,MEXICANWEED
+Herbicide,Soybeans,"NUTSEDGE, PURPLE"
+Herbicide,Soybeans,"PASPALUM, BULL"
+Herbicide,Soybeans,POKEWEED
+Herbicide,Soybeans,SICKLEGRASS
+Herbicide,Soybeans,BALLOONVINE
+Herbicide,Soybeans,"POINSETTIA, WILD"
+Herbicide,Soybeans,SUMPWEED
+Herbicide,Soybeans,"DOCK, CURLY"
+Herbicide,Soybeans,"MUHLY, WIRESTEM"
+Herbicide,Soybeans,"ADONIS, PHEASANTEYE"
+Herbicide,Soybeans,CUTGRASS
+Herbicide,Soybeans,DAYFLOWER
+Herbicide,Soybeans,GROUNDCHERRY
+Herbicide,Soybeans,PEAVINE
+Herbicide,Soybeans,FESCUE
+Herbicide,Soybeans,VETCH
+Herbicide,Soybeans,"BLUEGRASS, ANNUAL"
+Herbicide,Soybeans,"BURDOCK, COMMON"
+Herbicide,Soybeans,BEGGARTICKS
+Herbicide,Soybeans,"BUCKWHEAT, WILD"
+Herbicide,Soybeans,"BARLEY, FOXTAIL"
+Herbicide,Soybeans,"CORN, VOLUNTEER"
+Herbicide,Soybeans,HORSENETTLE
+Herbicide,Soybeans,INDIGO
+Herbicide,Soybeans,IRONWEED
+Herbicide,Soybeans,"SNEEZEWEED, BITTER"
+Herbicide,Soybeans,PLANTAIN
+Herbicide,Soybeans,"VELVETGRASS, COMMON"
+Herbicide,Soybeans,"WHEAT, VOLUNTEER"
+Herbicide,Soybeans,"OAT, WILD"
+Herbicide,Soybeans,PANICUM
+Herbicide,Soybeans,CROWNBEARD
+Herbicide,Soybeans,"JOINTVETCH, NORTHERN"
+Herbicide,Soybeans,ORCHARDGRASS
+Herbicide,Soybeans,"PIGWEED, TUMBLE"
+Herbicide,Soybeans,SOWTHISTLE
+Herbicide,Soybeans,"ANODA, SPURRED"
+Herbicide,Soybeans,BURCUCUMBER
+Herbicide,Soybeans,CHEAT
+Herbicide,Soybeans,DANDELION
+Herbicide,Soybeans,HENBIT
+Herbicide,Soybeans,IRIS
+Herbicide,Soybeans,"PASSIONFLOWER, MAYPOP"
+Herbicide,Soybeans,PENNYCRESS
+Herbicide,Soybeans,"VIOLET, FIELD"
+Herbicide,Soybeans,WATERMELON
+Herbicide,Soybeans,BELLFLOWER
+Herbicide,Soybeans,"BEAKRUSH, HORNED"
+Herbicide,Soybeans,CARPETWEED
+Herbicide,Soybeans,"COCKLE, CORN"
+Herbicide,Soybeans,CUPGRASS
+Herbicide,Soybeans,KNOTWEED
+Herbicide,Soybeans,LOVEGRASS
+Herbicide,Soybeans,PUNCTUREVINE
+Herbicide,Soybeans,"CARROT, WILD"
+Herbicide,Soybeans,"RADISH, WILD"
+Herbicide,Soybeans,"BROME, JAPANESE"
+Herbicide,Soybeans,WITCHGRASS
+Herbicide,Soybeans,BEARDGRASS
+Herbicide,Soybeans,BUCKBRUSH
+Herbicide,Soybeans,SHEPHERD'S-PURSE
+Herbicide,Soybeans,BUFFALOGRASS
+Herbicide,Soybeans,BULLNETTLE
+Herbicide,Soybeans,"BLUESTEM, LITTLE"
+Herbicide,Soybeans,PICKERELWEED
+Herbicide,Soybeans,SPRANGLETOP
+Herbicide,Soybeans,"CELERY, WILD"
+Herbicide,Soybeans,SMELLMELON
+Herbicide,Soybeans,SPURGE
+Herbicide,Soybeans,TANOAK
+Herbicide,Soybeans,OXALIS
+Herbicide,Soybeans,DUCKWEED
+Herbicide,Soybeans,HONEYSUCKLE
+Herbicide,Soybeans,"ALFALFA, VOLUNTEER"
+Herbicide,Soybeans,BROOMWEED
+Herbicide,Soybeans,CHICKWEED
+Herbicide,Soybeans,CITRONMELON
+Herbicide,Soybeans,"MILLET, BROWNTOP"
+Herbicide,Soybeans,REDSTEM
+Herbicide,Soybeans,SWITCHGRASS
+Herbicide,Soybeans,TIMOTHY
+Herbicide,Soybeans,BLACKEYED-SUSAN
+Herbicide,Soybeans,RESCUEGRASS
+Herbicide,Soybeans,"BARLEY, VOLUNTEER"
+Herbicide,Soybeans,"PLANTAIN, BUCKHORN"
+Herbicide,Soybeans,"PUSLEY, FLORIDA"
+Herbicide,Soybeans,MONEYWORT
+Herbicide,Soybeans,"MORNINGGLORY, BIGROOT"
+Herbicide,Soybeans,ALLIGATORWEED
+Herbicide,Soybeans,BEGGARWEED
+Herbicide,Soybeans,"COPPERLEAF, VIRGINIA"
+Herbicide,Soybeans,COPPERWEED
+Herbicide,Soybeans,GUINEAGRASS
+Herbicide,Soybeans,"MANNAGRASS, RATTLESNAKE"
+Herbicide,Soybeans,MARSHELDER
+Herbicide,Soybeans,OAK
+Herbicide,Soybeans,POORJOE
+Herbicide,Soybeans,"SUNFLOWER, VOLUNTEER"
+Herbicide,Soybeans,"THISTLE, RUSSIAN"
+Herbicide,Soybeans,"LETTUCE, TALL"
+Herbicide,Soybeans,PARTRIDGEPEA
+Herbicide,Soybeans,SALTGRASS
+Herbicide,Soybeans,TALLOWWEED
+Herbicide,Soybeans,"THISTLE, SCOTCH"
+Herbicide,Soybeans,WATERHEMLOCK
+Herbicide,Soybeans,"BEAN, WILD PEA"
+Herbicide,Soybeans,"BEGGARWEED, FLORIDA"
+Herbicide,Soybeans,"CAMPION, WHITE"
+Herbicide,Soybeans,DARNEL
+Herbicide,Soybeans,"RAPE, VOLUNTEER"
+Herbicide,Soybeans,"SUMAC, SMOOTH"
+Herbicide,Soybeans,Unidentified Weed
+Herbicide,Soybeans,"CUTGRASS, RICE"
+Herbicide,Soybeans,DALLISGRASS
+Herbicide,Soybeans,WOODY BRUSH
+Herbicide,Soybeans,"NIGHTSHADE,  AMERICAN BLACK"
+Herbicide,Soybeans,"FLAX, VOLUNTEER"
+Herbicide,Soybeans,COWPEA
+Herbicide,Soybeans,DOGFENNEL
+Herbicide,Soybeans,SEDGE
+Herbicide,Soybeans,"COPPERLEAF, HOPHORNBEAM"
+Herbicide,Soybeans,DODDER
+Herbicide,Soybeans,"ARTICHOKE, JERUSALEM"
+Herbicide,Soybeans,BALSAMAPPLE
+Herbicide,Soybeans,"BEAN, VOLUNTEER"
+Herbicide,Soybeans,BROME
+Herbicide,Soybeans,"BURSAGE, WOOLLYLEAF"
+Herbicide,Soybeans,BUTTERCUP
+Herbicide,Soybeans,CALADIUM
+Herbicide,Soybeans,CANARYGRASS
+Herbicide,Soybeans,"CANARYGRASS, REED"
+Herbicide,Soybeans,"CARAWAY, COMMON"
+Herbicide,Soybeans,CATTAIL
+Herbicide,Soybeans,"CRESS, HOARY"
+Herbicide,Soybeans,DEVIL'S-CLAW
+Herbicide,Soybeans,DOVEWEED
+Herbicide,Soybeans,FALSEFLAX
+Herbicide,Soybeans,FIREWEED
+Herbicide,Soybeans,FLIXWEED
+Herbicide,Soybeans,"GALINSOGA, SMALLFLOWER"
+Herbicide,Soybeans,"GOATGRASS, JOINTED"
+Herbicide,Soybeans,GROMWELL
+Herbicide,Soybeans,JUNIPER
+Herbicide,Soybeans,LARKSPUR
+Herbicide,Soybeans,LILY
+Herbicide,Soybeans,MAIDENCANE
+Herbicide,Soybeans,"NIGHTSHADE, PURPLE"
+Herbicide,Soybeans,"NIGHTSHADE, SILVERLEAF"
+Herbicide,Soybeans,"OAT, VOLUNTEER"
+Herbicide,Soybeans,PARAGRASS
+Herbicide,Soybeans,POISON-IVY
+Herbicide,Soybeans,"RAGWORT, TANSY"
+Herbicide,Soybeans,"SMARTWEED, SWAMP"
+Herbicide,Soybeans,SMUTGRASS
+Herbicide,Soybeans,ST. JOHNSWORT
+Herbicide,Soybeans,"TARO, WILD"
+Herbicide,Soybeans,TARWEED
+Herbicide,Soybeans,"THISTLE, BULL"
+Herbicide,Soybeans,"VINE, MILKWEED"
+Herbicide,Soybeans,"WAXMYRTLE, SOUTHERN"
+Herbicide,Soybeans,WHITETOP
+Herbicide,Soybeans,HAWKSBEARD
+Herbicide,Soybeans,"MALLOW, COMMON"
+Herbicide,Soybeans,"SCALESEED, SPREADING"
+Herbicide,Soybeans,ALKALIWEED
+Herbicide,Soybeans,"BUCKWHEAT, TARTARY"
+Herbicide,Soybeans,"NETTLE, STINGING"
+Herbicide,Soybeans,WORMWOOD
+Herbicide,Soybeans,"NIGHTSHADE, HAIRY"
+Herbicide,Soybeans,BRIAR
+Herbicide,Soybeans,"GARLIC, WILD"
+Herbicide,Soybeans,"HAWKWEED, YELLOW"
+Herbicide,Soybeans,"CUTGRASS, GIANT"
+Herbicide,Soybeans,TANSY
+Herbicide,Soybeans,BARBERRY
+Herbicide,Soybeans,"CRAZYWEED, LAMBERT"
+Herbicide,Soybeans,"FESCUE, TALL"
+Herbicide,Soybeans,"GERANIUM, DOVEFOOT"
+Herbicide,Soybeans,HORSETAIL
+Herbicide,Soybeans,"LETTUCE, PRICKLY"
+Herbicide,Soybeans,POISON-HEMLOCK
+Herbicide,Soybeans,"VERVAIN, BLUE"
+Herbicide,Soybeans,CAMPHORWEED
+Herbicide,Soybeans,VASEYGRASS
+Herbicide,Soybeans,"MARIGOLD, DWARF"
+Herbicide,Soybeans,MULLEIN
+Herbicide,Soybeans,"BARLEY, LITTLE"
+Herbicide,Soybeans,BRAMBLE
+Herbicide,Soybeans,CHINABERRY
+Herbicide,Soybeans,"ACACIA, CATCLAW"
+Herbicide,Soybeans,FIELDCRESS
+Herbicide,Soybeans,GOURD
+Herbicide,Soybeans,"MILLET, FOXTAIL"
+Herbicide,Soybeans,"OXTONGUE, BRISTLY"
+Herbicide,Corn,"WEEDS, ANNUAL"
+Herbicide,Corn,BALSAMAPPLE
+Herbicide,Corn,"GRASSES, ANNUAL"
+Herbicide,Corn,MUGWORT
+Herbicide,Corn,OXALIS
+Herbicide,Corn,"PIGWEED, SMOOTH"
+Herbicide,Corn,"BARLEY, LITTLE"
+Herbicide,Corn,DAYFLOWER
+Herbicide,Corn,SEDGE
+Herbicide,Corn,"VIOLET, FIELD"
+Herbicide,Corn,"GRASSES, PERENNIAL"
+Herbicide,Corn,SALTGRASS
+Herbicide,Corn,"AMARANTH, SPINY"
+Herbicide,Corn,BUCKBRUSH
+Herbicide,Corn,OAK
+Insecticide,Corn,"ARMYWORM, FALL"
+Insecticide,Corn,"ARMYWORM, SOUTHERN"
+Insecticide,Corn,"CRICKET, MOLE"
+Insecticide,Corn,"CATERPILLAR, ALFALFA"
+Insecticide,Corn,"HOPPER, THREECORNERED ALFALFA"
+Insecticide,Corn,NEMATODE
+Insecticide,Corn,"WEEVIL, ALFALFA"
+Insecticide,Corn,"BUG, GREEN STINK"
+Insecticide,Corn,GNAT
+Insecticide,Corn,GREENBUG
+Insecticide,Corn,"NEMATODE, LANCE"
+Insecticide,Corn,"NEMATODE, ROOT KNOT"
+Herbicide,Corn,"CHICKWEED, MOUSEEAR"
+Herbicide,Corn,"CRESS, HOARY"
+Herbicide,Corn,"GRASS, EASTERN GAMA"
+Herbicide,Corn,GROUNDCHERRY
+Herbicide,Corn,"MILLET, BROWNTOP"
+Herbicide,Corn,"MUSTARD, BLUE"
+Herbicide,Corn,"NETTLE, STINGING"
+Herbicide,Corn,AMARANTH
+Herbicide,Corn,"BROADLEAVES, ANNUAL"
+Herbicide,Corn,"BROADLEAVES, PERENNIAL"
+Herbicide,Corn,NEEDLEGRASS
+Herbicide,Corn,"PLANTAIN, BUCKHORN"
+Herbicide,Corn,REDTOP
+Herbicide,Corn,SASSAFRAS
+Herbicide,Corn,GOURD
+Herbicide,Corn,BULRUSH
+Herbicide,Corn,"MUSTARD, WALLFLOWER"
+Herbicide,Corn,FALSEFLAX
+Herbicide,Corn,GROMWELL
+Herbicide,Corn,"PENNYCRESS, FIELD"
+Insecticide,Corn,"BUG, LACE"
+Insecticide,Corn,CURCULIO
+Insecticide,Corn,"FLY, SILK"
+Insecticide,Corn,"WORM, CLOVER"
+Herbicide,Corn,ARROWHEAD
+Herbicide,Corn,"WEEDS, PERENNIAL"
+Herbicide,Corn,MARSHELDER
+Herbicide,Corn,PUNCTUREVINE
+Herbicide,Corn,BURSAGE
+Herbicide,Corn,ALKALIWEED
+Herbicide,Corn,LARKSPUR
+Herbicide,Corn,"LETTUCE, PRICKLY"
+Herbicide,Corn,"SAGE, LANCELEAF"
+Herbicide,Corn,SWINECRESS
+Herbicide,Corn,"NIGHTSHADE, HAIRY"
+Herbicide,Corn,PONDWEED
+Herbicide,Corn,WATERHYACINTH
+Herbicide,Corn,FLIXWEED
+Herbicide,Corn,CATTAIL
+Herbicide,Corn,DUCKSALAD
+Herbicide,Corn,"LETTUCE, TALL"
+Herbicide,Corn,"GOLDENROD, CANADA"
+Herbicide,Corn,CATCHFLY
+Herbicide,Corn,"DEWBERRY, SOUTHERN"
+Herbicide,Corn,"GERANIUM, DOVEFOOT"
+Herbicide,Corn,"AMMANNIA, PURPLE"
+Herbicide,Corn,"FESCUE, RATTAIL"
+Herbicide,Corn,"NIGHTSHADE, CUTLEAF"
+Herbicide,Corn,REDSTEM
+Herbicide,Soybeans,"GROMWELL, CORN"
+Herbicide,Soybeans,"GRASSES, ANNUAL"
+Herbicide,Soybeans,"HENBANE, BLACK"
+Herbicide,Soybeans,"WEEDS, ANNUAL"
+Herbicide,Soybeans,SPEEDWELL
+Herbicide,Soybeans,"BROME, DOWNY"
+Herbicide,Soybeans,CROTON
+Herbicide,Soybeans,COWCOCKLE
+Herbicide,Soybeans,DOLLARWEED
+Herbicide,Soybeans,"MUSTARD, BLUE"
+Herbicide,Soybeans,"CHAMOMILE, CORN"
+Herbicide,Soybeans,PRICKLYPEAR
+Herbicide,Soybeans,AGERATUM
+Herbicide,Soybeans,BLUEWEED
+Herbicide,Soybeans,"SORGHUM, VOLUNTEER"
+Herbicide,Soybeans,DICHONDRA
+Herbicide,Soybeans,"MOONFLOWER, PURPLE"
+Herbicide,Soybeans,"PIGWEED, SMOOTH"
+Herbicide,Soybeans,"BROADLEAVES, ANNUAL"
+Herbicide,Soybeans,"POTATO, VOLUNTEER"
+Herbicide,Soybeans,"STARBUR, BRISTLY"
+Herbicide,Soybeans,DAISY
+Herbicide,Soybeans,"IVY, GROUND"
+Herbicide,Soybeans,CHOLLA
+Herbicide,Soybeans,EVENINGPRIMROSE
+Herbicide,Soybeans,GOLDENROD
+Herbicide,Soybeans,"NIGHTSHADE, CUTLEAF"
+Herbicide,Soybeans,ONIONGRASS
+Herbicide,Soybeans,PARSLEY
+Herbicide,Soybeans,POVERTYWEED
+Herbicide,Soybeans,PURSLANE
+Herbicide,Soybeans,RABBITBRUSH
+Herbicide,Soybeans,"STICKTIGHT, EUROPEAN"
+Herbicide,Soybeans,"POPPY, FIELD"
+Herbicide,Soybeans,MINT
+Herbicide,Soybeans,"PASPALUM, SOUR"
+Herbicide,Soybeans,PONDWEED
+Herbicide,Soybeans,"MUSTARD, WALLFLOWER"
+Herbicide,Soybeans,PEPPERWEED
+Herbicide,Soybeans,"KNAPWEED, SPOTTED"
+Herbicide,Soybeans,"PEANUTS, VOLUNTEER"
+Herbicide,Soybeans,"CAMPION, MEADOW"
+Insecticide,Corn,"APHID, LEAF"
+Herbicide,Corn,"CAMPION, MEADOW"
+Herbicide,Corn,TORPEDOGRASS
+Insecticide,Corn,PREVENTATIVE PROGRAM
+Herbicide,Corn,"KNOTWEED, JAPANESE"
+Herbicide,Corn,"PEANUTS, VOLUNTEER"
+Herbicide,Corn,"AMARANTH, PALMER"
+Herbicide,Corn,SPIKEWEED
+Herbicide,Corn,DOCK
+Herbicide,Corn,"LOCO, WOOLLY"
+Herbicide,Corn,SORGHUM-ALMUM
+Herbicide,Corn,"NIGHTSHADE, SILVERLEAF"
+Insecticide,Corn,"MITE, BROWN"
+Insecticide,Corn,CRICKET
+Herbicide,Soybeans,HAWKWEED
+Herbicide,Soybeans,REDTOP
+Herbicide,Soybeans,"SPURGE, SPOTTED"
+Herbicide,Soybeans,"THISTLE, MUSK"
+Herbicide,Soybeans,"CROTON, TROPIC"
+Herbicide,Soybeans,REDVINE
+Herbicide,Soybeans,"AMARANTH, SPINY"
+Herbicide,Soybeans,WHEATGRASS
+Herbicide,Soybeans,"WEEDS, PERENNIAL"
+Herbicide,Soybeans,"GERANIUM, CAROLINA"
+Herbicide,Soybeans,PALMGRASS
+Herbicide,Soybeans,"CANOLA, VOLUNTEER"
+Herbicide,Soybeans,"AMARANTH, PALMER"
+Herbicide,Soybeans,"BROME, CALIFORNIA"
+Herbicide,Soybeans,BURSAGE
+Herbicide,Soybeans,DOCK
+Herbicide,Soybeans,"GRASSES, PERENNIAL"
+Herbicide,Soybeans,"LOCO, WOOLLY"
+Herbicide,Soybeans,"LOCO, WOOTON"
+Herbicide,Soybeans,"PENNYCRESS, FIELD"
+Herbicide,Soybeans,SAWGRASS
+Herbicide,Soybeans,"THISTLE, PLUMELESS"
+Herbicide,Soybeans,WITCHWEED
+Herbicide,Soybeans,CHICORY
+Herbicide,Soybeans,KIKUYUGRASS
+Herbicide,Corn,"DEADNETTLE, PURPLE"
+Insecticide,Corn,"BORER, HOP VINE"
+Herbicide,Corn,HEMPNETTLE
+Herbicide,Corn,"STARTHISTLE, YELLOW"
+Herbicide,Corn,"CONEFLOWER, PRAIRIE"
+Herbicide,Corn,DODDER
+Herbicide,Corn,FIRE BUSH
+Herbicide,Corn,LUPINE
+Herbicide,Corn,TICKWEED
+Herbicide,Corn,WITCHWEED
+Herbicide,Corn,"SPURGE, LEAFY"
+Herbicide,Corn,SEEPWEED
+Herbicide,Corn,PINEAPPLE-WEED
+Herbicide,Corn,"THISTLE, PLUMELESS"
+Herbicide,Corn,DOGWEED
+Herbicide,Corn,JUNIPER
+Herbicide,Corn,"COREOPSIS, PLAINS"
+Herbicide,Corn,ALEXANDERGRASS
+Herbicide,Corn,WATERMELON
+Herbicide,Corn,FOUR O'CLOCK
+Herbicide,Corn,SKELETONWEED
+Herbicide,Corn,BRAMBLE
+Herbicide,Corn,"FINGERGRASS, FEATHER"
+Herbicide,Corn,SPIDERWORT
+Herbicide,Corn,BLOODBERRY
+Herbicide,Corn,"BROME, JAPANESE"
+Herbicide,Corn,SKUNKWEED
+Herbicide,Corn,"TREFOIL, BIRDSFOOT"
+Herbicide,Soybeans,BOUNCINGBET
+Herbicide,Soybeans,TICKWEED
+Herbicide,Soybeans,"SAGE, LANCELEAF"
+Herbicide,Soybeans,"MEDIC, BLACK"
+Herbicide,Soybeans,"CROTON, WOOLLY"
+Herbicide,Soybeans,"WINTERCRESS, EARLY"
+Herbicide,Soybeans,WINDGRASS
+Herbicide,Soybeans,"BETONY, FLORIDA"
+Herbicide,Soybeans,BLOODBERRY
+Herbicide,Soybeans,HEMPNETTLE
+Herbicide,Soybeans,"MOSS, SPANISH"
+Herbicide,Soybeans,PINEAPPLE-WEED
+Herbicide,Soybeans,"BEDSTRAW, CATCHWEED"
+Herbicide,Soybeans,"BROADLEAVES, PERENNIAL"
+Herbicide,Soybeans,"BURCLOVER, CALIFORNIA"
+Herbicide,Soybeans,"CEREAL, VOLUNTEER"
+Herbicide,Soybeans,CUDWEED
+Herbicide,Soybeans,"CUPGRASS, PRAIRIE"
+Herbicide,Soybeans,"FILAREE, REDSTEM"
+Herbicide,Soybeans,LUPINE
+Herbicide,Soybeans,"PLUM, AMERICAN"
+Herbicide,Soybeans,SPANISHNEEDLES
+Herbicide,Soybeans,"SPURGE, LEAFY"
+Herbicide,Soybeans,TREE
+Herbicide,Soybeans,"BARLEY, WILD"
+Herbicide,Soybeans,SKELETONWEED
+Herbicide,Soybeans,STAR OF BETHLEHEM
+Herbicide,Soybeans,FOGFRUIT
+Herbicide,Soybeans,SPIKEWEED
+Herbicide,Soybeans,MAYFLOWER
+Herbicide,Soybeans,FIDDLENECK
+Herbicide,Soybeans,JOB'S-TEARS
+Herbicide,Corn,"GRASS, BARLEY"
+Herbicide,Corn,"SPURGE, PROSTRATE"
+Herbicide,Corn,"BEDSTRAW, CATCHWEED"
+Herbicide,Corn,LOVEGRASS
+Insecticide,Corn,"NEMATODE, NEEDLE"
+Herbicide,Corn,AGERATUM
+Herbicide,Corn,"CELERY, WILD"
+Herbicide,Corn,"WEEDS, TRIAZINE RESISTANT"
+Herbicide,Corn,CHARA
+Herbicide,Corn,PURPLETOP
+Herbicide,Corn,RED-MAIDS
+Herbicide,Corn,ST. AUGUSTINEGRASS
+Herbicide,Corn,"ANODA, SPURRED"
+Herbicide,Corn,HOUNDSTONGUE
+Herbicide,Corn,CATSEAR
+Herbicide,Corn,FILAREE
+Herbicide,Corn,PERSIMMON
+Herbicide,Corn,REDVINE
+Insecticide,Corn,FLEAHOPPER
+Insecticide,Corn,"MITE, CYCLAMEN"
+Herbicide,Corn,"CANOLA, VOLUNTEER"
+Herbicide,Corn,"NETTLE, BURNING"
+Herbicide,Corn,"PARSLEY, SPRING"
+Herbicide,Corn,"FESCUE, TALL"
+Herbicide,Soybeans,"GRASS, CARPET"
+Herbicide,Soybeans,GREENBRIAR
+Herbicide,Soybeans,"SENNA, COFFEE"
+Herbicide,Soybeans,"JESSAMINE, CAROLINA"
+Herbicide,Soybeans,SPIDERWORT
+Herbicide,Soybeans,"GRASS, BARLEY"
+Herbicide,Soybeans,"LETTUCE, INDIAN"
+Herbicide,Soybeans,ALKALI SACATON
+Herbicide,Soybeans,"ARROWHEAD, CALIFORNIA"
+Herbicide,Soybeans,"BROME, RIPGUT"
+Herbicide,Soybeans,"CLOVER, WHITE"
+Herbicide,Soybeans,DOGWEED
+Herbicide,Soybeans,FIRE BUSH
+Herbicide,Soybeans,"GRASS, EASTERN GAMA"
+Herbicide,Soybeans,HYDRILLA
+Herbicide,Soybeans,"ROSE, MULTIFLORA"
+Herbicide,Soybeans,TUMBLEGRASS
+Herbicide,Soybeans,YANKEEWEED
+Herbicide,Soybeans,BUFFELGRASS
+Herbicide,Soybeans,CENTIPEDEGRASS
+Herbicide,Soybeans,MUGWORT
+Herbicide,Corn,BARBERRY
+Herbicide,Corn,"MANNAGRASS, RATTLESNAKE"
+Herbicide,Corn,"MARIGOLD, WILD"
+Herbicide,Corn,MULLEIN
+Insecticide,Corn,LOCUST
+Insecticide,Corn,"BEETLE, CEREAL LEAF"
+Herbicide,Corn,"FESCUE, SIXWEEKS"
+Herbicide,Corn,"CLOVER, WHITE"
+Herbicide,Corn,"CROP, VOLUNTEER"
+Herbicide,Corn,"GRASS, CARPET"
+Herbicide,Corn,IRIS
+Herbicide,Corn,MAIDENCANE
+Herbicide,Corn,SPEEDWELL
+Herbicide,Corn,"WATERMILFOIL, EURASIAN"
+Herbicide,Corn,WINTER ANNUALS
+Herbicide,Corn,LANTANA
+Herbicide,Corn,BERRIES
+Herbicide,Corn,"BEAKRUSH, HORNED"
+Herbicide,Corn,HORSEMINT
+Herbicide,Corn,"BURCLOVER, CALIFORNIA"
+Herbicide,Corn,"OLIVE, RUSSIAN"
+Herbicide,Corn,"FOXTAIL, BRISTLY"
+Herbicide,Corn,NIMBLEWILL
+Herbicide,Corn,"WILLOWWEED, PANICLE"
+Herbicide,Corn,CHAMOMILE
+Herbicide,Corn,"OAK, POST"
+Herbicide,Corn,WATERLILY
+Herbicide,Soybeans,"KNAPWEED, RUSSIAN"
+Herbicide,Soybeans,"WEEDS, TRIAZINE RESISTANT"
+Herbicide,Soybeans,WINTER ANNUALS
+Herbicide,Soybeans,KNAPWEED
+Herbicide,Soybeans,MOSS
+Herbicide,Soybeans,"RAGWEED, WESTERN"
+Herbicide,Soybeans,"DAYFLOWER,  ASIATIC"
+Herbicide,Soybeans,BASSIA
+Herbicide,Soybeans,TOADFLAX
+Herbicide,Soybeans,CATNIP
+Herbicide,Soybeans,ALEXANDERGRASS
+Herbicide,Soybeans,BERRIES
+Herbicide,Soybeans,CATSEAR
+Herbicide,Soybeans,"COTTON, VOLUNTEER"
+Herbicide,Soybeans,"FOXTAIL, BRISTLY"
+Herbicide,Soybeans,GALINSOGA
+Herbicide,Soybeans,GORSE
+Herbicide,Soybeans,INCREASE SUGAR
+Herbicide,Soybeans,LANTANA
+Herbicide,Soybeans,LESPEDEZA
+Herbicide,Soybeans,"MARIGOLD, WILD"
+Herbicide,Soybeans,PURPLETOP
+Herbicide,Soybeans,"SUGAR BEET, VOLUNTEER"
+Herbicide,Soybeans,"WILLOWWEED, PANICLE"
+Herbicide,Soybeans,"CHAMOMILE, FALSE"
+Herbicide,Soybeans,SULFONYLUREA RESISTANT WEEDS
+Herbicide,Soybeans,ARROWHEAD
+Herbicide,Soybeans,WATERHYACINTH
+Insecticide,Corn,"CUTWORM, VARIEGATED"
+Insecticide,Corn,"ROOTWORM, MEXICAN"
+Herbicide,Corn,MESQUITE
+Herbicide,Corn,"RAGWEED, BURR"
+Herbicide,Corn,SOURGRASS
+Herbicide,Corn,PINKROOT
+Herbicide,Corn,SULFONYLUREA RESISTANT WEEDS
+Herbicide,Corn,CHRISTMASBERRY
+Herbicide,Corn,FERN
+Herbicide,Corn,"RAGWEED, LANCELEAF"
+Herbicide,Corn,"CINQUEFOIL, SULFUR"
+Herbicide,Corn,"COPPERLEAF, HOPHORNBEAM"
+Herbicide,Corn,"LETTUCE, BLUE"
+Herbicide,Corn,"LETTUCE, INDIAN"
+Herbicide,Corn,"ELODEA, COMMON WATERWEED"
+Herbicide,Corn,BUFFELGRASS
+Herbicide,Corn,"WAXMYRTLE, SOUTHERN"
+Herbicide,Corn,ELM
+Herbicide,Corn,"RAGWEED, WESTERN"
+Herbicide,Corn,HYDRILLA
+Herbicide,Corn,"BETONY, FLORIDA"
+Insecticide,Soybeans,WIREWORM
+Insecticide,Soybeans,CUTWORM
+Insecticide,Soybeans,NEMATODE
+Insecticide,Soybeans,APHID
+Insecticide,Soybeans,"BEETLE, JAPANESE"
+Insecticide,Soybeans,GRASSHOPPER
+Insecticide,Soybeans,"BEETLE, BEAN LEAF"
+Insecticide,Soybeans,"BUG, STINK"
+Insecticide,Soybeans,"BEETLE, FLEA"
+Insecticide,Soybeans,CRICKET
+Insecticide,Soybeans,No Answer Insect
+Insecticide,Soybeans,THRIP
+Herbicide,Soybeans,"RAGWEED, BURR"
+Herbicide,Soybeans,STINKGRASS
+Insecticide,Soybeans,"MITE, SPIDER"
+Insecticide,Soybeans,"APHID, SOYBEAN"
+Herbicide,Soybeans,NIMBLEWILL
+Herbicide,Soybeans,"MUSTARD, BLACK"
+Herbicide,Soybeans,BENTGRASS
+Herbicide,Soybeans,"CROP, VOLUNTEER"
+Herbicide,Soybeans,"FESCUE, RED"
+Herbicide,Soybeans,MESQUITE
+Herbicide,Soybeans,NEEDLEGRASS
+Herbicide,Soybeans,"PANICUM, BROWNTOP"
+Herbicide,Soybeans,TEXAS BLUEWEED
+Herbicide,Soybeans,"VINE, BLADDER"
+Herbicide,Soybeans,NAIAD
+Insecticide,Soybeans,"HOPPER, THREECORNERED ALFALFA"
+Insecticide,Soybeans,ARMYWORM
+Insecticide,Soybeans,WORM
+Insecticide,Soybeans,CATERPILLAR
+Insecticide,Soybeans,LOOPER
+Insecticide,Soybeans,"BEETLE, MEXICAN BEAN"
+Insecticide,Soybeans,BEETLE
+Insecticide,Soybeans,"BUG, GREEN STINK"
+Insecticide,Soybeans,"CATERPILLAR, VELVETBEAN"
+Insecticide,Soybeans,"GRUB, WHITE"
+Insecticide,Soybeans,LEAFHOPPER
+Insecticide,Soybeans,"WORM, CORN EAR"
+Insecticide,Soybeans,"LOOPER, CABBAGE"
+Insecticide,Soybeans,"BUG, SOUTHERN GREEN STINK"
+Insecticide,Soybeans,"LOOPER, SOYBEAN"
+Herbicide,Soybeans,ECLIPTA
+Herbicide,Soybeans,AMARANTH
+Herbicide,Corn,"COCKLEBUR, SPINY"
+Insecticide,Corn,"ARMYWORM, WESTERN YELLOW STRIPED"
+Insecticide,Corn,"COLASPIS, GRAPE"
+Herbicide,Corn,"CLOVER, RED"
+Herbicide,Corn,"HYSSOP, CAROLINA WATER"
+Herbicide,Corn,"NIGHTSHADE, EASTERN BLACK"
+Herbicide,Corn,GALLBERRY
+Herbicide,Corn,"GHERKIN, WEST INDIAN"
+Herbicide,Corn,NAIAD
+Herbicide,Corn,SPIKERUSH
+Herbicide,Corn,"HAWKWEED, YELLOW"
+Herbicide,Corn,"SEDGE, SMALLFLOWER UMBRELLA"
+Herbicide,Corn,"MUSTARD, YELLOW"
+Herbicide,Corn,RABBITBRUSH
+Herbicide,Corn,JOB'S-TEARS
+Herbicide,Corn,CASTORBEAN
+Herbicide,Corn,"PLUM, AMERICAN"
+Herbicide,Corn,"CLOVER, BUFFALO"
+Herbicide,Corn,JUNGLERICE
+Herbicide,Corn,"LOOSESTRIFE, PURPLE"
+Herbicide,Corn,SAGEBRUSH
+Herbicide,Corn,"BLUEGRASS, ROUGHSTALK"
+Herbicide,Corn,"VINE, BLADDER"
+Insecticide,Corn,"BEETLE, CORN SILK"
+Insecticide,Corn,"CUTWORM, DINGY"
+Herbicide,Corn,PALMGRASS
+Herbicide,Corn,"BROME, CALIFORNIA"
+Fungicide,Soybeans,PHYTOPHTHORA
+Fungicide,Soybeans,DAMPING OFF
+Fungicide,Soybeans,"ROT, ROOT"
+Herbicide,Soybeans,"COCKLEBUR, SPINY"
+Insecticide,Soybeans,"ROOTWORM, MEXICAN"
+Herbicide,Soybeans,"DAISY, FIELD"
+Herbicide,Soybeans,"FESCUE, RATTAIL"
+Herbicide,Soybeans,"FESCUE, SIXWEEKS"
+Herbicide,Soybeans,TANSYMUSTARD
+Herbicide,Soybeans,"CHICKWEED, MOUSEEAR"
+Herbicide,Soybeans,SEEPWEED
+Herbicide,Soybeans,"MUSTARD, YELLOW"
+Herbicide,Soybeans,"MUSTARD, TUMBLE"
+Herbicide,Soybeans,"ASPARAGUS, VOLUNTEER"
+Herbicide,Soybeans,"CLOVER, RED"
+Herbicide,Soybeans,"GRASS, RABBIT-FOOT"
+Herbicide,Soybeans,HORSEMINT
+Herbicide,Soybeans,"HYSSOP, CAROLINA WATER"
+Herbicide,Soybeans,"NIGHTSHADE, EASTERN BLACK"
+Herbicide,Soybeans,"PEPPERWEED, PERENNIAL"
+Herbicide,Soybeans,"YARROW, COMMON"
+Fungicide,Soybeans,BACTERIA
+Fungicide,Soybeans,BLIGHT
+Fungicide,Soybeans,"BLIGHT, AERIAL"
+Fungicide,Soybeans,"MILDEW, POWDERY"
+Fungicide,Soybeans,"MOLD, WHITE"
+Fungicide,Soybeans,No Answer Disease
+Fungicide,Soybeans,PURPLE SEED STAIN
+Fungicide,Soybeans,ROT
+Fungicide,Soybeans,RUST
+Fungicide,Soybeans,"RUST, ASIAN SOYBEAN"
+Fungicide,Soybeans,SEPTORIA
+Fungicide,Soybeans,"SPOT, BROWN"
+Fungicide,Soybeans,"SPOT, CERCOSPORA"
+Fungicide,Soybeans,"SPOT, FROGEYE LEAF"
+Fungicide,Soybeans,"SPOT, LEAF"
+Fungicide,Soybeans,"WILT, BACTERIAL"
+Fungicide,Soybeans,ANTHRACNOSE
+Fungicide,Soybeans,"BLIGHT, LEAF"
+Fungicide,Soybeans,"BLIGHT, SEEDLING"
+Fungicide,Soybeans,MILDEW
+Fungicide,Soybeans,"MILDEW, DOWNY"
+Fungicide,Soybeans,RHIZOCTONIA
+Fungicide,Soybeans,"ROT, BROWN"
+Fungicide,Soybeans,"ROT, CHARCOAL"
+Fungicide,Soybeans,SCAB
+Insecticide,Soybeans,"BUG, PLANT"
+Insecticide,Soybeans,"WORM, CLOVER"
+Insecticide,Soybeans,"MITE, 2-SPOTTED"
+Insecticide,Soybeans,"ROOTWORM, CORN"
+Insecticide,Soybeans,"MITE, RED SPIDER"
+Insecticide,Soybeans,"BUG, BROWN STINK"
+Insecticide,Soybeans,"LEAFHOPPER, POTATO"
+Insecticide,Soybeans,"MAGGOT, SEED"
+Insecticide,Soybeans,"BEETLE, CUCUMBER"
+Insecticide,Soybeans,"BUG, RICE STINK"
+Insecticide,Soybeans,SLUG
+Herbicide,Soybeans,"CUDWEED, PURPLE"
+Herbicide,Soybeans,PERSIMMON
+Herbicide,Soybeans,KUDZU
+Herbicide,Soybeans,"OAK, POST"
+Herbicide,Corn,"JOINTVETCH, NORTHERN"
+Insecticide,Corn,"CUTWORM, GRANULATE"
+Insecticide,Corn,"BEETLE, BEAN LEAF"
+Herbicide,Corn,"DRAGONHEAD, AMERICAN"
+Herbicide,Corn,"MOSS, SPANISH"
+Herbicide,Corn,"COTTON, VOLUNTEER"
+Herbicide,Corn,"VELVETGRASS, GERMAN"
+Herbicide,Corn,"SEDGE, WATER"
+Herbicide,Corn,CINQUEFOIL
+Herbicide,Corn,"CINQUEFOIL, SHRUBBY"
+Herbicide,Corn,FALSE RAGWEED
+Herbicide,Corn,"TOBACCO, WILD"
+Herbicide,Corn,"PLUM, SAND"
+Herbicide,Corn,"CHRYSTHANTHEMUM, COSTMARY"
+Herbicide,Corn,"THISTLE, SCOTCH"
+Herbicide,Corn,"WOAD, DYER'S"
+Herbicide,Corn,"KYLLINGA, GREEN"
+Herbicide,Soybeans,"RAGWEED, LANCELEAF"
+Herbicide,Soybeans,NAPIERGRASS
+Herbicide,Soybeans,WATERLETTUCE
+Herbicide,Soybeans,LOCUST
+Herbicide,Soybeans,"AMMANNIA, PURPLE"
+Herbicide,Soybeans,"MUSTARD, HILL"
+Herbicide,Soybeans,SPRING-BEAUTY
+Herbicide,Soybeans,"DITCHGRASS, SPIRAL"
+Herbicide,Soybeans,FALSE RAGWEED
+Herbicide,Soybeans,"GHERKIN, WEST INDIAN"
+Herbicide,Soybeans,"GOLDENROD, CANADA"
+Herbicide,Soybeans,MEDUSAHEAD
+Herbicide,Soybeans,"NETTLE, BURNING"
+Herbicide,Soybeans,PERIWINKLE
+Herbicide,Soybeans,"VELVETGRASS, GERMAN"
+Herbicide,Soybeans,WATERPURSLANE
+Herbicide,Soybeans,"WOAD, DYER'S"
+Fungicide,Soybeans,PYTHIUM
+Fungicide,Soybeans,"ROT, STEM"
+Fungicide,Soybeans,SPOT
+Insecticide,Soybeans,"BUG, REDSHOULDERED STINK"
+Insecticide,Soybeans,"ARMYWORM, BEET"
+Insecticide,Soybeans,"WHITEFLY, SILVERLEAF"
+Insecticide,Soybeans,"WORM, BOLL"
+Insecticide,Soybeans,"WORM, BUD"
+Insecticide,Soybeans,"CLOVERWORM, GREEN"
+Herbicide,Soybeans,"VETCH, HAIRY"
+Herbicide,Soybeans,"LETTUCE, BLUE"
+Herbicide,Soybeans,"SEDGE, WATER"
+Herbicide,Corn,"CUDWEED, PURPLE"
+Herbicide,Corn,"SPURGE, SPOTTED"
+Insecticide,Corn,CATERPILLAR
+Herbicide,Corn,"BLUEGRASS, KENTUCKY"
+Herbicide,Corn,"GERANIUM, CUTLEAF"
+Herbicide,Corn,"GERANIUM, CAROLINA"
+Herbicide,Corn,"THISTLE, MILK"
+Herbicide,Corn,LESPEDEZA
+Herbicide,Corn,PRICKLYPEAR
+Herbicide,Corn,"THISTLE, PRAIRIE"
+Herbicide,Corn,"KNAPWEED, SPOTTED"
+Herbicide,Corn,"GALINSOGA, HAIRY"
+Herbicide,Corn,"JACOB'S-LADDER, BLUE"
+Herbicide,Corn,"ROSE, CHEROKEE"
+Herbicide,Corn,"FILAREE, REDSTEM"
+Herbicide,Corn,"THISTLE, ITALIAN"
+Herbicide,Corn,"FLEABANE, HAIRY"
+Fungicide,Corn,BLIGHT
+Fungicide,Corn,"BLIGHT, ANTHRACNOSE LEAF"
+Fungicide,Corn,"BLIGHT, LEAF"
+Fungicide,Corn,"BLIGHT, SOUTHERN CORN LEAF"
+Fungicide,Corn,FUSARIUM
+Fungicide,Corn,No Answer Disease
+Fungicide,Corn,RUST
+Fungicide,Corn,"RUST, COMMON (CORN)"
+Fungicide,Corn,"RUST, SOUTHERN (CORN)"
+Fungicide,Corn,SPOT
+Fungicide,Corn,"SPOT, GRAY LEAF (CORN)"
+Fungicide,Corn,"SPOT, LEAF"
+Fungicide,Corn,MOLD
+Fungicide,Corn,SMUT
+Fungicide,Corn,"SPOT, PHYSODERMA BROWN"
+Fungicide,Corn,"BLIGHT, ASCOCHYTA LEAF"
+Fungicide,Corn,"BLIGHT, NORTHERN CORN LEAF"
+Fungicide,Corn,"BLIGHT, SEEDLING"
+Fungicide,Corn,"BLIGHT, YELLOW LEAF (CORN)"
+Fungicide,Corn,DAMPING OFF
+Fungicide,Corn,ERGOT
+Fungicide,Corn,EYESPOT (CORN)
+Fungicide,Corn,"MILDEW, DOWNY"
+Fungicide,Corn,PYTHIUM
+Fungicide,Corn,ROT
+Fungicide,Corn,"ROT, CHARCOAL"
+Fungicide,Corn,"ROT, RHIZOCTONIA EAR (CORN)"
+Fungicide,Corn,"SMUT, COMMON"
+Fungicide,Corn,"WILT, STEWART'S"
+Herbicide,Corn,"MALLOW, LITTLE"
+Herbicide,Corn,"MUSTARD, HILL"
+Herbicide,Soybeans,"SODA APPLE, TROPICAL"
+Herbicide,Soybeans,FLEABANE
+Herbicide,Soybeans,"BLUEGRASS, KENTUCKY"
+Herbicide,Soybeans,"GERANIUM, CUTLEAF"
+Herbicide,Soybeans,"THISTLE, MILK"
+Fungicide,Soybeans,FUSARIUM
+Fungicide,Soybeans,SCLEROTINIA
+Fungicide,Soybeans,"VIRUS, SOYBEAN MOSAIC"
+Insecticide,Soybeans,"ARMYWORM, FALL"
+Insecticide,Soybeans,BORER
+Insecticide,Soybeans,WHITEFLY
+Insecticide,Soybeans,"CATERPILLAR, ALFALFA"
+Insecticide,Soybeans,"BORER, EUROPEAN CORN"
+Insecticide,Soybeans,"WEEVIL, IMPORTED LONGHORNED"
+Herbicide,Soybeans,"CLOVER, BUFFALO"
+Herbicide,Corn,REDSHANK
+Insecticide,Corn,"CUTWORM, PALE WESTERN"
+Herbicide,Corn,WILLOWHERB
+Herbicide,Corn,"YAM, AIR"
+Herbicide,Corn,"DAYFLOWER,  ASIATIC"
+Herbicide,Corn,"MUSTARD, TUMBLE"
+Herbicide,Corn,"ROSE, MACARTNEY"
+Herbicide,Corn,"SPURGE, CYPRESS"
+Fungicide,Corn,"MOLD, WHITE"
+Fungicide,Corn,PREVENTATIVE PROGRAM
+Fungicide,Corn,"ROT, ROOT"
+Fungicide,Corn,"RUST, LEAF"
+Fungicide,Corn,"SPOT, NORTHERN CORN LEAF"
+Fungicide,Corn,"SPOT, BROWN"
+Fungicide,Corn,"ROT, BACTERIAL SOFT"
+Fungicide,Corn,SEEDLING DISEASE
+Fungicide,Corn,"WILT, BACTERIAL"
+Fungicide,Corn,"WILT, GOSS"
+Herbicide,Corn,"BUCKTHORN, EUROPEAN"
+Herbicide,Corn,"CLOVER, CRIMSON"
+Insecticide,Corn,"BEETLE, SUGARCANE"
+Herbicide,Soybeans,"CLOVER, CRIMSON"
+Herbicide,Soybeans,"SNAKEWEED, BROOM"
+Herbicide,Soybeans,"ROSE, MACARTNEY"
+Herbicide,Soybeans,CORNFLOWER
+Herbicide,Soybeans,"CRABGRASS, HAIRY"
+Herbicide,Soybeans,"FLEABANE, HAIRY"
+Herbicide,Soybeans,"PARSLEY, SPRING"
+Herbicide,Soybeans,"ROCKET, LONDON"
+Herbicide,Soybeans,STARTHISTLE
+Herbicide,Soybeans,"THISTLE, FLODMAN"
+Herbicide,Soybeans,"YAM, AIR"
+Fungicide,Soybeans,"RUST, LEAF"
+Fungicide,Soybeans,SUDDEN DEATH SYNDROME (soybean)
+Fungicide,Soybeans,PHOMA
+Fungicide,Soybeans,"BLIGHT, COMMON"
+Fungicide,Soybeans,SEEDLING DISEASE
+Insecticide,Soybeans,"ARMYWORM, YELLOWSTRIPE"
+Insecticide,Soybeans,PREVENTATIVE PROGRAM
+Insecticide,Soybeans,WEBWORM
+Herbicide,Soybeans,SOURGRASS
+Herbicide,Soybeans,"BLUEGRASS, ROUGHSTALK"
+Herbicide,Corn,"CRABGRASS, HAIRY"
+Insecticide,Corn,"NEMATODE, DAGGER"
+Herbicide,Corn,"HEDGENETTLE, WOOLLY"
+Herbicide,Corn,MOSS
+Herbicide,Corn,"CANCERWORT, SHARPLEAF"
+Fungicide,Corn,ALL DISEASES
+Insecticide,Corn,"APHID, BEAN"
+Herbicide,Corn,"FLEABANE, DAISY"
+Herbicide,Corn,WILDRYE
+Insecticide,Soybeans,"NEMATODE, SOYBEAN CYST"
+Herbicide,Soybeans,HAWTHORN
+Herbicide,Soybeans,WILLOWHERB
+Herbicide,Soybeans,"THISTLE, ITALIAN"
+Herbicide,Soybeans,CHRISTMASBERRY
+Fungicide,Soybeans,"CANKER, SOYBEAN STEM"
+Insecticide,Soybeans,"ARMYWORM, SOUTHERN"
+Insecticide,Soybeans,"BORER, BEAN POD"
+Insecticide,Soybeans,WEEVIL
+Insecticide,Soybeans,"ANT, FIRE"
+Insecticide,Soybeans,"CUTWORM, BLACK"
+Insecticide,Soybeans,"GRUB, JAPANESE BEETLE"
+Herbicide,Soybeans,ASTER
+Herbicide,Soybeans,"FLEABANE, DAISY"
+Herbicide,Soybeans,"HEDGENETTLE, WOOLLY"
+Herbicide,Corn,"CRABGRASS, SMOOTH"
+Insecticide,Corn,"CUTWORM, ARMY"
+Fungicide,Corn,"ROT, STENOCARPELLA EAR/STALK"
+Herbicide,Corn,"WIREWEED, COMMON"
+Herbicide,Corn,LOCUST
+Herbicide,Corn,"SUGAR BEET, VOLUNTEER"
+Herbicide,Corn,"SODA APPLE, TROPICAL"
+Herbicide,Corn,"SPURGE, TOOTHED"
+Insecticide,Corn,"BUG, BROWN STINK"
+Insecticide,Corn,"BUG, SOUTHERN GREEN STINK"
+Herbicide,Corn,FIREWHEEL
+Herbicide,Soybeans,"DEWBERRY, SOUTHERN"
+Herbicide,Soybeans,"CRABGRASS, SMOOTH"
+Herbicide,Soybeans,"CANCERWORT, SHARPLEAF"
+Herbicide,Soybeans,"ELODEA, COMMON WATERWEED"
+Herbicide,Soybeans,"KNOTWEED, JAPANESE"
+Herbicide,Soybeans,"SPURGE, TOOTHED"
+Fungicide,Soybeans,"ROT, BROWN STEM"
+Fungicide,Soybeans,"ROT, RHIZOCTONIA ROOT"
+Fungicide,Soybeans,"SPOT, TARGET"
+Insecticide,Soybeans,"BUG, REDBANDED STINK"
+Insecticide,Soybeans,"BEETLE, COLORADO POTATO"
+Insecticide,Soybeans,BUG
+Insecticide,Soybeans,"ROOTWORM, SOUTHERN CORN"
+Insecticide,Soybeans,MOTH
+Herbicide,Soybeans,"COREOPSIS, PLAINS"
+Herbicide,Soybeans,WILDRYE
+Herbicide,Corn,"GRASS, TIGER"
+Fungicide,Corn,VIRUS
+Herbicide,Corn,"DAISY, FIELD"
+Herbicide,Corn,SALTCEDAR
+Herbicide,Corn,"BROME, SMOOTH"
+Herbicide,Corn,"DAYFLOWER, BENGHAL"
+Herbicide,Corn,RICHWEED
+Herbicide,Soybeans,"TEASEL, FULLER'S"
+Herbicide,Soybeans,"ROSE, CHEROKEE"
+Herbicide,Soybeans,SWEETCLOVER
+Herbicide,Soybeans,TORPEDOGRASS
+Herbicide,Soybeans,CATCHFLY
+Herbicide,Soybeans,GOOSEBERRY
+Herbicide,Soybeans,"PLUM, SAND"
+Fungicide,Soybeans,ALL DISEASES
+Fungicide,Soybeans,"BLIGHT, BACTERIAL LEAF (SOYBEAN)"
+Fungicide,Soybeans,"BLAST, BACTERIAL"
+Insecticide,Soybeans,BEAN PLATASPID
+Insecticide,Soybeans,"BUG, FALSE CHINCH"
+Insecticide,Soybeans,MITE
+Insecticide,Soybeans,LARVAE
+Insecticide,Soybeans,"WEEVIL, PEA LEAF"
+Herbicide,Soybeans,CEDAR
+Herbicide,Corn,"TALLOWTREE, CHINESE"
+Herbicide,Corn,GREASEWOOD
+Herbicide,Corn,YUCCA
+Fungicide,Corn,"ROT, STALK"
+Herbicide,Corn,"CANARYGRASS, LITTLESEED"
+Herbicide,Corn,SWEETCLOVER
+Herbicide,Corn,WATERCRESS
+Insecticide,Corn,"APHID, BIRD CHERRY-OAT"
+Insecticide,Corn,"APHID, GREEN PEACH"
+Insecticide,Corn,"MITE, STRAWBERRY SPIDER"
+Herbicide,Corn,CREEPER
+Insecticide,Soybeans,GRUB
+Herbicide,Soybeans,"SPURGE, CYPRESS"
+Herbicide,Soybeans,RICHWEED
+Herbicide,Soybeans,"WIREWEED, COMMON"
+Herbicide,Soybeans,WATERCRESS
+Herbicide,Soybeans,"HAWKSBEARD, NARROWLEAF"
+Herbicide,Soybeans,"GRASS, TUMBLE WINDMILL"
+Herbicide,Soybeans,"TREFOIL, BIRDSFOOT"
+Fungicide,Soybeans,"BLIGHT, SOUTHERN"
+Insecticide,Soybeans,"BEETLE, BLISTER"
+Insecticide,Soybeans,"BORER, COMMON STALK"
+Insecticide,Soybeans,"CUTWORM, WESTERN BEAN"
+Herbicide,Corn,"GRASS, TUMBLE WINDMILL"
+Herbicide,Corn,"SANDWEED, COMMON"
+Herbicide,Corn,"AMARANTH, POWELL'S"
+Herbicide,Soybeans,"PICKERELWEED, HEARTSHAPE FALSE"
+Herbicide,Soybeans,"AMARANTH, POWELL'S"
+Herbicide,Soybeans,FIREWHEEL
+Herbicide,Soybeans,MILKVINE
+Herbicide,Soybeans,CURLY PONDWEED
+Herbicide,Soybeans,"FOXTAIL, CAROLINA"
+Herbicide,Soybeans,"BROME, SMOOTH"
+Herbicide,Soybeans,CREEPER
+Herbicide,Soybeans,"GRASS, TIGER"
+Herbicide,Soybeans,OSAGE-ORANGE
+Herbicide,Soybeans,SUMAC
+Herbicide,Soybeans,"SIDA, ARROWLEAF"
+Insecticide,Soybeans,"BUG, BROWN MARMORATED STINK"
+Insecticide,Soybeans,PILLBUG
+Insecticide,Soybeans,"BUG, LYGUS"
+Herbicide,Soybeans,"DAYFLOWER, BENGHAL"
+Herbicide,Corn,"MORNINGGLORY, IVYLEAF"
+Herbicide,Corn,"PASPALUM, WATER"
+Herbicide,Corn,"INDIGO, HAIRY"
+Herbicide,Corn,VELVETWEED
+Herbicide,Corn,"FLATSEDGE, RICEFIELD"
+Herbicide,Corn,"ARROWHEAD, GREGG"
+Herbicide,Corn,"FOXTAIL, CAROLINA"
+Herbicide,Corn,"PICKERELWEED, HEARTSHAPE FALSE"
+Fungicide,Corn,MOSAIC
+Herbicide,Corn,RATTLEWEED
+Herbicide,Corn,"GRASS, RABBIT-FOOT"
+Herbicide,Corn,MILKVETCH
+Herbicide,Corn,"WHEATGRASS, CRESTED"
+Herbicide,Corn,"RAPE, VOLUNTEER"
+Herbicide,Corn,"SORREL, RED"
+Insecticide,Corn,"BILLBUG, SOUTHERN CORN"
+Herbicide,Soybeans,"PASPALUM, WATER"
+Herbicide,Soybeans,"MORNINGGLORY, IVYLEAF"
+Herbicide,Soybeans,VELVETWEED
+Herbicide,Soybeans,"BRACKENFERN, WESTERN"
+Herbicide,Soybeans,DOGWOOD
+Herbicide,Soybeans,REDSHANK
+Herbicide,Soybeans,"WATERBUTTONS, AUSTRALIAN"
+Fungicide,Soybeans,PHOMOPSIS
+Insecticide,Soybeans,"SKIPPER, SILVER SPOTTED"
+Herbicide,Soybeans,DUCKSALAD
+Insecticide,Soybeans,"NEMATODE, RENIFORM"
+Herbicide,Corn,"FESCUE, SHEEP"
+Herbicide,Corn,TEXAS BLUEWEED
+Herbicide,Corn,"TAIL, LIZARD'S"
+Herbicide,Corn,RUSH
+Herbicide,Corn,"CHAMOMILE, FALSE"
+Herbicide,Corn,"HORSENETTLE, WESTERN"
+Herbicide,Corn,HACKBERRY
+Herbicide,Corn,"BURRWEED, FIELD"
+Herbicide,Soybeans,"BURRWEED, FIELD"
+Herbicide,Soybeans,HORNPOPPY
+Herbicide,Soybeans,"BROME, RED"
+Fungicide,Soybeans,ALTERNARIA
+Insecticide,Soybeans,"BORER, DECTES STEM"
+Insecticide,Soybeans,"ROOTWORM, NORTHERN CORN"
+Herbicide,Soybeans,"JACOB'S-LADDER, BLUE"
+Herbicide,Soybeans,"SPURGE, PROSTRATE"
+Insecticide,Corn,"MAGGOT, BEAN SEED"
+Herbicide,Corn,DOGWOOD
+Fungicide,Corn,"ROT, CROWN"
+Herbicide,Corn,"TEASEL, FULLER'S"
+Herbicide,Corn,"BROME, RED"
+Herbicide,Corn,BITTERCRESS
+Herbicide,Corn,HONEYLOCUST
+Herbicide,Soybeans,"THISTLE, PRAIRIE"
+Herbicide,Soybeans,"WORMWOOD, BIENNIAL"
+Herbicide,Soybeans,MANNAGRASS
+Herbicide,Soybeans,PINKROOT
+Insecticide,Soybeans,"ROOTWORM, WESTERN CORN"
+Insecticide,Soybeans,ALL INSECTS
+Herbicide,Soybeans,RATTLEWEED
+Herbicide,Corn,INDIANGRASS
+Herbicide,Corn,HONEYVINE
+Herbicide,Soybeans,HONEYVINE
+Herbicide,Soybeans,RUSH
+Insecticide,Soybeans,"CATERPILLAR, THISTLE"
+Insecticide,Soybeans,"COLASPIS, GRAPE"
+Herbicide,Soybeans,"PARSNIP, WILD"
+Herbicide,Corn,"WATERBUTTONS, AUSTRALIAN"
+Fungicide,Corn,"SPOT, TAR"
+Herbicide,Corn,"GRASS, NORTH AFRICA"
+Herbicide,Corn,DARNEL
+Herbicide,Corn,"ROCKET, LONDON"
+Herbicide,Soybeans,"SEDGE, SMALLFLOWER UMBRELLA"
+Herbicide,Soybeans,"MOLD, WHITE"
+Insecticide,Soybeans,"ARMYWORM, WESTERN YELLOW STRIPED"
+Insecticide,Soybeans,BANDED WOOLLYBEAR
+Insecticide,Soybeans,"CATERPILLAR, SALTMARSH"
+Herbicide,Soybeans,HEDGEMUSTARD
+Herbicide,Soybeans,"KNOTWEED, PROSTRATE"
+Herbicide,Soybeans,SALTCEDAR
+Herbicide,Soybeans,"FINGERGRASS, FEATHER"
+Herbicide,Soybeans,"MILLET, JAPANESE"
+Insecticide,Corn,"NEMATODE, LESION"
+Herbicide,Corn,"HEMPVINE, CLIMBING"
+Herbicide,Corn,CURLY PONDWEED
+Herbicide,Corn,DEVILS GUT
+Fungicide,Corn,SCLEROTINIA
+Fungicide,Corn,"SPOT, BLACK"
+Herbicide,Corn,MANNAGRASS
+Herbicide,Corn,OSAGE-ORANGE
+Herbicide,Corn,"GOOSEFOOT, NETTLELEAF"
+Herbicide,Corn,WAXWEED
+Insecticide,Corn,"BEETLE, SAP"
+Insecticide,Corn,"BUG, BROWN MARMORATED STINK"
+Insecticide,Corn,WHITEFLY
+Herbicide,Corn,CROWNVETCH
+Herbicide,Corn,"WINTERGRASS, TEXAS"
+Herbicide,Soybeans,"WHEATGRASS, CRESTED"
+Herbicide,Soybeans,"HEMPVINE, CLIMBING"
+Herbicide,Soybeans,MULBERRY
+Herbicide,Soybeans,"CINQUEFOIL, SHRUBBY"
+Herbicide,Soybeans,SKUNKWEED
+Insecticide,Soybeans,FLY
+Herbicide,Soybeans,"WHEATGRASS, WESTERN"
+Herbicide,Soybeans,"FESCUE, SHEEP"
+Insecticide,Soybeans,"MAGGOT, BEAN SEED"
+Herbicide,Corn,"SIDA, ARROWLEAF"
+Herbicide,Corn,MAYFLOWER
+Herbicide,Corn,MULBERRY
+Herbicide,Soybeans,THREEAWN
+Herbicide,Soybeans,AQUATICS
+Herbicide,Soybeans,MARSH GRASS
+Herbicide,Soybeans,"WINTERGRASS, TEXAS"
