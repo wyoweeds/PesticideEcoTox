@@ -367,7 +367,7 @@ plot_grid(ToxIndex.plot(crop = "Corn",
           nrow = 1)
 ```
 
-```{r, echo = FALSE, warning = FALSE, message = FALSE, fig.width = 8, fig.height = 9, fig.cap = "**Figure 3. Honey bee adult acute contact risk quotient for pesticides applied to corn or soybean *after* crop emergence.**"}
+```{r, echo = FALSE, warning = FALSE, message = FALSE, fig.width = 9, fig.height = 8, fig.cap = "**Figure 3. Honey bee adult acute contact risk quotient for pesticides applied to corn or soybean *after* crop emergence.**"}
 plot_grid(ToxIndex.plot(crop = "Corn", timing = "POST"),
           ToxIndex.plot(crop = "Soybeans", timing = "POST"),
           nrow = 1)
