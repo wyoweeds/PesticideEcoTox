@@ -309,19 +309,19 @@ plot_grid(tisum.rate.gg, tisum.area.gg,
 
 * The summed honey bee $TI_{rate}$ over all years was `r round(ToxIndex.cropTotals$cropToxIndex.rate[1]/ToxIndex.cropTotals$cropToxIndex.rate[2], 1)`-times greater in corn compared to soybean.
 * The summed honey be $TI_{area}$ over all years was `r round(ToxIndex.cropTotals$cropToxIndex.area[1]/ToxIndex.cropTotals$cropToxIndex.area[2], 1)`-times greater in corn compared to soybean.
-* I think the area-adjusted version is the one worth looking at - just the rate applied seems misleading if somthing was applied at a high rate on very few acres.
+  * I think the area-adjusted version is the one worth looking at - just the rate applied seems misleading if somthing was applied at a high rate on very few acres.
 * `r cornTot <- ToxIndex.summary %>% filter(Crop == "Corn" & Timing == "PRE") %>% summarize(a = sum(cropToxIndex.areaPct))
 round(cornTot[[2]])`% of the summed $TI_{area}$ applied to corn was applied *before* crop emergence, when relative risk to honey bees and many other pollinator species is expected to be lower. 
 * `r soyTot <- ToxIndex.summary %>% filter(Crop == "Soybeans" & Timing == "POST") %>% summarize(a = sum(cropToxIndex.areaPct))
 round(soyTot[[2]])`% of the summed $TI_{area}$ applied to soybean was applied *after* crop emergence, when relative risk to honey bees and many other pollinator species is expected to be higher.
 * In corn, insecticides were responsible for `r corn.i <- cropType.summary %>% filter(Crop == "Corn" & Type == "Insecticide")
 corn.i$cropToxIndex.areaPct`% of $TI_{area}$, compared to `r corn.h <- cropType.summary %>% filter(Crop == "Corn" & Type == "Herbicide")
-corn.h$cropToxIndex.areaPct`% for herbicides, and `r corn.f <- cropType.summary %>% filter(Crop == "Corn" & Type == "Fungicide")
-corn.f$cropToxIndex.areaPct`% for fungicides.
+signif(corn.h$cropToxIndex.areaPct,2)`% for herbicides, and `r corn.f <- cropType.summary %>% filter(Crop == "Corn" & Type == "Fungicide")
+signif(corn.f$cropToxIndex.areaPct,2)`% for fungicides.
 * In soybean, insecticides were responsible for `r soy.i <- cropType.summary %>% filter(Crop == "Soybeans" & Type == "Insecticide")
-soy.i$cropToxIndex.areaPct`% of the summed $TI{area}$, compared to `r soy.h <- cropType.summary %>% filter(Crop == "Soybeans" & Type == "Herbicide")
-soy.h$cropToxIndex.areaPct`% for herbicides, and `r soy.f <- cropType.summary %>% filter(Crop == "Soybeans" & Type == "Fungicide")
-soy.f$cropToxIndex.areaPct`% for fungicides.
+signif(soy.i$cropToxIndex.areaPct,2)`% of the summed $TI{area}$, compared to `r soy.h <- cropType.summary %>% filter(Crop == "Soybeans" & Type == "Herbicide")
+signif(soy.h$cropToxIndex.areaPct,2)`% for herbicides, and `r soy.f <- cropType.summary %>% filter(Crop == "Soybeans" & Type == "Fungicide")
+signif(soy.f$cropToxIndex.areaPct,2)`% for fungicides.
 
 ---
 
