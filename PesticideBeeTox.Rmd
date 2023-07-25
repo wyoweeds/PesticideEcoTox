@@ -36,7 +36,13 @@ AgroTrak.Timing.dat <- read_excel(
                           "Foliar atTasseling (Fungicides)", 
                           "Foliar before Tasseling (Fungicides)") ~ "POST"),
          Timing = factor(Timing, ordered = "TRUE",
-                            levels = c("PRE", "POST"))) 
+                            levels = c("PRE", "POST"))) %>%
+  group_by(Year, Crop, Timing, Type, Active.Ingredient, ai) %>%
+  summarize(Volume.lbs = round(sum(Volume.lbs)),
+            Base.Area.Treated = round(sum(Base.Area.Treated)),
+            Total.Area.Treated = round(sum(Total.Area.Treated))) %>%
+    mutate(Type = factor(Type,
+                         levels = c("Insecticide", "Herbicide", "Fungicide")))
 glimpse(AgroTrak.Timing.dat)
 
 ## Get full pesticide list from AgroTrak:
@@ -135,17 +141,33 @@ finalTox.dat <- bind_rows(
                               !is.na(AAC.LD50)),
   farruggia.s1.all %>% filter(ai %in% which.farruggia$ai),
   missingSearch.dat %>% filter(!is.na(AAC.LD50))
-)
+) %>%
+  group_by(ai) %>%
+  distinct()
 glimpse(finalTox.dat)
 write_csv(finalTox.dat, "finalToxData.csv")
+
+## USDA planted acres:
+plantedAcres.dat <- read_csv("DATA/USDA-PlantedAcres_1990-2023.csv") %>%
+  mutate(Crop = str_to_title(Commodity),
+         PlantedHectares = Value / 2.47) %>%
+  select(Year, Crop, PlantedHectares)
+glimpse(plantedAcres.dat)
 
 ## Merge with usage data
 AgroTrak.ecotox <-
   AgroTrak.Timing.dat %>%
   left_join(finalTox.dat) %>%
   mutate(Year = as.numeric(Year),
-         Volume.kg = Volume.lbs * 0.454,
-         RQ = Volume.kg / AAC.LD50) 
+         Volume.kg = round(Volume.lbs * 0.454),
+         BaseArea.ha = round(Base.Area.Treated / 2.47),
+         Rate.kgha = Volume.kg / BaseArea.ha) %>%
+  left_join(plantedAcres.dat) %>%
+  mutate(TreatedProportion = BaseArea.ha / PlantedHectares,
+         AreaAdjRate.kgha = Rate.kgha * TreatedProportion,
+         ToxIndex.vol = Volume.kg / AAC.LD50,
+         ToxIndex.rate = Rate.kgha / AAC.LD50,
+         ToxIndex.area = AreaAdjRate.kgha / AAC.LD50)
 glimpse(AgroTrak.ecotox)
 ```
 
@@ -198,68 +220,117 @@ knitr::kable(missDat %>% select(-AAC.LD50),
              caption = "**Table 1. Active ingredients for which more than 1,000 kg were applied during the period 1998 -- 2020 but do not have a reliable honey bee adult acute contact $LD_{50}$.**")
 ```
 
-# Honey bee Risk Quotient
+# Honey bee Toxicity Indices
 
 ```{r, include = FALSE}
-RQ.summary.yr <- AgroTrak.ecotox %>%
+ToxIndex.summary.yr <- AgroTrak.ecotox %>%
   group_by(Year, Crop, Timing, Type) %>%
-  summarize(RQ = sum(RQ, na.rm = TRUE)/1000000)
-RQ.summary <- AgroTrak.ecotox %>%
+  summarize(ToxIndex.vol = sum(ToxIndex.vol, na.rm = TRUE),
+            ToxIndex.rate = sum(ToxIndex.rate, na.rm = TRUE),
+            ToxIndex.area = sum(ToxIndex.area, na.rm = TRUE))
+ToxIndex.summary <- AgroTrak.ecotox %>%
   group_by(Crop, Timing, Type) %>%
-  summarize(RQ = sum(RQ, na.rm = TRUE)/1000000) %>%
+  summarize(ToxIndex.vol = sum(ToxIndex.vol, na.rm = TRUE),
+            ToxIndex.rate = sum(ToxIndex.rate, na.rm = TRUE),
+            ToxIndex.area = sum(ToxIndex.area, na.rm = TRUE)) %>%
   group_by(Crop) %>% 
-  mutate(cropRQ = sum(RQ),
-         cropRQ.pct = signif(RQ / cropRQ*100, 2))
+  mutate(cropToxIndex.vol = sum(ToxIndex.vol),
+         cropToxIndex.rate = sum(ToxIndex.rate),
+         cropToxIndex.area = sum(ToxIndex.area),
+         cropToxIndex.volPct = signif(ToxIndex.vol / 
+                                         cropToxIndex.vol*100, 2),
+         cropToxIndex.ratePct = signif(ToxIndex.rate / 
+                                         cropToxIndex.rate*100, 2),
+         cropToxIndex.areaPct = signif(ToxIndex.area / 
+                                         cropToxIndex.area*100, 2))
 
-RQ.cropTotals <- RQ.summary %>% 
+ToxIndex.cropTotals <- ToxIndex.summary %>% 
   group_by(Crop) %>% 
-  summarize(cropRQ = unique(cropRQ)) %>%
-  pivot_wider(names_from = Crop, values_from = cropRQ) %>%
-  mutate(propDiff = Corn / Soybeans)
+  summarize(cropToxIndex.vol = unique(cropToxIndex.vol),
+            cropToxIndex.rate = unique(cropToxIndex.rate),
+            cropToxIndex.area = unique(cropToxIndex.area))
+ToxIndex.cropTotals
 
-cropType.summary <- RQ.summary %>% 
+cropType.summary <- ToxIndex.summary %>% 
   group_by(Crop, Type) %>%
-  summarize(cropRQ.pct = sum(cropRQ.pct))
+  summarize(cropToxIndex.volPct = sum(cropToxIndex.volPct),
+            cropToxIndex.ratePct = sum(cropToxIndex.ratePct),
+            cropToxIndex.areaPct = sum(cropToxIndex.areaPct))
+cropType.summary
 ```
 
-Pesticide use data were separated into pesticides applied before crop emergence (PRE) and pesticides applied after crop emergence (POST). For each ai applied to each crop in each year, the volume applied $P_{vol}$ in kg was divided by the acute contact $LD_{50}$ for adult honey bees expressed in $\mu$g / bee to derive a risk quotient (RQ). [this was also divided by 1 million solely to make numbers easier to read in the figs... probably need to discuss that choice.]
+Pesticide use data were separated into pesticides applied before crop emergence (PRE) and pesticides applied after crop emergence (POST). For each ai applied to each crop in each year, three Toxicity Index values were calculated. A volume-based toxicity index ($TI_{vol}$) was calculated by taking the the total pesticide appliied rate $P_{vol}$ in kg and dividing by the acute contact $LD_{50}$ for adult honey bees expressed in $\mu$g / bee.
 
-$$RQ = (\frac{P_{vol}}{LD_{50}}) * 10^{-6}$$
+$$TI_{vol} = (\frac{P_{vol}}{LD_{50}})$$
 
-```{r, echo = FALSE, warning = FALSE, message = FALSE, fig.width = 8, fig.height = 3, fig.cap = "**Figure 1. Summed honey bee RQ applied to corn or soybean during the period 1998 through 2020 by pesticide type and application timing.**"}
-ggplot(RQ.summary, 
-       aes(x = RQ, y = Type)) +
+An application rate-based toxicity index $TI_{rate}$ was calculated by dividing $P_{vol}$ by the area treated with the pesticide in hectares ($A_{trt}$) to get the average application rate, then difiding that application rate by the $LD_{50}$.  
+
+$$TI_{rate} = (\frac{P_{vol} / A_{trt}}{LD_{50}})$$
+
+Finally, an area-adjusted toxicity index ($TI_{area}$) was calculated by multiplying $P_{rate}$ by the proportion of planted area ($A_{planted}$) onto which the pesticide was applied ($A_{trt}$), then dividing by $LD_{50}$:
+
+$$TI_{area} = (\frac{P_{rate} * (A_{trt} / A_{planted})}{LD_{50}})$$
+(( This is the same thing as $P_{vol}$ / $A_{planted}$ so need to simplify...))
+
+```{r, echo = FALSE, warning = FALSE, message = FALSE, fig.width = 8, fig.height = 6, fig.cap = "**Figure 1. Summed honey bee RQ applied to corn or soybean during the period 1998 through 2020 by pesticide type and application timing.**"}
+tisum.vol.gg <- ggplot(ToxIndex.summary, 
+       aes(x = ToxIndex.vol, y = Type)) +
   facet_grid(Crop ~ Timing) + 
   geom_bar(stat = "identity",
            aes(fill = Crop)) +
   ylab(element_blank()) +
-  xlab("Honeybee acute RQ") +
+  xlab("Honeybee acute toxicity index") +
   theme_minimal_grid() +
   theme(legend.position = "none")
+tisum.rate.gg <- ggplot(ToxIndex.summary, 
+       aes(x = ToxIndex.rate, y = Type)) +
+  facet_grid(Crop ~ Timing) + 
+  geom_bar(stat = "identity",
+           aes(fill = Crop)) +
+  ylab(element_blank()) +
+  xlab("Honeybee acute toxicity index") +
+  theme_minimal_grid() +
+  theme(legend.position = "none")
+tisum.area.gg <- ggplot(ToxIndex.summary, 
+       aes(x = ToxIndex.area, y = Type)) +
+  facet_grid(Crop ~ Timing) + 
+  geom_bar(stat = "identity",
+           aes(fill = Crop)) +
+  ylab(element_blank()) +
+  xlab("Honeybee acute toxicity index") +
+  theme_minimal_grid() +
+  theme(legend.position = "none")
+
+plot_grid(tisum.rate.gg, tisum.area.gg,
+          ncol = 1,
+          labels = c("Rate applied", "Area adjusted"),
+          hjust = -0.1)
 ```
 
-* The summed honey bee RQ over all years was `r round(RQ.cropTotals$propDiff, 1)`-times greater in corn compared to soybean.  
-* `r cornTot <- RQ.summary %>% filter(Crop == "Corn" & Timing == "PRE") %>% summarize(a = sum(cropRQ.pct))
-round(cornTot[[2]])`% of the summed honey bee risk quotient applied to corn was applied *before* crop emergence, when relative risk to honey bees and many other pollinator species is expected to be lower. 
-* `r soyTot <- RQ.summary %>% filter(Crop == "Soybeans" & Timing == "POST") %>% summarize(a = sum(cropRQ.pct))
-round(soyTot[[2]])`% of the summed honey bee risk quotient applied to soybean was applied *after* crop emergence, when relative risk to honey bees and many other pollinator species is expected to be higher.
+* The summed honey bee $TI_{rate}$ over all years was `r round(ToxIndex.cropTotals$cropToxIndex.rate[1]/ToxIndex.cropTotals$cropToxIndex.rate[2], 1)`-times greater in corn compared to soybean.
+* The summed honey be $TI_{area}$ over all years was `r round(ToxIndex.cropTotals$cropToxIndex.area[1]/ToxIndex.cropTotals$cropToxIndex.area[2], 1)`-times greater in corn compared to soybean.
+* I think the area-adjusted version is the one worth looking at - just the rate applied seems misleading if somthing was applied at a high rate on very few acres.
+* `r cornTot <- ToxIndex.summary %>% filter(Crop == "Corn" & Timing == "PRE") %>% summarize(a = sum(cropToxIndex.areaPct))
+round(cornTot[[2]])`% of the summed $TI_{area}$ applied to corn was applied *before* crop emergence, when relative risk to honey bees and many other pollinator species is expected to be lower. 
+* `r soyTot <- ToxIndex.summary %>% filter(Crop == "Soybeans" & Timing == "POST") %>% summarize(a = sum(cropToxIndex.areaPct))
+round(soyTot[[2]])`% of the summed $TI_{area}$ applied to soybean was applied *after* crop emergence, when relative risk to honey bees and many other pollinator species is expected to be higher.
 * In corn, insecticides were responsible for `r corn.i <- cropType.summary %>% filter(Crop == "Corn" & Type == "Insecticide")
-corn.i[[3]]`% of the summed RQ, compared to `r corn.h <- cropType.summary %>% filter(Crop == "Corn" & Type == "Herbicide")
-corn.h[[3]]`% for herbicides, and `r corn.f <- cropType.summary %>% filter(Crop == "Corn" & Type == "Fungicide")
-corn.f[[3]]`% for fungicides.
+corn.i$cropToxIndex.areaPct`% of $TI_{area}$, compared to `r corn.h <- cropType.summary %>% filter(Crop == "Corn" & Type == "Herbicide")
+corn.h$cropToxIndex.areaPct`% for herbicides, and `r corn.f <- cropType.summary %>% filter(Crop == "Corn" & Type == "Fungicide")
+corn.f$cropToxIndex.areaPct`% for fungicides.
 * In soybean, insecticides were responsible for `r soy.i <- cropType.summary %>% filter(Crop == "Soybeans" & Type == "Insecticide")
-soy.i[[3]]`% of the summed RQ, compared to `r soy.h <- cropType.summary %>% filter(Crop == "Soybeans" & Type == "Herbicide")
-soy.h[[3]]`% for herbicides, and `r soy.f <- cropType.summary %>% filter(Crop == "Soybeans" & Type == "Fungicide")
-soy.f[[3]]`% for fungicides.
+soy.i$cropToxIndex.areaPct`% of the summed $TI{area}$, compared to `r soy.h <- cropType.summary %>% filter(Crop == "Soybeans" & Type == "Herbicide")
+soy.h$cropToxIndex.areaPct`% for herbicides, and `r soy.f <- cropType.summary %>% filter(Crop == "Soybeans" & Type == "Fungicide")
+soy.f$cropToxIndex.areaPct`% for fungicides.
 
 ---
 
 ```{r, include = FALSE, warning = FALSE, message = FALSE}
 options(scipen = 10)
-knitr::kable(RQ.summary %>% select(-cropRQ) %>%
+knitr::kable(ToxIndex.summary %>% 
                pivot_wider(id_cols = c(Type, Timing),
                            names_from = Crop,
-                           values_from = cropRQ.pct) %>%
+                           values_from = cropToxIndex.areaPct) %>%
                arrange(Timing, Type),
              caption = "**Table 2. Percentage of the total honey bee risk quotient in corn and soybean by pesticide type and application timing.**")
 ```
@@ -268,14 +339,17 @@ knitr::kable(RQ.summary %>% select(-cropRQ) %>%
 
 
 ```{r, echo = FALSE, warning = FALSE, message = FALSE}
-RQ.plot <- function(data = RQ.summary.yr, crop, timing, excludeType = "none") {
+ToxIndex.plot <- function(
+    data = ToxIndex.summary.yr, 
+    crop, timing, 
+    excludeType = "none") {
   data %>% filter(Crop == crop & Timing == timing & Type != excludeType) %>%
-    ggplot(aes(y = RQ, x = Year)) +
+    ggplot(aes(y = ToxIndex.area, x = Year)) +
     facet_wrap(~ Type, scales = "free_y",
                ncol = 1) +
     geom_point() + 
     stat_smooth(se = FALSE, span = 0.9) +
-    ylab("Honeybee acute RQ") +
+    ylab("Honeybee acute toxicity index") +
     #theme_minimal_hgrid() +
     theme_gray(base_size = 18) +
     scale_y_continuous(limits = c(0, NA), expand = c(0, 0)) +
@@ -284,13 +358,65 @@ RQ.plot <- function(data = RQ.summary.yr, crop, timing, excludeType = "none") {
 ```
 
 ```{r, echo = FALSE, warning = FALSE, message = FALSE, fig.width = 8, fig.height = 6, fig.cap = "**Figure 2. Honey bee adult acute contact risk quotient for pesticides applied to corn or soybean *before* crop emergence.**"}
-plot_grid(RQ.plot(crop = "Corn", timing = "PRE", excludeType = "Fungicide"),
-          RQ.plot(crop = "Soybeans", timing = "PRE", excludeType = "Fungicide"),
+plot_grid(ToxIndex.plot(crop = "Corn", 
+                        timing = "PRE", 
+                        excludeType = "Fungicide"),
+          ToxIndex.plot(crop = "Soybeans", 
+                        timing = "PRE", 
+                        excludeType = "Fungicide"),
           nrow = 1)
 ```
 
 ```{r, echo = FALSE, warning = FALSE, message = FALSE, fig.width = 8, fig.height = 9, fig.cap = "**Figure 3. Honey bee adult acute contact risk quotient for pesticides applied to corn or soybean *after* crop emergence.**"}
-plot_grid(RQ.plot(crop = "Corn", timing = "POST"),
-          RQ.plot(crop = "Soybeans", timing = "POST"),
+plot_grid(ToxIndex.plot(crop = "Corn", timing = "POST"),
+          ToxIndex.plot(crop = "Soybeans", timing = "POST"),
           nrow = 1)
+```
+
+
+## Active ingredient contributions (2016-2020)
+
+```{r, include = FALSE}
+ToxIndex.post2015 <- AgroTrak.ecotox %>%
+  filter(Year > 2015) %>%
+  group_by(Crop, Timing, Type, ai) %>%
+  summarize(ToxIndex.area = sum(ToxIndex.area, na.rm = TRUE)) %>%
+  ungroup()
+```
+
+
+```{r, echo = FALSE, warning = FALSE, message = FALSE, fig.width = 8, fig.height = 6, fig.cap = "**Figure 4. Contribution of individual pesticides to the honey bee adult acute contact risk quotient; corn pesticides applied *after* crop emergence, 2016-2020.**"}
+ToxIndex.post2015 %>%
+  filter(Crop == "Corn" & Timing == "POST") %>%
+  arrange(-ToxIndex.area) %>% 
+  top_n(25) %>%
+  ggplot(aes(x = ToxIndex.area, y = reorder(ai, ToxIndex.area))) +
+  geom_point(aes(color = Type, shape = Type)) +
+  xlab("Honey bee acute toxicity index") +
+  ylab(element_blank()) +
+  ggtitle("Corn POST - 2016-2020") +
+  theme_gray(base_size = 18)
+```
+
+```{r, echo = FALSE, warning = FALSE, message = FALSE, fig.width = 8, fig.height = 6, fig.cap = "**Figure 5. Contribution of individual pesticides to the honey bee adult acute contact risk quotient; soybean pesticides applied *after* crop emergence, 2016-2020.**"}
+ToxIndex.post2015 %>%
+  filter(Crop == "Soybeans", Timing == "POST") %>%
+  arrange(-ToxIndex.area) %>% 
+  top_n(25) %>%
+  ggplot(aes(x = ToxIndex.area, y = reorder(ai, ToxIndex.area))) +
+  geom_point(aes(color = Type, shape = Type)) +
+  xlab("Honey bee acute toxicity index") +
+  ylab(element_blank()) +
+  ggtitle("Soybean POST - 2016-2020") +
+  theme_gray(base_size = 18)
+```
+
+```{r, include = FALSE}
+groupToxIndex <- AgroTrak.ecotox %>%
+  group_by(Year, Crop, Timing) %>%
+  mutate(ToxIndex.groupSum = sum(ToxIndex.area, na.rm = TRUE),
+         ToxIndex.groupProp = ToxIndex.area / ToxIndex.groupSum) %>%
+  select(Year, Crop, Timing, ai, 
+         ToxIndex.groupProp)
+glimpse(groupToxIndex)
 ```

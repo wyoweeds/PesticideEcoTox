@@ -17,7 +17,6 @@ METHYL PARATHION,NA,0.291,Ecotox Export
 PHORATE,NA,10.07,Ecotox Export
 DISULFOTON,NA,0.96,Ecotox Export
 DIURON,>,145.03,Ecotox Export
-DIURON,>,145.03,Ecotox Export
 LINURON,>,120.86,Ecotox Export
 DIAZINON,NA,0.372,Ecotox Export
 EPTC,NA,72.5,Ecotox Export
@@ -38,12 +37,10 @@ CHLORPYRIFOS,NA,0.114,Ecotox Export
 PARAQUAT,>,6.04,Ecotox Export
 PROMETRYN,>,96.69,Ecotox Export
 SULFUR,NA,1051,Ecotox Export
-SULFUR,NA,1051,Ecotox Export
 PYRETHRINS,>,0.63,Ecotox Export
 AZADIRACHTIN,>,2.5,Ecotox Export
 MANEB,>,12.09,Ecotox Export
 TERBUFOS,NA,4.09,Ecotox Export
-ETHOPROPHOS,NA,2.58,Ecotox Export
 ETHOPROPHOS,NA,2.58,Ecotox Export
 FENBUTATIN OXIDE,NA,3982,Ecotox Export
 ALACHLOR,>,36.26,Ecotox Export
@@ -52,11 +49,9 @@ BENOMYL,>,120.86,Ecotox Export
 THIOPHANATE-METHYL,>,100,Ecotox Export
 ACEPHATE,NA,1.2,Ecotox Export
 ACETOCHLOR,>,200,Ecotox Export
-ACETOCHLOR,>,200,Ecotox Export
 DIFLUBENZURON,>,74.2,Ecotox Export
 METALDEHYDE,>,113,Ecotox Export
 PENDIMETHALIN,>,100,Ecotox Export
-OXYFLUORFEN,>,100,Ecotox Export
 OXYFLUORFEN,>,100,Ecotox Export
 METOLACHLOR,>,110,Ecotox Export
 PERMETHRIN,NA,0.025,Ecotox Export
@@ -86,7 +81,6 @@ MYCLOBUTANIL,>,500,Ecotox Export
 CYHALOTHRIN-LAMBDA,NA,0.038,Ecotox Export
 PROSULFURON,>,100,Ecotox Export
 CYPROCONAZOLE,>,100,Ecotox Export
-CYPROCONAZOLE,>,100,Ecotox Export
 FLUMETSULAM,>,100,Ecotox Export
 TRIBENURON METHYL,>,100,Ecotox Export
 FLUMIOXAZIN,>,105,Ecotox Export
@@ -96,7 +90,6 @@ NICOSULFURON,>,20,Ecotox Export
 IMAZAMOX,>,58,Ecotox Export
 NOVALURON,>,100,Ecotox Export
 FLUTHIACET-METHYL,>,100,Ecotox Export
-PICOXYSTROBIN,>,200,Ecotox Export
 PICOXYSTROBIN,>,200,Ecotox Export
 DIFENOCONAZOLE,>,100,Ecotox Export
 SULFENTRAZONE,>,25.1,Ecotox Export
@@ -118,25 +111,18 @@ METHOXYFENOZIDE,>,100,Ecotox Export
 SPINOSYN,NA,0.0029,Ecotox Export
 INDOXACARB,NA,0.0682,Ecotox Export
 PYRACLOSTROBIN,>,100,Ecotox Export
-PYRACLOSTROBIN,>,100,Ecotox Export
-PROTHIOCONAZOLE,>,200,Ecotox Export
 PROTHIOCONAZOLE,>,200,Ecotox Export
 PENTHIOPYRAD,NA,23.49,Ecotox Export
 BOSCALID,>,200,Ecotox Export
 TOPRAMEZONE,>,100,Ecotox Export
-TOPRAMEZONE,>,100,Ecotox Export
 CLOTHIANIDIN,NA,0.0275,Ecotox Export
 FLUBENDIAMIDE,>,200,Ecotox Export
-FLUBENDIAMIDE,>,200,Ecotox Export
-SPIROMESIFEN,>,200,Ecotox Export
 SPIROMESIFEN,>,200,Ecotox Export
 BICYCLOPYRONE,>,197,Ecotox Export
 FLUOXASTROBIN,>,200,Ecotox Export
 SAFLUFENACIL,>,100,Ecotox Export
-SAFLUFENACIL,>,100,Ecotox Export
 PYROXASULFONE,>,100,Ecotox Export
 BIXAFEN,>,100,Ecotox Export
-FLUOPYRAM,>,100,Ecotox Export
 FLUOPYRAM,>,100,Ecotox Export
 AFIDOPYROPEN,NA,20.3,Ecotox Export
 SPINETORAM,NA,0.024,Ecotox Export
