@@ -511,3 +511,37 @@ AgroTrak.PestToxIndex %>%
   ylab("Total Pest Toxicity Index")
 
 ```
+
+```{r include = FALSE}
+weedToxIndex.post <- AgroTrak.PestToxIndex %>%
+  filter(Type == "Herbicide" & 
+           Timing == "POST") %>%
+  group_by(Crop, Pest) %>%
+  summarize(pestToxIndex.sum = sum(pestToxIndex, na.rm = TRUE)) 
+glimpse(weedToxIndex.post)
+```
+
+```{r, echo = FALSE, warning = FALSE, message = FALSE, fig.width = 8, fig.height = 6, fig.cap = "**Figure 8. Contribution of weeds to the honey bee adult acute contact toxicity index; corn herbicides applied *after* crop emergence, 1998-2020.**"}
+weedToxIndex.post %>%
+  filter(Crop == "Corn") %>%
+  slice_max(pestToxIndex.sum, n = 30) %>%
+  ggplot(aes(x = pestToxIndex.sum,
+             y = reorder(Pest, pestToxIndex.sum))) +
+  geom_bar(stat = "identity") +
+  ggtitle("Corn POST - Herbicide targets") +
+  ylab(element_blank()) +
+  xlab("Summed Pest Toxicity Index")
+```
+
+```{r, echo = FALSE, warning = FALSE, message = FALSE, fig.width = 8, fig.height = 6, fig.cap = "**Figure 9. Contribution of weeds to the honey bee adult acute contact toxicity index; soybean herbicides applied *after* crop emergence, 1998-2020.**"}
+weedToxIndex.post %>%
+  filter(Crop == "Soybeans") %>%
+  slice_max(pestToxIndex.sum, n = 30) %>%
+  ggplot(aes(x = pestToxIndex.sum,
+             y = reorder(Pest, pestToxIndex.sum))) +
+  geom_bar(stat = "identity") +
+  ggtitle("Soybean POST - Herbicide targets") +
+  ylab(element_blank()) +
+  xlab("Summed Pest Toxicity Index")
+
+```
