@@ -1,0 +1,1190 @@
+Type,Crop,Pest,TaxonGroup,Family,Genus,Species
+Herbicide,Corn,"ACACIA, CATCLAW",,Fabaceae,Senegalia,
+Herbicide,Soybeans,"ACACIA, CATCLAW",,Fabaceae,Senegalia,
+Herbicide,Corn,"ADONIS, PHEASANTEYE",,Ranunculaceae,Adonis,
+Herbicide,Soybeans,"ADONIS, PHEASANTEYE",,Ranunculaceae,Adonis,
+Herbicide,Corn,AGERATUM,,Asteraceae,Ageratum,
+Herbicide,Soybeans,AGERATUM,,Asteraceae,Ageratum,
+Herbicide,Corn,ALEXANDERGRASS,,Poaceae,Urochloa,plantaginea
+Herbicide,Soybeans,ALEXANDERGRASS,,Poaceae,Urochloa,plantaginea
+Herbicide,Corn,"ALFALFA, VOLUNTEER",,Fabaceae,Medicago,sativa
+Herbicide,Soybeans,"ALFALFA, VOLUNTEER",,Fabaceae,Medicago,sativa
+Herbicide,Corn,ALGAE,,,,
+Herbicide,Soybeans,ALKALI SACATON,,Poaceae,Sporobolus,airoides
+Herbicide,Corn,ALKALIWEED,,Convolvulaceae,Cressa,
+Herbicide,Soybeans,ALKALIWEED,,Convolvulaceae,Cressa,
+Herbicide,Corn,ALL WEEDS,,,,
+Herbicide,Soybeans,ALL WEEDS,,,,
+Herbicide,Corn,ALLIGATORWEED,,Amaranthaceae,Alternanthera,philoxeroides
+Herbicide,Soybeans,ALLIGATORWEED,,Amaranthaceae,Alternanthera,philoxeroides
+Herbicide,Corn,AMARANTH,,Amaranthaceae,Amarathus,
+Herbicide,Soybeans,AMARANTH,,Amaranthaceae,Amarathus,
+Herbicide,Corn,"AMARANTH, PALMER",,Amaranthaceae,Amarathus,palmeri
+Herbicide,Soybeans,"AMARANTH, PALMER",,Amaranthaceae,Amarathus,palmeri
+Herbicide,Corn,"AMARANTH, POWELL'S",,Amaranthaceae,Amarathus,powellii
+Herbicide,Soybeans,"AMARANTH, POWELL'S",,Amaranthaceae,Amarathus,powellii
+Herbicide,Corn,"AMARANTH, SPINY",,Amaranthaceae,Amarathus,spinosus
+Herbicide,Soybeans,"AMARANTH, SPINY",,Amaranthaceae,Amarathus,spinosus
+Herbicide,Corn,"AMMANNIA, PURPLE",,Lythraceae,Ammannia,
+Herbicide,Soybeans,"AMMANNIA, PURPLE",,Lythraceae,Ammannia,
+Herbicide,Corn,"ANODA, SPURRED",,Malvaceae,Anoda,cristata
+Herbicide,Soybeans,"ANODA, SPURRED",,Malvaceae,Anoda,cristata
+Herbicide,Soybeans,AQUATICS,,,,
+Herbicide,Corn,ARROWHEAD,,Alismataceae,Sagittaria,
+Herbicide,Soybeans,ARROWHEAD,,Alismataceae,Sagittaria,
+Herbicide,Soybeans,"ARROWHEAD, CALIFORNIA",,Alismataceae,Sagittaria,montevidensis
+Herbicide,Corn,"ARROWHEAD, GREGG",,Alismataceae,Sagittaria,longiloba
+Herbicide,Corn,"ARTICHOKE, JERUSALEM",,Asteraceae,Helianthus,tuberosus
+Herbicide,Soybeans,"ARTICHOKE, JERUSALEM",,Asteraceae,Helianthus,tuberosus
+Herbicide,Corn,"ASPARAGUS, VOLUNTEER",,Asparagaceae,Asparagus,officinalis
+Herbicide,Soybeans,"ASPARAGUS, VOLUNTEER",,Asparagaceae,Asparagus,officinalis
+Herbicide,Corn,ASTER,,Asteraceae,Aster,
+Herbicide,Soybeans,ASTER,,Asteraceae,Aster,
+Herbicide,Corn,BAHIAGRASS,,Poaceae,Paspalum,notatum
+Herbicide,Soybeans,BAHIAGRASS,,Poaceae,Paspalum,notatum
+Herbicide,Corn,BALLOONVINE,,Sapindaceae,Cardiospermum,halicacabum
+Herbicide,Soybeans,BALLOONVINE,,Sapindaceae,Cardiospermum,halicacabum
+Herbicide,Corn,BALSAMAPPLE,,Curcubitaceae,Echinopepon,
+Herbicide,Soybeans,BALSAMAPPLE,,Curcubitaceae,Echinopepon,
+Herbicide,Corn,BARBERRY,,Berberidaceae,Berberis,
+Herbicide,Soybeans,BARBERRY,,Berberidaceae,Berberis,
+Herbicide,Corn,"BARLEY, FOXTAIL",,Poaceae,Hordeum,jubatum
+Herbicide,Soybeans,"BARLEY, FOXTAIL",,Poaceae,Hordeum,jubatum
+Herbicide,Corn,"BARLEY, LITTLE",,Poaceae,Hordeum,pusillum
+Herbicide,Soybeans,"BARLEY, LITTLE",,Poaceae,Hordeum,pusillum
+Herbicide,Corn,"BARLEY, VOLUNTEER",,Poaceae,Hordeum,vulgare
+Herbicide,Soybeans,"BARLEY, VOLUNTEER",,Poaceae,Hordeum,vulgare
+Herbicide,Corn,"BARLEY, WILD",,Poaceae,Hordeum,spontaneaum
+Herbicide,Soybeans,"BARLEY, WILD",,Poaceae,Hordeum,spontaneaum
+Herbicide,Corn,BARNYARDGRASS,,Poaceae,Echinochloa,
+Herbicide,Soybeans,BARNYARDGRASS,,Poaceae,Echinochloa,
+Herbicide,Soybeans,BASSIA,,Chenopodiaceae,Bassia,
+Herbicide,Corn,"BEAKRUSH, HORNED",,Cyperaceae,Rhynchospora,
+Herbicide,Soybeans,"BEAKRUSH, HORNED",,Cyperaceae,Rhynchospora,
+Herbicide,Corn,"BEAN, VOLUNTEER",,Fabaceae,Phaseolus,vulgare
+Herbicide,Soybeans,"BEAN, VOLUNTEER",,Fabaceae,Phaseolus,vulgare
+Herbicide,Corn,"BEAN, WILD PEA",,Fabaceae,Phaseolus,
+Herbicide,Soybeans,"BEAN, WILD PEA",,Fabaceae,Phaseolus,
+Herbicide,Corn,BEARDGRASS,,Poaceae,Bothriochloa,
+Herbicide,Soybeans,BEARDGRASS,,Poaceae,Bothriochloa,
+Herbicide,Corn,"BEDSTRAW, CATCHWEED",,Rubiaceae,Galium,aparine
+Herbicide,Soybeans,"BEDSTRAW, CATCHWEED",,Rubiaceae,Galium,aparine
+Herbicide,Corn,BEGGARTICKS,,Asteraceae,Bidens,
+Herbicide,Soybeans,BEGGARTICKS,,Asteraceae,Bidens,
+Herbicide,Corn,BEGGARWEED,,Fabaceae,Desmodium,
+Herbicide,Soybeans,BEGGARWEED,,Fabaceae,Desmodium,
+Herbicide,Corn,"BEGGARWEED, FLORIDA",,Fabaceae,Desmodium,tortuosum
+Herbicide,Soybeans,"BEGGARWEED, FLORIDA",,Fabaceae,Desmodium,tortuosum
+Herbicide,Corn,BELLFLOWER,,Campanulaceae,Campanula,
+Herbicide,Soybeans,BELLFLOWER,,Campanulaceae,Campanula,
+Herbicide,Corn,BENTGRASS,,Poaceae,Agrostis,
+Herbicide,Soybeans,BENTGRASS,,Poaceae,Agrostis,
+Herbicide,Corn,BERMUDAGRASS,,Poaceae,Cynodon,dactylon
+Herbicide,Soybeans,BERMUDAGRASS,,Poaceae,Cynodon,dactylon
+Herbicide,Corn,BERRIES,,,,
+Herbicide,Soybeans,BERRIES,,,,
+Herbicide,Corn,"BETONY, FLORIDA",,Lamiaceae,Stachys,floridiana
+Herbicide,Soybeans,"BETONY, FLORIDA",,Lamiaceae,Stachys,floridiana
+Herbicide,Corn,"BINDWEED, FIELD",,Convolvulaceae,Convolvulus,arvensis
+Herbicide,Soybeans,"BINDWEED, FIELD",,Convolvulaceae,Convolvulus,arvensis
+Herbicide,Corn,BITTERCRESS,,Brassicaceae,Cardamine,
+Herbicide,Corn,BLACKBERRY,,Rosaceae,Rubus,
+Herbicide,Soybeans,BLACKBERRY,,Rosaceae,Rubus,
+Herbicide,Corn,BLACKEYED-SUSAN,,Asteraceae,Rudbeckia,hirta
+Herbicide,Soybeans,BLACKEYED-SUSAN,,Asteraceae,Rudbeckia,hirta
+Herbicide,Corn,BLACKGRASS,,Poaceae,Alopecurus,myosuroides
+Herbicide,Soybeans,BLACKGRASS,,Poaceae,Alopecurus,myosuroides
+Herbicide,Corn,BLOODBERRY,,Phytolaccaceae,Rivina,humilis
+Herbicide,Soybeans,BLOODBERRY,,Phytolaccaceae,Rivina,humilis
+Herbicide,Corn,"BLUEGRASS, ANNUAL",,Poaceae,Poa,annua
+Herbicide,Soybeans,"BLUEGRASS, ANNUAL",,Poaceae,Poa,annua
+Herbicide,Corn,"BLUEGRASS, KENTUCKY",,Poaceae,Poa,pratensis
+Herbicide,Soybeans,"BLUEGRASS, KENTUCKY",,Poaceae,Poa,pratensis
+Herbicide,Corn,"BLUEGRASS, ROUGHSTALK",,Poaceae,Poa,trivialis
+Herbicide,Soybeans,"BLUEGRASS, ROUGHSTALK",,Poaceae,Poa,trivialis
+Herbicide,Corn,"BLUESTEM, LITTLE",,Poaceae,Schizachyrium,scoparium
+Herbicide,Soybeans,"BLUESTEM, LITTLE",,Poaceae,Schizachyrium,scoparium
+Herbicide,Corn,BLUEWEED,,Boraginaceae,Echium,vulgare
+Herbicide,Soybeans,BLUEWEED,,Boraginaceae,Echium,vulgare
+Herbicide,Soybeans,BOUNCINGBET,,Caryophyllaceae,Saponaria,officinalis
+Herbicide,Soybeans,"BRACKENFERN, WESTERN",,Dennstaedtiaceae,Pteridium,aquilinum
+Herbicide,Corn,BRAMBLE,,,,
+Herbicide,Soybeans,BRAMBLE,,,,
+Herbicide,Corn,BRIAR,,,,
+Herbicide,Soybeans,BRIAR,,,,
+Herbicide,Corn,"BROADLEAVES, ALL",,"Dicot, all","Dicot, all",
+Herbicide,Soybeans,"BROADLEAVES, ALL",,,,
+Herbicide,Corn,"BROADLEAVES, ANNUAL",,,,
+Herbicide,Soybeans,"BROADLEAVES, ANNUAL",,,,
+Herbicide,Corn,"BROADLEAVES, PERENNIAL",,,,
+Herbicide,Soybeans,"BROADLEAVES, PERENNIAL",,,,
+Herbicide,Corn,BROME,,Poaceae,Bromus,
+Herbicide,Soybeans,BROME,,Poaceae,Bromus,
+Herbicide,Corn,"BROME, CALIFORNIA",,Poaceae,Bromus,carinatus
+Herbicide,Soybeans,"BROME, CALIFORNIA",,Poaceae,Bromus,carinatus
+Herbicide,Corn,"BROME, DOWNY",,Poaceae,Bromus,tectorum
+Herbicide,Soybeans,"BROME, DOWNY",,Poaceae,Bromus,tectorum
+Herbicide,Corn,"BROME, JAPANESE",,Poaceae,Bromus,arvensis
+Herbicide,Soybeans,"BROME, JAPANESE",,Poaceae,Bromus,arvensis
+Herbicide,Corn,"BROME, RED",,Poaceae,Bromus,rubens
+Herbicide,Soybeans,"BROME, RED",,Poaceae,Bromus,rubens
+Herbicide,Corn,"BROME, RIPGUT",,Poaceae,Bromus,diandrus
+Herbicide,Soybeans,"BROME, RIPGUT",,Poaceae,Bromus,diandrus
+Herbicide,Corn,"BROME, SMOOTH",,Poaceae,Bromus,inermis
+Herbicide,Soybeans,"BROME, SMOOTH",,Poaceae,Bromus,inermis
+Herbicide,Corn,BROOMSEDGE,,Poaceae,Andropogon,virginicus
+Herbicide,Corn,BROOMWEED,,Asteraceae,Amphiachyris,
+Herbicide,Soybeans,BROOMWEED,,Asteraceae,Amphiachyris,
+Herbicide,Corn,BUCKBRUSH,,Rhamnaceae,Ceanothus,cuneatus
+Herbicide,Soybeans,BUCKBRUSH,,Rhamnaceae,Ceanothus,cuneatus
+Herbicide,Corn,"BUCKTHORN, EUROPEAN",,Rhamnaceae,Rhamnus,cathartica
+Herbicide,Corn,"BUCKWHEAT, TARTARY",,Polygonaceae,Fagopyrum,tataricum
+Herbicide,Soybeans,"BUCKWHEAT, TARTARY",,Polygonaceae,Fagopyrum,tataricum
+Herbicide,Corn,"BUCKWHEAT, WILD",,Polygonaceae,Polygonum,convolvulus
+Herbicide,Soybeans,"BUCKWHEAT, WILD",,Polygonaceae,Polygonum,convolvulus
+Herbicide,Corn,BUFFALOBUR,,Solanaceae,Solanum,rostratum
+Herbicide,Soybeans,BUFFALOBUR,,Solanaceae,Solanum,rostratum
+Herbicide,Corn,BUFFALOGRASS,,Poaceae,Bouteloua,dactyloides
+Herbicide,Soybeans,BUFFALOGRASS,,Poaceae,Bouteloua,dactyloides
+Herbicide,Corn,BUFFELGRASS,,Poaceae,Pennisetum,ciliare
+Herbicide,Soybeans,BUFFELGRASS,,Poaceae,Pennisetum,ciliare
+Herbicide,Corn,BULLNETTLE,,Euphorbiaceae,Cnidoscolus,texanus
+Herbicide,Soybeans,BULLNETTLE,,Euphorbiaceae,Cnidoscolus,texanus
+Herbicide,Corn,BULRUSH,,,,
+Herbicide,Corn,"BURCLOVER, CALIFORNIA",,Fabaceae,Medicago,polymorpha
+Herbicide,Soybeans,"BURCLOVER, CALIFORNIA",,Fabaceae,Medicago,polymorpha
+Herbicide,Corn,BURCUCUMBER,,Curcubitaceae,Sicyos,angulatus
+Herbicide,Soybeans,BURCUCUMBER,,Curcubitaceae,Sicyos,angulatus
+Herbicide,Corn,"BURDOCK, COMMON",,Asteraceae,Arctium,minus
+Herbicide,Soybeans,"BURDOCK, COMMON",,Asteraceae,Arctium,minus
+Herbicide,Corn,BURNDOWN,,Unknown,Unknown,
+Herbicide,Soybeans,BURNDOWN,,,,
+Herbicide,Corn,"BURRWEED, FIELD",,Asteraceae,Soliva,sessilis
+Herbicide,Soybeans,"BURRWEED, FIELD",,Asteraceae,Soliva,sessilis
+Herbicide,Corn,BURSAGE,,Asteraceae,Ambrosia,
+Herbicide,Soybeans,BURSAGE,,Asteraceae,Ambrosia,
+Herbicide,Corn,"BURSAGE, WOOLLYLEAF",,Asteraceae,Ambrosia,grayi
+Herbicide,Soybeans,"BURSAGE, WOOLLYLEAF",,Asteraceae,Ambrosia,grayi
+Herbicide,Corn,BUTTERCUP,,Ranunculaceae,Ranunculus,
+Herbicide,Soybeans,BUTTERCUP,,Ranunculaceae,Ranunculus,
+Herbicide,Corn,BUTTONWEED,,Rubiaceae,Diodia,
+Herbicide,Soybeans,BUTTONWEED,,Rubiaceae,Diodia,
+Herbicide,Corn,CALADIUM,,Araceae,Caladium,
+Herbicide,Soybeans,CALADIUM,,Araceae,Caladium,
+Herbicide,Corn,CAMPHORWEED,,Asteraceae,Pluchea,
+Herbicide,Soybeans,CAMPHORWEED,,Asteraceae,Pluchea,
+Herbicide,Corn,"CAMPION, MEADOW",,Caryophyllaceae,Silene,flos-cuculi
+Herbicide,Soybeans,"CAMPION, MEADOW",,Caryophyllaceae,Silene,flos-cuculi
+Herbicide,Corn,"CAMPION, WHITE",,Caryophyllaceae,Silene,latifolia
+Herbicide,Soybeans,"CAMPION, WHITE",,Caryophyllaceae,Silene,latifolia
+Herbicide,Corn,CANARYGRASS,,Poaceae,Phalaris,
+Herbicide,Soybeans,CANARYGRASS,,Poaceae,Phalaris,
+Herbicide,Corn,"CANARYGRASS, LITTLESEED",,Poaceae,Phalaris,minor
+Herbicide,Corn,"CANARYGRASS, REED",,Poaceae,Phalaris,arundinacea
+Herbicide,Soybeans,"CANARYGRASS, REED",,Poaceae,Phalaris,arundinacea
+Herbicide,Corn,"CANCERWORT, SHARPLEAF",,Scrophulariaceae,Kickxia,elatine
+Herbicide,Soybeans,"CANCERWORT, SHARPLEAF",,Scrophulariaceae,Kickxia,elatine
+Herbicide,Corn,"CANOLA, VOLUNTEER",,Brassicaceae,Brassica,napus
+Herbicide,Soybeans,"CANOLA, VOLUNTEER",,Brassicaceae,Brassica,napus
+Herbicide,Soybeans,"CARAWAY, COMMON",,Apiaceae,Carum,carvi
+Herbicide,Corn,CARPETWEED,,Molluginaceae,Mollugo,
+Herbicide,Soybeans,CARPETWEED,,Molluginaceae,Mollugo,
+Herbicide,Corn,"CARROT, WILD",,Apiaceae,Daucus,
+Herbicide,Soybeans,"CARROT, WILD",,Apiaceae,Daucus,
+Herbicide,Corn,CASTORBEAN,,Euphorbiaceae,Ricinus,communis
+Herbicide,Corn,CATCHFLY,,Caryophyllaceae,Silene,
+Herbicide,Soybeans,CATCHFLY,,Caryophyllaceae,Silene,
+Herbicide,Soybeans,CATNIP,,Lamiaceae,Nepeta,cataria
+Herbicide,Corn,CATSEAR,,Asteraceae,Hypochaeris,radicata
+Herbicide,Soybeans,CATSEAR,,Asteraceae,Hypochaeris,radicata
+Herbicide,Corn,CATTAIL,,Typhaceae,Typha,
+Herbicide,Soybeans,CATTAIL,,Typhaceae,Typha,
+Herbicide,Corn,CEDAR,,Cupressaceae,Juniperus,
+Herbicide,Soybeans,CEDAR,,Cupressaceae,Juniperus,
+Herbicide,Corn,"CELERY, WILD",,Apiaceae,Apium,graveolens
+Herbicide,Soybeans,"CELERY, WILD",,Apiaceae,Apium,graveolens
+Herbicide,Corn,CENTIPEDEGRASS,,Poaceae,Eremochloa,
+Herbicide,Soybeans,CENTIPEDEGRASS,,Poaceae,Eremochloa,
+Herbicide,Corn,"CEREAL, VOLUNTEER",,Poaceae,,
+Herbicide,Soybeans,"CEREAL, VOLUNTEER",,Poaceae,,
+Herbicide,Corn,CHAMOMILE,,Asteraceae,,
+Herbicide,Corn,"CHAMOMILE, CORN",,Asteraceae,Anthemis,arvensis
+Herbicide,Soybeans,"CHAMOMILE, CORN",,Asteraceae,Anthemis,arvensis
+Herbicide,Corn,"CHAMOMILE, FALSE",,Asteraceae,Matricaria,perforata
+Herbicide,Soybeans,"CHAMOMILE, FALSE",,Asteraceae,Matricaria,perforata
+Herbicide,Corn,CHARA,,Characeae,Chara,
+Herbicide,Corn,CHEAT,,,,
+Herbicide,Soybeans,CHEAT,,,,
+Herbicide,Corn,CHICKWEED,,Caryophyllaceae,Cerastium,
+Herbicide,Soybeans,CHICKWEED,,Caryophyllaceae,Cerastium,
+Herbicide,Corn,"CHICKWEED, MOUSEEAR",,Caryophyllaceae,Cerastium,fontanum
+Herbicide,Soybeans,"CHICKWEED, MOUSEEAR",,Caryophyllaceae,Cerastium,fontanum
+Herbicide,Corn,CHICORY,,Asteraceae,Cichorium,intybus
+Herbicide,Soybeans,CHICORY,,Asteraceae,Cichorium,intybus
+Herbicide,Soybeans,CHINABERRY,,Meliaceae,Melia,azedarach
+Herbicide,Corn,CHOLLA,,Cactaceae,Cylindropuntia,
+Herbicide,Soybeans,CHOLLA,,Cactaceae,Cylindropuntia,
+Herbicide,Corn,CHRISTMASBERRY,,Primulaceae,Ardisia,crenata
+Herbicide,Soybeans,CHRISTMASBERRY,,Primulaceae,Ardisia,crenata
+Herbicide,Corn,"CHRYSTHANTHEMUM, COSTMARY",,Asteraceae,Tanacetum,balsamita
+Herbicide,Corn,CINQUEFOIL,,Rosaceae,Potentilla,
+Herbicide,Corn,"CINQUEFOIL, SHRUBBY",,Rosaceae,Dasiphora,
+Herbicide,Soybeans,"CINQUEFOIL, SHRUBBY",,Rosaceae,Dasiphora,
+Herbicide,Corn,"CINQUEFOIL, SULFUR",,Rosaceae,Potentilla,recta
+Herbicide,Corn,CITRONMELON,,Curcubitaceae,Citrullus,lanatus
+Herbicide,Soybeans,CITRONMELON,,Curcubitaceae,Citrullus,lanatus
+Herbicide,Corn,CLOVER,,Fabaceae,Trifolium,
+Herbicide,Soybeans,CLOVER,,Fabaceae,Trifolium,
+Herbicide,Corn,"CLOVER, BUFFALO",,Fabaceae,Trifolium,reflexum
+Herbicide,Soybeans,"CLOVER, BUFFALO",,Fabaceae,Trifolium,reflexum
+Herbicide,Corn,"CLOVER, CRIMSON",,Fabaceae,Trifolium,incarnatum
+Herbicide,Soybeans,"CLOVER, CRIMSON",,Fabaceae,Trifolium,incarnatum
+Herbicide,Corn,"CLOVER, RED",,Fabaceae,Trifolium,pratense
+Herbicide,Soybeans,"CLOVER, RED",,Fabaceae,Trifolium,pratense
+Herbicide,Corn,"CLOVER, WHITE",,Fabaceae,Trifolium,repens
+Herbicide,Soybeans,"CLOVER, WHITE",,Fabaceae,Trifolium,repens
+Herbicide,Corn,"COCKLE, CORN",,Caryophyllaceae,Agrostemma,githago
+Herbicide,Soybeans,"COCKLE, CORN",,Caryophyllaceae,Agrostemma,githago
+Herbicide,Corn,COCKLEBUR,,Asteraceae,Xanthium,
+Herbicide,Soybeans,COCKLEBUR,,Asteraceae,Xanthium,
+Herbicide,Corn,"COCKLEBUR, SPINY",,Asteraceae,Xanthium,spinosum
+Herbicide,Soybeans,"COCKLEBUR, SPINY",,Asteraceae,Xanthium,spinosum
+Herbicide,Corn,COGONGRASS,,Poaceae,Imperata,cylindrica
+Herbicide,Corn,"CONEFLOWER, PRAIRIE",,Asteraceae,Ratibida,
+Herbicide,Corn,COPPERLEAF,,Euphorbiaceae,Acalypha,
+Herbicide,Soybeans,COPPERLEAF,,Euphorbiaceae,Acalypha,
+Herbicide,Corn,"COPPERLEAF, HOPHORNBEAM",,Euphorbiaceae,Acalypha,ostryifolia
+Herbicide,Soybeans,"COPPERLEAF, HOPHORNBEAM",,Euphorbiaceae,Acalypha,ostryifolia
+Herbicide,Corn,"COPPERLEAF, VIRGINIA",,Euphorbiaceae,Acalypha,virginica
+Herbicide,Soybeans,"COPPERLEAF, VIRGINIA",,Euphorbiaceae,Acalypha,virginica
+Herbicide,Corn,COPPERWEED,,Asteraceae,Oxytenia,
+Herbicide,Soybeans,COPPERWEED,,Asteraceae,Oxytenia,
+Herbicide,Corn,"COREOPSIS, PLAINS",,Asteraceae,Coreopsis,tinctoria
+Herbicide,Soybeans,"COREOPSIS, PLAINS",,Asteraceae,Coreopsis,tinctoria
+Herbicide,Corn,"CORN, VOLUNTEER",,Poaceae,Zea,mays
+Herbicide,Soybeans,"CORN, VOLUNTEER",,Poaceae,Zea,mays
+Herbicide,Corn,CORNFLOWER,,Asteraceae,Centaurea,
+Herbicide,Soybeans,CORNFLOWER,,Asteraceae,Centaurea,
+Herbicide,Corn,"COTTON, VOLUNTEER",,Malvaceae,Gossypium,
+Herbicide,Soybeans,"COTTON, VOLUNTEER",,Malvaceae,Gossypium,
+Herbicide,Corn,COWCOCKLE,,Caryophyllaceae,Vaccaria,hispanica
+Herbicide,Soybeans,COWCOCKLE,,Caryophyllaceae,Vaccaria,hispanica
+Herbicide,Corn,COWPEA,,Fabaceae,Vigna,
+Herbicide,Soybeans,COWPEA,,Fabaceae,Vigna,
+Herbicide,Corn,CRABGRASS,,Poaceae,Digitaria,
+Herbicide,Soybeans,CRABGRASS,,Poaceae,Digitaria,
+Herbicide,Corn,"CRABGRASS, HAIRY",,Poaceae,Digitaria,sanguinalis
+Herbicide,Soybeans,"CRABGRASS, HAIRY",,Poaceae,Digitaria,sanguinalis
+Herbicide,Corn,"CRABGRASS, SMOOTH",,Poaceae,Digitaria,ischaemum
+Herbicide,Soybeans,"CRABGRASS, SMOOTH",,Poaceae,Digitaria,ischaemum
+Herbicide,Corn,"CRAZYWEED, LAMBERT",,Fabaceae,Oxytropis,lambertii
+Herbicide,Soybeans,"CRAZYWEED, LAMBERT",,Fabaceae,Oxytropis,lambertii
+Herbicide,Corn,CREEPER,,,,
+Herbicide,Soybeans,CREEPER,,,,
+Herbicide,Corn,"CRESS, HOARY",,Brassicaceae,Lepidium,draba
+Herbicide,Soybeans,"CRESS, HOARY",,Brassicaceae,Lepidium,draba
+Herbicide,Corn,"CROP, VOLUNTEER",,,,
+Herbicide,Soybeans,"CROP, VOLUNTEER",,,,
+Herbicide,Corn,CROTON,,Euphorbiaceae,Croton,
+Herbicide,Soybeans,CROTON,,Euphorbiaceae,Croton,
+Herbicide,Corn,"CROTON, TROPIC",,Euphorbiaceae,Croton,glandulosus
+Herbicide,Soybeans,"CROTON, TROPIC",,Euphorbiaceae,Croton,glandulosus
+Herbicide,Corn,"CROTON, WOOLLY",,Euphorbiaceae,Croton,capitatus
+Herbicide,Soybeans,"CROTON, WOOLLY",,Euphorbiaceae,Croton,capitatus
+Herbicide,Corn,CROWFOOTGRASS,,Poaceae,Dactyloctenium,
+Herbicide,Soybeans,CROWFOOTGRASS,,Poaceae,Dactyloctenium,
+Herbicide,Corn,CROWNBEARD,,Asteraceae,Verbesina,
+Herbicide,Soybeans,CROWNBEARD,,Asteraceae,Verbesina,
+Herbicide,Corn,CROWNVETCH,,Fabaceae,Securigera,
+Herbicide,Corn,"CUCUMBER, WILD",,Curcubitaceae,Echinocystis,lobata
+Herbicide,Soybeans,"CUCUMBER, WILD",,Curcubitaceae,Echinocystis,lobata
+Herbicide,Corn,CUDWEED,,Asteraceae,Gamochaeta,
+Herbicide,Soybeans,CUDWEED,,Asteraceae,Gamochaeta,
+Herbicide,Corn,"CUDWEED, PURPLE",,Asteraceae,Gamochaeta,purpurea
+Herbicide,Soybeans,"CUDWEED, PURPLE",,Asteraceae,Gamochaeta,purpurea
+Herbicide,Corn,CUPGRASS,,Poaceae,Eriochloa,
+Herbicide,Soybeans,CUPGRASS,,Poaceae,Eriochloa,
+Herbicide,Corn,"CUPGRASS, PRAIRIE",,Poaceae,Eriochloa,contracta
+Herbicide,Soybeans,"CUPGRASS, PRAIRIE",,Poaceae,Eriochloa,contracta
+Herbicide,Corn,"CUPGRASS, WOOLLY",,Poaceae,Eriochloa,villosa
+Herbicide,Soybeans,"CUPGRASS, WOOLLY",,Poaceae,Eriochloa,villosa
+Herbicide,Corn,CURLY PONDWEED,,Potamogetonaceae,Potamogeton,crispus
+Herbicide,Soybeans,CURLY PONDWEED,,Potamogetonaceae,Potamogeton,crispus
+Herbicide,Corn,CUTGRASS,,Poaceae,Zizaniopsis,
+Herbicide,Soybeans,CUTGRASS,,Poaceae,Zizaniopsis,
+Herbicide,Corn,"CUTGRASS, GIANT",,Poaceae,Zizaniopsis,miliacea
+Herbicide,Soybeans,"CUTGRASS, GIANT",,Poaceae,Zizaniopsis,miliacea
+Herbicide,Corn,"CUTGRASS, RICE",,Poaceae,Leersia,oryzoides
+Herbicide,Soybeans,"CUTGRASS, RICE",,Poaceae,Leersia,oryzoides
+Herbicide,Corn,DAISY,,Asteraceae,,
+Herbicide,Soybeans,DAISY,,Asteraceae,,
+Herbicide,Corn,"DAISY, FIELD",,Asteraceae,Leucanthemum,vulgare
+Herbicide,Soybeans,"DAISY, FIELD",,Asteraceae,Leucanthemum,vulgare
+Herbicide,Corn,DALLISGRASS,,Poaceae,Paspalum,dilatatum
+Herbicide,Soybeans,DALLISGRASS,,Poaceae,Paspalum,dilatatum
+Herbicide,Corn,DANDELION,,Asteraceae,Taraxacum,officinale
+Herbicide,Soybeans,DANDELION,,Asteraceae,Taraxacum,officinale
+Herbicide,Corn,DARNEL,,Poaceae,Lolium,temulentum
+Herbicide,Soybeans,DARNEL,,Poaceae,Lolium,temulentum
+Herbicide,Corn,DAYFLOWER,,Commelinaceae,Commelina,
+Herbicide,Soybeans,DAYFLOWER,,Commelinaceae,Commelina,
+Herbicide,Corn,"DAYFLOWER,  ASIATIC",,Commelinaceae,Commelina,communis
+Herbicide,Soybeans,"DAYFLOWER,  ASIATIC",,Commelinaceae,Commelina,communis
+Herbicide,Corn,"DAYFLOWER, BENGHAL",,Commelinaceae,Commelina,benghalensis
+Herbicide,Soybeans,"DAYFLOWER, BENGHAL",,Commelinaceae,Commelina,benghalensis
+Herbicide,Corn,"DEADNETTLE, PURPLE",,Lamiaceae,Lamium,purpureum
+Herbicide,Soybeans,"DEADNETTLE, PURPLE",,Lamiaceae,Lamium,purpureum
+Herbicide,Corn,DEVIL'S-CLAW,,Pedaliaceae,Harpagophytum,procumbens
+Herbicide,Soybeans,DEVIL'S-CLAW,,Pedaliaceae,Harpagophytum,procumbens
+Herbicide,Corn,DEVILS GUT,,Lauraceae,Cassytha,filiformis
+Herbicide,Corn,"DEWBERRY, SOUTHERN",,Rosaceae,Rubus,trivialis
+Herbicide,Soybeans,"DEWBERRY, SOUTHERN",,Rosaceae,Rubus,trivialis
+Herbicide,Corn,DICHONDRA,,Convolvulaceae,Dichondra,
+Herbicide,Soybeans,DICHONDRA,,Convolvulaceae,Dichondra,
+Herbicide,Soybeans,"DITCHGRASS, SPIRAL",,Ruppiaceae,Ruppia,cirrhosa
+Herbicide,Corn,DOCK,,Polygonaceae,Rumex,
+Herbicide,Soybeans,DOCK,,Polygonaceae,Rumex,
+Herbicide,Corn,"DOCK, CURLY",,Polygonaceae,Rumex,crispus
+Herbicide,Soybeans,"DOCK, CURLY",,Polygonaceae,Rumex,crispus
+Herbicide,Corn,"DOCK, SOUR",,Polygonaceae,Rumex,arcticus
+Herbicide,Soybeans,"DOCK, SOUR",,Polygonaceae,Rumex,arcticus
+Herbicide,Corn,DODDER,,Cuscutaceae,Cuscuta,
+Herbicide,Soybeans,DODDER,,Cuscutaceae,Cuscuta,
+Herbicide,Corn,DOGBANE,,Apocynaceae,Apocynum,
+Herbicide,Soybeans,DOGBANE,,Apocynaceae,Apocynum,
+Herbicide,Corn,DOGFENNEL,,Asteraceae,Eupatorium,capillifolium
+Herbicide,Soybeans,DOGFENNEL,,Asteraceae,Eupatorium,capillifolium
+Herbicide,Corn,DOGWEED,,Asteraceae,Adenophyllum,
+Herbicide,Soybeans,DOGWEED,,Asteraceae,Adenophyllum,
+Herbicide,Corn,DOGWOOD,,Cornaceae,Cornus,
+Herbicide,Soybeans,DOGWOOD,,Cornaceae,Cornus,
+Herbicide,Soybeans,DOLLARWEED,,Apiaceae,Hydrocotyle,
+Herbicide,Corn,DOVEWEED,,Commelinaceae,Murdannia,nudiflora
+Herbicide,Soybeans,DOVEWEED,,Commelinaceae,Murdannia,nudiflora
+Herbicide,Corn,"DRAGONHEAD, AMERICAN",,Lamiaceae,Dracocephalum,parviflorum
+Herbicide,Corn,DUCKSALAD,,Pontederiaceae,Heteranthera,limosa
+Herbicide,Soybeans,DUCKSALAD,,Pontederiaceae,Heteranthera,limosa
+Herbicide,Corn,DUCKWEED,,Lemnaceae,Lemna,
+Herbicide,Soybeans,DUCKWEED,,Lemnaceae,Lemna,
+Herbicide,Corn,ECLIPTA,,Asteraceae,Eclipta,
+Herbicide,Soybeans,ECLIPTA,,Asteraceae,Eclipta,
+Herbicide,Corn,ELM,,Ulmaceae,Ulmus,
+Herbicide,Corn,"ELODEA, COMMON WATERWEED",,Hydrocharitaceae,Elodea,canadensis
+Herbicide,Soybeans,"ELODEA, COMMON WATERWEED",,Hydrocharitaceae,Elodea,canadensis
+Herbicide,Corn,EVENINGPRIMROSE,,Onagraceae,Oenothera,
+Herbicide,Soybeans,EVENINGPRIMROSE,,Onagraceae,Oenothera,
+Herbicide,Corn,"EVERLASTING, PEARLY",,Asteraceae,Anaphalis,margaritacea
+Herbicide,Corn,FALSE RAGWEED,,Asteraceae,Parthenium,hysterophorus
+Herbicide,Soybeans,FALSE RAGWEED,,Asteraceae,Parthenium,hysterophorus
+Herbicide,Corn,FALSEFLAX,,Brassicaceae,Camelina,
+Herbicide,Soybeans,FALSEFLAX,,Brassicaceae,Camelina,
+Herbicide,Corn,FERN,,,,
+Herbicide,Corn,FESCUE,,Poaceae,Festuca,
+Herbicide,Soybeans,FESCUE,,Poaceae,Festuca,
+Herbicide,Corn,"FESCUE, RATTAIL",,Poaceae,Vulpia,myuros
+Herbicide,Soybeans,"FESCUE, RATTAIL",,Poaceae,Vulpia,myuros
+Herbicide,Corn,"FESCUE, RED",,Poaceae,Festuca,rubra
+Herbicide,Soybeans,"FESCUE, RED",,Poaceae,Festuca,rubra
+Herbicide,Corn,"FESCUE, SHEEP",,Poaceae,Festuca,ovina
+Herbicide,Soybeans,"FESCUE, SHEEP",,Poaceae,Festuca,ovina
+Herbicide,Corn,"FESCUE, SIXWEEKS",,Poaceae,Vulpia,octoflora
+Herbicide,Soybeans,"FESCUE, SIXWEEKS",,Poaceae,Vulpia,octoflora
+Herbicide,Corn,"FESCUE, TALL",,Poaceae,Schedonorus,arundinaceus
+Herbicide,Soybeans,"FESCUE, TALL",,Poaceae,Schedonorus,arundinaceus
+Herbicide,Soybeans,FIDDLENECK,,Boraginaceae,Amsinckia,
+Herbicide,Corn,FIELDCRESS,,Brassicaceae,Lepidium,campestre
+Herbicide,Soybeans,FIELDCRESS,,Brassicaceae,Lepidium,campestre
+Herbicide,Corn,FILAREE,,Geraniaceae,Erodium,
+Herbicide,Corn,"FILAREE, REDSTEM",,Geraniaceae,Erodium,cicutarium
+Herbicide,Soybeans,"FILAREE, REDSTEM",,Geraniaceae,Erodium,cicutarium
+Herbicide,Corn,"FINGERGRASS, FEATHER",,Poaceae,Chloris,virgata
+Herbicide,Soybeans,"FINGERGRASS, FEATHER",,Poaceae,Chloris,virgata
+Herbicide,Corn,FIRE BUSH,,Rubiaceae,Hamelia,patens
+Herbicide,Soybeans,FIRE BUSH,,Rubiaceae,Hamelia,patens
+Herbicide,Corn,FIREWEED,,Onagraceae,Chamerion,
+Herbicide,Soybeans,FIREWEED,,Onagraceae,Chamerion,
+Herbicide,Corn,FIREWHEEL,,Asteraceae,Gaillardia,pulchella
+Herbicide,Soybeans,FIREWHEEL,,Asteraceae,Gaillardia,pulchella
+Herbicide,Corn,"FLATSEDGE, RICEFIELD",,Cyperaceae,Cyperus,iria
+Herbicide,Corn,"FLAX, VOLUNTEER",,Linaceae,Linum,
+Herbicide,Soybeans,"FLAX, VOLUNTEER",,Linaceae,Linum,
+Herbicide,Corn,FLEABANE,,Asteraceae,Erigeron,
+Herbicide,Soybeans,FLEABANE,,Asteraceae,Erigeron,
+Herbicide,Corn,"FLEABANE, DAISY",,Asteraceae,Erigeron,
+Herbicide,Soybeans,"FLEABANE, DAISY",,Asteraceae,Erigeron,
+Herbicide,Corn,"FLEABANE, HAIRY",,Asteraceae,Erigeron,pubescens
+Herbicide,Soybeans,"FLEABANE, HAIRY",,Asteraceae,Erigeron,pubescens
+Herbicide,Corn,FLIXWEED,,Brassicaceae,Descurainia,sophia
+Herbicide,Soybeans,FLIXWEED,,Brassicaceae,Descurainia,sophia
+Herbicide,Corn,FOGFRUIT,,Verbenaceae,Phyla,
+Herbicide,Soybeans,FOGFRUIT,,Verbenaceae,Phyla,
+Herbicide,Corn,FOUR O'CLOCK,,Nyctaginaceae,Mirabilis,
+Herbicide,Corn,FOXTAIL,,Poaceae,Setaria,
+Herbicide,Soybeans,FOXTAIL,,Poaceae,Setaria,
+Herbicide,Corn,"FOXTAIL, BRISTLY",,Poaceae,Setaria,parviflora
+Herbicide,Soybeans,"FOXTAIL, BRISTLY",,Poaceae,Setaria,parviflora
+Herbicide,Corn,"FOXTAIL, CAROLINA",,Poaceae,Alopecurus,carolinianus
+Herbicide,Soybeans,"FOXTAIL, CAROLINA",,Poaceae,Alopecurus,carolinianus
+Herbicide,Corn,"FOXTAIL, GIANT",,Poaceae,Setaria,faberi
+Herbicide,Soybeans,"FOXTAIL, GIANT",,Poaceae,Setaria,faberi
+Herbicide,Corn,"FOXTAIL, GREEN",,Poaceae,Setaria,viridis
+Herbicide,Soybeans,"FOXTAIL, GREEN",,Poaceae,Setaria,viridis
+Herbicide,Corn,"FOXTAIL, YELLOW",,Poaceae,Setaria,pumilis
+Herbicide,Soybeans,"FOXTAIL, YELLOW",,Poaceae,Setaria,pumilis
+Herbicide,Corn,GALINSOGA,,Asteraceae,Galinsoga,
+Herbicide,Soybeans,GALINSOGA,,Asteraceae,Galinsoga,
+Herbicide,Corn,"GALINSOGA, HAIRY",,Asteraceae,Galinsoga,quadriradiata
+Herbicide,Corn,"GALINSOGA, SMALLFLOWER",,Asteraceae,Galinsoga,parviflora
+Herbicide,Soybeans,"GALINSOGA, SMALLFLOWER",,Asteraceae,Galinsoga,parviflora
+Herbicide,Corn,GALLBERRY,,Aquifoliaceae,Ilex,coriaceae
+Herbicide,Corn,"GARLIC, WILD",,Amaryllidaceae,Allium,ursinum
+Herbicide,Soybeans,"GARLIC, WILD",,Amaryllidaceae,Allium,ursinum
+Herbicide,Corn,"GERANIUM, CAROLINA",,Geraniaceae,Geranium,carolinianum
+Herbicide,Soybeans,"GERANIUM, CAROLINA",,Geraniaceae,Geranium,carolinianum
+Herbicide,Corn,"GERANIUM, CUTLEAF",,Geraniaceae,Geranium,dissectum
+Herbicide,Soybeans,"GERANIUM, CUTLEAF",,Geraniaceae,Geranium,dissectum
+Herbicide,Corn,"GERANIUM, DOVEFOOT",,Geraniaceae,Geranium,molle
+Herbicide,Soybeans,"GERANIUM, DOVEFOOT",,Geraniaceae,Geranium,molle
+Herbicide,Corn,"GHERKIN, WEST INDIAN",,Curcubitaceae,Cucumis,anguria
+Herbicide,Soybeans,"GHERKIN, WEST INDIAN",,Curcubitaceae,Cucumis,anguria
+Herbicide,Corn,"GOATGRASS, JOINTED",,Poaceae,Aegilops,cylindrica
+Herbicide,Soybeans,"GOATGRASS, JOINTED",,Poaceae,Aegilops,cylindrica
+Herbicide,Corn,GOLDENROD,,Asteraceae,Solidago,
+Herbicide,Soybeans,GOLDENROD,,Asteraceae,Solidago,
+Herbicide,Corn,"GOLDENROD, CANADA",,Asteraceae,Solidago,canadensis
+Herbicide,Soybeans,"GOLDENROD, CANADA",,Asteraceae,Solidago,canadensis
+Herbicide,Soybeans,GOOSEBERRY,,Grossulariaceae,Ribes,
+Herbicide,Corn,GOOSEFOOT,,Chenopodiaceae,Chenopodium,
+Herbicide,Soybeans,GOOSEFOOT,,Chenopodiaceae,Chenopodium,
+Herbicide,Corn,"GOOSEFOOT, NETTLELEAF",,Chenopodiaceae,Chenopodium,murale
+Herbicide,Corn,GOOSEGRASS,,Poaceae,Eleusine,
+Herbicide,Soybeans,GOOSEGRASS,,Poaceae,Eleusine,
+Herbicide,Corn,GORSE,,Fabaceae,Ulex,
+Herbicide,Soybeans,GORSE,,Fabaceae,Ulex,
+Herbicide,Corn,GOURD,,Curcubitaceae,,
+Herbicide,Soybeans,GOURD,,Curcubitaceae,,
+Herbicide,Corn,"GRASS, BARLEY",,Poaceae,Hordeum,
+Herbicide,Soybeans,"GRASS, BARLEY",,Poaceae,Hordeum,
+Herbicide,Corn,"GRASS, CARPET",,Poaceae,Axonopus,suffultus
+Herbicide,Soybeans,"GRASS, CARPET",,Poaceae,Axonopus,suffultus
+Herbicide,Corn,"GRASS, EASTERN GAMA",,Poaceae,Tripsacum,dactyloides
+Herbicide,Soybeans,"GRASS, EASTERN GAMA",,Poaceae,Tripsacum,dactyloides
+Herbicide,Corn,"GRASS, NORTH AFRICA",,Poaceae,Ventenata,dubia
+Herbicide,Corn,"GRASS, RABBIT-FOOT",,Poaceae,Polypogon,monspeliensis
+Herbicide,Soybeans,"GRASS, RABBIT-FOOT",,Poaceae,Polypogon,monspeliensis
+Herbicide,Corn,"GRASS, TIGER",,Poaceae,Thysanolaena,latifolia
+Herbicide,Soybeans,"GRASS, TIGER",,Poaceae,Thysanolaena,latifolia
+Herbicide,Corn,"GRASS, TUMBLE WINDMILL",,Poaceae,Chloris,verticillata
+Herbicide,Soybeans,"GRASS, TUMBLE WINDMILL",,Poaceae,Chloris,verticillata
+Herbicide,Corn,"GRASSES, ALL",,Poaceae,,
+Herbicide,Soybeans,"GRASSES, ALL",,Poaceae,,
+Herbicide,Corn,"GRASSES, ANNUAL",,Poaceae,,
+Herbicide,Soybeans,"GRASSES, ANNUAL",,Poaceae,,
+Herbicide,Corn,"GRASSES, PERENNIAL",,Poaceae,,
+Herbicide,Soybeans,"GRASSES, PERENNIAL",,Poaceae,,
+Herbicide,Corn,GREASEWOOD,,Chenopodiaceae,Sarcobatus,
+Herbicide,Corn,GREENBRIAR,,Smilaceae,Smilax,
+Herbicide,Soybeans,GREENBRIAR,,Smilaceae,Smilax,
+Herbicide,Corn,GROMWELL,,Boraginaceae,Buglossoides,
+Herbicide,Soybeans,GROMWELL,,Boraginaceae,Buglossoides,
+Herbicide,Corn,"GROMWELL, CORN",,Boraginaceae,Buglossoides,arvensis
+Herbicide,Soybeans,"GROMWELL, CORN",,Boraginaceae,Buglossoides,arvensis
+Herbicide,Corn,GROUNDCHERRY,,Solanaceae,Physalis,
+Herbicide,Soybeans,GROUNDCHERRY,,Solanaceae,Physalis,
+Herbicide,Corn,GROUNDSEL,,Asteraceae,Packera,
+Herbicide,Soybeans,GROUNDSEL,,Asteraceae,Packera,
+Herbicide,Corn,GUINEAGRASS,,Poaceae,Urochloa,maxima
+Herbicide,Soybeans,GUINEAGRASS,,Poaceae,Urochloa,maxima
+Herbicide,Corn,GUMWEED,,Asteraceae,Grindelia,
+Herbicide,Soybeans,GUMWEED,,Asteraceae,Grindelia,
+Herbicide,Corn,HACKBERRY,,Ulmaceae,Celtis,
+Herbicide,Soybeans,HAWKSBEARD,,Asteraceae,Crepis,
+Herbicide,Soybeans,"HAWKSBEARD, NARROWLEAF",,Asteraceae,Crepis,tectorum
+Herbicide,Corn,HAWKWEED,,Asteraceae,Hieracium,
+Herbicide,Soybeans,HAWKWEED,,Asteraceae,Hieracium,
+Herbicide,Corn,"HAWKWEED, YELLOW",,Asteraceae,Hieracium,fendleri
+Herbicide,Soybeans,"HAWKWEED, YELLOW",,Asteraceae,Hieracium,fendleri
+Herbicide,Corn,HAWTHORN,,Rosaceae,Crataegus,
+Herbicide,Soybeans,HAWTHORN,,Rosaceae,Crataegus,
+Herbicide,Soybeans,HEDGEMUSTARD,,Brassicaceae,Sisymbrium,
+Herbicide,Corn,"HEDGENETTLE, WOOLLY",,Lamiaceae,Stachys,byzantina
+Herbicide,Soybeans,"HEDGENETTLE, WOOLLY",,Lamiaceae,Stachys,byzantina
+Herbicide,Corn,HEMPNETTLE,,Lamiaceae,Galeopsis,
+Herbicide,Soybeans,HEMPNETTLE,,Lamiaceae,Galeopsis,
+Herbicide,Corn,"HEMPVINE, CLIMBING",,Asteraceae,Mikania,scandens
+Herbicide,Soybeans,"HEMPVINE, CLIMBING",,Asteraceae,Mikania,scandens
+Herbicide,Corn,"HENBANE, BLACK",,Solanaceae,Hyoscyamus,niger
+Herbicide,Soybeans,"HENBANE, BLACK",,Solanaceae,Hyoscyamus,niger
+Herbicide,Corn,HENBIT,,Lamiaceae,Lamium,
+Herbicide,Soybeans,HENBIT,,Lamiaceae,Lamium,
+Herbicide,Corn,HONEYLOCUST,,Fabaceae,Gleditsia,triacanthos
+Herbicide,Corn,HONEYSUCKLE,,Caprifoliaceae,Lonicera,
+Herbicide,Soybeans,HONEYSUCKLE,,Caprifoliaceae,Lonicera,
+Herbicide,Corn,HONEYVINE,,Asclepiadaceae,Cynanchum,laeve
+Herbicide,Soybeans,HONEYVINE,,Asclepiadaceae,Cynanchum,laeve
+Herbicide,Soybeans,HORNPOPPY,,Papaveraceae,Glaucium,
+Herbicide,Corn,HORSEMINT,,Lamiaceae,Monarda,punctata
+Herbicide,Soybeans,HORSEMINT,,Lamiaceae,Monarda,punctata
+Herbicide,Corn,HORSENETTLE,,Solanaceae,Solanum,
+Herbicide,Soybeans,HORSENETTLE,,Solanaceae,Solanum,
+Herbicide,Corn,"HORSENETTLE, WESTERN",,Solanaceae,Solanum,dimidiatum
+Herbicide,Corn,HORSETAIL,,Equisetaceae,Equisetum,
+Herbicide,Soybeans,HORSETAIL,,Equisetaceae,Equisetum,
+Herbicide,Corn,HORSEWEED,,Asteraceae,Conyza,
+Herbicide,Soybeans,HORSEWEED,,Asteraceae,Conyza,
+Herbicide,Corn,HOUNDSTONGUE,,Asteraceae,Hieracium,cynoglossoides
+Herbicide,Corn,HUCKLEBERRY,,Ericaceae,Gaylussacia,
+Herbicide,Soybeans,HUCKLEBERRY,,Ericaceae,Gaylussacia,
+Herbicide,Corn,HYDRILLA,,Hydrocharitaceae,Hydrilla,
+Herbicide,Soybeans,HYDRILLA,,Hydrocharitaceae,Hydrilla,
+Herbicide,Corn,"HYSSOP, CAROLINA WATER",,Plantaginaceae,Bacopa,caroliniana
+Herbicide,Soybeans,"HYSSOP, CAROLINA WATER",,Plantaginaceae,Bacopa,caroliniana
+Herbicide,Soybeans,INCREASE SUGAR,,,,
+Herbicide,Corn,INDIANGRASS,,Poaceae,Sorghastrum,
+Herbicide,Corn,INDIGO,,Fabaceae,Indigofera,
+Herbicide,Soybeans,INDIGO,,Fabaceae,Indigofera,
+Herbicide,Corn,"INDIGO, HAIRY",,Fabaceae,Indigofera,hirsuta
+Herbicide,Corn,IRIS,,Iridaceae,Iris,
+Herbicide,Soybeans,IRIS,,Iridaceae,Iris,
+Herbicide,Corn,IRONWEED,,Asteraceae,Vernonia,
+Herbicide,Soybeans,IRONWEED,,Asteraceae,Vernonia,
+Herbicide,Corn,ITCHGRASS,,Poaceae,Rottboellia,
+Herbicide,Soybeans,ITCHGRASS,,Poaceae,Rottboellia,
+Herbicide,Corn,"IVY, GROUND",,Lamiaceae,Glechoma,hederacea
+Herbicide,Soybeans,"IVY, GROUND",,Lamiaceae,Glechoma,hederacea
+Herbicide,Corn,"JACOB'S-LADDER, BLUE",,Polemoniaceae,Polemonium,caeruleum
+Herbicide,Soybeans,"JACOB'S-LADDER, BLUE",,Polemoniaceae,Polemonium,caeruleum
+Herbicide,Soybeans,"JESSAMINE, CAROLINA",,Gelsemiaceae,Gelsemium,sempervirens
+Herbicide,Corn,JIMSONWEED,,Solanaceae,Datura,stramonium
+Herbicide,Soybeans,JIMSONWEED,,Solanaceae,Datura,stramonium
+Herbicide,Corn,JOB'S-TEARS,,Poaceae,Coix,lacryma-jobi
+Herbicide,Soybeans,JOB'S-TEARS,,Poaceae,Coix,lacryma-jobi
+Herbicide,Corn,JOHNSONGRASS,,Poaceae,Sorghum,halepense
+Herbicide,Soybeans,JOHNSONGRASS,,Poaceae,Sorghum,halepense
+Herbicide,Corn,"JOINTVETCH, NORTHERN",,Fabaceae,Aeschynomene,virginica
+Herbicide,Soybeans,"JOINTVETCH, NORTHERN",,Fabaceae,Aeschynomene,virginica
+Herbicide,Corn,JUNGLERICE,,Poaceae,Echinochloa,colona
+Herbicide,Corn,JUNIPER,,Cupressaceae,Juniperus,
+Herbicide,Soybeans,JUNIPER,,Cupressaceae,Juniperus,
+Herbicide,Soybeans,KIKUYUGRASS,,Poaceae,Pennisetum,
+Herbicide,Corn,KNAPWEED,,Asteraceae,Centaurea,
+Herbicide,Soybeans,KNAPWEED,,Asteraceae,Centaurea,
+Herbicide,Corn,"KNAPWEED, RUSSIAN",,Asteraceae,Leuzea,repens
+Herbicide,Soybeans,"KNAPWEED, RUSSIAN",,Asteraceae,Leuzea,repens
+Herbicide,Corn,"KNAPWEED, SPOTTED",,Asteraceae,Centaurea,stoebe
+Herbicide,Soybeans,"KNAPWEED, SPOTTED",,Asteraceae,Centaurea,stoebe
+Herbicide,Corn,KNOTGRASS,,Polygonaceae,Polygonum,
+Herbicide,Soybeans,KNOTGRASS,,Polygonaceae,Polygonum,
+Herbicide,Corn,KNOTWEED,,Polygonaceae,Polygonum,
+Herbicide,Soybeans,KNOTWEED,,Polygonaceae,Polygonum,
+Herbicide,Corn,"KNOTWEED, JAPANESE",,Polygonaceae,Fallopia,japonica
+Herbicide,Soybeans,"KNOTWEED, JAPANESE",,Polygonaceae,Fallopia,japonica
+Herbicide,Soybeans,"KNOTWEED, PROSTRATE",,Polygonaceae,Polygonum,aviculare
+Herbicide,Corn,KOCHIA,,Amaranthaceae,Bassia,scoparia
+Herbicide,Soybeans,KOCHIA,,Amaranthaceae,Bassia,scoparia
+Herbicide,Corn,KUDZU,,Fabaceae,Pueraria,
+Herbicide,Soybeans,KUDZU,,Fabaceae,Pueraria,
+Herbicide,Corn,"KYLLINGA, GREEN",,Cyperaceae,Kyllinga,brevifolia
+Herbicide,Corn,LADYSTHUMB,,Polygonaceae,Persicaria,maculosa
+Herbicide,Corn,LAMBSQUARTERS,,Amaranthaceae,Chenopodium,album
+Herbicide,Soybeans,LAMBSQUARTERS,,Amaranthaceae,Chenopodium,album
+Herbicide,Corn,LANTANA,,Verbenaceae,Lantana,
+Herbicide,Soybeans,LANTANA,,Verbenaceae,Lantana,
+Herbicide,Corn,LARKSPUR,,Ranunculaceae,Delphinium,
+Herbicide,Soybeans,LARKSPUR,,Ranunculaceae,Delphinium,
+Herbicide,Corn,LEADPLANT,,Fabaceae,Amorpha,canescens
+Herbicide,Corn,LESPEDEZA,,Fabaceae,Lespedeza,
+Herbicide,Soybeans,LESPEDEZA,,Fabaceae,Lespedeza,
+Herbicide,Corn,"LETTUCE, BLUE",,Asteraceae,Lactuca,biennis
+Herbicide,Soybeans,"LETTUCE, BLUE",,Asteraceae,Lactuca,biennis
+Herbicide,Corn,"LETTUCE, INDIAN",,Asteraceae,Lactuca,indica
+Herbicide,Soybeans,"LETTUCE, INDIAN",,Asteraceae,Lactuca,indica
+Herbicide,Corn,"LETTUCE, PRICKLY",,Asteraceae,Lactuca,serriola
+Herbicide,Soybeans,"LETTUCE, PRICKLY",,Asteraceae,Lactuca,serriola
+Herbicide,Corn,"LETTUCE, TALL",,Asteraceae,Lactuca,biennis
+Herbicide,Soybeans,"LETTUCE, TALL",,Asteraceae,Lactuca,biennis
+Herbicide,Corn,LILY,,Liliaceae,Lilium,
+Herbicide,Soybeans,LILY,,Liliaceae,Lilium,
+Herbicide,Corn,"LOCO, WOOLLY",,Fabaceae,Astragalus,mollissimus
+Herbicide,Soybeans,"LOCO, WOOLLY",,Fabaceae,Astragalus,mollissimus
+Herbicide,Soybeans,"LOCO, WOOTON",,Fabaceae,Astragalus,wootonii
+Herbicide,Corn,LOCUST,,Fabaceae,Robinia,
+Herbicide,Soybeans,LOCUST,,Fabaceae,Robinia,
+Herbicide,Corn,"LOOSESTRIFE, PURPLE",,Lythraceae,Lythrum,salicaria
+Herbicide,Corn,LOVEGRASS,,Poaceae,Eragrostis,
+Herbicide,Soybeans,LOVEGRASS,,Poaceae,Eragrostis,
+Herbicide,Corn,LUPINE,,Fabaceae,Lupinus,
+Herbicide,Soybeans,LUPINE,,Fabaceae,Lupinus,
+Herbicide,Corn,MAIDENCANE,,Poaceae,Panicum,hemitomon
+Herbicide,Soybeans,MAIDENCANE,,Poaceae,Panicum,hemitomon
+Herbicide,Corn,"MALLOW, COMMON",,Malvaceae,Malva,sylvestris
+Herbicide,Soybeans,"MALLOW, COMMON",,Malvaceae,Malva,sylvestris
+Herbicide,Corn,"MALLOW, LITTLE",,Malvaceae,Malva,parviflora
+Herbicide,Corn,"MALLOW, VENICE",,Malvaceae,Hibiscus,trionum
+Herbicide,Soybeans,"MALLOW, VENICE",,Malvaceae,Hibiscus,trionum
+Herbicide,Corn,MANNAGRASS,,Poaceae,Glyceria,
+Herbicide,Soybeans,MANNAGRASS,,Poaceae,Glyceria,
+Herbicide,Corn,"MANNAGRASS, RATTLESNAKE",,Poaceae,Glyceria,canadensis
+Herbicide,Soybeans,"MANNAGRASS, RATTLESNAKE",,Poaceae,Glyceria,canadensis
+Herbicide,Corn,MARESTAIL,,Asteraceae,Conyza,canadensis
+Herbicide,Soybeans,MARESTAIL,,Asteraceae,Conyza,canadensis
+Herbicide,Corn,"MARIGOLD, DWARF",,Asteraceae,Calendula,
+Herbicide,Soybeans,"MARIGOLD, DWARF",,Asteraceae,Calendula,
+Herbicide,Corn,"MARIGOLD, WILD",,Asteraceae,Tagetes,minuta
+Herbicide,Soybeans,"MARIGOLD, WILD",,Asteraceae,Tagetes,minuta
+Herbicide,Corn,MARIJUANA,,Cannabaceae,Cannabis,
+Herbicide,Soybeans,MARIJUANA,,Cannabaceae,Cannabis,
+Herbicide,Soybeans,MARSH GRASS,,Poaceae,,
+Herbicide,Corn,MARSHELDER,,Asteraceae,Iva,frutescens
+Herbicide,Soybeans,MARSHELDER,,Asteraceae,Iva,frutescens
+Herbicide,Corn,MAYFLOWER,,Liliaceae,Maianthemum,
+Herbicide,Soybeans,MAYFLOWER,,Liliaceae,Maianthemum,
+Herbicide,Soybeans,"MEDIC, BLACK",,Fabaceae,Medicago,lupulina
+Herbicide,Soybeans,MEDUSAHEAD,,Poaceae,Taeniatherum,caput-medusae
+Herbicide,Corn,MESQUITE,,Fabaceae,Prosopis,
+Herbicide,Soybeans,MESQUITE,,Fabaceae,Prosopis,
+Herbicide,Corn,MEXICANWEED,,Amaranthaceae,Dysphania,ambrosioides
+Herbicide,Soybeans,MEXICANWEED,,Amaranthaceae,Dysphania,ambrosioides
+Herbicide,Corn,MILKVETCH,,Fabaceae,Astragalus,
+Herbicide,Soybeans,MILKVINE,,Asclepiadaceae,Matelea,
+Herbicide,Corn,MILKWEED,,Asclepiadaceae,Asclepias,
+Herbicide,Soybeans,MILKWEED,,Asclepiadaceae,Asclepias,
+Herbicide,Corn,"MILLET, BROWNTOP",,Poaceae,Urochloa,ramosa
+Herbicide,Soybeans,"MILLET, BROWNTOP",,Poaceae,Urochloa,ramosa
+Herbicide,Corn,"MILLET, FOXTAIL",,Poaceae,Setaria,italica
+Herbicide,Soybeans,"MILLET, FOXTAIL",,Poaceae,Setaria,italica
+Herbicide,Soybeans,"MILLET, JAPANESE",,Poaceae,Echinochloa,esculenta
+Herbicide,Corn,"MILLET, WILD-PROSO",,Poaceae,Panicum,miliaceum
+Herbicide,Soybeans,"MILLET, WILD-PROSO",,Poaceae,Panicum,miliaceum
+Herbicide,Corn,MINT,,Lamiaceae,,
+Herbicide,Soybeans,MINT,,Lamiaceae,,
+Herbicide,Soybeans,"MOLD, WHITE",,,,
+Herbicide,Corn,MONEYWORT,,Fabaceae,Alysicarpus,
+Herbicide,Soybeans,MONEYWORT,,Fabaceae,Alysicarpus,
+Herbicide,Soybeans,"MOONFLOWER, PURPLE",,Convolvulaceae,Ipomoea,turbinata
+Herbicide,Corn,MORNINGGLORY,,Convolvulaceae,Ipomoea,
+Herbicide,Soybeans,MORNINGGLORY,,Convolvulaceae,Ipomoea,
+Herbicide,Corn,"MORNINGGLORY, BIGROOT",,Convolvulaceae,Ipomoea,pandurata
+Herbicide,Soybeans,"MORNINGGLORY, BIGROOT",,Convolvulaceae,Ipomoea,pandurata
+Herbicide,Corn,"MORNINGGLORY, IVYLEAF",,Convolvulaceae,Ipomoea,hederacea
+Herbicide,Soybeans,"MORNINGGLORY, IVYLEAF",,Convolvulaceae,Ipomoea,hederacea
+Herbicide,Corn,MOSS,,,,
+Herbicide,Soybeans,MOSS,,,,
+Herbicide,Corn,"MOSS, SPANISH",,Bromeliaceae,Tillandsia,usneoides
+Herbicide,Soybeans,"MOSS, SPANISH",,Bromeliaceae,Tillandsia,usneoides
+Herbicide,Corn,MUGWORT,,Asteraceae,Artemisia,vulgare
+Herbicide,Soybeans,MUGWORT,,Asteraceae,Artemisia,vulgare
+Herbicide,Corn,"MUHLY, WIRESTEM",,Poaceae,Muhlenbergia,frondosa
+Herbicide,Soybeans,"MUHLY, WIRESTEM",,Poaceae,Muhlenbergia,frondosa
+Herbicide,Corn,MULBERRY,,Moraceae,Morus,
+Herbicide,Soybeans,MULBERRY,,Moraceae,Morus,
+Herbicide,Corn,MULLEIN,,Scrophulariaceae,Verbascum,
+Herbicide,Soybeans,MULLEIN,,Scrophulariaceae,Verbascum,
+Herbicide,Corn,"MULLEIN, TURKEY",,Euphorbiaceae,Eremocarpus,setigerus
+Herbicide,Soybeans,"MULLEIN, TURKEY",,Euphorbiaceae,Eremocarpus,setigerus
+Herbicide,Corn,"MUSTARD, BLACK",,Brassicaceae,Brassica,nigra
+Herbicide,Soybeans,"MUSTARD, BLACK",,Brassicaceae,Brassica,nigra
+Herbicide,Corn,"MUSTARD, BLUE",,Brassicaceae,Chorispora,tenella
+Herbicide,Soybeans,"MUSTARD, BLUE",,Brassicaceae,Chorispora,tenella
+Herbicide,Corn,"MUSTARD, HILL",,Brassicaceae,Bunias,orientalis
+Herbicide,Soybeans,"MUSTARD, HILL",,Brassicaceae,Bunias,orientalis
+Herbicide,Corn,"MUSTARD, TUMBLE",,Brassicaceae,Sisymbrium,altissimum
+Herbicide,Soybeans,"MUSTARD, TUMBLE",,Brassicaceae,Sisymbrium,altissimum
+Herbicide,Corn,"MUSTARD, WALLFLOWER",,Brassicaceae,Erysimum,cheiranthoides
+Herbicide,Soybeans,"MUSTARD, WALLFLOWER",,Brassicaceae,Erysimum,cheiranthoides
+Herbicide,Corn,"MUSTARD, WILD",,Brassicaceae,Sinapis,arvensis
+Herbicide,Soybeans,"MUSTARD, WILD",,Brassicaceae,Sinapis,arvensis
+Herbicide,Corn,"MUSTARD, YELLOW",,Brassicaceae,Guillenia,flavescens
+Herbicide,Soybeans,"MUSTARD, YELLOW",,Brassicaceae,Guillenia,flavescens
+Herbicide,Corn,NAIAD,,Najadaceae,Najas,
+Herbicide,Soybeans,NAIAD,,Najadaceae,Najas,
+Herbicide,Corn,NAPIERGRASS,,Poaceae,Pennisetum,purpureum
+Herbicide,Soybeans,NAPIERGRASS,,Poaceae,Pennisetum,purpureum
+Herbicide,Corn,NEEDLEGRASS,,Poaceae,Achnatherum,
+Herbicide,Soybeans,NEEDLEGRASS,,Poaceae,Achnatherum,
+Herbicide,Corn,NETTLE,,Urticaceae,Urtica,
+Herbicide,Soybeans,NETTLE,,Urticaceae,Urtica,
+Herbicide,Corn,"NETTLE, BURNING",,Urticaceae,Urtica,urens
+Herbicide,Soybeans,"NETTLE, BURNING",,Urticaceae,Urtica,urens
+Herbicide,Corn,"NETTLE, STINGING",,Urticaceae,Urtica,dioica
+Herbicide,Soybeans,"NETTLE, STINGING",,Urticaceae,Urtica,dioica
+Herbicide,Corn,"NIGHTSHADE,  AMERICAN BLACK",,Solanaceae,Solanum,americanum
+Herbicide,Soybeans,"NIGHTSHADE,  AMERICAN BLACK",,Solanaceae,Solanum,americanum
+Herbicide,Corn,"NIGHTSHADE, BLACK",,Solanaceae,Solanum,nigrum
+Herbicide,Soybeans,"NIGHTSHADE, BLACK",,Solanaceae,Solanum,nigrum
+Herbicide,Corn,"NIGHTSHADE, CUTLEAF",,Solanaceae,Solanum,triflorum
+Herbicide,Soybeans,"NIGHTSHADE, CUTLEAF",,Solanaceae,Solanum,triflorum
+Herbicide,Corn,"NIGHTSHADE, EASTERN BLACK",,Solanaceae,Solanum,ptychanthum
+Herbicide,Soybeans,"NIGHTSHADE, EASTERN BLACK",,Solanaceae,Solanum,ptychanthum
+Herbicide,Corn,"NIGHTSHADE, HAIRY",,Solanaceae,Solanum,villosum
+Herbicide,Soybeans,"NIGHTSHADE, HAIRY",,Solanaceae,Solanum,villosum
+Herbicide,Corn,"NIGHTSHADE, PURPLE",,Solanaceae,Solanum,xanti
+Herbicide,Soybeans,"NIGHTSHADE, PURPLE",,Solanaceae,Solanum,xanti
+Herbicide,Corn,"NIGHTSHADE, SILVERLEAF",,Solanaceae,Solanum,elaeagnifolium
+Herbicide,Soybeans,"NIGHTSHADE, SILVERLEAF",,Solanaceae,Solanum,elaeagnifolium
+Herbicide,Corn,NIMBLEWILL,,Poaceae,Muhlenbergia,schreberi
+Herbicide,Soybeans,NIMBLEWILL,,Poaceae,Muhlenbergia,schreberi
+Herbicide,Corn,No Answer Weed,,,,
+Herbicide,Soybeans,No Answer Weed,,,,
+Herbicide,Corn,NUTSEDGE,,Cyperaceae,Cyperus,esculentus
+Herbicide,Soybeans,NUTSEDGE,,Cyperaceae,Cyperus,esculentus
+Herbicide,Corn,"NUTSEDGE, PURPLE",,Cyperaceae,Cyperus,esculentus
+Herbicide,Soybeans,"NUTSEDGE, PURPLE",,Cyperaceae,Cyperus,esculentus
+Herbicide,Corn,"NUTSEDGE, YELLOW",,Cyperaceae,Cyperus,esculentus
+Herbicide,Soybeans,"NUTSEDGE, YELLOW",,Cyperaceae,Cyperus,esculentus
+Herbicide,Corn,OAK,,Fagaceae,Quercus,
+Herbicide,Soybeans,OAK,,Fagaceae,Quercus,
+Herbicide,Corn,"OAK, POST",,Fagaceae,Quercus,stellata
+Herbicide,Soybeans,"OAK, POST",,Fagaceae,Quercus,stellata
+Herbicide,Corn,"OAK, SHINNERY",,Fagaceae,Quercus,havardii
+Herbicide,Corn,"OAT, VOLUNTEER",,Poaceae,Avena,sativa
+Herbicide,Soybeans,"OAT, VOLUNTEER",,Poaceae,Avena,sativa
+Herbicide,Corn,"OAT, WILD",,Poaceae,Avena,fatua
+Herbicide,Soybeans,"OAT, WILD",,Poaceae,Avena,fatua
+Herbicide,Corn,"OLIVE, RUSSIAN",,Elaeagnaceae,Elaeagnus,angustifolia
+Herbicide,Corn,"ONION, WILD",,Liliaceae,Allium,
+Herbicide,Soybeans,"ONION, WILD",,Liliaceae,Allium,
+Herbicide,Corn,ONIONGRASS,,Poaceae,Melica,
+Herbicide,Soybeans,ONIONGRASS,,Poaceae,Melica,
+Herbicide,Corn,ORCHARDGRASS,,Poaceae,Dactylis,
+Herbicide,Soybeans,ORCHARDGRASS,,Poaceae,Dactylis,
+Herbicide,Corn,OSAGE-ORANGE,,Moraceae,Maclura,pomifera
+Herbicide,Soybeans,OSAGE-ORANGE,,Moraceae,Maclura,pomifera
+Herbicide,Corn,OXALIS,,Oxalidaceae,Oxalis,
+Herbicide,Soybeans,OXALIS,,Oxalidaceae,Oxalis,
+Herbicide,Soybeans,"OXTONGUE, BRISTLY",,Asteraceae,Picris,echioides
+Herbicide,Corn,PALMGRASS,,Poaceae,Setaria,palmifolia
+Herbicide,Soybeans,PALMGRASS,,Poaceae,Setaria,palmifolia
+Herbicide,Corn,PANICUM,,Poaceae,Panicum,
+Herbicide,Soybeans,PANICUM,,Poaceae,Panicum,
+Herbicide,Corn,"PANICUM, BROWNTOP",,Poaceae,Panicum,fasciculatum
+Herbicide,Soybeans,"PANICUM, BROWNTOP",,Poaceae,Panicum,fasciculatum
+Herbicide,Corn,"PANICUM, FALL",,Poaceae,Panicum,dichotomiflorum
+Herbicide,Soybeans,"PANICUM, FALL",,Poaceae,Panicum,dichotomiflorum
+Herbicide,Corn,"PANICUM, TEXAS",,Poaceae,Panicum,texanum
+Herbicide,Soybeans,"PANICUM, TEXAS",,Poaceae,Panicum,texanum
+Herbicide,Corn,PARAGRASS,,,,
+Herbicide,Soybeans,PARAGRASS,,,,
+Herbicide,Corn,PARSLEY,,,,
+Herbicide,Soybeans,PARSLEY,,,,
+Herbicide,Corn,"PARSLEY, SPRING",,,,
+Herbicide,Soybeans,"PARSLEY, SPRING",,,,
+Herbicide,Soybeans,"PARSNIP, WILD",,,,
+Herbicide,Corn,PARTRIDGEPEA,,Fabaceae,Chamaecrista,fasciculata
+Herbicide,Soybeans,PARTRIDGEPEA,,Fabaceae,Chamaecrista,fasciculata
+Herbicide,Corn,"PASPALUM, BULL",,Poaceae,Paspalum,setaceum
+Herbicide,Soybeans,"PASPALUM, BULL",,Poaceae,Paspalum,setaceum
+Herbicide,Corn,"PASPALUM, SOUR",,Poaceae,Paspalum,conjugatum
+Herbicide,Soybeans,"PASPALUM, SOUR",,Poaceae,Paspalum,conjugatum
+Herbicide,Corn,"PASPALUM, WATER",,Poaceae,Paspalum,repens
+Herbicide,Soybeans,"PASPALUM, WATER",,Poaceae,Paspalum,repens
+Herbicide,Soybeans,"PASSIONFLOWER, MAYPOP",,Passifloraceae,Passiflora,incarnata
+Herbicide,Corn,"PEANUTS, VOLUNTEER",,Fabaceae,Arachis,hypogaea
+Herbicide,Soybeans,"PEANUTS, VOLUNTEER",,Fabaceae,Arachis,hypogaea
+Herbicide,Corn,PEAVINE,,Fabaceae,Lathyrus,
+Herbicide,Soybeans,PEAVINE,,Fabaceae,Lathyrus,
+Herbicide,Corn,PENNYCRESS,,Brassicaceae,Thlaspi,
+Herbicide,Soybeans,PENNYCRESS,,Brassicaceae,Thlaspi,
+Herbicide,Corn,"PENNYCRESS, FIELD",,Brassicaceae,Thlaspi,arvense
+Herbicide,Soybeans,"PENNYCRESS, FIELD",,Brassicaceae,Thlaspi,arvense
+Herbicide,Corn,PENNYWORT,,Apiaceae,Centella,
+Herbicide,Corn,PEPPERWEED,,Brassicaceae,Lepidium,
+Herbicide,Soybeans,PEPPERWEED,,Brassicaceae,Lepidium,
+Herbicide,Corn,"PEPPERWEED, PERENNIAL",,Brassicaceae,Lepidium,latifolium
+Herbicide,Soybeans,"PEPPERWEED, PERENNIAL",,Brassicaceae,Lepidium,latifolium
+Herbicide,Corn,PERIWINKLE,,Apocynaceae,Vinca,
+Herbicide,Soybeans,PERIWINKLE,,Apocynaceae,Vinca,
+Herbicide,Corn,PERSIMMON,,Ebenaceae,Diospyros,
+Herbicide,Soybeans,PERSIMMON,,Ebenaceae,Diospyros,
+Herbicide,Corn,PICKERELWEED,,Pontederiaceae,Pontederia,
+Herbicide,Soybeans,PICKERELWEED,,Pontederiaceae,Pontederia,
+Herbicide,Corn,"PICKERELWEED, HEARTSHAPE FALSE",,Pontederiaceae,Monochoria,vaginalis
+Herbicide,Soybeans,"PICKERELWEED, HEARTSHAPE FALSE",,Pontederiaceae,Monochoria,vaginalis
+Herbicide,Corn,"PIGWEED, REDROOT",,Amaranthaceae,Amaranthus,retroflexus
+Herbicide,Soybeans,"PIGWEED, REDROOT",,Amaranthaceae,Amaranthus,retroflexus
+Herbicide,Corn,"PIGWEED, SMOOTH",,Amaranthaceae,Amaranthus,hybridus
+Herbicide,Soybeans,"PIGWEED, SMOOTH",,Amaranthaceae,Amaranthus,hybridus
+Herbicide,Corn,"PIGWEED, TUMBLE",,Amaranthaceae,Amaranthus,albus
+Herbicide,Soybeans,"PIGWEED, TUMBLE",,Amaranthaceae,Amaranthus,albus
+Herbicide,Corn,PINEAPPLE-WEED,,Asteraceae,Matricaria,discoidea
+Herbicide,Soybeans,PINEAPPLE-WEED,,Asteraceae,Matricaria,discoidea
+Herbicide,Corn,PINKROOT,,Loganiaceae,Spigelia,
+Herbicide,Soybeans,PINKROOT,,Loganiaceae,Spigelia,
+Herbicide,Corn,PLANTAIN,,Plantaginaceae,Plantago,
+Herbicide,Soybeans,PLANTAIN,,Plantaginaceae,Plantago,
+Herbicide,Corn,"PLANTAIN, BROADLEAF",,Plantaginaceae,Plantago,major
+Herbicide,Soybeans,"PLANTAIN, BROADLEAF",,Plantaginaceae,Plantago,major
+Herbicide,Corn,"PLANTAIN, BUCKHORN",,Plantaginaceae,Plantago,coronopus
+Herbicide,Soybeans,"PLANTAIN, BUCKHORN",,Plantaginaceae,Plantago,coronopus
+Herbicide,Corn,"PLUM, AMERICAN",,Rosaceae,Prunus,americana
+Herbicide,Soybeans,"PLUM, AMERICAN",,Rosaceae,Prunus,americana
+Herbicide,Corn,"PLUM, SAND",,Rosaceae,Prunus,angustifolia
+Herbicide,Soybeans,"PLUM, SAND",,Rosaceae,Prunus,angustifolia
+Herbicide,Corn,"POINSETTIA, WILD",,Euphorbiaceae,Euphorbia,
+Herbicide,Soybeans,"POINSETTIA, WILD",,Euphorbiaceae,Euphorbia,
+Herbicide,Corn,POISON-HEMLOCK,,Apiaceae,Conium,maculatum
+Herbicide,Soybeans,POISON-HEMLOCK,,Apiaceae,Conium,maculatum
+Herbicide,Corn,POISON-IVY,,Anacardiaceae,Toxicodendron,radicans
+Herbicide,Soybeans,POISON-IVY,,Anacardiaceae,Toxicodendron,radicans
+Herbicide,Corn,POISON-OAK,,Anacardiaceae,Toxicodendron,pubescens
+Herbicide,Corn,POKEWEED,,Phytolaccaceae,Phytolacca,
+Herbicide,Soybeans,POKEWEED,,Phytolaccaceae,Phytolacca,
+Herbicide,Corn,PONDWEED,,Potamogetonaceae,Potamogeton,
+Herbicide,Soybeans,PONDWEED,,Potamogetonaceae,Potamogeton,
+Herbicide,Corn,POORJOE,,Rubiaceae,Diodia,teres
+Herbicide,Soybeans,POORJOE,,Rubiaceae,Diodia,teres
+Herbicide,Corn,"POPPY, FIELD",,Papaveraceae,Papaver,rhoeas
+Herbicide,Soybeans,"POPPY, FIELD",,Papaveraceae,Papaver,rhoeas
+Herbicide,Corn,"POTATO, VOLUNTEER",,Solanaceae,Solanum,tuberosum
+Herbicide,Soybeans,"POTATO, VOLUNTEER",,Solanaceae,Solanum,tuberosum
+Herbicide,Corn,POVERTYWEED,,Asteraceae,Iva,axillaris
+Herbicide,Soybeans,POVERTYWEED,,Asteraceae,Iva,axillaris
+Herbicide,Corn,PRICKLYPEAR,,Cactaceae,Opunthia,
+Herbicide,Soybeans,PRICKLYPEAR,,Cactaceae,Opunthia,
+Herbicide,Corn,PUNCTUREVINE,,Zygophyllaceae,Tribulus,terrestris
+Herbicide,Soybeans,PUNCTUREVINE,,Zygophyllaceae,Tribulus,terrestris
+Herbicide,Corn,PURPLETOP,,Poaceae,Tridens,flavus
+Herbicide,Soybeans,PURPLETOP,,Poaceae,Tridens,flavus
+Herbicide,Corn,PURSLANE,,Portulacaceae,Portulaca,
+Herbicide,Soybeans,PURSLANE,,Portulacaceae,Portulaca,
+Herbicide,Corn,"PUSLEY, FLORIDA",,Rubiaceae,Richardia,scabra
+Herbicide,Soybeans,"PUSLEY, FLORIDA",,Rubiaceae,Richardia,scabra
+Herbicide,Corn,QUACKGRASS,,Poaceae,Elymus,repens
+Herbicide,Soybeans,QUACKGRASS,,Poaceae,Elymus,repens
+Herbicide,Corn,RABBITBRUSH,,Asteraceae,Chrysothamnus,
+Herbicide,Soybeans,RABBITBRUSH,,Asteraceae,Chrysothamnus,
+Herbicide,Corn,"RADISH, WILD",,Brassicaceae,Raphanus,raphanistrum
+Herbicide,Soybeans,"RADISH, WILD",,Brassicaceae,Raphanus,raphanistrum
+Herbicide,Corn,RAGWEED,,Asteraceae,Ambrosia,
+Herbicide,Soybeans,RAGWEED,,Asteraceae,Ambrosia,
+Herbicide,Corn,"RAGWEED, BURR",,Asteraceae,Ambrosia,grayii
+Herbicide,Soybeans,"RAGWEED, BURR",,Asteraceae,Ambrosia,grayii
+Herbicide,Corn,"RAGWEED, GIANT",,Asteraceae,Ambrosia,trifida
+Herbicide,Soybeans,"RAGWEED, GIANT",,Asteraceae,Ambrosia,trifida
+Herbicide,Corn,"RAGWEED, LANCELEAF",,Asteraceae,Ambrosia,bidentata
+Herbicide,Soybeans,"RAGWEED, LANCELEAF",,Asteraceae,Ambrosia,bidentata
+Herbicide,Corn,"RAGWEED, WESTERN",,Asteraceae,Ambrosia,psilostachya
+Herbicide,Soybeans,"RAGWEED, WESTERN",,Asteraceae,Ambrosia,psilostachya
+Herbicide,Corn,"RAGWORT, TANSY",,Asteraceae,Senecio,jacobaea
+Herbicide,Soybeans,"RAGWORT, TANSY",,Asteraceae,Senecio,jacobaea
+Herbicide,Corn,"RAPE, VOLUNTEER",,Brassicaceae,Brassica,rapa
+Herbicide,Soybeans,"RAPE, VOLUNTEER",,Brassicaceae,Brassica,rapa
+Herbicide,Corn,RATTLEWEED,,Fabaceae,Crotalaria,retusa
+Herbicide,Soybeans,RATTLEWEED,,Fabaceae,Crotalaria,retusa
+Herbicide,Corn,RED-MAIDS,,Montiaceae,Calandrinia,ciliata
+Herbicide,Corn,REDSHANK,,Rosaceae,Adenostoma,sparsifolium
+Herbicide,Soybeans,REDSHANK,,Rosaceae,Adenostoma,sparsifolium
+Herbicide,Corn,REDSTEM,,Lythraceae,Ammannia,
+Herbicide,Soybeans,REDSTEM,,Lythraceae,Ammannia,
+Herbicide,Corn,REDTOP,,Poaceae,Agrostis,gigantea
+Herbicide,Soybeans,REDTOP,,Poaceae,Agrostis,gigantea
+Herbicide,Corn,REDVINE,,Polygonaceae,Brunnichia,ovata
+Herbicide,Soybeans,REDVINE,,Polygonaceae,Brunnichia,ovata
+Herbicide,Corn,REDWEED,,Phytolaccaceae,Phytolacca,americana
+Herbicide,Soybeans,REDWEED,,Phytolaccaceae,Phytolacca,americana
+Herbicide,Corn,RESCUEGRASS,,Poaceae,Bromus,catharticus
+Herbicide,Soybeans,RESCUEGRASS,,Poaceae,Bromus,catharticus
+Herbicide,Corn,"RICE, RED",,Poaceae,Oryza,punctata
+Herbicide,Soybeans,"RICE, RED",,Poaceae,Oryza,punctata
+Herbicide,Corn,RICHWEED,,Lamiaceae,Collinsonia,canadensis
+Herbicide,Soybeans,RICHWEED,,Lamiaceae,Collinsonia,canadensis
+Herbicide,Corn,"ROCKET, LONDON",,Brassicaceae,Sisymbrium,irio
+Herbicide,Soybeans,"ROCKET, LONDON",,Brassicaceae,Sisymbrium,irio
+Herbicide,Corn,"ROCKET, YELLOW",,Brassicaceae,Barbarea,vulgaris
+Herbicide,Soybeans,"ROCKET, YELLOW",,Brassicaceae,Barbarea,vulgaris
+Herbicide,Corn,"ROSE, CHEROKEE",,Rosaceae,Rosa,laevigata
+Herbicide,Soybeans,"ROSE, CHEROKEE",,Rosaceae,Rosa,laevigata
+Herbicide,Corn,"ROSE, MACARTNEY",,Rosaceae,Rosa,bracteata
+Herbicide,Soybeans,"ROSE, MACARTNEY",,Rosaceae,Rosa,bracteata
+Herbicide,Corn,"ROSE, MULTIFLORA",,Rosaceae,Rosa,multiflora
+Herbicide,Soybeans,"ROSE, MULTIFLORA",,Rosaceae,Rosa,multiflora
+Herbicide,Corn,RUSH,,,,
+Herbicide,Soybeans,RUSH,,,,
+Herbicide,Corn,RYEGRASS,,Poaceae,Lolium,
+Herbicide,Soybeans,RYEGRASS,,Poaceae,Lolium,
+Herbicide,Corn,SAGE,,Lamiaceae,Salvia,
+Herbicide,Soybeans,SAGE,,Lamiaceae,Salvia,
+Herbicide,Corn,"SAGE, LANCELEAF",,Lamiaceae,Salvia,reflexa
+Herbicide,Soybeans,"SAGE, LANCELEAF",,Lamiaceae,Salvia,reflexa
+Herbicide,Corn,SAGEBRUSH,,Asteraceae,Artemisia,
+Herbicide,Corn,SALTCEDAR,,Tamaricaceae,Tamarix,ramosissima
+Herbicide,Soybeans,SALTCEDAR,,Tamaricaceae,Tamarix,ramosissima
+Herbicide,Corn,SALTGRASS,,Poaceae,Distichlis,spicata
+Herbicide,Soybeans,SALTGRASS,,Poaceae,Distichlis,spicata
+Herbicide,Corn,SANDBUR,,Poaceae,Cenchrus,
+Herbicide,Soybeans,SANDBUR,,Poaceae,Cenchrus,
+Herbicide,Corn,"SANDWEED, COMMON",,Brassicaceae,Athysanus,pusillus
+Herbicide,Corn,SASSAFRAS,,Lauraceae,Sassafras,albidum
+Herbicide,Corn,SAWGRASS,,Cyperaceae,Cladium,
+Herbicide,Soybeans,SAWGRASS,,Cyperaceae,Cladium,
+Herbicide,Soybeans,"SCALESEED, SPREADING",,Apiaceae,Spermolepis,diffusa
+Herbicide,Corn,SEDGE,,Cyperaceae,Cyperus,
+Herbicide,Soybeans,SEDGE,,Cyperaceae,Cyperus,
+Herbicide,Corn,"SEDGE, SMALLFLOWER UMBRELLA",,Cyperaceae,Cyperus,difformis
+Herbicide,Soybeans,"SEDGE, SMALLFLOWER UMBRELLA",,Cyperaceae,Cyperus,difformis
+Herbicide,Corn,"SEDGE, WATER",,Cyperaceae,Cyperus,aquatilis
+Herbicide,Soybeans,"SEDGE, WATER",,Cyperaceae,Cyperus,aquatilis
+Herbicide,Corn,SEEPWEED,,Chenopodiaceae,Suaeda,
+Herbicide,Soybeans,SEEPWEED,,Chenopodiaceae,Suaeda,
+Herbicide,Corn,"SENNA, COFFEE",,Fabaceae,Senna,occidentalis
+Herbicide,Soybeans,"SENNA, COFFEE",,Fabaceae,Senna,occidentalis
+Herbicide,Corn,"SESBANIA, HEMP",,Fabaceae,Sesbania,herbacea
+Herbicide,Soybeans,"SESBANIA, HEMP",,Fabaceae,Sesbania,herbacea
+Herbicide,Corn,SHATTERCANE,,Poaceae,Sorghum,bicolor
+Herbicide,Soybeans,SHATTERCANE,,Poaceae,Sorghum,bicolor
+Herbicide,Corn,SHEPHERD'S-PURSE,,Brassicaceae,Capsella,bursa-pastoris
+Herbicide,Soybeans,SHEPHERD'S-PURSE,,Brassicaceae,Capsella,bursa-pastoris
+Herbicide,Corn,SICKLEGRASS,,Poaceae,Parapholis,
+Herbicide,Soybeans,SICKLEGRASS,,Poaceae,Parapholis,
+Herbicide,Corn,SICKLEPOD,,Brassicaceae,Arabis,canadensis
+Herbicide,Soybeans,SICKLEPOD,,Brassicaceae,Arabis,canadensis
+Herbicide,Corn,"SIDA, ARROWLEAF",,Malvaceae,Sida,rhombifolia
+Herbicide,Soybeans,"SIDA, ARROWLEAF",,Malvaceae,Sida,rhombifolia
+Herbicide,Corn,"SIDA, PRICKLY",,Malvaceae,Sida,spinosa
+Herbicide,Soybeans,"SIDA, PRICKLY",,Malvaceae,Sida,spinosa
+Herbicide,Corn,"SIGNALGRASS, BROADLEAF",,Poaceae,Brachiaria,platyphylla
+Herbicide,Soybeans,"SIGNALGRASS, BROADLEAF",,Poaceae,Brachiaria,platyphylla
+Herbicide,Corn,SKELETONWEED,,Asteraceae,Chaetadelpha,
+Herbicide,Soybeans,SKELETONWEED,,Asteraceae,Chaetadelpha,
+Herbicide,Corn,SKUNKWEED,,Polemoniaceae,Navarretia,squarrosa
+Herbicide,Soybeans,SKUNKWEED,,Polemoniaceae,Navarretia,squarrosa
+Herbicide,Corn,SMARTWEED,,Polygonaceae,Polygonum,
+Herbicide,Soybeans,SMARTWEED,,Polygonaceae,Polygonum,
+Herbicide,Corn,"SMARTWEED, PENNSYLVANIA",,Polygonaceae,Polygonum,pensylvanicum
+Herbicide,Soybeans,"SMARTWEED, PENNSYLVANIA",,Polygonaceae,Polygonum,pensylvanicum
+Herbicide,Corn,"SMARTWEED, SWAMP",,Polygonaceae,Polygonum,hydropiperoides
+Herbicide,Soybeans,"SMARTWEED, SWAMP",,Polygonaceae,Polygonum,hydropiperoides
+Herbicide,Corn,SMELLMELON,,Curcubitaceae,Cucumis,melo
+Herbicide,Soybeans,SMELLMELON,,Curcubitaceae,Cucumis,melo
+Herbicide,Corn,SMUTGRASS,,Poaceae,Sporobolus,
+Herbicide,Soybeans,SMUTGRASS,,Poaceae,Sporobolus,
+Herbicide,Corn,"SNAKEWEED, BROOM",,Asteraceae,Gutierrezia,sarothrae
+Herbicide,Soybeans,"SNAKEWEED, BROOM",,Asteraceae,Gutierrezia,sarothrae
+Herbicide,Corn,"SNEEZEWEED, BITTER",,Asteraceae,Helenium,amarum
+Herbicide,Soybeans,"SNEEZEWEED, BITTER",,Asteraceae,Helenium,amarum
+Herbicide,Corn,"SODA APPLE, TROPICAL",,Solanaceae,Solanum,viarum
+Herbicide,Soybeans,"SODA APPLE, TROPICAL",,Solanaceae,Solanum,viarum
+Herbicide,Corn,SORGHUM-ALMUM,,Poaceae,Sorghum,
+Herbicide,Corn,"SORGHUM, VOLUNTEER",,Poaceae,Sorghum,bicolor
+Herbicide,Soybeans,"SORGHUM, VOLUNTEER",,Poaceae,Sorghum,bicolor
+Herbicide,Corn,"SORREL, RED",,Polygonaceae,Rumex,acetosella
+Herbicide,Corn,SOURGRASS,,Poaceae,Digitaria,insularis
+Herbicide,Soybeans,SOURGRASS,,Poaceae,Digitaria,insularis
+Herbicide,Corn,SOWTHISTLE,,Asteraceae,Sonchus,
+Herbicide,Soybeans,SOWTHISTLE,,Asteraceae,Sonchus,
+Herbicide,Corn,SPANISHNEEDLES,,Asteraceae,Bidens,bipinnata
+Herbicide,Soybeans,SPANISHNEEDLES,,Asteraceae,Bidens,bipinnata
+Herbicide,Corn,SPEEDWELL,,Scrophulariaceae,Veronica,
+Herbicide,Soybeans,SPEEDWELL,,Scrophulariaceae,Veronica,
+Herbicide,Corn,SPIDERWORT,,Commelinaceae,Tradescantia,
+Herbicide,Soybeans,SPIDERWORT,,Commelinaceae,Tradescantia,
+Herbicide,Corn,SPIKERUSH,,Cyperaceae,Eleocharis,
+Herbicide,Corn,SPIKEWEED,,Asteraceae,Centromadia,pungens
+Herbicide,Soybeans,SPIKEWEED,,Asteraceae,Centromadia,pungens
+Herbicide,Corn,SPRANGLETOP,,Poaceae,Leptochloa,
+Herbicide,Soybeans,SPRANGLETOP,,Poaceae,Leptochloa,
+Herbicide,Soybeans,SPRING-BEAUTY,,Montiaceae,Claytonia,
+Herbicide,Corn,SPURGE,,Euphorbiaceae,Euphorbia,
+Herbicide,Soybeans,SPURGE,,Euphorbiaceae,Euphorbia,
+Herbicide,Corn,"SPURGE, CYPRESS",,Euphorbiaceae,Euphorbia,cyparissias
+Herbicide,Soybeans,"SPURGE, CYPRESS",,Euphorbiaceae,Euphorbia,cyparissias
+Herbicide,Corn,"SPURGE, LEAFY",,Euphorbiaceae,Euphorbia,esula
+Herbicide,Soybeans,"SPURGE, LEAFY",,Euphorbiaceae,Euphorbia,esula
+Herbicide,Corn,"SPURGE, PROSTRATE",,Euphorbiaceae,Euphorbia,humistrata
+Herbicide,Soybeans,"SPURGE, PROSTRATE",,Euphorbiaceae,Euphorbia,humistrata
+Herbicide,Corn,"SPURGE, SPOTTED",,Euphorbiaceae,Euphorbia,maculata
+Herbicide,Soybeans,"SPURGE, SPOTTED",,Euphorbiaceae,Euphorbia,maculata
+Herbicide,Corn,"SPURGE, TOOTHED",,Euphorbiaceae,Euphorbia,dentata
+Herbicide,Soybeans,"SPURGE, TOOTHED",,Euphorbiaceae,Euphorbia,dentata
+Herbicide,Corn,"SPURRY, CORN",,Caryophylliaceae,Spergula,arvensis
+Herbicide,Corn,ST. AUGUSTINEGRASS,,Poaceae,Stenotaphrum,secundatum
+Herbicide,Corn,ST. JOHNSWORT,,Clusiaceae,Hypericum,
+Herbicide,Soybeans,ST. JOHNSWORT,,Clusiaceae,Hypericum,
+Herbicide,Soybeans,STAR OF BETHLEHEM,,Liliaceae,Ornithogalum,
+Herbicide,Corn,"STARBUR, BRISTLY",,Asteraceae,Acanthospermum,hispidum
+Herbicide,Soybeans,"STARBUR, BRISTLY",,Asteraceae,Acanthospermum,hispidum
+Herbicide,Corn,STARTHISTLE,,Asteraceae,Centaurea,solstitialis
+Herbicide,Soybeans,STARTHISTLE,,Asteraceae,Centaurea,solstitialis
+Herbicide,Corn,"STARTHISTLE, YELLOW",,Asteraceae,Centaurea,solstitialis
+Herbicide,Corn,"STICKTIGHT, EUROPEAN",,Lamiaceae,Lappula,squarrosa
+Herbicide,Soybeans,"STICKTIGHT, EUROPEAN",,Lamiaceae,Lappula,squarrosa
+Herbicide,Corn,STINKGRASS,,Poaceae,Eragrostis,cilianensis
+Herbicide,Soybeans,STINKGRASS,,Poaceae,Eragrostis,cilianensis
+Herbicide,Corn,STINKWEED,,Capparaceae,Cleomella,
+Herbicide,Soybeans,STINKWEED,,Capparaceae,Cleomella,
+Herbicide,Corn,"SUGAR BEET, VOLUNTEER",,Amaranthaceae,Beta,vulgaris
+Herbicide,Soybeans,"SUGAR BEET, VOLUNTEER",,Amaranthaceae,Beta,vulgaris
+Herbicide,Corn,SULFONYLUREA RESISTANT WEEDS,,,,
+Herbicide,Soybeans,SULFONYLUREA RESISTANT WEEDS,,,,
+Herbicide,Soybeans,SUMAC,,Anacardiaceae,Rhus,
+Herbicide,Corn,"SUMAC, SMOOTH",,Anacardiaceae,Rhus,glabra
+Herbicide,Soybeans,"SUMAC, SMOOTH",,Anacardiaceae,Rhus,glabra
+Herbicide,Corn,SUMPWEED,,Asteraceae,Chorisiva,
+Herbicide,Soybeans,SUMPWEED,,Asteraceae,,
+Herbicide,Corn,SUNFLOWER,,Asteraceae,Helianthus,
+Herbicide,Soybeans,SUNFLOWER,,Asteraceae,Helianthus,
+Herbicide,Corn,"SUNFLOWER, VOLUNTEER",,Asteraceae,Helianthus,annuus
+Herbicide,Soybeans,"SUNFLOWER, VOLUNTEER",,Asteraceae,Helianthus,annuus
+Herbicide,Corn,SWEETCLOVER,,Fabaceae,Melilotus,
+Herbicide,Soybeans,SWEETCLOVER,,Fabaceae,Melilotus,
+Herbicide,Corn,SWINECRESS,,Brassicaceae,Coronopus,
+Herbicide,Corn,SWITCHGRASS,,Poaceae,Panicum,virgatum
+Herbicide,Soybeans,SWITCHGRASS,,Poaceae,Panicum,virgatum
+Herbicide,Corn,"TAIL, LIZARD'S",,Acanthaceae,Saururus,cernuus
+Herbicide,Corn,"TALLOWTREE, CHINESE",,Euphorbiaceae,Triadica,sebifera
+Herbicide,Corn,TALLOWWEED,,Plantaginaceae,Plantago,hookeriana
+Herbicide,Soybeans,TALLOWWEED,,Plantaginaceae,Plantago,hookeriana
+Herbicide,Soybeans,TANOAK,,Fagaceae,Notholithocarpus,
+Herbicide,Corn,TANSY,,Asteraceae,Tanacetum,
+Herbicide,Soybeans,TANSY,,Asteraceae,Tanacetum,
+Herbicide,Corn,TANSYMUSTARD,,Brassicaceae,Descurraina,
+Herbicide,Soybeans,TANSYMUSTARD,,Brassicaceae,Descurraina,
+Herbicide,Corn,"TARO, WILD",,Araceae,Alocasia,
+Herbicide,Soybeans,"TARO, WILD",,Araceae,Alocasia,
+Herbicide,Corn,TARWEED,,Asteraceae,Madia,
+Herbicide,Soybeans,TARWEED,,Asteraceae,Madia,
+Herbicide,Corn,"TEASEL, FULLER'S",,Dipsacaceae,Dipsacus,fullonum
+Herbicide,Soybeans,"TEASEL, FULLER'S",,Dipsacaceae,Dipsacus,fullonum
+Herbicide,Corn,TEXAS BLUEWEED,,Asteraceae,Helianthus,ciliaris
+Herbicide,Soybeans,TEXAS BLUEWEED,,Asteraceae,Helianthus,ciliaris
+Herbicide,Corn,TEXASWEED,,Euphorbiaceae,Caperonia,palustris
+Herbicide,Soybeans,TEXASWEED,,Euphorbiaceae,Caperonia,palustris
+Herbicide,Corn,THISTLE,,Asteraceae,Cirsium,
+Herbicide,Soybeans,THISTLE,,Asteraceae,Cirsium,
+Herbicide,Corn,"THISTLE, BULL",,Asteraceae,Carduus,
+Herbicide,Soybeans,"THISTLE, BULL",,Asteraceae,Carduus,
+Herbicide,Corn,"THISTLE, CANADA",,Asteraceae,Cirsium,arvense
+Herbicide,Soybeans,"THISTLE, CANADA",,Asteraceae,Cirsium,arvense
+Herbicide,Corn,"THISTLE, FLODMAN",,Asteraceae,Cirsium,flodmani
+Herbicide,Soybeans,"THISTLE, FLODMAN",,Asteraceae,Cirsium,flodmani
+Herbicide,Corn,"THISTLE, ITALIAN",,Asteraceae,Carduus,pycnocephalus
+Herbicide,Soybeans,"THISTLE, ITALIAN",,Asteraceae,Carduus,pycnocephalus
+Herbicide,Corn,"THISTLE, MILK",,Asteraceae,Silybum,marianum
+Herbicide,Soybeans,"THISTLE, MILK",,Asteraceae,Silybum,marianum
+Herbicide,Corn,"THISTLE, MUSK",,Asteraceae,Carduus,nutans
+Herbicide,Soybeans,"THISTLE, MUSK",,Asteraceae,Carduus,nutans
+Herbicide,Corn,"THISTLE, PLUMELESS",,Asteraceae,Carduus,acanthoides
+Herbicide,Soybeans,"THISTLE, PLUMELESS",,Asteraceae,Carduus,acanthoides
+Herbicide,Corn,"THISTLE, PRAIRIE",,Asteraceae,Cirsium,canescens
+Herbicide,Soybeans,"THISTLE, PRAIRIE",,Asteraceae,Carduus,canescens
+Herbicide,Corn,"THISTLE, RUSSIAN",,Amaranthaceae,Salsola,
+Herbicide,Soybeans,"THISTLE, RUSSIAN",,Amaranthaceae,Salsola,
+Herbicide,Corn,"THISTLE, SCOTCH",,Asteraceae,Onopordum,acanthium
+Herbicide,Soybeans,"THISTLE, SCOTCH",,Asteraceae,Carduus,acanthium
+Herbicide,Soybeans,THREEAWN,,Poaceae,Aristida,
+Herbicide,Corn,TICKWEED,,Asteraceae,Coreopsis,
+Herbicide,Soybeans,TICKWEED,,Asteraceae,Coreopsis,
+Herbicide,Corn,TIMOTHY,,Poaceae,Phleum,
+Herbicide,Soybeans,TIMOTHY,,Poaceae,Phleum,
+Herbicide,Soybeans,TOADFLAX,,Scrophulariaceae,Linaria,
+Herbicide,Corn,"TOBACCO, WILD",,Solanaceae,Nicotiana,
+Herbicide,Soybeans,"TOBACCO, WILD",,Solanaceae,Nicotiana,
+Herbicide,Corn,TORPEDOGRASS,,Poaceae,Panicum,repens
+Herbicide,Soybeans,TORPEDOGRASS,,Poaceae,Panicum,repens
+Herbicide,Corn,TREE,,,,
+Herbicide,Soybeans,TREE,,,,
+Herbicide,Corn,"TREFOIL, BIRDSFOOT",,Fabaceae,Lotus,corniculatus
+Herbicide,Soybeans,"TREFOIL, BIRDSFOOT",,Fabaceae,Lotus,corniculatus
+Herbicide,Corn,TRUMPETCREEPER,,Bignoniaceae,Campsis,radicans
+Herbicide,Soybeans,TRUMPETCREEPER,,Bignoniaceae,Campsis,radicans
+Herbicide,Corn,TUMBLEGRASS,,Poaceae,Schedonnardus,
+Herbicide,Soybeans,TUMBLEGRASS,,Poaceae,Schedonnardus,
+Herbicide,Corn,Unidentified Weed,,,,
+Herbicide,Soybeans,Unidentified Weed,,,,
+Herbicide,Corn,VASEYGRASS,,Poaceae,Paspalum,urvillei
+Herbicide,Soybeans,VASEYGRASS,,Poaceae,Paspalum,urvillei
+Herbicide,Corn,"VELVETGRASS, COMMON",,Poaceae,Holcus,lanatus
+Herbicide,Soybeans,"VELVETGRASS, COMMON",,Poaceae,Holcus,lanatus
+Herbicide,Corn,"VELVETGRASS, GERMAN",,Poaceae,Holcus,mollis
+Herbicide,Soybeans,"VELVETGRASS, GERMAN",,Poaceae,Holcus,mollis
+Herbicide,Corn,VELVETLEAF,,Malvaceae,Abutilon,theophrasti
+Herbicide,Soybeans,VELVETLEAF,,Malvaceae,Abutilon,theophrasti
+Herbicide,Corn,VELVETWEED,,Onagraceae,Oenothera,curtiflora
+Herbicide,Soybeans,VELVETWEED,,Onagraceae,Oenothera,curtiflora
+Herbicide,Corn,"VERVAIN, BLUE",,Verbenaceae,Verbena,hastata
+Herbicide,Soybeans,"VERVAIN, BLUE",,Verbenaceae,Verbena,hastata
+Herbicide,Corn,VETCH,,Fabaceae,Vicia,
+Herbicide,Soybeans,VETCH,,Fabaceae,Vicia,
+Herbicide,Corn,"VETCH, HAIRY",,Fabaceae,Vicia,villosa
+Herbicide,Soybeans,"VETCH, HAIRY",,Fabaceae,Vicia,villosa
+Herbicide,Corn,VINE,,,,
+Herbicide,Soybeans,VINE,,,,
+Herbicide,Corn,"VINE, BLADDER",,Apocynaceae,Araujia,sericifera
+Herbicide,Soybeans,"VINE, BLADDER",,Apocynaceae,Araujia,sericifera
+Herbicide,Corn,"VINE, MILKWEED",,Apocynaceae,Cynanchum,laeve
+Herbicide,Soybeans,"VINE, MILKWEED",,Apocynaceae,Cynanchum,laeve
+Herbicide,Corn,"VIOLET, FIELD",,Violaceae,Viola,arvensis
+Herbicide,Soybeans,"VIOLET, FIELD",,Violaceae,Viola,arvensis
+Herbicide,Corn,"WATERBUTTONS, AUSTRALIAN",,Asteraceae,Cotula,australis
+Herbicide,Soybeans,"WATERBUTTONS, AUSTRALIAN",,Asteraceae,Cotula,australis
+Herbicide,Corn,WATERCRESS,,Brassicaceae,Nasturtium,
+Herbicide,Soybeans,WATERCRESS,,Brassicaceae,Nasturtium,
+Herbicide,Corn,WATERGRASS,,Poaceae,,
+Herbicide,Soybeans,WATERGRASS,,Poaceae,,
+Herbicide,Corn,WATERHEMLOCK,,Apiaceae,Cicuta,douglasii
+Herbicide,Soybeans,WATERHEMLOCK,,Apiaceae,Cicuta,douglasii
+Herbicide,Corn,"WATERHEMP, COMMON",,Amaranthaceae,Amaranthus,rudis
+Herbicide,Soybeans,"WATERHEMP, COMMON",,Amaranthaceae,Amaranthus,rudis
+Herbicide,Corn,"WATERHEMP, TALL",,Amaranthaceae,Amaranthus,tuberculatus
+Herbicide,Soybeans,"WATERHEMP, TALL",,Amaranthaceae,Amaranthus,tuberculatus
+Herbicide,Corn,WATERHYACINTH,,Pontederiaceae,Eichhornia,crassipes
+Herbicide,Soybeans,WATERHYACINTH,,Pontederiaceae,Eichhornia,crassipes
+Herbicide,Soybeans,WATERLETTUCE,,Araceae,Pistia,
+Herbicide,Corn,WATERLILY,,Nymphaeaceae,,
+Herbicide,Corn,WATERMELON,,Curcubitaceae,Citrullus,lanatus
+Herbicide,Soybeans,WATERMELON,,Curcubitaceae,Citrullus,lanatus
+Herbicide,Corn,"WATERMILFOIL, EURASIAN",,Haloragaceae,Myriophyllum,spicatum
+Herbicide,Corn,WATERPURSLANE,,Lythraceae,Didiplis,diandra
+Herbicide,Soybeans,WATERPURSLANE,,Lythraceae,Didiplis,diandra
+Herbicide,Corn,"WAXMYRTLE, SOUTHERN",,Myricaceae,Myrica,cerifera
+Herbicide,Soybeans,"WAXMYRTLE, SOUTHERN",,Myricaceae,Myrica,cerifera
+Herbicide,Corn,WAXWEED,,Lythraceae,Cuphea,
+Herbicide,Corn,"WEEDS, ANNUAL",,,,
+Herbicide,Soybeans,"WEEDS, ANNUAL",,,,
+Herbicide,Corn,"WEEDS, PERENNIAL",,,,
+Herbicide,Soybeans,"WEEDS, PERENNIAL",,,,
+Herbicide,Corn,"WEEDS, TRIAZINE RESISTANT",,,,
+Herbicide,Soybeans,"WEEDS, TRIAZINE RESISTANT",,,,
+Herbicide,Corn,"WHEAT, VOLUNTEER",,Poaceae,Triticum,
+Herbicide,Soybeans,"WHEAT, VOLUNTEER",,Poaceae,Triticum,
+Herbicide,Corn,WHEATGRASS,,Poaceae,Agropyron,
+Herbicide,Soybeans,WHEATGRASS,,Poaceae,Agropyron,
+Herbicide,Corn,"WHEATGRASS, CRESTED",,Poaceae,Agropyron,cristatum
+Herbicide,Soybeans,"WHEATGRASS, CRESTED",,Poaceae,Agropyron,cristatum
+Herbicide,Soybeans,"WHEATGRASS, WESTERN",,Poaceae,Pascopyrum,smithii
+Herbicide,Corn,WHITETOP,,Brassicaceae,Lepidium,
+Herbicide,Soybeans,WHITETOP,,Brassicaceae,Lepidium,
+Herbicide,Corn,WILDRYE,,Poaceae,Elymus,
+Herbicide,Soybeans,WILDRYE,,Poaceae,Elymus,
+Herbicide,Corn,"WILDRYE, VIRGINIA",,Poaceae,Elymus,virginicus
+Herbicide,Corn,WILLOWHERB,,Onagraceae,Epilobium,
+Herbicide,Soybeans,WILLOWHERB,,Onagraceae,Epilobium,
+Herbicide,Corn,"WILLOWWEED, PANICLE",,Onagraceae,Epilobium,brachycarpum
+Herbicide,Soybeans,"WILLOWWEED, PANICLE",,Onagraceae,Epilobium,brachycarpum
+Herbicide,Corn,WINDGRASS,,Poaceae,Apera,
+Herbicide,Soybeans,WINDGRASS,,Poaceae,Apera,
+Herbicide,Corn,WINTER ANNUALS,,,,
+Herbicide,Soybeans,WINTER ANNUALS,,,,
+Herbicide,Corn,"WINTERCRESS, EARLY",,Brassicaceae,Barbarea,verna
+Herbicide,Soybeans,"WINTERCRESS, EARLY",,Brassicaceae,Barbarea,verna
+Herbicide,Corn,"WINTERGRASS, TEXAS",,Poaceae,Nassella,leucotricha
+Herbicide,Soybeans,"WINTERGRASS, TEXAS",,Poaceae,Nassella,leucotricha
+Herbicide,Corn,"WIREWEED, COMMON",,Malvaceae,Sida,acuta
+Herbicide,Soybeans,"WIREWEED, COMMON",,Malvaceae,Sida,acuta
+Herbicide,Corn,WITCHGRASS,,Poaceae,Panicum,capillare
+Herbicide,Soybeans,WITCHGRASS,,Poaceae,Panicum,capillare
+Herbicide,Corn,WITCHWEED,,Scrophulariaceae,Striga,
+Herbicide,Soybeans,WITCHWEED,,Scrophulariaceae,Striga,
+Herbicide,Corn,"WOAD, DYER'S",,Brassicaceae,Isatis,tinctoria
+Herbicide,Soybeans,"WOAD, DYER'S",,Brassicaceae,Isatis,tinctoria
+Herbicide,Corn,WOODY BRUSH,,,,
+Herbicide,Soybeans,WOODY BRUSH,,,,
+Herbicide,Corn,WORMWOOD,,Asteraceae,Artemisia,
+Herbicide,Soybeans,WORMWOOD,,Asteraceae,Artemisia,
+Herbicide,Soybeans,"WORMWOOD, BIENNIAL",,Asteraceae,Artemisia,biennis
+Herbicide,Corn,"YAM, AIR",,Dioscoreaceae,Dioscorea,bulbifera
+Herbicide,Soybeans,"YAM, AIR",,Dioscoreaceae,Dioscorea,bulbifera
+Herbicide,Soybeans,YANKEEWEED,,Asteraceae,Eupatorium,capillifolium
+Herbicide,Corn,"YARROW, COMMON",,Asteraceae,Achillea,millefolium
+Herbicide,Soybeans,"YARROW, COMMON",,Asteraceae,Achillea,millefolium
+Herbicide,Corn,YUCCA,,Agavaceae,Yucca,
