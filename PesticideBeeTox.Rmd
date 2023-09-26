@@ -180,6 +180,7 @@ AgroTrak.ecotox <-
   mutate(Year = as.numeric(Year),
          Volume.kg = round(Volume.lbs * 0.454),
          BaseArea.ha = round(Base.Area.Treated / 2.47),
+         TotalArea.ha = round(Total.Area.Treated / 2.47),
          Rate.kgha = Volume.kg / BaseArea.ha) %>%
   left_join(plantedAcres.dat) %>%
   mutate(BeeRex.EEC = (Volume.kg / BaseArea.ha) * 2.4 / AAC.LD50,
@@ -415,7 +416,7 @@ plot_grid(ToxIndex.plot(crop = "Corn", timing = "POST", excludeType = "Fungicide
 ```
 
 
-```{r, echo = FALSE, warning = FALSE, message = FALSE, fig.width = 9, fig.height = 8, fig.cap = "**Figure 4. Honeybee eco-efficiency index for pesticides applied to corn or soybean *after* crop emergence.**"}
+```{r, echo = FALSE, warning = FALSE, message = FALSE, fig.width = 9, fig.height = 6, fig.cap = "**Figure 4. Honeybee eco-efficiency index for pesticides applied to corn or soybean *after* crop emergence.**"}
 plot_grid(
   ToxIndex.summary.yr %>% 
     filter(Crop == "Corn" & Timing == "POST" & Type != "Fungicide") %>%
@@ -429,7 +430,7 @@ plot_grid(
     scale_y_continuous(limits = c(1, NA)) + #, expand = c(0, 0)) +
     ggtitle("Corn POST"),
 ToxIndex.summary.yr %>% 
-  filter(Crop == "Soybeans" & Timing == "POST") %>%
+  filter(Crop == "Soybeans" & Timing == "POST" & Type != "Fungicide") %>%
   ggplot(aes(y = EcoEff, x = Year)) +
   facet_wrap(~ Type, scales = "free_y",
              ncol = 1) +
