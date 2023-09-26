@@ -1,6 +1,32 @@
 library("tidyverse")
 library("readxl")
 
+plot_grid(
+  ToxIndex.summary.yr %>% 
+    filter(Crop == "Corn" & Timing == "POST") %>%
+    ggplot(aes(y = EcoEff, x = Year)) +
+    facet_wrap(~ Type, scales = "free_y",
+               ncol = 1) +
+    geom_point() + 
+    stat_smooth(se = FALSE, span = 0.9) + 
+    ylab("Honeybee Eco-Efficiency Index") +
+    theme_gray(base_size = 18) +
+    scale_y_continuous(limits = c(0, NA), expand = c(0, 0)) +
+    ggtitle("Corn POST"),
+ToxIndex.summary.yr %>% 
+  filter(Crop == "Soybeans" & Timing == "POST") %>%
+  ggplot(aes(y = EcoEff, x = Year)) +
+  facet_wrap(~ Type, scales = "free_y",
+             ncol = 1) +
+  geom_point() + 
+  stat_smooth(se = FALSE, span = 0.9) + 
+  ylab("Honeybee Eco-Efficiency Index") +
+  theme_gray(base_size = 18) +
+  scale_y_continuous(limits = c(0, NA), expand = c(0, 0)) +
+  ggtitle("Soybeans POST"),
+nrow = 1)
+
+
 plantedAcres.dat <- read_csv("DATA/USDA-PlantedAcresProduction_1990-2022.csv") %>%
   select(Year, State, Commodity, Data.Item = `Data Item`, Value) %>%
   mutate(Data.Item = 
