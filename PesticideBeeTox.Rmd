@@ -399,7 +399,7 @@ ToxIndex.plot <- function(
 }
 ```
 
-```{r, echo = FALSE, warning = FALSE, message = FALSE, fig.width = 8, fig.height = 6, fig.cap = "**Figure 2. Honey bee adult acute contact toxicity index for insecticides and herbicides applied to corn or soybean *before* crop emergence.**"}
+```{r, echo = FALSE, warning = FALSE, message = FALSE, fig.width = 9, fig.height = 6, fig.cap = "**Figure 2. Honey bee adult acute contact toxicity index for insecticides and herbicides applied to corn or soybean *before* crop emergence.**"}
 plot_grid(ToxIndex.plot(crop = "Corn", 
                         timing = "PRE", 
                         excludeType = "Fungicide"),
