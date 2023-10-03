@@ -163,14 +163,18 @@ plantedAcres.dat <- read_csv("DATA/USDA-PlantedAcresProduction_1990-2022.csv") %
               values_from = Value,
               names_from = Data.Item) %>%
   rename(Acres = `ACRES PLANTED`,
-         productionBu = `PRODUCTION, MEASURED IN BU`) %>%
+         productionBu = `PRODUCTION, MEASURED IN BU`,
+         productionUSD = `PRODUCTION, MEASURED IN $`) %>%
   mutate(Crop = str_to_title(Commodity),
          PlantedHectares = Acres / 2.47,
          ProductionTonnes = case_when(
            Crop == "Corn" ~ round(productionBu * 56 * 0.45359 /1000),
            Crop == "Soybeans" ~ round(productionBu * 60 * 0.45359 /1000)),
-         Yield.tha = round(ProductionTonnes / PlantedHectares, 2)) %>%
-  select(Year, Crop, PlantedHectares, ProductionTonnes, Yield.tha)
+         Yield.tha = round(ProductionTonnes / PlantedHectares, 2),
+         ProductionBUSD = case_when(
+           Crop == "Corn" ~ round(productionUSD / 10^9, 1),
+           Crop == "Soybeans" ~ round(productionUSD / 10^9, 1))) %>%
+  select(Year, Crop, PlantedHectares, ProductionTonnes, ProductionBUSD, Yield.tha)
 glimpse(plantedAcres.dat)
 
 ## Merge with usage data
@@ -247,34 +251,41 @@ ToxIndex.summary.yr <- AgroTrak.ecotox %>%
   summarize(ToxIndex.vol = sum(ToxIndex.vol, na.rm = TRUE),
             ToxIndex.rate = sum(ToxIndex.rate, na.rm = TRUE),
             ToxIndex.area = sum(ToxIndex.area, na.rm = TRUE),
-            Yield.tha = mean(Yield.tha, na.rm = TRUE)) %>%
-  mutate(EcoEff = Yield.tha / ToxIndex.area)
+            Yield.tha = mean(Yield.tha, na.rm = TRUE),
+            Value.BUSD = mean(ProductionBUSD, na.rm = TRUE)) %>%
+  mutate(EcoEff.Y = Yield.tha / ToxIndex.area,
+         EcoEff.V = Value.BUSD / ToxIndex.area)
 ToxIndex.summary <- AgroTrak.ecotox %>%
   group_by(Crop, Timing, Type) %>%
   summarize(ToxIndex.vol = sum(ToxIndex.vol, na.rm = TRUE),
             ToxIndex.rate = sum(ToxIndex.rate, na.rm = TRUE),
             ToxIndex.area = sum(ToxIndex.area, na.rm = TRUE),
-            Yield.tha = mean(Yield.tha, na.rm = TRUE)) %>%
-  mutate(EcoEff = Yield.tha / ToxIndex.area) %>%
+            Yield.tha = mean(Yield.tha, na.rm = TRUE),
+            Value.BUSD = mean(ProductionBUSD, na.rm = TRUE)) %>%
+  mutate(EcoEff.Y = Yield.tha / ToxIndex.area,
+         EcoEff.V = Value.BUSD / ToxIndex.area) %>%
   group_by(Crop) %>% 
   mutate(cropToxIndex.vol = sum(ToxIndex.vol),
          cropToxIndex.rate = sum(ToxIndex.rate),
          cropToxIndex.area = sum(ToxIndex.area),
-         cropEcoEff = sum(EcoEff),
+         cropEcoEff.Y = sum(EcoEff.Y),
+         cropEcoEff.V = sum(EcoEff.V),
          cropToxIndex.volPct = signif(ToxIndex.vol / 
                                          cropToxIndex.vol*100, 2),
          cropToxIndex.ratePct = signif(ToxIndex.rate / 
                                          cropToxIndex.rate*100, 2),
          cropToxIndex.areaPct = signif(ToxIndex.area / 
                                          cropToxIndex.area*100, 2),
-         cropEcoEff.Pct = signif(EcoEff / cropEcoEff*100, 2))
+         cropEcoEff.Y.Pct = signif(EcoEff.Y / cropEcoEff.Y*100, 2),
+         cropEcoEff.V.Pct = signif(EcoEff.V / cropEcoEff.V*100, 2))
 
 ToxIndex.cropTotals <- ToxIndex.summary %>% 
   group_by(Crop) %>% 
   summarize(cropToxIndex.vol = unique(cropToxIndex.vol),
             cropToxIndex.rate = unique(cropToxIndex.rate),
             cropToxIndex.area = unique(cropToxIndex.area),
-            cropEcoEff = unique(cropEcoEff))
+            cropEcoEff.Y = unique(cropEcoEff.Y),
+            cropEcoEff.V = unique(cropEcoEff.V))
 ToxIndex.cropTotals
 
 cropType.summary <- ToxIndex.summary %>% 
@@ -282,7 +293,8 @@ cropType.summary <- ToxIndex.summary %>%
   summarize(cropToxIndex.volPct = sum(cropToxIndex.volPct),
             cropToxIndex.ratePct = sum(cropToxIndex.ratePct),
             cropToxIndex.areaPct = sum(cropToxIndex.areaPct),
-            cropEcoEff.Pct = sum(cropEcoEff.Pct))
+            cropEcoEff.Y.Pct = sum(cropEcoEff.Y.Pct),
+            cropEcoEff.V.Pct = sum(cropEcoEff.V.Pct))
 ```
 
 ```{r, echo = FALSE}
@@ -326,8 +338,18 @@ tisum.area.gg <- ggplot(ToxIndex.summary,
   theme(legend.position = "none",
         plot.title.position = "plot") +
   ggtitle("Area-adjusted Toxicity Index")
-ecoeffsum.gg <- ggplot(ToxIndex.summary, 
-       aes(x = EcoEff, y = Type)) +
+
+ecoeffYsum.gg <- ggplot(ToxIndex.summary, 
+       aes(x = EcoEff.Y, y = Type)) +
+  facet_grid(Crop ~ Timing) + 
+  geom_bar(stat = "identity",
+           aes(fill = Crop)) +
+  ylab(element_blank()) +
+  xlab("Honey bee acute toxicity eco-efficiency") +
+  theme_minimal_grid() +
+  theme(legend.position = "none")
+ecoeffVsum.gg <- ggplot(ToxIndex.summary, 
+       aes(x = EcoEff.V, y = Type)) +
   facet_grid(Crop ~ Timing) + 
   geom_bar(stat = "identity",
            aes(fill = Crop)) +
@@ -416,31 +438,52 @@ plot_grid(ToxIndex.plot(crop = "Corn", timing = "POST", excludeType = "Fungicide
 ```
 
 
-```{r, echo = FALSE, warning = FALSE, message = FALSE, fig.width = 9, fig.height = 6, fig.cap = "**Figure 4. Honeybee eco-efficiency index for pesticides applied to corn or soybean *after* crop emergence.**"}
+```{r, echo = FALSE, warning = FALSE, message = FALSE, fig.width = 9, fig.height = 9, fig.cap = "**Figure 4. Honeybee eco-efficiency index for pesticides applied to corn or soybean *after* crop emergence.**"}
 plot_grid(
   ToxIndex.summary.yr %>% 
     filter(Crop == "Corn" & Timing == "POST" & Type != "Fungicide") %>%
-    ggplot(aes(y = EcoEff, x = Year)) +
+    ggplot(aes(y = EcoEff.Y, x = Year)) +
     facet_wrap(~ Type, scales = "free_y",
                ncol = 1) +
     geom_point() + 
     stat_smooth(se = FALSE, span = 0.9) + 
-    ylab("Honeybee Eco-Efficiency Index") +
+    ylab("Yield Eco-Efficiency") +
     theme_gray(base_size = 18) +
     scale_y_continuous(limits = c(1, NA)) + #, expand = c(0, 0)) +
     ggtitle("Corn POST"),
-ToxIndex.summary.yr %>% 
+  ToxIndex.summary.yr %>% 
   filter(Crop == "Soybeans" & Timing == "POST" & Type != "Fungicide") %>%
-  ggplot(aes(y = EcoEff, x = Year)) +
+  ggplot(aes(y = EcoEff.Y, x = Year)) +
   facet_wrap(~ Type, scales = "free_y",
              ncol = 1) +
   geom_point() + 
   stat_smooth(se = FALSE, span = 0.9) + 
-  ylab("Honeybee Eco-Efficiency Index") +
+  ylab("Yield Eco-Efficiency") +
   theme_gray(base_size = 18) +
   scale_y_continuous(limits = c(1, NA)) + #, expand = c(0, 0)) +
   ggtitle("Soybeans POST"),
-nrow = 1)
+  ToxIndex.summary.yr %>% 
+    filter(Crop == "Corn" & Timing == "POST" & Type != "Fungicide") %>%
+    ggplot(aes(y = EcoEff.V, x = Year)) +
+    facet_wrap(~ Type, scales = "free_y",
+               ncol = 1) +
+    geom_point() + 
+    stat_smooth(se = FALSE, span = 0.9) + 
+    ylab("Value Eco-Efficiency") +
+    theme_gray(base_size = 18) +
+    scale_y_continuous(limits = c(1, NA)) + #, expand = c(0, 0)) +
+    ggtitle("Corn POST"),
+  ToxIndex.summary.yr %>% 
+  filter(Crop == "Soybeans" & Timing == "POST" & Type != "Fungicide") %>%
+  ggplot(aes(y = EcoEff.V, x = Year)) +
+  facet_wrap(~ Type, scales = "free_y",
+             ncol = 1) +
+  geom_point() + 
+  stat_smooth(se = FALSE, span = 0.9) + 
+  ylab("Value Eco-Efficiency") +
+  theme_gray(base_size = 18) +
+  scale_y_continuous(limits = c(1, NA)) + #, expand = c(0, 0)) +
+  ggtitle("Soybeans POST"))
 ```
 
 ## Active ingredient contributions (2016-2020)
