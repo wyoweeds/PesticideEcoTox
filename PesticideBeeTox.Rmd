@@ -439,7 +439,21 @@ plot_grid(ToxIndex.plot(crop = "Corn", timing = "POST", excludeType = "Fungicide
           nrow = 1)
 ```
 
-```{r, echo = FALSE, warning = FALSE, message = FALSE, fig.width = 9, fig.height = 6, fig.cap = paste0("**Figure 4. Contribution of insecticide active ingredients to honey bee adult acute contact toxicity index applied to corn or soybean *after* crop emergence. 'All Other Insecticides' category includes ", 100-corn.top7prop, "% of the total corn toxicity index, and ", 100-soy.top7prop, "% of the total soybean toxicity index. **")}
+```{r, echo = FALSE, warning = FALSE, message = FALSE, fig.width = 8, fig.height = 6, fig.cap = paste0("**Figure 4. Contribution of insecticide active ingredients to honey bee adult acute contact toxicity index applied to corn or soybean *after* crop emergence. 'All Other Insecticides' category includes ", 100-corn.top7prop, "% of the total corn toxicity index, and ", 100-soy.top7prop, "% of the total soybean toxicity index. **")}
+
+cornPre.90list <- AgroTrak.ecotox %>%
+  filter(Type == "Insecticide" &
+           Timing == "PRE" &
+           Crop == "Corn") %>%
+  group_by(ai) %>%
+  summarize(ToxIndex.areaSum = sum(ToxIndex.area, na.rm = TRUE)) %>%
+  arrange(-ToxIndex.areaSum) %>%
+  mutate(total = sum(ToxIndex.areaSum),
+         ToxIndex.prop = ToxIndex.areaSum / total,
+         Tox.cumsum = cumsum(ToxIndex.prop)) %>%
+  slice_max(ToxIndex.prop, n = 7)
+cornPre.top7prop <- round(max(cornPre.90list$Tox.cumsum), 2) * 100
+
 cornPost.90list <- AgroTrak.ecotox %>%
   filter(Type == "Insecticide" &
            Timing == "POST" &
@@ -471,6 +485,28 @@ cbPalette.corn <- c("#999999", "#E69F00", "#56B4E9", "#D55E00",
 cbPalette.soy <- c("#999999", "#E69F00", "#009E73", "#56B4E9", 
                    "#F0E442", "#0072B2", "#D55E00", "#CC79A7")
 aiplot.ylab <- "Honey bee acute \ntoxicity index"
+
+cornPre.aigg <- AgroTrak.ecotox %>%
+  filter(Type == "Insecticide" &
+           Timing == "PRE" &
+           Crop == "Corn") %>%
+  mutate(aiplot = case_when(
+    ai %in% cornPre.90list$ai ~ ai,
+    TRUE ~ "ALL OTHER INSECTICIDES"),
+    aiplot = factor(aiplot, levels = c(cornPre.90list$ai,
+                                       "ALL OTHER INSECTICIDES"))) %>%
+  group_by(Year, aiplot) %>%
+  summarize(ToxIndex.area = sum(ToxIndex.area, na.rm = TRUE)) %>%
+  ungroup() %>%
+  complete(aiplot, Year, fill = list(ToxIndex.area = 0)) %>%
+  ggplot(aes(x = Year, y = ToxIndex.area)) +
+  geom_area(aes(fill = aiplot)) +
+  scale_fill_manual(values = cbPalette.corn) +
+  ggtitle("Corn Insecticides Applied PRE") +
+  xlim(c(1998, 2020)) +
+  ylab(aiplot.ylab) + xlab(element_blank()) +
+  theme_minimal_grid() +
+  theme(legend.title = element_blank())
 
 corn.aigg <- AgroTrak.ecotox %>%
   filter(Type == "Insecticide" &
@@ -572,42 +608,6 @@ plot_grid(
   ggtitle("Soybeans POST"))
 ```
 
-## Active ingredient contributions (2016-2020)
-
-```{r, include = FALSE}
-ToxIndex.post2015 <- AgroTrak.ecotox %>%
-  filter(Year > 2015) %>%
-  group_by(Crop, Timing, Type, ai) %>%
-  summarize(ToxIndex.area = sum(ToxIndex.area, na.rm = TRUE)) %>%
-  ungroup()
-```
-
-
-```{r, echo = FALSE, warning = FALSE, message = FALSE, fig.width = 8, fig.height = 6, fig.cap = "**Figure 6. Contribution of individual pesticides to the honey bee adult acute contact risk quotient; corn pesticides applied *after* crop emergence, 2016-2020.**"}
-ToxIndex.post2015 %>%
-  filter(Crop == "Corn" & Timing == "POST") %>%
-  arrange(-ToxIndex.area) %>% 
-  top_n(25) %>%
-  ggplot(aes(x = ToxIndex.area, y = reorder(ai, ToxIndex.area))) +
-  geom_point(aes(color = Type, shape = Type)) +
-  xlab("Honey bee acute toxicity index") +
-  ylab(element_blank()) +
-  ggtitle("Corn POST - 2016-2020") +
-  theme_gray(base_size = 18)
-```
-
-```{r, echo = FALSE, warning = FALSE, message = FALSE, fig.width = 8, fig.height = 6, fig.cap = "**Figure 7. Contribution of individual pesticides to the honey bee adult acute contact risk quotient; soybean pesticides applied *after* crop emergence, 2016-2020.**"}
-ToxIndex.post2015 %>%
-  filter(Crop == "Soybeans", Timing == "POST") %>%
-  arrange(-ToxIndex.area) %>% 
-  top_n(25) %>%
-  ggplot(aes(x = ToxIndex.area, y = reorder(ai, ToxIndex.area))) +
-  geom_point(aes(color = Type, shape = Type)) +
-  xlab("Honey bee acute toxicity index") +
-  ylab(element_blank()) +
-  ggtitle("Soybean POST - 2016-2020") +
-  theme_gray(base_size = 18)
-```
 
 # Pest Index
 
@@ -673,8 +673,7 @@ $$TI_{pest} = (P_{pest} / P_{total}) * (TI_{area.ai} / TI_{area.group})$$
 AgroTrak.PestToxIndex %>%
   filter(Type == "Insecticide" & 
            Timing == "POST" &
-           Crop == "Corn" &
-           TaxonGroup != "Unknown" & !is.na(TaxonGroup)) %>%
+           Crop == "Corn" &!is.na(TaxonGroup)) %>%
   group_by(Crop, Year, TaxonGroup) %>%
   summarize(pestToxIndex.sum = sum(pestToxIndex, na.rm = TRUE)) %>%
   group_by(Crop, TaxonGroup) %>%
@@ -691,8 +690,7 @@ AgroTrak.PestToxIndex %>%
 AgroTrak.PestToxIndex %>%
   filter(Type == "Insecticide" & 
            Timing == "POST" &
-           Crop == "Soybeans" &
-           TaxonGroup != "Unknown" & !is.na(TaxonGroup)) %>%
+           Crop == "Soybeans" &!is.na(TaxonGroup)) %>%
   group_by(Crop, Year, TaxonGroup) %>%
   summarize(pestToxIndex.sum = sum(pestToxIndex, na.rm = TRUE)) %>%
   group_by(Crop, TaxonGroup) %>%
@@ -703,68 +701,5 @@ AgroTrak.PestToxIndex %>%
   facet_wrap(~ TaxonGroup) +
   ggtitle("Soybean POST Insecticide Targets") +
   ylab("Total Pest Toxicity Index")
-
 ```
 
-```{r include = FALSE}
-insectToxIndex.b2006 <- AgroTrak.PestToxIndex %>%
-  filter(Type == "Insecticide" & Year < 2006 & 
-           Timing == "POST") %>%
-  group_by(Crop, TaxonGroup) %>%
-  summarize(pestToxIndex.sum = sum(pestToxIndex, na.rm = TRUE) / 
-              length(unique(Year))) %>%
-  ungroup() %>%
-  mutate(era = "1998 to 2005")
-insectToxIndex.a2015 <- AgroTrak.PestToxIndex %>%
-  filter(Type == "Insecticide" & Year > 2015 & 
-           Timing == "POST") %>%
-  group_by(Crop, TaxonGroup) %>%
-  summarize(pestToxIndex.sum = sum(pestToxIndex, na.rm = TRUE) / 
-              length(unique(Year))) %>%
-  ungroup() %>%
-  mutate(era = "2016 to 2020")
-
-insectToxIndex.post <- bind_rows(insectToxIndex.b2006, insectToxIndex.a2015)
-
-plotKeep.taxon <- insectToxIndex.post %>%
-  filter(!is.na(TaxonGroup) &
-           !TaxonGroup %in% c("Unknown", "All Insects")) %>%
-  group_by(Crop, era) %>%
-  slice_max(pestToxIndex.sum, n = 16) %>%
-  ungroup() %>%
-  distinct(TaxonGroup)
-```
-
-```{r, echo = FALSE, warning = FALSE, message = FALSE, fig.width = 8, fig.height = 3, fig.cap = "**Figure 10. Contribution of insect pest taxa to the honey bee adult acute contact toxicity index; soybean pesticides applied *after* crop emergence, 1998-2005 compared to 2016-2020.**"}
-insectToxIndex.post %>%
-  filter(Crop == "Corn" &
-           TaxonGroup %in% plotKeep.taxon$TaxonGroup) %>%
-  ggplot(aes(x = pestToxIndex.sum,
-             y = reorder(TaxonGroup, pestToxIndex.sum))) +
-  geom_line(alpha = .5, size = 1.1) +
-  geom_point(aes(shape = era, color = era), size = 4, alpha = .8) +
-  scale_shape_manual(values=c(20, 18)) +
-  scale_color_manual(values = c("#ff6347", "#1dc460")) +
-  theme(legend.position = "right",
-        legend.title = element_blank()) +
-  ggtitle("Corn POST - Insecticide targets") +
-  ylab(element_blank()) +
-  xlab("Annual Pest Toxicity Index")
-```
-
-```{r, echo = FALSE, warning = FALSE, message = FALSE, fig.width = 8, fig.height = 2.5, fig.cap = "**Figure 11. Contribution of insect pest taxa to the honey bee adult acute contact toxicity index; soybean pesticides applied *after* crop emergence, 1998-2005 compared to 2016-2020.**"}
-insectToxIndex.post %>%
-  filter(Crop == "Soybeans" &
-           TaxonGroup %in% plotKeep.taxon$TaxonGroup) %>%
-  ggplot(aes(x = pestToxIndex.sum,
-             y = reorder(TaxonGroup, pestToxIndex.sum))) +
-  geom_line(alpha = .5, size = 1.1) +
-  geom_point(aes(shape = era, color = era), size = 4, alpha = 0.8) +
-  scale_shape_manual(values=c(20, 18)) +
-  scale_color_manual(values = c("#ff6347", "#1dc460")) +
-  theme(legend.position = "right",
-        legend.title = element_blank()) +
-  ggtitle("Soybean POST - Insecticide targets") +
-  ylab(element_blank()) +
-  xlab("Annual Pest Toxicity Index")
-```

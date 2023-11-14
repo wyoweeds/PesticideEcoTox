@@ -426,3 +426,103 @@ weedToxIndex.post %>%
   ylab(element_blank()) +
   xlab("Summed Pest Toxicity Index")
 ```
+
+
+## Active ingredient contributions (2016-2020)
+
+```{r, include = FALSE}
+ToxIndex.post2015 <- AgroTrak.ecotox %>%
+  filter(Year > 2015) %>%
+  group_by(Crop, Timing, Type, ai) %>%
+  summarize(ToxIndex.area = sum(ToxIndex.area, na.rm = TRUE)) %>%
+  ungroup()
+```
+
+
+```{r, echo = FALSE, warning = FALSE, message = FALSE, fig.width = 8, fig.height = 6, fig.cap = "**Figure 6. Contribution of individual pesticides to the honey bee adult acute contact risk quotient; corn pesticides applied *after* crop emergence, 2016-2020.**"}
+ToxIndex.post2015 %>%
+  filter(Crop == "Corn" & Timing == "POST") %>%
+  arrange(-ToxIndex.area) %>% 
+  top_n(25) %>%
+  ggplot(aes(x = ToxIndex.area, y = reorder(ai, ToxIndex.area))) +
+  geom_point(aes(color = Type, shape = Type)) +
+  xlab("Honey bee acute toxicity index") +
+  ylab(element_blank()) +
+  ggtitle("Corn POST - 2016-2020") +
+  theme_gray(base_size = 18)
+```
+
+```{r, echo = FALSE, warning = FALSE, message = FALSE, fig.width = 8, fig.height = 6, fig.cap = "**Figure 7. Contribution of individual pesticides to the honey bee adult acute contact risk quotient; soybean pesticides applied *after* crop emergence, 2016-2020.**"}
+ToxIndex.post2015 %>%
+  filter(Crop == "Soybeans", Timing == "POST") %>%
+  arrange(-ToxIndex.area) %>% 
+  top_n(25) %>%
+  ggplot(aes(x = ToxIndex.area, y = reorder(ai, ToxIndex.area))) +
+  geom_point(aes(color = Type, shape = Type)) +
+  xlab("Honey bee acute toxicity index") +
+  ylab(element_blank()) +
+  ggtitle("Soybean POST - 2016-2020") +
+  theme_gray(base_size = 18)
+```
+```{r include = FALSE}
+insectToxIndex.b2006 <- AgroTrak.PestToxIndex %>%
+  filter(Type == "Insecticide" & Year < 2006 & 
+           Timing == "POST") %>%
+  group_by(Crop, TaxonGroup) %>%
+  summarize(pestToxIndex.sum = sum(pestToxIndex, na.rm = TRUE) / 
+              length(unique(Year))) %>%
+  ungroup() %>%
+  mutate(era = "1998 to 2005")
+insectToxIndex.a2015 <- AgroTrak.PestToxIndex %>%
+  filter(Type == "Insecticide" & Year > 2015 & 
+           Timing == "POST") %>%
+  group_by(Crop, TaxonGroup) %>%
+  summarize(pestToxIndex.sum = sum(pestToxIndex, na.rm = TRUE) / 
+              length(unique(Year))) %>%
+  ungroup() %>%
+  mutate(era = "2016 to 2020")
+
+insectToxIndex.post <- bind_rows(insectToxIndex.b2006, insectToxIndex.a2015)
+
+plotKeep.taxon <- insectToxIndex.post %>%
+  filter(!is.na(TaxonGroup) &
+           !TaxonGroup %in% c("Unknown", "All Insects")) %>%
+  group_by(Crop, era) %>%
+  slice_max(pestToxIndex.sum, n = 16) %>%
+  ungroup() %>%
+  distinct(TaxonGroup)
+```
+
+```{r, echo = FALSE, warning = FALSE, message = FALSE, fig.width = 8, fig.height = 3, fig.cap = "**Figure 10. Contribution of insect pest taxa to the honey bee adult acute contact toxicity index; soybean pesticides applied *after* crop emergence, 1998-2005 compared to 2016-2020.**"}
+insectToxIndex.post %>%
+  filter(Crop == "Corn" &
+           TaxonGroup %in% plotKeep.taxon$TaxonGroup) %>%
+  ggplot(aes(x = pestToxIndex.sum,
+             y = reorder(TaxonGroup, pestToxIndex.sum))) +
+  geom_line(alpha = .5, size = 1.1) +
+  geom_point(aes(shape = era, color = era), size = 4, alpha = .8) +
+  scale_shape_manual(values=c(20, 18)) +
+  scale_color_manual(values = c("#ff6347", "#1dc460")) +
+  theme(legend.position = "right",
+        legend.title = element_blank()) +
+  ggtitle("Corn POST - Insecticide targets") +
+  ylab(element_blank()) +
+  xlab("Annual Pest Toxicity Index")
+```
+
+```{r, echo = FALSE, warning = FALSE, message = FALSE, fig.width = 8, fig.height = 2.5, fig.cap = "**Figure 11. Contribution of insect pest taxa to the honey bee adult acute contact toxicity index; soybean pesticides applied *after* crop emergence, 1998-2005 compared to 2016-2020.**"}
+insectToxIndex.post %>%
+  filter(Crop == "Soybeans" &
+           TaxonGroup %in% plotKeep.taxon$TaxonGroup) %>%
+  ggplot(aes(x = pestToxIndex.sum,
+             y = reorder(TaxonGroup, pestToxIndex.sum))) +
+  geom_line(alpha = .5, size = 1.1) +
+  geom_point(aes(shape = era, color = era), size = 4, alpha = 0.8) +
+  scale_shape_manual(values=c(20, 18)) +
+  scale_color_manual(values = c("#ff6347", "#1dc460")) +
+  theme(legend.position = "right",
+        legend.title = element_blank()) +
+  ggtitle("Soybean POST - Insecticide targets") +
+  ylab(element_blank()) +
+  xlab("Annual Pest Toxicity Index")
+```
