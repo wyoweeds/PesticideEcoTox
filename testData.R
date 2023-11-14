@@ -1,7 +1,131 @@
 library("tidyverse")
 library("readxl")
 
+paste0("**Figure 4. Contribution of insecticide active ingredients to honey bee adult acute contact toxicity index applied to corn or soybean *after* crop emergence. 'All Other Insecticides' category includes ", 100-cornPre.top7prop, "% of the total corn toxicity index applied PRE, ", 100-corn.top7prop, "% of the total corn toxicity index applied POST, and ", 100-soy.top7prop, "% of the total soybean toxicity index. **")
 
+
+```{r, echo = FALSE, warning = FALSE, message = FALSE}
+ToxIndex.plot <- function(
+    data = ToxIndex.summary.yr, 
+    crop, timing, 
+    type = "Insecticide") {
+  data %>% filter(Crop == crop & Timing == timing & Type == type) %>%
+    ggplot(aes(y = ToxIndex.area, x = Year)) +
+    facet_wrap(~ Type, scales = "free_y",
+               ncol = 1) +
+    geom_point() + 
+    stat_smooth(se = FALSE, span = 0.9) +
+    ylab("Honeybee acute \ntoxicity index") +
+    #theme_minimal_hgrid() +
+    theme_gray(base_size = 18) +
+    scale_y_continuous(limits = c(0, NA), expand = c(0, 0)) +
+    ggtitle(paste(crop, timing))
+}
+```
+plot_grid(ToxIndex.plot(crop = "Corn", 
+                        timing = "PRE", 
+                        type = "Insecticide"),
+          ToxIndex.plot(crop = "Soybeans", 
+                        timing = "PRE", 
+                        type = "Insecticide"),
+          nrow = 1)
+```{r, echo = FALSE, warning = FALSE, message = FALSE, fig.width = 8, fig.height = 4, fig.cap = "**Figure 3. Honey bee adult acute contact toxicity index for insecticides applied to corn or soybean *after* crop emergence.**"}
+plot_grid(ToxIndex.plot(crop = "Corn", 
+                        timing = "POST", 
+                        type = "Insecticide"),
+          ToxIndex.plot(crop = "Soybeans", 
+                        timing = "POST", 
+                        type = "Insecticide"),
+          nrow = 1)
+```
+
+
+
+ToxIndex.summary.early <- AgroTrak.ecotox %>%
+  filter(Year > 1999 & Year < 2006) %>%
+  group_by(Crop, Timing, Type) %>%
+  summarize(ToxIndex.area = sum(ToxIndex.area, na.rm = TRUE)) %>%
+  ungroup() %>% group_by(Crop) %>% 
+  mutate(cropToxIndex.area = sum(ToxIndex.area),
+         cropToxIndex.areaPct = signif(ToxIndex.area / 
+                                         cropToxIndex.area*100, 2),
+         Period = "2000 - 2005")
+ToxIndex.summary.late <- AgroTrak.ecotox %>%
+  filter(Year > 2014) %>%
+  group_by(Crop, Timing, Type) %>%
+  summarize(ToxIndex.area = sum(ToxIndex.area, na.rm = TRUE)) %>%
+  ungroup() %>% group_by(Crop) %>% 
+  mutate(cropToxIndex.area = sum(ToxIndex.area),
+         cropToxIndex.areaPct = signif(ToxIndex.area / 
+                                         cropToxIndex.area*100, 2),
+         Period = "2015 - 2020")
+ToxIndex.evl <- bind_rows(ToxIndex.summary.early, ToxIndex.summary.late)
+knitr::kable(ToxIndex.evl %>% 
+               filter(Type != "Fungicide") %>%
+               mutate(ToxIndex.area = signif(ToxIndex.area, 2)) %>%
+               select(Crop, Period, Timing, Type, ToxIndex.area) %>%
+               arrange(Crop, Type, Timing, Period) %>%
+               pivot_wider(id_cols = c(Crop, Timing, Type),
+                           names_from = Period,
+                           values_from = ToxIndex.area))
+
+corn.evl.gg <- ggplot(ToxIndex.evl %>% filter(Crop == "Corn"), 
+       aes(x = ToxIndex.area, y = Type)) +
+  facet_grid(Timing ~ Period) +
+  geom_bar(stat = "identity",
+           aes(fill = Type)) +
+  ylab(element_blank()) +
+  xlab("Area-adjusted honey bee acute toxicity index") +
+  theme_minimal_grid() +
+  theme(legend.position = "none",
+        plot.title.position = "plot") +
+  ggtitle("Corn")
+soy.evl.gg <- ggplot(ToxIndex.evl %>% filter(Crop == "Soybeans"), 
+       aes(x = ToxIndex.area, y = Type)) +
+  facet_grid(Timing ~ Period) +
+  geom_bar(stat = "identity",
+           aes(fill = Type)) +
+  ylab(element_blank()) +
+  xlab("Area-adjusted honey bee acute toxicity index") +
+  theme_minimal_grid() +
+  theme(legend.position = "none",
+        plot.title.position = "plot") +
+  ggtitle("Soybean")
+
+
+
+egg::ggarrange(corn.evl.gg + xlab(element_blank()), 
+               soy.evl.gg,
+               ncol = 1,
+               labels = c("Corn", "Soybean"))
+
+tisumEarly.area.gg <- ggplot(ToxIndex.summary.early, 
+                        aes(x = ToxIndex.area, y = Type)) +
+  facet_grid(Crop ~ Timing) + 
+  geom_bar(stat = "identity",
+           aes(fill = Crop)) +
+  ylab(element_blank()) +
+  xlab("Area-adjusted honey bee acute toxicity index") +
+  theme_minimal_grid() +
+  theme(legend.position = "none",
+        plot.title.position = "plot") +
+  ggtitle("2000 - 2005")
+
+
+tisumLate.area.gg <- ggplot(ToxIndex.summary.late, 
+                             aes(x = ToxIndex.area, y = Type)) +
+  facet_grid(Crop ~ Timing) + 
+  geom_bar(stat = "identity",
+           aes(fill = Crop)) +
+  ylab(element_blank()) +
+  xlab("Area-adjusted honey bee acute toxicity index") +
+  theme_minimal_grid() +
+  theme(legend.position = "none",
+        plot.title.position = "plot") +
+  ggtitle("2015 - 2020")
+
+plot_grid(tisumEarly.area.gg, tisumLate.area.gg,
+          nrow = 2, align = "v")
 
 AgroTrak.ecotox %>%
   filter(Type == "Insecticide" &
