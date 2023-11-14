@@ -1,6 +1,143 @@
 library("tidyverse")
 library("readxl")
 
+
+
+AgroTrak.ecotox %>%
+  filter(Type == "Insecticide" &
+           Timing == "POST" &
+           Crop == "Soybeans") %>%
+  group_by(ai) %>%
+  summarize(ToxIndex.areaSum = sum(ToxIndex.area, na.rm = TRUE)) %>%
+  arrange(-ToxIndex.areaSum) %>% 
+  top_n(7) %>%
+  select(ai)
+
+
+cbPalette <- c("#999999", "#E69F00", "#56B4E9", "#009E73", "#F0E442", 
+               "#0072B2", "#D55E00", "#CC79A7")
+
+glimpse(AgroTrak.ecotox)
+AgroTrak.ecotox %>%
+  filter(Type == "Insecticide" &
+           Timing == "POST" &
+           Crop == "Corn") %>%
+  mutate(aiplot = case_when(
+    ai %in% c("BIFENTHRIN", "CHLORPYRIFOS", "CYHALOTHRIN-LAMBDA",
+              "PERMETHRIN", "DELTAMETHRIN", "ZETA-CYPERMETHRIN") ~ ai,
+    TRUE ~ "ALL OTHER INSECTICIDES"),
+    aiplot = factor(aiplot, levels = c(
+      "BIFENTHRIN", "CHLORPYRIFOS", "CYHALOTHRIN-LAMBDA",
+      "PERMETHRIN", "DELTAMETHRIN", "ZETA-CYPERMETHRIN",
+      "ALL OTHER INSECTICIDES"))) %>%
+  group_by(Year, aiplot) %>%
+  summarize(ToxIndex.area = sum(ToxIndex.area, na.rm = TRUE)) %>%
+  ungroup() %>%
+  complete(aiplot, Year, fill = list(ToxIndex.area = 0)) %>%
+  ggplot(aes(x = Year, y = ToxIndex.area)) +
+  geom_area(aes(fill = aiplot)) +
+  scale_fill_manual(values = cbPalette) +
+  ggtitle("Corn POST") +
+  xlim(c(1998, 2020))
+  
+AgroTrak.ecotox %>%
+  filter(Type == "Insecticide" &
+           Timing == "POST" &
+           Crop == "Soybeans") %>%
+  mutate(aiplot = case_when(
+    ai %in% c("BIFENTHRIN", "CHLORPYRIFOS", "CYHALOTHRIN-LAMBDA",
+              "DELTAMETHRIN", "THIAMETHOXAM", "CYFLUTHRIN", "ACEPHATE") ~ ai,
+    TRUE ~ "ALL OTHER INSECTICIDES"),
+    aiplot = factor(aiplot, 
+                    levels = c("BIFENTHRIN", "CHLORPYRIFOS", 
+                               "CYHALOTHRIN-LAMBDA", "DELTAMETHRIN", 
+                               "THIAMETHOXAM", "CYFLUTHRIN", "ACEPHATE",
+                               "ALL OTHER INSECTICIDES"))) %>%
+  group_by(Year, aiplot) %>%
+  summarize(ToxIndex.area = sum(ToxIndex.area, na.rm = TRUE)) %>%
+  ungroup() %>%
+  complete(aiplot, Year, fill = list(ToxIndex.area = 0)) %>%
+  ggplot(aes(x = Year, y = ToxIndex.area)) +
+  geom_area(aes(fill = aiplot)) +
+  scale_fill_manual(values = cbPalette) +
+  ggtitle("Soybean POST") +
+  xlim(c(1998, 2020))
+
+AgroTrak.PestToxIndex %>%
+  filter(Type == "Insecticide" & 
+           Timing == "POST" &
+           Crop == "Corn" &
+           TaxonGroup %in% c("All Insects", "Unknown")) %>%
+  group_by(Year, ai) %>%
+  summarize(mean.pestToxIndex = mean(pestToxIndex)) %>%
+  ggplot(aes(x = Year, y = mean.pestToxIndex)) +
+  geom_point() + geom_line() +
+  facet_wrap(~ ai)
+
+AgroTrak.PestToxIndex %>%
+  filter(Type == "Insecticide" & 
+           Timing == "POST" &
+           Crop == "Corn" &
+           ai == "BIFENTHRIN") %>%
+  group_by(Year, TaxonGroup) %>%
+  summarize(mean.pestToxIndex = mean(pestToxIndex)) %>%
+  ggplot(aes(x = Year, y = mean.pestToxIndex)) +
+  geom_point() + geom_line() +
+  facet_wrap(~ TaxonGroup)
+
+
+AgroTrak.PestToxIndex %>%
+  filter(Type == "Insecticide" & 
+           Timing == "POST" &
+           Crop == "Soybeans" &
+           TaxonGroup %in% c("All Insects", "Unknown")) %>%
+  group_by(Year, ai) %>%
+  summarize(mean.pestToxIndex = mean(pestToxIndex)) %>%
+  ggplot(aes(x = Year, y = mean.pestToxIndex)) +
+  geom_point() + geom_line() +
+  facet_wrap(~ ai)
+
+AgroTrak.PestToxIndex %>%
+  filter(Type == "Insecticide" & 
+           Timing == "POST" &
+           Crop == "Soybeans" &
+           ai == "BIFENTHRIN") %>%
+  group_by(Year, TaxonGroup) %>%
+  summarize(mean.pestToxIndex = mean(pestToxIndex)) %>%
+  ggplot(aes(x = Year, y = mean.pestToxIndex)) +
+  geom_point() + geom_line() +
+  facet_wrap(~ TaxonGroup)
+
+glimpse(AgroTrak.ecotox) %>%
+  filter(ai == "BIFENTHRIN" &
+           Crop == "Corn" &
+           Timing == "POST") %>%
+  ggplot(aes(x = Year, y = Volume.kg)) +
+  geom_line(size = 2)
+  
+
+####
+
+AgroTrak.PestToxIndex %>%
+  filter(Type == "Insecticide" & 
+           Timing == "POST" &
+           Crop == "Corn" &
+           TaxonGroup == "Unknown" & !is.na(TaxonGroup)) %>%
+  group_by(Crop, Year, TaxonGroup) %>%
+  summarize(pestToxIndex.sum = sum(pestToxIndex, na.rm = TRUE)) %>%
+  group_by(Crop, TaxonGroup) %>%
+  mutate(taxonKeep = length(!is.na(pestToxIndex.sum)) > 4) %>%
+  filter(taxonKeep == TRUE) %>%
+  ggplot(aes(x = Year, y = pestToxIndex.sum)) +
+  geom_point() + stat_smooth(method = "lm", se = FALSE) +
+  facet_wrap(~ TaxonGroup) +
+  ggtitle("Corn POST Insecticide Targets") +
+  ylab("Total Pest Toxicity Index")
+
+
+
+
+
 plot_grid(
   ToxIndex.summary.yr %>% 
     filter(Crop == "Corn" & Timing == "POST") %>%
