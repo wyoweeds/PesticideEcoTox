@@ -650,3 +650,15 @@ insectToxIndex.post %>%
   ylab(element_blank()) +
   xlab("Annual Pest Toxicity Index")
 ```
+
+```{r, include = FALSE}
+### These bullet points from below moved here to avoid printing. 
+### Can move them back if desired.
+#* The summed honey bee $TI_{rate}$ over all years was `r round(ToxIndex.cropTotals$cropToxIndex.rate[1]/ToxIndex.cropTotals$cropToxIndex.rate[2], 1)`-times greater in corn compared to soybean.
+
+```
+
+
+Application rate-based toxicity index $TI_{rate}$ was calculated by dividing $P_{vol}$ by the area treated with the pesticide in hectares ($A_{trt}$) to get the average application rate, then dividing that application rate by the adult acute contact $LD_{50}$.
+
+$$TI_{rate} = \sum_{i=1}^{N_{CYT}} (\frac{P_{vol} / A_{trt}}{LD_{50}})$$
