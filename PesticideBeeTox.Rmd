@@ -17,7 +17,7 @@ csl: "WSSA-Journals.csl"
 
 The use of pesticides (herbicides, insecticides, and fungicides) is pivotal for crop protection, providing farmers with an efficient tool for controlling pests, and preventing yield losses that could threaten food security [@Kudsk2018Pesticide] and cause devastating economic losses [@Popp2013Pesticide; @Tudi2021Agriculture]. Therefore, the use of pesticides has become a necessary agricultural practice, with one-third of agricultural products depending on their application [@Tudi2021Agriculture]. However, pesticide use in agriculture can have detrimental side effects on non-target organisms and ecosystems, with a very small percentage of the amount applied coming in direct contact with target pests [@Werf1996Assessing]. The increasing number of pesticides' negative effects has shaped their use in accordance with changes in agricultural and pest management strategies, regulatory policies, environmental and health hazard, and public awareness.
 
-In the United States, the use of synthetic pesticides sha increased drastically from the 1960s to the early 1980s, then stabilized according to the change in crop acreage, the development of pesticides with lower per-acre application, and the adoption of genetically engineered (GE) insect-resistant and herbicide tolerant crops [@Osteen2013Economic; @Kniss2018Genetically]. As a reflection of US Environmental Protection Agency (US EPA) regulations, the type of synthetic insecticides applied in agriculture has changed from mainly organophosphorus and N-methyl carbamate insecticides to considerably lower quantities of organophosphorus compounds, together with a considerable increase in neonicotinoids and a small increase in pyrethroids [@DiBartolomeis2019assessment]. On the other hand, the use of herbicides seemed to be affected by the increased use of herbicide-tolerant crops, which led to a higher application rate [@Benbrook2016Trends; @Kim2022Worldwide]. Similarly, fungicide application rate is predicted to rise because of climate change, increasing of fungicide resistance, and spread of invasive fungal species [@Boxall2009Impacts][@Fisher2012Emerging].
+In the United States, the use of synthetic pesticides sha increased drastically from the 1960s to the early 1980s, then stabilized according to the change in crop acreage, the development of pesticides with lower per-acre application, and the adoption of genetically engineered (GE) insect-resistant and herbicide tolerant crops [@Osteen2013Economic; @Kniss2018Genetically]. As a reflection of US Environmental Protection Agency (US EPA) regulations, the type of synthetic insecticides applied in agriculture has changed from mainly organophosphorus and N-methyl carbamate insecticides to considerably lower quantities of organophosphorus compounds, together with a considerable increase in neonicotinoids and a small increase in pyrethroids [@DiBartolomeis2019assessment]. On the other hand, the use of herbicides seemed to be affected by the increased use of herbicide-tolerant crops, which led to a higher application rate [@Benbrook2016Trends; @Kim2022Worldwide]. Similarly, fungicide application rate is predicted to rise because of climate change, increasing of fungicide resistance, and spread of invasive fungal species [@Boxall2009Impacts; @Fisher2012Emerging].
 
 Evaluating the risk of pesticides is a necessary and complex task that requires detailed information on active ingredients, toxicity levels, application rates, routes of exposure, effects on non-target organisms, interactions, and environmental fate [@DiBartolomeis2019assessment; @Greitens2007alternative]. Moreover, the assessment of pesticide risks is frequently based on partial information, making the determination of the overall risk of pesticide use difficult and, often times, subjective [@Greitens2007alternative; @dushoff1994; @peterson2014]. Nonetheless, scientists and agencies have developed numerous methods to evaluate the environmental risks associated with pesticides use, including pesticide risk indicators based on numerous information, such as active ingredients, use rate, acute and chronic toxicity information, environmental persistence and mobility, and non-target effects [@Greitens2007alternative; @kniss2017].
 
@@ -206,7 +206,7 @@ AgroTrak.ecotox <-
   AgroTrak.Timing.dat %>%
   left_join(finalTox.dat) %>%
   mutate(Year = as.numeric(Year),
-         Volume.kg = round(Volume.lbs * 0.454),
+         Volume.kg = round(Volume.lbs * 0.45359),
          BaseArea.ha = round(Base.Area.Treated / 2.47),
          TotalArea.ha = round(Total.Area.Treated / 2.47),
          Rate.kgha = Volume.kg / BaseArea.ha) %>%
@@ -321,7 +321,6 @@ cropType.summary <- ToxIndex.summary %>%
             cropToxIndex.areaPct = sum(cropToxIndex.areaPct))
 ```
 
-
 Pesticide use data were separated into pesticides applied before crop emergence (PRE) and pesticides applied after crop emergence (POST). For each ai applied to each crop in each year, an an area-adjusted toxicity index ($TI_{area}$) was calculated by dividing the total pesticide volume applied in kg ($P_{vol}$) by the total planted area ($A_{plant}$) for each crop to account for year-to-year changes in hectares planted to corn and soybeans. That value was then divided by the adult acute contact $LD_{50}$ to derive the $TI_{area}$. $TI_{area}$ can be interpreted as the number of honey bee acute $LD_{50}$ values applied per hectare (in billions).
 
 $$TI_{area} = \sum_{i=1}^{N_{cyt}} (\frac{P_{vol} / A_{plant}}{LD_{50}})$$
@@ -332,8 +331,7 @@ $$TI_{area} = \sum_{i=1}^{N_{cyt}} (\frac{P_{vol} / A_{plant}}{LD_{50}})$$
 
 A pesticide target toxicity index ($TI_{pest}$) was calculated to quantify relative impact that different pest species have on the overall risk to honey bees. For each pesticide application, FarmTrak data records which pest species were listed by survey respondents as the target for the pesticide application. For each active ingredient, the volume applied targeting a particular pest was divided by the total volume of the active ingredient applied. This proportion was then multiplied by that active ingredient's proportion of the total toxicity index $TI_{area}$.
 
-$$TI_{pest} = \sum_{i=1}^{N_{cyt}}(P_{pest} / P_{total}) * (TI_{ai} / TI_{area})$$ 
-
+$$TI_{pest} = \sum_{i=1}^{N_{cyt}}(P_{pest} / P_{total}) * (TI_{ai} / TI_{area})$$
 
 ## Eco-Efficiency
 
@@ -421,7 +419,6 @@ ggplot(data = ToxIndex.summary.yr %>%
   scale_y_continuous(limits = c(0, NA)) 
 ```
 
-
 ```{r, echo = FALSE, message = FALSE, warning = FALSE}
 ToxIndex.summary.early <- AgroTrak.ecotox %>%
   filter(Year > 1999 & Year < 2006) %>%
@@ -451,12 +448,12 @@ evl.SummaryTab <- ToxIndex.evl %>%
 ```
 
 -   Over time, insecticide use in corn shifted from primarily PRE applications to a mix of PRE and POST applications.
-    +   During the period 2000 to 2005, `r round(evl.SummaryTab[[1,4]]/(evl.SummaryTab[[1,4]] + evl.SummaryTab[[2,4]])*100)`% of honey bee toxicity index from insecticides was applied before crop emergence; whereas more recently, from 2015 to 2020, approximately `r round(evl.SummaryTab[[1,5]]/(evl.SummaryTab[[1,5]]+evl.SummaryTab[[2,5]])*100)`% of honey bee toxicity index was applied before crop emergence.
-    +   In corn, the toxicity index applied POST has increased approximately `r round(evl.SummaryTab[[2,5]]/evl.SummaryTab[[2,4]], 1)`-fold, from `r evl.SummaryTab[[2,4]]` to `r evl.SummaryTab[[2,5]]`. 
+    -   During the period 2000 to 2005, `r round(evl.SummaryTab[[1,4]]/(evl.SummaryTab[[1,4]] + evl.SummaryTab[[2,4]])*100)`% of honey bee toxicity index from insecticides was applied before crop emergence; whereas more recently, from 2015 to 2020, approximately `r round(evl.SummaryTab[[1,5]]/(evl.SummaryTab[[1,5]]+evl.SummaryTab[[2,5]])*100)`% of honey bee toxicity index was applied before crop emergence.
+    -   In corn, the toxicity index applied POST has increased approximately `r round(evl.SummaryTab[[2,5]]/evl.SummaryTab[[2,4]], 1)`-fold, from `r evl.SummaryTab[[2,4]]` to `r evl.SummaryTab[[2,5]]`.
 -   In soybeans, insecticide applications have been mostly applied POST, and the honey bee acute toxicity index associated with POST applications has increased `r round(evl.SummaryTab[[4,5]]/evl.SummaryTab[[4,4]])`-fold since the early 2000s.
-- *The $TI_{area}$ value estimates the total number of $LD_{50}$s applied per hectare (in billions). In corn and soybean combined, during the period 2015 to 2020, approximately `r round(sum(evl.SummaryTab[5]),2)` billion honey bee $LD_{50}$s were applied annually, compared to `r round(sum(evl.SummaryTab[4]),2)` billion that were applied annually between 2000 and 2005.*
+-   *The* $TI_{area}$ value estimates the total number of $LD_{50}$s applied per hectare (in billions). In corn and soybean combined, during the period 2015 to 2020, approximately `r round(sum(evl.SummaryTab[5]),2)` billion honey bee $LD_{50}$s were applied annually, compared to `r round(sum(evl.SummaryTab[4]),2)` billion that were applied annually between 2000 and 2005.
 
--------------------------------------------------------------------------
+------------------------------------------------------------------------
 
 **Table 2. Area-adjusted acute toxicity index values for insecticides applied before (PRE) and after (POST) crop emergence for the periods 2000 to 2005, and from 2015 to 2020.**
 
@@ -464,7 +461,7 @@ evl.SummaryTab <- ToxIndex.evl %>%
 knitr::kable(evl.SummaryTab)
 ```
 
-```{r, echo = FALSE, warning = FALSE, message = FALSE, fig.width = 8, fig.height = 9, fig.cap = paste0("**Figure 3. Contribution of insecticide active ingredients to honey bee adult acute contact toxicity index applied to corn or soybean. 'All Other Insecticides' category includes ", 100-cornPre.top7prop, "% of the total corn toxicity index applied PRE, ", 100-corn.top7prop, "% of the total corn toxicity index applied POST, and ", 100-soy.top7prop, "% of the total soybean toxicity index. **")}
+```{r, echo = FALSE, warning = FALSE, message = FALSE, fig.width = 8, fig.height = 9, fig.cap = paste0("**Figure 3. Contribution of insecticide active ingredients to honey bee adult acute contact toxicity index applied PRE to corn (A, B), POST to corn (C), or POST to soybean (D). Panel B shows the period from 2012 to 2020 for corn PRE on a zoomed-in y-axis scale. The 'All Other Insecticides' category includes ", 100-cornPre.top7prop, "% of the total corn toxicity index applied PRE, ", 100-corn.top7prop, "% of the total corn toxicity index applied POST, and ", 100-soy.top7prop, "% of the total soybean toxicity index. **")}
 
 cornPre.90list <- AgroTrak.ecotox %>%
   filter(Type == "Insecticide" &
@@ -531,19 +528,25 @@ cornPre.aigg <- AgroTrak.ecotox %>%
   scale_fill_manual(values = cbPalette.cornPre) +
   ggtitle("Corn Insecticides Applied PRE") +
   xlim(c(1998, 2020)) +
+  scale_y_continuous(expand = c(0,0)) +
   ylab(aiplot.ylab) + xlab(element_blank()) +
-  theme_minimal_hgrid() +
-  theme(legend.title = element_blank())
+  theme_minimal_grid() +
+  theme(legend.title = element_blank()) +
+  annotate("rect", xmin = 2007, xmax = Inf, 
+           ymin = 0.8, ymax = Inf, fill = "white")
 cornPre.inset <- cornPre.aigg +
   coord_cartesian(ylim = c(0, 0.35)) +
   ylab(element_blank()) +
   scale_x_continuous(limits = c(2012, 2020),
                      breaks = seq(2012, 2020, 4)) +
+  scale_y_continuous(expand = c(0,0)) +
+  #theme_minimal_grid() +
   theme(legend.position = "none",
         panel.background = element_rect(fill = "#F0F0F0")) +
   ggtitle(element_blank())
 cornPre.2panel <- ggdraw(cornPre.aigg) + 
   draw_plot(cornPre.inset, .36, .25, .29, .66)
+
 
 corn.aigg <- AgroTrak.ecotox %>%
   filter(Type == "Insecticide" &
@@ -563,6 +566,7 @@ corn.aigg <- AgroTrak.ecotox %>%
   scale_fill_manual(values = cbPalette.corn) +
   ggtitle("Corn Insecticides Applied POST") +
   xlim(c(1998, 2020)) +
+  scale_y_continuous(expand = c(0,0)) +
   ylab(aiplot.ylab) + xlab(element_blank()) +
   theme_minimal_grid() +
   theme(legend.title = element_blank())
@@ -589,18 +593,21 @@ soy.aigg <- AgroTrak.ecotox %>%
   scale_fill_manual(values = cbPalette.soy) +
   ggtitle("Soybean Insecticides Applied POST") +
   xlim(c(1998, 2020)) +
+  scale_y_continuous(expand = c(0,0)) +
   ylab(aiplot.ylab) + xlab(element_blank()) +
   theme_minimal_grid() +
   theme(legend.title = element_blank())
 
-#plot_grid(corn.aigg, soy.aigg,
-#          nrow = 2, align = "v")
-plot_grid(cornPre.2panel, corn.aigg, soy.aigg,
+ggdraw(plot_grid(cornPre.aigg + 
+                   annotate("text", x = 2008, y = 3, label = "B", 
+                            size = 5, fontface = "bold"), 
+                 corn.aigg, soy.aigg,
           ncol = 1, align = "v",
-          labels = LETTERS)
+          labels = LETTERS[c(1,3,4)])) + 
+  draw_plot(cornPre.inset, .36, .75, .29, .2)
 ```
 
--   Two pesticides, fipronil and chlorpyrifos, were responsible for a majority of the $TI_{area}$ applied PRE to corn until approximately 2010. After 2010, bifenthrin became the largest contributor to $TI_{area}$ in both PRE and POST application timings in corn. 
+-   Two pesticides, fipronil and chlorpyrifos, were responsible for a majority of the $TI_{area}$ applied PRE to corn until approximately 2010. After 2010, bifenthrin became the largest contributor to $TI_{area}$ in both PRE and POST application timings in corn.
 -   Insecticide application was rare in soybean before 2004. Three insecticides, bifenthrin, chlorpyrifos, and cyhalothrin-lambda, accounted for a majority of the $TI_{area}$ applied to soybean since 2005.
 
 ```{r, include = FALSE}
@@ -631,7 +638,7 @@ AgroTrak.PestTiming.dat <- read_excel(
                           "Postemergence (Non-Herbicides)",
                           "Foliar atTasseling (Fungicides)", 
                           "Foliar before Tasseling (Fungicides)") ~ "POST"),
-         Volume.kg = Volume.lbs * 454,
+         Volume.kg = Volume.lbs * 0.45359,
          Treated.ha = Base.Area.Treated / 2.47,
          AppRate.kgha = Volume.kg / Treated.ha) %>%
   left_join(pestList)
@@ -657,9 +664,10 @@ AgroTrak.PestToxIndex <- AgroTrak.PestTiming.dat %>%
 glimpse(AgroTrak.PestToxIndex)
 ```
 
-asdf pest index stuff
-```{r, echo = FALSE, warning = FALSE, message = FALSE, fig.width = 8, fig.height = 6, fig.cap = "**Figure 8. Contribution of insect pests to the honey bee adult acute contact toxicity index; corn pesticides applied *after* crop emergence, 1998-2020.**"}
-AgroTrak.PestToxIndex %>%
+------------------------------------------------------------------------
+
+```{r, echo = FALSE, warning = FALSE, message = FALSE, fig.width = 8, fig.height = 6, fig.cap = "**Figure 4. Contribution of insect pests to the honey bee adult acute contact toxicity index; corn pesticides applied *after* crop emergence, 1998-2020.**"}
+cornPostPestTox.summary <- AgroTrak.PestToxIndex %>%
   filter(Type == "Insecticide" & 
            Timing == "POST" &
            Crop == "Corn" &!is.na(TaxonGroup)) %>%
@@ -667,16 +675,41 @@ AgroTrak.PestToxIndex %>%
   summarize(pestToxIndex.sum = sum(pestToxIndex, na.rm = TRUE)) %>%
   group_by(Crop, TaxonGroup) %>%
   mutate(taxonKeep = length(!is.na(pestToxIndex.sum)) > 4) %>%
-  filter(taxonKeep == TRUE) %>%
-  ggplot(aes(x = Year, y = pestToxIndex.sum)) +
+  filter(taxonKeep == TRUE)
+
+cornPost.taxa.lm <- lm(pestToxIndex.sum ~ TaxonGroup/Year + 0,
+                       data = cornPostPestTox.summary)
+cornPost.lm.summary <- broom::tidy(summary(cornPost.taxa.lm)) %>%
+  filter(grepl(":Year", term)) %>%
+  mutate(TaxonGroup = str_remove_all(term, "TaxonGroup|:Year"),
+         pval.display = case_when(
+           round(p.value, 3) == 0 ~ "< 0.001",
+           round(p.value, 3) >  0 ~ paste0("= ",round(p.value, 3))),
+         Crop = "Corn") %>%
+  arrange(p.value) %>%
+  select(Crop, TaxonGroup, estimate, std.error, pval.display)
+
+ggplot(cornPostPestTox.summary, aes(x = Year, y = pestToxIndex.sum)) +
   geom_point() + stat_smooth(method = "lm", se = FALSE) +
-  facet_wrap(~ TaxonGroup) +
+  facet_wrap(~ TaxonGroup, ncol = 3) +
   ggtitle("Corn POST Insecticide Targets") +
-  ylab("Total Pest Toxicity Index")
+  ylab("Total Pest Toxicity Index") +
+  theme_minimal_grid() + 
+  theme(panel.background = element_rect(fill = "#F5F5F5"),
+        axis.text.x = element_text(size = 9)) +
+  geom_text(data = cornPost.lm.summary,
+            aes(x = Inf, y = 0.5, label = paste("P", pval.display)),
+            hjust = 1, vjust = 1)
 ```
 
-```{r, echo = FALSE, warning = FALSE, message = FALSE, fig.width = 8, fig.height = 6, fig.cap = "**Figure 9. Contribution of insect pests to the honey bee adult acute contact toxicity index; soybean pesticides applied *after* crop emergence, 1998-2020.**"}
-AgroTrak.PestToxIndex %>%
+-   Coleoptera and Lepidoptera pests were the pesticide targets contributing most to the overall $TI_{area}$ in corn, followed by Hemiptera and spider mites (Trombidiformes).
+-   In corn, there was a decreasing trend for Coleoptera (P `r cornPost.lm.summary$pval.display[cornPost.lm.summary$TaxonGroup == "Coleoptera"]`) and Lepidoptera (P `r cornPost.lm.summary$pval.display[cornPost.lm.summary$TaxonGroup == "Lepidoptera"]`) contributions to the $TI_{pest}$ over time.
+-   Hemiptera increased in importance over time (P `r cornPost.lm.summary$pval.display[cornPost.lm.summary$TaxonGroup == "Hemiptera"]`) in corn.
+-   There was an increase in the contribution of the Unknown pest target category (P `r cornPost.lm.summary$pval.display[cornPost.lm.summary$TaxonGroup == "Unknown"]`), which included survey responses with no answer to the question, as well as answers that were not specific enough to identify the target taxa (like 'larvae' or 'preventative program').
+-   Trends for other taxa were not statistically obvious in corn.
+
+```{r, echo = FALSE, warning = FALSE, message = FALSE, fig.width = 8, fig.height = 6, fig.cap = "**Figure 5. Contribution of insect pests to the honey bee adult acute contact toxicity index; soybean pesticides applied *after* crop emergence, 1998-2020.**"}
+soyPostPestTox.summary <- AgroTrak.PestToxIndex %>%
   filter(Type == "Insecticide" & 
            Timing == "POST" &
            Crop == "Soybeans" &!is.na(TaxonGroup)) %>%
@@ -684,17 +717,133 @@ AgroTrak.PestToxIndex %>%
   summarize(pestToxIndex.sum = sum(pestToxIndex, na.rm = TRUE)) %>%
   group_by(Crop, TaxonGroup) %>%
   mutate(taxonKeep = length(!is.na(pestToxIndex.sum)) > 4) %>%
-  filter(taxonKeep == TRUE) %>%
-  ggplot(aes(x = Year, y = pestToxIndex.sum)) +
+  filter(taxonKeep == TRUE)
+
+soyPost.taxa.lm <- lm(pestToxIndex.sum ~ TaxonGroup/Year + 0,
+                       data = soyPostPestTox.summary)
+soyPost.lm.summary <- broom::tidy(summary(soyPost.taxa.lm)) %>%
+  filter(grepl(":Year", term)) %>%
+  mutate(TaxonGroup = str_remove_all(term, "TaxonGroup|:Year"),
+         pval.display = case_when(
+           round(p.value, 3) == 0 ~ "< 0.001",
+           round(p.value, 3) >  0 ~ paste0("= ",round(p.value, 3))),
+         Crop = "Soybean") %>%
+  arrange(p.value) %>%
+  select(Crop, TaxonGroup, estimate, std.error, pval.display)
+
+ggplot(soyPostPestTox.summary %>%
+         filter(TaxonGroup != "Hymenoptera"), 
+       aes(x = Year, y = pestToxIndex.sum)) +
   geom_point() + stat_smooth(method = "lm", se = FALSE) +
-  facet_wrap(~ TaxonGroup) +
+  facet_wrap(~ TaxonGroup, ncol = 3) +
   ggtitle("Soybean POST Insecticide Targets") +
-  ylab("Total Pest Toxicity Index")
+  ylab("Total Pest Toxicity Index") +
+  theme_minimal_grid() + 
+  theme(panel.background = element_rect(fill = "#F5F5F5"),
+        axis.text.x = element_text(size = 9)) +
+  geom_text(data = soyPost.lm.summary %>%
+              filter(TaxonGroup != "Hymenoptera"),
+            aes(x = Inf, y = 0.75, label = paste("P", pval.display)),
+            hjust = 1, vjust = 1)
 ```
+
+-   In soybean, Hemiptera (true bug) pests were the greatest contributor to the overall $TI_{pest}$, although there was a significant decrease in $TI_{pest}$ contribution over time (P `r soyPost.lm.summary$pval.display[soyPost.lm.summary$TaxonGroup == "Hemiptera"]`).
+-   Lepidopteran pest contribution to $TI_{pest}$ increased over time (P `r soyPost.lm.summary$pval.display[soyPost.lm.summary$TaxonGroup == "Lepidoptera"]`), as did the 'Unknown' category (P `r soyPost.lm.summary$pval.display[soyPost.lm.summary$TaxonGroup == "Unknown"]`).
+
+```{r, include = FALSE}
+### Bifenthrin:
+
+bifenthrin.Taxa <- AgroTrak.PestToxIndex %>%
+  filter(ai == "BIFENTHRIN") %>%
+  group_by(TaxonGroup) %>%
+  summarize(nVal = length(unique(Year))) %>% 
+  filter(nVal > 8) %>%
+  select(TaxonGroup) 
+
+AgroTrak.PestToxIndex %>%
+  filter(ai == "BIFENTHRIN" & 
+           Timing == "POST" &
+           Crop == "Corn" &
+           TaxonGroup %in% bifenthrin.Taxa$TaxonGroup) %>%
+  group_by(Year, TaxonGroup) %>%
+  summarize(mean.pestToxIndex = mean(pestToxIndex)) %>%
+  ggplot(aes(x = Year, y = mean.pestToxIndex)) +
+  geom_point() + 
+  geom_smooth(method = "loess", se = FALSE, span = 1.2) +
+  facet_wrap(~ TaxonGroup) +
+  ylab("Pest Toxicity Index") +
+  theme_minimal_grid() +
+  theme(plot.title.position = "plot") +
+  ggtitle("Bifenthrin applied to corn POST")
+
+AgroTrak.PestToxIndex %>%
+  filter(ai == "BIFENTHRIN" & 
+           Timing == "POST" &
+           Crop == "Soybeans" &
+           TaxonGroup %in% bifenthrin.Taxa$TaxonGroup &
+           TaxonGroup != "Diptera") %>%
+  group_by(Year, TaxonGroup) %>%
+  summarize(mean.pestToxIndex = mean(pestToxIndex)) %>%
+  ggplot(aes(x = Year, y = mean.pestToxIndex)) +
+  geom_point() + 
+  geom_smooth(method = "loess", se = FALSE, span = 1.2) +
+  facet_wrap(~ TaxonGroup) +
+  ylab("Pest Toxicity Index") +
+  theme_minimal_grid() +
+  theme(plot.title.position = "plot") +
+  ggtitle("Bifenthrin applied to soybean POST")
+```
+
+
+```{r, include = FALSE}
+### Chlorpyrifos:
+
+chlorpyrifos.Taxa <- AgroTrak.PestToxIndex %>%
+  filter(ai == "CHLORPYRIFOS") %>%
+  group_by(TaxonGroup) %>%
+  summarize(nVal = length(unique(Year))) %>% 
+  filter(nVal > 8) %>%
+  select(TaxonGroup) 
+
+AgroTrak.PestToxIndex %>%
+  filter(ai == "CHLORPYRIFOS" & 
+           Timing == "POST" &
+           Crop == "Corn" &
+           TaxonGroup %in% chlorpyrifos.Taxa$TaxonGroup) %>%
+  group_by(Year, TaxonGroup) %>%
+  summarize(mean.pestToxIndex = mean(pestToxIndex)) %>%
+  ggplot(aes(x = Year, y = mean.pestToxIndex)) +
+  geom_point() + 
+  geom_smooth(method = "loess", se = FALSE, span = 1.2) +
+  facet_wrap(~ TaxonGroup) +
+  ylab("Pest Toxicity Index") +
+  theme_minimal_grid() +
+  theme(plot.title.position = "plot") +
+  ggtitle("Chlorpyrifos applied to corn POST")
+
+AgroTrak.PestToxIndex %>%
+  filter(ai == "CHLORPYRIFOS" & 
+           Timing == "POST" &
+           Crop == "Soybeans" &
+           TaxonGroup %in% chlorpyrifos.Taxa$TaxonGroup &
+           TaxonGroup != "Diptera") %>%
+  group_by(Year, TaxonGroup) %>%
+  summarize(mean.pestToxIndex = mean(pestToxIndex)) %>%
+  ggplot(aes(x = Year, y = mean.pestToxIndex)) +
+  geom_point() + 
+  geom_smooth(method = "loess", se = FALSE, span = 1.2) +
+  facet_wrap(~ TaxonGroup) +
+  ylab("Pest Toxicity Index") +
+  theme_minimal_grid() +
+  theme(plot.title.position = "plot") +
+  ggtitle("Chlorpyrifos applied to soybean POST")
+```
+
+--------------------------------------------------------
 
 ## Eco-efficiency
 
-```{r, echo = FALSE, warning = FALSE, message = FALSE, fig.width = 9, fig.height = 9, fig.cap = "**Figure 4. Honeybee eco-efficiency index for pesticides applied to corn or soybean *after* crop emergence.**"}
+```{r, echo = FALSE, warning = FALSE, message = FALSE, fig.width = 9, fig.height = 9, fig.cap = "**Figure X. Honeybee eco-efficiency index for pesticides applied to corn or soybean *after* crop emergence.**"}
 plot_grid(
   ToxIndex.summary.yr %>% 
     filter(Crop == "Corn" & Timing == "POST" & Type != "Fungicide") %>%
@@ -741,7 +890,6 @@ plot_grid(
   scale_y_continuous(limits = c(1, NA)) + #, expand = c(0, 0)) +
   ggtitle("Soybeans POST"))
 ```
-
 
 ------------------------------------------------------------------------
 

@@ -1,6 +1,18 @@
 library("tidyverse")
 library("readxl")
 
+glimpse(AgroTrak.PestTiming.dat)
+
+ggplot(data = AgroTrak.PestToxIndex %>%
+         filter(TaxonGroup == "Unknown" &
+                  Type == "Insecticide" &
+                  ai %in% c("BIFENTHRIN", "CHLORPYRIFOS", 
+                            "CYHALOTHRIN-LAMBDA", "DELTAMETHRIN", 
+                            "THIAMETHOXAM", "CYFLUTHRIN", "ACEPHATE",
+                            "ALL OTHER INSECTICIDES")),
+       aes(y = pestToxIndex, x = ai.pestVol)) +
+  geom_point() + facet_wrap(~ai)
+
 paste0("**Figure 4. Contribution of insecticide active ingredients to honey bee adult acute contact toxicity index applied to corn or soybean *after* crop emergence. 'All Other Insecticides' category includes ", 100-cornPre.top7prop, "% of the total corn toxicity index applied PRE, ", 100-corn.top7prop, "% of the total corn toxicity index applied POST, and ", 100-soy.top7prop, "% of the total soybean toxicity index. **")
 
 
