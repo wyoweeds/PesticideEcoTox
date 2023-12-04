@@ -1,6 +1,78 @@
 library("tidyverse")
 library("readxl")
 
+
+glimpse(AgroTrak.PestToxIndex)
+
+AgroTrak.PestToxIndex %>%
+  filter(TaxonGroup %in% c("Coleoptera", "Hemiptera", "Lepidoptera", 
+                           "Unknown")) %>%
+  group_by(Crop, TaxonGroup, Pest) %>%
+  summarize(pestToxIndex = sum(pestToxIndex, na.rm = TRUE)) %>%
+  ungroup() %>% group_by(Crop, TaxonGroup) %>%
+  mutate(TaxonGroup.ToxTotal = sum(pestToxIndex, na.rm = TRUE),
+         PestProp = round(100 * (pestToxIndex / TaxonGroup.ToxTotal)),
+         Pest = str_to_lower(Pest)) %>%
+  select(-TaxonGroup.ToxTotal) %>%
+  arrange(Crop, TaxonGroup, -pestToxIndex) %>%
+  filter(PestProp >= 5 ) %>%
+  data.frame()
+
+
+
+usda.exp <- read_csv("DATA/USDA-Expenses_1998-2020.csv") %>%
+  select(Program, Year, Period, Geo.Level = `Geo Level`, State,
+         Commodity, Data.Item = `Data Item`, 
+         Domain, Category = `Domain Category`,
+         Value) %>%
+  filter(Category == "TYPE OF OPERATION: (CROP)")
+usda.cropExp <- usda.exp %>%
+  select(Year, Data.Item, Value) %>%
+  pivot_wider(id_cols = Year,
+              names_from = Data.Item,
+              values_from = Value) %>%
+  rename(ChemicalTotal = `CHEMICAL TOTALS - EXPENSE, MEASURED IN $`,
+         ExpenseTotals = `EXPENSE TOTALS, PRODUCTION - EXPENSE, MEASURED IN $`,
+         FertilizerTotal = 
+           `FERTILIZER TOTALS, INCL LIME & SOIL CONDITIONERS - EXPENSE, MEASURED IN $`) %>%
+  mutate(chemPct = ChemicalTotal / ExpenseTotals,
+         fertPct = FertilizerTotal / ExpenseTotals)
+glimpse(usda.cropExp)
+
+ggplot(usda.cropExp, aes(y = chemPct, x = Year)) +
+  geom_point() +
+  geom_smooth(se = FALSE)
+
+
+ToxIndex.summary.yr %>% 
+  filter(Timing == "POST" & Type == "Insecticide") %>%
+  ggplot(aes(y = EcoEff.Y, x = Year)) +
+  facet_wrap(~ Crop, scales = "free_y",
+             nrow = 1) +
+  geom_point() + 
+  stat_smooth(se = FALSE, span = 0.9) + 
+  ylab("Yield Eco-Efficiency") +
+  xlab(element_blank()) +
+  theme_gray(base_size = 18) +
+  scale_y_continuous(limits = c(1, NA)) + #, expand = c(0, 0)) +
+  scale_x_continuous(limits = c(1998, 2020))
+ToxIndex.summary.yr %>% 
+  filter(Timing == "POST" & Type == "Insecticide") %>%
+  ggplot(aes(y = EcoEff.V, x = Year)) +
+  facet_wrap(~ Crop, scales = "free_y",
+             nrow = 1) +
+  geom_point() + 
+  stat_smooth(se = FALSE, span = 0.9) + 
+  ylab("Value Eco-Efficiency") +
+  xlab(element_blank()) +
+  theme_gray(base_size = 18) +
+  scale_y_continuous(limits = c(1, NA)) + #, expand = c(0, 0)) +
+  scale_x_continuous(limits = c(1998, 2020))
+
+
+
+
+
 glimpse(AgroTrak.PestTiming.dat)
 
 ggplot(data = AgroTrak.PestToxIndex %>%
