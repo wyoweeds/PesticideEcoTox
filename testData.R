@@ -1,6 +1,27 @@
 library("tidyverse")
 library("readxl")
 
+yield.gg <- ggplot(plantedAcres.dat, aes(x = Year, y = Yield.tha)) +
+  geom_point() +
+  facet_wrap(~ Crop, scales = "free_y", nrow = 2) +
+  geom_smooth(method = "lm", se = FALSE) +
+  xlim(c(1998, 2020)) +
+  ylim(c(0, NA)) +
+  ylab("Yield (tonnes/hectare)")
+
+b <- plot_grid(Corn.EcoY.gg, Corn.EcoV.gg, 
+          Soy.EcoY.gg,  Soy.EcoV.gg,
+          nrow = 2, ncol = 2, align = "hv", labels = LETTERS)
+plot_grid(yield.gg, b, nrow = 1, rel_widths = c(.3, .7))
+
+bifenthrin.Pests <- AgroTrak.PestToxIndex %>%
+  filter(ai == "BIFENTHRIN" &
+           Timing == "POST" &
+           Year > 2014) %>%
+  group_by(Crop, Timing, TaxonGroup, Pest) %>%
+  summarize(pestToxIndex = sum(pestToxIndex) / length(unique(Year))) %>%
+  arrange(Crop, -pestToxIndex)
+bifenthrin.Pests
 
 glimpse(AgroTrak.PestToxIndex)
 
