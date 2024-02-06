@@ -1,0 +1,48 @@
+Crop,Timing,TaxonGroup,Pest.common,pestToxIndex,TaxaPct
+Corn,POST,Unknown,No answer,1.0134878431215053,99
+Corn,POST,Coleoptera,"Corn Rootworm (Mexican, Northern, Southern, Western)",0.8540475476427872,55
+Corn,POST,Lepidoptera,"Cutworm (army, black, climbing, dingy, granulate, pale western, variegated, western bean, other)",0.7926495865964144,55
+Corn,POST,Hemiptera,"Stink bug (brown marmorated, brown, green, redbanded, redshouldered, rice, southern green)",0.37455090823428394,64
+Corn,POST,Coleoptera,"Beetle, Japanese",0.285488207635957,19
+Corn,POST,Lepidoptera,"Worm (bag, boll, bud, clover, ear, horn, leaf, pin, rednecked peanut, split)",0.242668682548885,17
+Corn,POST,Lepidoptera,European Corn Borer,0.20607828346089058,14
+Corn,POST,Hemiptera,"Aphid (bean, soybean, russian wheat, root, leaf, green peach, corn leaf black, bird cherry-oat)",0.1895746294262539,32
+Corn,POST,Coleoptera,Beetle (non-specific),0.13410845634682028,9
+Corn,POST,Coleoptera,"Beetle, Corn",0.12718777114207253,8
+Corn,POST,Lepidoptera,"Armyworm (beet, fall southern, western yellow striped, yellowstripe)",0.09118373460609482,6
+Corn,POST,Lepidoptera,Worm (generic),0.07014663452877225,5
+Corn,PRE,Coleoptera,"Corn Rootworm (Mexican, Northern, Southern, Western)",1.660984752741144,64
+Corn,PRE,Lepidoptera,"Cutworm (army, black, climbing, dingy, granulate, pale western, variegated, western bean, other)",1.2135142347649865,83
+Corn,PRE,Unknown,No answer,1.019771820027025,100
+Corn,PRE,Coleoptera,Wireworm,0.4671641676691041,18
+Corn,PRE,Coleoptera,"Grub (white, other non-specific)",0.3940768343089181,15
+Corn,PRE,Lepidoptera,European Corn Borer,0.08071590005447549,6
+Corn,PRE,Hemiptera,"Aphid (bean, soybean, russian wheat, root, leaf, green peach, corn leaf black, bird cherry-oat)",0.028520646204280676,45
+Corn,PRE,Hemiptera,"Stink bug (brown marmorated, brown, green, redbanded, redshouldered, rice, southern green)",0.017256426380040744,27
+Corn,PRE,Hemiptera,Bug (non-specific),0.009439911023778984,15
+Corn,PRE,Hemiptera,Chinch Bug,0.006790353380160996,11
+Soybeans,POST,Hemiptera,"Stink bug (brown marmorated, brown, green, redbanded, redshouldered, rice, southern green)",1.2816838553770908,48
+Soybeans,POST,Hemiptera,"Aphid (bean, soybean, russian wheat, root, leaf, green peach, corn leaf black, bird cherry-oat)",1.2454462355893683,47
+Soybeans,POST,Unknown,No answer,0.8329236802030794,98
+Soybeans,POST,Coleoptera,"Leaf Beetle (corn, bean, cereal)",0.3773686787194862,44
+Soybeans,POST,Coleoptera,"Beetle, Japanese",0.34322629012019107,40
+Soybeans,POST,Lepidoptera,"Worm (bag, boll, bud, clover, ear, horn, leaf, pin, rednecked peanut, split)",0.2622794355742603,27
+Soybeans,POST,Lepidoptera,"Looper (cabbage, soybean)",0.19576108482657972,20
+Soybeans,POST,Lepidoptera,"Armyworm (beet, fall southern, western yellow striped, yellowstripe)",0.13988281837846295,14
+Soybeans,POST,Lepidoptera,"Caterpillar (alfalfa, thistle, velvetbean, other non-specific)",0.116413753557637,12
+Soybeans,POST,Lepidoptera,Green Cloverworm,0.08200416628804688,8
+Soybeans,POST,Lepidoptera,Worm (generic),0.08103900140247164,8
+Soybeans,POST,Coleoptera,Beetle (non-specific),0.055216473769915016,7
+Soybeans,PRE,Unknown,No answer,0.921644833092886,97
+Soybeans,PRE,Hemiptera,"Aphid (bean, soybean, russian wheat, root, leaf, green peach, corn leaf black, bird cherry-oat)",0.27037054594618404,84
+Soybeans,PRE,Lepidoptera,"Cutworm (army, black, climbing, dingy, granulate, pale western, variegated, western bean, other)",0.142235312281182,64
+Soybeans,PRE,Coleoptera,"Grub (white, other non-specific)",0.09676430014585238,44
+Soybeans,PRE,Coleoptera,Wireworm,0.06495629539826996,30
+Soybeans,PRE,Hemiptera,False Chinch Bug,0.0268126135147646,8
+Soybeans,PRE,Lepidoptera,"Armyworm (beet, fall southern, western yellow striped, yellowstripe)",0.0268126135147646,12
+Soybeans,PRE,Lepidoptera,"Caterpillar (alfalfa, thistle, velvetbean, other non-specific)",0.026786151085393305,12
+Soybeans,PRE,Coleoptera,"Leaf Beetle (corn, bean, cereal)",0.019431112652478377,9
+Soybeans,PRE,Coleoptera,"Corn Rootworm (Mexican, Northern, Southern, Western)",0.01870409411734865,9
+Soybeans,PRE,Coleoptera,"Beetle, Japanese",0.017908090281228202,8
+Soybeans,PRE,Lepidoptera,"Worm (bag, boll, bud, clover, ear, horn, leaf, pin, rednecked peanut, split)",0.012873205318576409,6
+Soybeans,PRE,Lepidoptera,Worm (generic),0.012873205318576409,6

@@ -1,6 +1,279 @@
 library("tidyverse")
 library("readxl")
 
+## Clayton Grub question
+cornPrePestTox.summary <- AgroTrak.PestToxIndex %>%
+  filter(Type == "Insecticide" & 
+           Timing == "PRE" &
+           Crop == "Corn" &!is.na(TaxonGroup)) %>%
+  group_by(Crop, Year, TaxonGroup) %>%
+  summarize(pestToxIndex.sum = sum(pestToxIndex, na.rm = TRUE)) %>%
+  group_by(Crop, TaxonGroup) %>%
+  mutate(taxonKeep = length(!is.na(pestToxIndex.sum)) > 4) %>%
+  filter(taxonKeep == TRUE)
+
+cornPre.taxa.lm <- lm(pestToxIndex.sum ~ TaxonGroup/Year + 0,
+                       data = cornPrePestTox.summary)
+cornPre.lm.summary <- broom::tidy(summary(cornPre.taxa.lm)) %>%
+  filter(grepl(":Year", term)) %>%
+  mutate(TaxonGroup = str_remove_all(term, "TaxonGroup|:Year"),
+         pval.display = case_when(
+           round(p.value, 3) == 0 ~ "< 0.001",
+           round(p.value, 3) >  0 ~ paste0("= ",round(p.value, 3))),
+         Crop = "Corn") %>%
+  arrange(estimate) %>%
+  select(Crop, TaxonGroup, estimate, std.error, pval.display)
+ggplot(cornPrePestTox.summary, aes(x = Year, y = pestToxIndex.sum)) +
+  geom_point() + stat_smooth(method = "lm", se = FALSE) +
+  facet_wrap(~ TaxonGroup, ncol = 3) +
+  ggtitle("Corn PRE Insecticide Targets") +
+  ylab("Total Pest Toxicity Index") +
+  theme_minimal_grid() + 
+  theme(panel.background = element_rect(fill = "#F5F5F5"),
+        axis.text.x = element_text(size = 9)) +
+  geom_text(data = cornPre.lm.summary,
+            aes(x = Inf, y = 0.5, label = paste("P", pval.display)),
+            hjust = 1, vjust = 1, color = "blue")
+
+
+
+This is some data I pulled from USDA - it is not specific to a crop, but estimates chemical expenses and all expenses for crop production operations. I'm unsure whether non-pesticides are included in "chemicals" here (fertilizer seems to not be included). I'm also unsure whether it is useful in any way... Panel B, chemicals as a proportion of total expenses seems to show the same (inverse) pattern that one might expect given the efficiency pattern in corn; but I'm not convinced those things are related very closely. Might be best to ignore this. 
+
+```{r, echo = FALSE, warning = FALSE, message = FALSE, fig.width = 7, fig.height = 2.5, fig.cap = "**Figure X. Chemical expenses in billion USD (A) and as a proportion of total crop production operation expenses (B).**"}
+
+usda.exp <- read_csv("DATA/USDA-Expenses_1998-2020.csv") %>%
+  select(Program, Year, Period, Geo.Level = `Geo Level`, State,
+         Commodity, Data.Item = `Data Item`, 
+         Domain, Category = `Domain Category`,
+         Value) %>%
+  filter(Category == "TYPE OF OPERATION: (CROP)")
+
+usda.cropExp <- usda.exp %>%
+  select(Year, Data.Item, Value) %>%
+  pivot_wider(id_cols = Year,
+              names_from = Data.Item,
+              values_from = Value) %>%
+  rename(ChemicalTotal = `CHEMICAL TOTALS - EXPENSE, MEASURED IN $`,
+         ExpenseTotals = `EXPENSE TOTALS, PRODUCTION - EXPENSE, MEASURED IN $`,
+         FertilizerTotal = 
+           `FERTILIZER TOTALS, INCL LIME & SOIL CONDITIONERS - EXPENSE, MEASURED IN $`) %>%
+  mutate(chemPct = ChemicalTotal / ExpenseTotals,
+         fertPct = FertilizerTotal / ExpenseTotals)
+  #right_join(plantedAcres.dat) %>%
+  #mutate(costEff = ProductionBUSD / (ChemicalTotal/(1*10^9)))
+#glimpse(usda.cropExp)
+
+plot_grid(
+ggplot(usda.cropExp, aes(y = ChemicalTotal / (10^9), x = Year)) +
+  geom_point() +
+  geom_smooth(se = FALSE) +
+  ylab("Total chemical expenses \n(Billion USD)") +
+  xlab(element_blank()) +
+  ylim(c(0, NA)),
+ggplot(usda.cropExp, aes(y = chemPct, x = Year)) +
+  geom_point() +
+  geom_smooth(se = FALSE) +
+  ylab("Chemical proportion of \ntotal expenses") +
+  xlab(element_blank()) +
+  ylim(c(0, NA)),
+labels = LETTERS)
+
+```
+
+ggplot(AgroTrak.ecotox %>% filter(ai == "TEBUPIRIMPHOS"),
+       aes(x = Year, y = Volume.lbs)) +
+  #geom_point(aes(color = Crop, shape = Crop)) +
+  facet_wrap(~Timing) +
+  geom_smooth(se = FALSE)
+
+
+ToxIndex.summary.early <- AgroTrak.ecotox %>%
+  filter(Crop == "Corn" & Year > 1999 & Year < 2006 |
+           Crop == "Soybeans" & Year > 2004 & Year < 2011) %>%
+  group_by(Crop, Timing, Type) %>%
+  summarize(ToxIndex.area = sum(ToxIndex.area, na.rm = TRUE)/6) %>%
+  ungroup() %>% group_by(Crop) %>% 
+  mutate(cropToxIndex.area = sum(ToxIndex.area),
+         Period = "Early")
+ToxIndex.summary.late <- AgroTrak.ecotox %>%
+  filter(Year > 2014) %>%
+  group_by(Crop, Timing, Type) %>%
+  summarize(ToxIndex.area = sum(ToxIndex.area, na.rm = TRUE)/6) %>%
+  ungroup() %>% group_by(Crop) %>% 
+  mutate(cropToxIndex.area = sum(ToxIndex.area),
+         Period = "Late")
+ToxIndex.evl <- bind_rows(ToxIndex.summary.early, ToxIndex.summary.late)
+evl.SummaryTab <- ToxIndex.evl %>% 
+  filter(Type == "Insecticide") %>%
+  mutate(ToxIndex.area = signif(ToxIndex.area, 2)) %>%
+  select(Crop, Period, Timing, Type, ToxIndex.area) %>%
+  arrange(Crop, Type, Timing, Period) %>%
+  pivot_wider(id_cols = c(Crop, Timing, Type),
+              names_from = Period,
+              values_from = ToxIndex.area) %>%
+  ungroup() 
+
+knitr::kable(evl.SummaryTab) %>%
+  kableExtra::add_footnote("Footnote 1", notation="alphabet")
+
+
+sampleSizes <- read_excel("DATA/AgroTrak_CornSoy-SampleSizes.xlsx", 
+                          skip = 4) %>%
+  select(Crop, 
+         Type = `Pesticide Type`, 
+         Active.Ingredient = `Active Ingredient`, 
+         Year, 
+         N = `Sample Farms\r\n(Number)`) %>%
+  group_by(Crop, Active.Ingredient) %>%
+  summarize(maxYearN = max(N),
+            totalN = sum(N))
+sampleSizes %>% filter(maxYearN <= 3 & totalN > 5)
+
+ggplot(missDat, aes(x = totalVol/1000000, y = reorder(ai, totalVol))) +
+  geom_bar(stat = "identity", aes(fill = Type)) +
+  ylab(element_blank()) +
+  xlab("Volume applied (million kg) 1998 - 2020") +
+  theme_minimal_grid() +
+  theme(legend.position = "top", 
+        legend.justification = "left",
+        legend.title = element_blank())
+
+length(goodDat$ai)
+length(missDat$ai)
+
+AgroTrak.ecotox %>%
+  ungroup() %>%
+  distinct(Active.Ingredient)
+AgroTrak.ecotox %>%
+  ungroup() %>%
+  distinct(ai)
+
+goodDat <- AgroTrak.ecotox %>%
+  group_by(Type, ai) %>%
+  summarize(AAC.LD50 = unique(AAC.LD50)) %>%
+  filter(!is.na(AAC.LD50)) %>%
+  select(ai, Type)
+goodDat
+
+notgoodDat <- AgroTrak.ecotox %>%
+  group_by(Type, ai) %>%
+  summarize(AAC.LD50 = unique(AAC.LD50)) %>%
+  filter(is.na(AAC.LD50)) %>%
+  select(ai, Type)
+notgoodDat
+
+glimpse(AgroTrak.ecotox)# %>%
+  group_by(Type, ai) %>%
+  summarize(AAC.LD50 = unique(AAC.LD50)) %>%
+  filter(!is.na(AAC.LD50)) %>%
+  select(ai, Type)
+
+
+AgroTrak.ecotox %>%
+  filter(Type == "Insecticide" &
+           Timing == "PRE" &
+           Crop == "Corn") %>%
+  mutate(aiplot = case_when(
+    ai %in% cornPre.90list$ai ~ ai,
+    TRUE ~ "ALL OTHER INSECTICIDES"),
+    aiplot = factor(aiplot, levels = c(cornPre.90list$ai,
+                                       "ALL OTHER INSECTICIDES"))) %>%
+  group_by(Year, aiplot) %>%
+  summarize(ToxIndex.area = sum(ToxIndex.area, na.rm = TRUE)) %>%
+  ungroup() %>%
+  complete(aiplot, Year, fill = list(ToxIndex.area = 0)) %>%
+  ggplot(aes(x = Year, y = ToxIndex.area)) +
+  #geom_area(aes(fill = aiplot)) +
+  geom_line(aes(color = aiplot)) +
+  geom_point(aes(color = aiplot, shape = aiplot)) +
+  scale_fill_manual(values = cbPalette.cornPre) +
+  ggtitle("Corn Insecticides Applied PRE") +
+  xlim(c(1998, 2020)) +
+  scale_y_continuous(expand = c(0,0)) +
+  ylab(aiplot.ylab) + xlab(element_blank()) +
+  theme_minimal_grid() +
+  theme(legend.title = element_blank()) #+
+  #annotate("rect", xmin = 2007, xmax = Inf, 
+  #         ymin = 0.8, ymax = Inf, fill = "white")
+
+
+cornPre.inset <- cornPre.aigg +
+  coord_cartesian(ylim = c(0, 0.35)) +
+  ylab(element_blank()) +
+  scale_x_continuous(limits = c(2012, 2020),
+                     breaks = seq(2012, 2020, 4)) +
+  scale_y_continuous(expand = c(0,0)) +
+  #theme_minimal_grid() +
+  theme(legend.position = "none",
+        panel.background = element_rect(fill = "#F0F0F0")) +
+  ggtitle(element_blank())
+cornPre.2panel <- ggdraw(cornPre.aigg) + 
+  draw_plot(cornPre.inset, .36, .25, .29, .66)
+
+
+AgroTrak.ecotox %>%
+  filter(Type == "Insecticide" &
+           Timing == "POST" &
+           Crop == "Corn") %>%
+  mutate(aiplot = case_when(
+    ai %in% cornPost.90list$ai ~ ai,
+    TRUE ~ "ALL OTHER INSECTICIDES"),
+    aiplot = factor(aiplot, levels = c(cornPost.90list$ai,
+                                       "ALL OTHER INSECTICIDES"))) %>%
+  group_by(Year, aiplot) %>%
+  summarize(ToxIndex.area = sum(ToxIndex.area, na.rm = TRUE)) %>%
+  ungroup() %>%
+  complete(aiplot, Year, fill = list(ToxIndex.area = 0)) %>%
+  ggplot(aes(x = Year, y = ToxIndex.area)) +
+  #geom_area(aes(fill = aiplot)) +
+  geom_line(aes(color = aiplot)) +
+  geom_point(aes(color = aiplot, shape = aiplot)) +
+  scale_fill_manual(values = cbPalette.corn) +
+  ggtitle("Corn Insecticides Applied POST") +
+  xlim(c(1998, 2020)) +
+  scale_y_continuous(expand = c(0,0)) +
+  ylab(aiplot.ylab) + xlab(element_blank()) +
+  theme_minimal_grid() +
+  theme(legend.title = element_blank())
+
+soy.aigg <- AgroTrak.ecotox %>%
+  filter(Type == "Insecticide" &
+           Timing == "POST" &
+           Crop == "Soybeans") %>%
+  mutate(aiplot = case_when(
+    ai %in% c("BIFENTHRIN", "CHLORPYRIFOS", "CYHALOTHRIN-LAMBDA",
+              "DELTAMETHRIN", "THIAMETHOXAM", "CYFLUTHRIN", "ACEPHATE") ~ ai,
+    TRUE ~ "ALL OTHER INSECTICIDES"),
+    aiplot = factor(aiplot, 
+                    levels = c("BIFENTHRIN", "CHLORPYRIFOS", 
+                               "CYHALOTHRIN-LAMBDA", "DELTAMETHRIN", 
+                               "THIAMETHOXAM", "CYFLUTHRIN", "ACEPHATE",
+                               "ALL OTHER INSECTICIDES"))) %>%
+  group_by(Year, aiplot) %>%
+  summarize(ToxIndex.area = sum(ToxIndex.area, na.rm = TRUE)) %>%
+  ungroup() %>%
+  complete(aiplot, Year, fill = list(ToxIndex.area = 0)) %>%
+  ggplot(aes(x = Year, y = ToxIndex.area)) +
+  geom_area(aes(fill = aiplot)) +
+  scale_fill_manual(values = cbPalette.soy) +
+  ggtitle("Soybean Insecticides Applied POST") +
+  xlim(c(1998, 2020)) +
+  scale_y_continuous(expand = c(0,0)) +
+  ylab(aiplot.ylab) + xlab(element_blank()) +
+  theme_minimal_grid() +
+  theme(legend.title = element_blank())
+
+ggdraw(plot_grid(cornPre.aigg + 
+                   annotate("text", x = 2008, y = 3, label = "B", 
+                            size = 5, fontface = "bold"), 
+                 corn.aigg, soy.aigg,
+                 ncol = 1, align = "v",
+                 labels = LETTERS[c(1,3,4)])) + 
+  draw_plot(cornPre.inset, .36, .75, .29, .2)
+
+
+
+
 yield.gg <- ggplot(plantedAcres.dat, aes(x = Year, y = Yield.tha)) +
   geom_point() +
   facet_wrap(~ Crop, scales = "free_y", nrow = 2) +

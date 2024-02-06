@@ -15,17 +15,21 @@ csl: "WSSA-Journals.csl"
 
 # Introduction
 
-The use of pesticides (herbicides, insecticides, and fungicides) is pivotal for crop protection, providing farmers with an efficient tool for controlling pests, and preventing yield losses that could threaten food security [@Kudsk2018Pesticide] and cause devastating economic losses [@Popp2013Pesticide; @Tudi2021Agriculture]. Therefore, the use of pesticides has become a necessary agricultural practice, with one-third of agricultural products depending on their application [@Tudi2021Agriculture]. However, pesticide use in agriculture can have detrimental side effects on non-target organisms and ecosystems, with a very small percentage of the amount applied coming in direct contact with target pests [@Werf1996Assessing]. The increasing number of pesticides' negative effects has shaped their use in accordance with changes in agricultural and pest management strategies, regulatory policies, environmental and health hazard, and public awareness.
+As part of an integrated pest management program, pesticides (especially herbicides, insecticides, and fungicides) remain a crucial component of crop protection. Pesticides provide farmers with an efficient tool for controlling pests and, when used appropriately, prevent yield loss that could threaten food security [@Kudsk2018Pesticide] and cause devastating economic losses [@Popp2013Pesticide; @Tudi2021Agriculture]. Approximately one-third of global agricultural products are produced with some dependence on pesticides [@Tudi2021Agriculture]. In the United States, well over 95% of corn and soybean hectares are sprayed with pesticides each year [@fernandez-cornejoPesticideUseAgriculture2014]. 
 
-In the United States, the use of synthetic pesticides sha increased drastically from the 1960s to the early 1980s, then stabilized according to the change in crop acreage, the development of pesticides with lower per-acre application, and the adoption of genetically engineered (GE) insect-resistant and herbicide tolerant crops [@Osteen2013Economic; @Kniss2018Genetically]. As a reflection of US Environmental Protection Agency (US EPA) regulations, the type of synthetic insecticides applied in agriculture has changed from mainly organophosphorus and N-methyl carbamate insecticides to considerably lower quantities of organophosphorus compounds, together with a considerable increase in neonicotinoids and a small increase in pyrethroids [@DiBartolomeis2019assessment]. On the other hand, the use of herbicides seemed to be affected by the increased use of herbicide-tolerant crops, which led to a higher application rate [@Benbrook2016Trends; @Kim2022Worldwide]. Similarly, fungicide application rate is predicted to rise because of climate change, increasing of fungicide resistance, and spread of invasive fungal species [@Boxall2009Impacts; @Fisher2012Emerging].
+However, pesticide usage in agriculture can have detrimental side effects on non-target organisms, both through misuse of pesticide products and through off-target movement of applied pesticides. Over time, as awareness of the potential for pesticide negative effects has increased, public scrutiny of pesticides has also increased. Regulatory agencies and agricultural stakeholders have continuously sought to better balance the risks and benefits of pesticide usage. Most recently, U.S. pesticide regulatory bodies have sought to increase compliance with the Endangered Species Act.
 
-Evaluating the risk of pesticides is a necessary and complex task that requires detailed information on active ingredients, toxicity levels, application rates, routes of exposure, effects on non-target organisms, interactions, and environmental fate [@DiBartolomeis2019assessment; @Greitens2007alternative]. Moreover, the assessment of pesticide risks is frequently based on partial information, making the determination of the overall risk of pesticide use difficult and, often times, subjective [@Greitens2007alternative; @dushoff1994; @peterson2014]. Nonetheless, scientists and agencies have developed numerous methods to evaluate the environmental risks associated with pesticides use, including pesticide risk indicators based on numerous information, such as active ingredients, use rate, acute and chronic toxicity information, environmental persistence and mobility, and non-target effects [@Greitens2007alternative; @kniss2017].
+Between 1960 and 1980, the volume of pesticides applied to corn and soybean increased 9- and 50-fold in the United States, and by 1985, the percentage of planted area exceeded 95% in both crops [@fernandez-cornejoPesticideUseAgriculture2014; @Osteen2013Economic]. Some of this increase can be attributed to a concurrent increase in crop area, but even when adjusted for area, a steady increase in pesticide intensity has been observed [@Kniss2018Genetically]. 
 
-Generally, the first step in developing methods to evaluate the ecological risk of pesticides is to build a reliable database based on existing empirical toxicity data derived from literature review procedures. The ECOTOXicology Knowledgebase (ECOTOX Ver 5, www.epa.gov/ecotox) currently represents the world's largest compilation of curated ecotoxicity data, providing data for assessments of safety and ecological research for over 12,000 chemicals and ecological species with over one million test results from over 50,000 references [@Olker2022ECOTOXicology]. Managed by US-EPA, it provides transparent and comprehensive information about toxicity measures and endpoints such as $LD_{50}$, $LC_{50}$, and other sublethal effects, and effects on both aquatic and terrestrial organisms.
+As a reflection of increased U.S. Environmental Protection Agency (US EPA) regulation, the types of synthetic insecticides applied in agriculture has changed from mainly organophosphorus and N-methyl carbamate insecticides to mainly neonicotinoids and pyrethroids [@DiBartolomeis2019assessment]. Changes in herbicide usage has been driven by the widespread adoption of herbicide-resistant crops [@Benbrook2016Trends; @Kim2022Worldwide; @Kniss2018Genetically]. Similarly, fungicide usage has been predicted to rise in response to climate change, increased evolution of fungicide resistance, and spread of invasive fungal species [@Boxall2009Impacts; @Fisher2012Emerging].
 
-Among terrestrial organisms, insect pollinators are widely used for environmental risk assessment procedure and regulatory agencies, such as US-EPA and European Food Safety Agency (EFSA), require the submission of insect pollinators risk toxicity data when registering pesticides because their services to terrestrial ecosystems and crop production [@Reilly2020Crop; @farruggia2022]. Pollinators, in particular honey bees (*Apis mellifera*), are at risk for several reasons, including pesticides uses [@Goulson2015Bee]. Honey bees represent a useful indicator species because of their importance to agriculture, the availability of standardized testing for lab and field experiments [@farruggia2022], their ability to interact with pesticides through different exposure pathways [@Johnson2015Honey], and their sensitivity to pesticides with respect to other bee species [@Arena2014meta-analysis]. Therefore, honey bees represent the most well studied indicator of insect health in US agricultural lands, having the most comprehensive data set available for insect, and allowing to show how pesticide toxicity loadings have changed over time [@DiBartolomeis2019assessment].
+Evaluating the risk of pesticides is a necessary and complex task that requires detailed information on active ingredients, application rates, exposure routes, toxiity and other effects on non-target organisms, and environmental fate [@DiBartolomeis2019assessment; @greitensAlternativeWayEvaluate2007]. Scientists and agencies have developed numerous methods to evaluate the environmental risks associated with pesticide usage, including pesticide risk indicators incorporating varied information, such as physico-chemical properties of active ingredients, usage parameters including application rates and timings, environmental persistence and fate, and acute and chronic toxicity to different organisms [@greitensAlternativeWayEvaluate2007; @knissLongtermTrendsIntensity2017]. Nonetheless, the assessment of pesticide risks is frequently based on incomplete knowledge, making the determination of the overall risk of pesticide use difficult and, often times, uncertain [@greitensAlternativeWayEvaluate2007; @Dushoff1994Evaluating; @petersonProbabilisticAnalysisReveals2014]. 
 
-The objective of this study is to combine honey bee toxicological endpoints with pesticide use data and crop yields to quantify (1) how the average toxicity of agricultural pesticides used in the United States has changed over time; and (2) determine how specific pesticides and pest targets contribute to the overall non-target insect risk. This information will benefit the general public by informing the debate on whether domestic agricultural systems have become more or less ecologically efficient and sustainable over time, and allow us to focus future efforts on pests and pesticides that contribute most to overall risk.
+Generally, the first step in developing methods to evaluate the ecological risk of pesticides is to build a reliable database based on existing empirical toxicity data derived from literature review procedures. The ECOTOXicology Knowledgebase (ECOTOX Ver 5, www.epa.gov/ecotox) currently represents the world's largest compilation of curated ecotoxicity data, providing data for assessments of safety and ecological research for over 12,000 chemicals and species with over one million test results from over 50,000 references [@Olker2022ECOTOXicology]. Managed by US EPA, it provides transparent and comprehensive information about toxicity measures and endpoints such as $LD_{50}$, $LC_{50}$, and other sublethal effects on both aquatic and terrestrial organisms.
+
+Among terrestrial organisms, insect pollinators are widely used as primary surrogate species for environmental risk assessment, and regulatory agencies such as US EPA and the European Food Safety Agency (EFSA) require the submission of insect pollinator toxicity data when registering pesticides, in part, because of these species critical role in providing ecosystem services [@farruggiaRetrospectiveAnalysisHoney2022; @Reilly2020Crop]. Pollinators, including honey bees (*Apis mellifera*), are at risk for several reasons including pesticide usage [@Goulson2015Bee]. Honey bees also represent a useful surrogate species for ecotxicology studies because of the availability of standardized rearing and testing protocols for lab and field experiments [@farruggiaRetrospectiveAnalysisHoney2022], their ability to interact with pesticides through different exposure pathways [@Johnson2015Honey], and their sensitivity to pesticides relative to other bee species [@Arena2014meta-analysis]. Honey bees represent the most well-studied indicator of insect health in US agricultural lands and have the most comprehensive ecotoxicology data set available. As such, honey bees are useful for assessing how non-target pesticide risks have changed over time [@DiBartolomeis2019assessment].
+
+The objective of this study is to combine honey bee toxicological endpoints with pesticide usage data and corn and soybean yields to quantify (1) how the average overall toxicity of agricultural pesticides used in the United States has changed over time in the two largest crops by area; and (2) determine how specific pesticides and pest targets contribute to the overall non-target pesticide hazard to insects. This information will benefit the general public by informing the debate on whether domestic agricultural systems have become more or less ecologically efficient and sustainable over time, and will allow us to more holistically prioritize future pest management efforts.
 
 # Methods
 
@@ -175,7 +179,7 @@ finalTox.dat <- bind_rows(
                        ineq = ">", AAC.LD50 = 193.38,
                        source = "EPA communication"))
 glimpse(finalTox.dat)
-write_csv(finalTox.dat, "finalToxData.csv")
+write_csv(finalTox.dat %>% arrange(ai), "finalToxData.csv")
 
 ## USDA planted acres:
 plantedAcres.dat <- read_csv("DATA/USDA-PlantedAcresProduction_1990-2022.csv") %>%
@@ -218,27 +222,50 @@ AgroTrak.ecotox <-
 glimpse(AgroTrak.ecotox)
 ```
 
+
 ## Data sources
 
-### Pesticide usage data
+### Pesticide usage and crop data
 
-Proprietary pesticide use data were obtained from the FarmTrak product maintained by [Kynetec](https://www.kynetec.com/). Data included pesticide volume applied, treated acreage, and timing of pesticide applications for corn and soybean from 1998 through 2020. Application timings from the original data were condensed into either before crop emergence (PRE) or after crop emergence (POST).
+Proprietary pesticide usage data were obtained in May of 2023 from the AgroTrak product maintained by [Kynetec](https://www.kynetec.com/). **[Insert proprietary data note here.]** Data included pesticide volume applied, treated acreage, timing of pesticide applications, and target pests for corn and soybean from 1998 through 2020. Application timings from the original data were condensed into either before crop emergence (PRE) or after crop emergence (POST). National estimates of crop yield and area planted to corn and soybean for each year was obtained from the USDA National Agricultural Statistics Service [(USDA-NASS)](https://quickstats.nass.usda.gov/).
 
 ### Honey bee toxicity data
 
-Adult acute contact $LD_{50}$ values for honey bee (*Apis mellifera*) were obtained from the following sources:
+Updated adult acute contact $LD_{50}$ values for honey bee (*Apis mellifera*) were obtained for as many pesticide active ingredients in the AgroTrak data as possible. Our analysis is limited to the adult acute contact toxicity due to incompleteness of most other toxicity endpoints (such as oral acute or chronic endpoints). Acute contact $LD_{50}$ values were obtained from the following sources: (1) the U.S. EPA [ECOTOX](https://cfpub.epa.gov/ecotox/) database; (2) Supporting Table S1 from @farruggiaRetrospectiveAnalysisHoney2022; and (3) manually searching pesticide ecological risk assessments supporting registration and re-evaluation posted to the public docket at Regulations.gov; and (4) communications with EPA personnel from the Office of Pesticide Programs' Environmental Fate and Effects Division.
 
--   The U.S. EPA [ECOTOX](https://cfpub.epa.gov/ecotox/) database.
--   Supporting Table S1 from @farruggia2022.
--   Manually searching pesticide registration documents and conversations with EPA EFED personnel.
-
-The ECOTOX database was the preferred source for all pesticide toxicity data. For each active ingredient (ai) in the Kynetec data, adult acute contact $LD_{50}$ were downloaded from ECOTOX. For many active ingredients, ECOTOX reports multiple toxicity endpoints, some are exact estimates (e.g. $LD_{50}$ = 13 ug/bee). Some estimates are listed as inequalities, where the original study was unable to quantify an exact endpoint (e.g. $LD_{50}$ \> 100 ug/bee). For active ingredients with multiple adult acute contact toxicity values reported, we used the following selection criteria to select a single toxicity value for each ai:
+The ECOTOX database was the preferred source for all pesticide toxicity data. For each active ingredient (ai) in the AgroTrak data, adult acute contact $LD_{50}$ were downloaded from ECOTOX. For many active ingredients, ECOTOX reports multiple toxicity endpoints. Some are exact estimates (e.g. $LD_{50}$ = 13 ug/bee). Some estimates are listed as inequalities, where the original study was unable to quantify an exact endpoint (e.g. $LD_{50}$ \> 100 ug/bee). For active ingredients with multiple adult acute contact toxicity values reported, we used the following selection criteria to select a single toxicity value for each ai:
 
 1)  if there was only one *exact* estimate and one or more inequality estimates the exact estimate was selected.
 2)  if there were multiple exact estimates, the lowest (most toxic) value was selected.
 3)  if there were no exact estimates, the lowest (most toxic) inequality was selected.
 
-After this selection criteria was applied to the ECOTOX data, the toxicity values were compared with those published by Farruggia et al. (2022). In nearly all cases, the ECOTOX values were the same as those published by Farruggia et al. For 6 pesticides, the values reported by Farruggia et al. were lower (*i.e.* more toxic) than those selected from ECOTOX; for five of those six pesticides, the Farruggia et al. values were used to ensure we used the most conservative toxicity estimates available. One estimate from Farrugia et al (2022) was determined to be an error; dicamba adult acute contact toxicity was listed correctly in ECOTOX and so that value was used. Finally, for any ai in the Kynetec data that did not have toxicity values in ECOTOX or Farruggia et al. (2022), pesticide registration documents were searched manually to obtain honey bee adult acute contact toxicity values.
+For some active ingredients, the database included toxicity estimates from both technical active ingredient studies and from formulated product studies; we did not use this potentially important difference as a selection criteria to ensure our analysis included the most conservative (*e.g.* most toxic) endpoint. 
+
+After this selection criteria was applied to the ECOTOX data, these toxicity values were compared with those published by Farruggia et al. (2022). In nearly all cases, the ECOTOX values were the same as those published by Farruggia et al. For 6 pesticides, the values reported by Farruggia et al. were lower (*i.e.* more toxic) than those selected from ECOTOX; for five of those six pesticides, the Farruggia et al. values were used to ensure we used the most conservative toxicity estimates available. One estimate from Farrugia et al (2022) was determined to be an error; dicamba adult acute contact toxicity was listed correctly in ECOTOX and so that value was used. Finally, for any active ingredient in the Kynetec data that did not have toxicity values in ECOTOX or Farruggia et al. (2022), pesticide registration and re-evaluation documents (i.e., the most recent ecological risk assessments, conducted approximately every 15 years for registered pesticides) were searched manually to obtain honey bee adult acute contact toxicity values.
+
+```{r, eval = TRUE, echo = FALSE, message = FALSE}
+maxYearN.cutoff <- 2
+totalN.cutoff <- 10
+
+sampleSizes <- read_excel("DATA/AgroTrak_CornSoy-SampleSizes.xlsx", 
+                          skip = 4) %>%
+  select(Crop, 
+         Type = `Pesticide Type`, 
+         Active.Ingredient = `Active Ingredient`, 
+         Year, 
+         N = `Sample Farms\r\n(Number)`) %>%
+  group_by(Crop, Active.Ingredient) %>%
+  summarize(maxYearN = max(N),
+            totalN = sum(N))
+lowN.keepers <- sampleSizes %>% 
+  filter(maxYearN >= maxYearN.cutoff & totalN > totalN.cutoff) 
+
+AgroTrak.ecotox.wLowN <- AgroTrak.ecotox
+
+AgroTrak.ecotox.noLowN <- lowN.keepers %>%
+  select(Crop, Active.Ingredient) %>%
+  left_join(AgroTrak.ecotox.wLowN)
+```
 
 ```{r, include = FALSE, warning = FALSE, message = FALSE}
 missDat <- AgroTrak.ecotox %>%
@@ -246,7 +273,7 @@ missDat <- AgroTrak.ecotox %>%
   summarize(totalVol = signif(sum(Volume.kg), 3),
             totalBase = signif(sum(Base.Area.Treated), 3),
             AAC.LD50 = unique(AAC.LD50)) %>%
-  filter(is.na(AAC.LD50) & totalVol > 1000) %>%
+  filter(is.na(AAC.LD50)) %>%# & totalVol > 1000) %>%
   arrange(desc(totalBase)) %>%
   select(ai, Type, AAC.LD50, totalVol, totalBase) %>%
   mutate(ai = str_to_lower(ai)) %>%
@@ -256,18 +283,52 @@ goodDat <- AgroTrak.ecotox %>%
   summarize(AAC.LD50 = unique(AAC.LD50)) %>%
   filter(!is.na(AAC.LD50)) %>%
   select(ai, Type)
+allmissDat <- AgroTrak.ecotox %>%
+  group_by(Type, ai) %>%
+  summarize(AAC.LD50 = unique(AAC.LD50)) %>%
+  filter(is.na(AAC.LD50)) %>%
+  select(ai, Type)
 ```
 
-In total, there were `r length(missDat$ai) + length(goodDat$ai)` unique pesticides in the Kynetec database applied to either corn or soybean during 1998 to 2020. Of those, we were unable to find a reliable toxicity estimate for `r length(missDat$ai)` pesticides (Table 1). Two of those pesticides (tebupirimphos and ethalfluralin) were widely used during the study period, with total application volume of nearly 3 million kg and over 1 million kg, respectively.
+In total, there were `r length(unique(AgroTrak.ecotox.wLowN$ai))` pesticide active ingredients mentioned by survey respondents as being applied to either corn or soybean during the period 1998 to 2020. Of those, `r length(unique(AgroTrak.ecotox.wLowN$ai)) - length(unique(AgroTrak.ecotox.noLowN$ai))` active ingredients were mentioned by `r maxYearN.cutoff` or fewer survey respondents in any given year and had fewer than `r totalN.cutoff` mentions in the entire 22 year period. It is possible that these may represent mis-reporting; to determine whether these outliers may have an outsized impact on the results, the analysis was conducted with and without these pesticides with low sample sizes. Removal had no practical impact on data interpretation, so the pesticides with low sample sizes were retained in the final analysis. The AgroTrak data, like many other public and proprietary data sources, does not include seed treatments. 
 
-```{r, echo = FALSE, warning = FALSE, message = FALSE}
-knitr::kable(missDat %>% select(-AAC.LD50),
+We were unable to find reliable honey bee adult acute contact toxicity estimates for `r length(unique(missDat$ai))` pesticides. Of the pesticides without toxicity values, `r sum(missDat$totalVol > 15000)` had a total applied volume of greater than 15,000 kg during the period 1998 to 2020  (Supplementary Figure 1). Only `r sum(missDat$totalVol > 1*10^6)` pesticides (tebupirimphos and ethalfluralin) were applied at over 1 million kg during the study period but did not have reliable acute contact $LD_{50}$ values. As an organophosphate insecticide, tebupirimphos would be expected to be highly toxic to bees; however, its only registered use is for soil-incorporated application at planting with granular products (Supplemental Figure 2). This usage pattern of tebupirimphos will reduce the potential to negatively impact honey bees compared to products applied after crop emergence.
+
+```{r, include = FALSE, warning = FALSE, message = FALSE}
+knitr::kable(missDat %>% select(-AAC.LD50, -totalBase) %>% arrange(-totalVol),
              col.names = c("Active ingredient", 
                            "Pesticide type",
-                           "Total volume (kg)", 
-                           "Total base acres treated"),
-             caption = "**Table 1. Active ingredients for which more than 1,000 kg were applied during the period 1998 -- 2020 but do not have a reliable honey bee adult acute contact $LD_{50}$.**")
+                           "Total volume (kg)"),
+             caption = "**Supplementary Table (probably not used). Active ingredients for which more than 1,000 kg were applied to corn and soybean during the period 1998 -- 2020 but do not have a reliable honey bee adult acute contact $LD_{50}$.**")
 ```
+
+```{r, echo = FALSE, warning = FALSE, message = FALSE, fig.width = 7, fig.height = 2.7, fig.cap = "Supplementary Figure 1: Active ingredients applied at over 15,000 kg between 1998 through 2020 without reliable honey bee adult acute contact $LD_{50}$."}
+ggplot(missDat %>% filter(totalVol > 15000) %>%
+         mutate(ai = ifelse(ai == "bacillus thuringiensis", 
+                            "Bacillus thuringiensis", ai)), 
+       aes(x = totalVol/1000000, y = reorder(ai, totalVol))) +
+  geom_bar(stat = "identity", aes(fill = Type)) +
+  ylab(element_blank()) +
+  xlab("Volume applied (million kg) 1998 - 2020") +
+  theme_minimal_hgrid() +
+  theme(legend.position = "top", 
+        legend.justification = "left",
+        legend.title = element_blank())
+```
+
+```{r, echo = FALSE, warning = FALSE, message = FALSE, fig.width = 8, fig.height = 3.2, fig.cap = "Supplementary Figure 2: Tebupirimphos usage in corn, 1998 to 2020."}
+ggplot(AgroTrak.ecotox %>% 
+         filter(ai == "TEBUPIRIMPHOS" & Crop == "Corn"),
+       aes(x = Year, y = Volume.kg)) +
+  facet_wrap(~Timing) +
+  geom_smooth(se = FALSE) +
+  ylab("Volume applied (kg)") +
+  xlab(element_blank()) +
+  ggtitle("Tebupirimphos applied to Corn") +
+  theme_minimal_grid() +
+  theme(plot.title.position = "plot")
+```
+
 
 ## Honey bee Toxicity Index
 
@@ -321,21 +382,20 @@ cropType.summary <- ToxIndex.summary %>%
             cropToxIndex.areaPct = sum(cropToxIndex.areaPct))
 ```
 
-Pesticide use data were separated into pesticides applied before crop emergence (PRE) and pesticides applied after crop emergence (POST). For each ai applied to each crop in each year, an an area-adjusted toxicity index (*TI*) was calculated by dividing the total pesticide volume applied in kg ($P_{vol}$) by the total planted area ($A_{plant}$) for each crop to account for year-to-year changes in hectares planted to corn and soybeans. That value was then divided by the adult acute contact $LD_{50}$ to derive the *TI*. *TI* can be interpreted as the number of honey bee acute $LD_{50}$ values applied per hectare (in billions).
+Pesticide usage data were separated into pesticides applied before crop emergence (PRE) and pesticides applied after crop emergence (POST). For each active ingredient applied to each crop in each year, an an area-adjusted toxicity index ($TI$) was calculated by dividing the total pesticide volume applied in kg ($P_{vol}$) by the total planted area ($A_{plant}$) for each crop to account for year-to-year changes in hectares planted to corn and soybeans. That value was then divided by the adult acute contact $LD_{50}$ to derive the $TI$. $TI$ can be interpreted as the number of honey bee acute $LD_{50}$ values (in billions) applied per hectare of crop grown.
 
 $$TI = \sum_{i=1}^{N_{cyt}} (\frac{P_{vol} / A_{plant}}{LD_{50}})$$
 
-*something here about how individual pesticide contributions were divvied up*
 
-## Pesticide Target Toxicity Index
+## Target Pest Toxicity Index
 
-A pesticide target toxicity index ($TI_{pest}$) was calculated to quantify relative impact that different pest species have on the overall risk to honey bees. For each pesticide application, FarmTrak data records which pest species were listed by survey respondents as the target for the pesticide application. For each active ingredient, the volume applied targeting a particular pest was divided by the total volume of the active ingredient applied. This proportion was then multiplied by that active ingredient's proportion of the total toxicity index (*TI*).
+For each pesticide application, AgroTrak data records which pest species were listed by survey respondents as the target for the pesticide application. A target pest toxicity index ($TI_{pest}$) was calculated using this information. For each active ingredient, the volume applied targeting a particular pest ($P_{pest}$) was divided by the total volume of the active ingredient applied ($P_{total}$. This proportion was then multiplied by that active ingredient's proportion of the total toxicity index ($TI$). The $TI_{pest}$ can be interpreted as the relative impact that different pest species have on the overall pesticide hazard to honey bees; a pest species with a greater $TI_{pest}$ value is likely more responsible for pesticide applications with greater potential impact to honey bees than a pest species with a lower $TI_{pest}$. 
 
 $$TI_{pest} = \sum_{i=1}^{N_{cyt}}(P_{pest} / P_{total}) * (TI_{ai} / TI_{total})$$
 
 ## Eco-Efficiency
 
-Eco-efficiency ($E$) was calculated for each year and application timing by dividing crop yield (ton/ha) by *TI*. $E$ can be interpreted as the tonnes of crop yield produced per honey bee $LD_{50}$ applied. Higher values of $E$ suggest greater eco-efficiency.
+Eco-efficiency ($E$) was calculated for each year and application timing by dividing crop yield (ton/ha) by $TI$. $E$ can be interpreted as the tonnes of crop yield produced per honey bee $LD_{50}$ applied. Higher values of $E$ suggest greater eco-efficiency.
 
 $$E = \frac{Y}{TI}$$
 
@@ -385,7 +445,9 @@ ecoeffVsum.gg <- ggplot(ToxIndex.summary,
   theme(legend.position = "none")
 ```
 
-The summed honey bee *TI* over all years from 1998 through 2020 was `r round(ToxIndex.cropTotals$cropToxIndex.area[1]/ToxIndex.cropTotals$cropToxIndex.area[2], 1)`-times greater in corn compared to soybean (Figure 1). Relative risk to honey bees and many other pollinator species is expected to be lower if pesticides are applied before crop emergence, as there are fewer polinators expected to visit the field; `r cornTot <- ToxIndex.summary %>% filter(Crop == "Corn" & Timing == "PRE") %>% summarize(a = sum(cropToxIndex.areaPct)); round(cornTot[[2]])`% of the summed *TI* applied to corn was applied *before* crop emergence, whereas `r soyTot <- ToxIndex.summary %>% filter(Crop == "Soybeans" & Timing == "POST") %>% summarize(a = sum(cropToxIndex.areaPct)); round(soyTot[[2]])`% of the summed *TI* applied to soybean was applied *after* crop emergence. For both crops, a vast majority of *TI* was driven by insecticide use, as expected. In corn, insecticides were responsible for nearly `r corn.i <- cropType.summary %>% filter(Crop == "Corn" & Type == "Insecticide"); corn.i$cropToxIndex.areaPct`% of *TI*, compared to `r corn.h <- cropType.summary %>% filter(Crop == "Corn" & Type == "Herbicide"); signif(corn.h$cropToxIndex.areaPct,2)`% for herbicides, and `r corn.f <- cropType.summary %>% filter(Crop == "Corn" & Type == "Fungicide"); signif(corn.f$cropToxIndex.areaPct,2)`% for fungicides. In soybean, insecticides were responsible for `r soy.i <- cropType.summary %>% filter(Crop == "Soybeans" & Type == "Insecticide"); signif(soy.i$cropToxIndex.areaPct,2)`% of the summed *TI*, compared to `r soy.h <- cropType.summary %>% filter(Crop == "Soybeans" & Type == "Herbicide");  signif(soy.h$cropToxIndex.areaPct,2)`% for herbicides, and `r soy.f <- cropType.summary %>% filter(Crop == "Soybeans" & Type == "Fungicide"); signif(soy.f$cropToxIndex.areaPct,2)`% for fungicides. In terms of total volume applied, herbicides are more heavily used in both corn and soybean; however, because *TI* accounts both for applied volume and inherent acute toxicity, the relative toxicity of insecticides to honey bees outweighs herbicide use in this metric. Because insecticides are the primary driver of overall risk to honey bees and other polinators, we will not discuss other pesticide types (herbicides and fungicides) further.
+The summed honey bee $TI$ over all years from 1998 through 2020 was `r round(ToxIndex.cropTotals$cropToxIndex.area[1]/ToxIndex.cropTotals$cropToxIndex.area[2], 1)`-times greater in corn compared to soybean (Figure 1). Relative risk to honey bees and many other pollinator species is expected to be lower if pesticides are applied before crop emergence, as there are fewer pollinators expected to visit the field before the crop is established; just `r cornTot <- ToxIndex.summary %>% filter(Crop == "Corn" & Timing == "PRE") %>% summarize(a = sum(cropToxIndex.areaPct)); 100-round(cornTot[[2]])`% of the summed $TI$ applied to corn was applied after crop emergence when negative impacts are more likely, whereas `r soyTot <- ToxIndex.summary %>% filter(Crop == "Soybeans" & Timing == "POST") %>% summarize(a = sum(cropToxIndex.areaPct)); round(soyTot[[2]])`% of the summed $TI$ applied to soybean was applied after crop emergence. 
+
+For both crops, a vast majority of $TI$ was driven by insecticide usage, as expected, because insecticides are inherently more toxic to insects compared to most herbicides and fungicides. In corn, insecticides were responsible for nearly `r corn.i <- cropType.summary %>% filter(Crop == "Corn" & Type == "Insecticide"); corn.i$cropToxIndex.areaPct`% of $TI$. In soybean, insecticides were responsible for `r soy.i <- cropType.summary %>% filter(Crop == "Soybeans" & Type == "Insecticide"); signif(soy.i$cropToxIndex.areaPct,2)`% of the summed $TI$. In terms of total volume applied, herbicides are more heavily used in both corn and soybean; however, because $TI$ accounts both for applied volume and inherent acute toxicity, the relative toxicity of insecticides to honey bees outweighs herbicide usage in this metric. Because insecticides are the primary driver of overall risk to honey bees (and likely other pollinators), we will not discuss other pesticide types (herbicides and fungicides) further.
 
 -------------------------------------------------
 
@@ -401,50 +463,54 @@ knitr::kable(ToxIndex.summary %>%
                            names_from = Crop,
                            values_from = cropToxIndex.areaPct) %>%
                arrange(Timing, Type),
-             caption = "**Table 2. Percentage of the total honey bee risk quotient in corn and soybean by pesticide type and application timing.**")
+             caption = "**Table 1. Percentage of the total honey bee risk quotient in corn and soybean by pesticide type and application timing.**")
 ```
 
 ```{r, echo = FALSE, message = FALSE, warning = FALSE}
 ToxIndex.summary.early <- AgroTrak.ecotox %>%
-  filter(Year > 1999 & Year < 2006) %>%
+  filter(Crop == "Corn" & Year > 1999 & Year < 2006 |
+           Crop == "Soybeans" & Year > 2004 & Year < 2011) %>%
   group_by(Crop, Timing, Type) %>%
   summarize(ToxIndex.area = sum(ToxIndex.area, na.rm = TRUE)/6) %>%
   ungroup() %>% group_by(Crop) %>% 
   mutate(cropToxIndex.area = sum(ToxIndex.area),
-         Period = "2000 - 2005")
+         Period = "Early")
 ToxIndex.summary.late <- AgroTrak.ecotox %>%
   filter(Year > 2014) %>%
   group_by(Crop, Timing, Type) %>%
   summarize(ToxIndex.area = sum(ToxIndex.area, na.rm = TRUE)/6) %>%
   ungroup() %>% group_by(Crop) %>% 
   mutate(cropToxIndex.area = sum(ToxIndex.area),
-         Period = "2015 - 2020")
+         Period = "Recent")
 ToxIndex.evl <- bind_rows(ToxIndex.summary.early, ToxIndex.summary.late)
 evl.SummaryTab <- ToxIndex.evl %>% 
-               filter(Type == "Insecticide") %>%
-               mutate(ToxIndex.area = signif(ToxIndex.area, 2)) %>%
-               select(Crop, Period, Timing, Type, ToxIndex.area) %>%
-               arrange(Crop, Type, Timing, Period) %>%
-               pivot_wider(id_cols = c(Crop, Timing, Type),
-                           names_from = Period,
-                           values_from = ToxIndex.area) %>%
+  filter(Type == "Insecticide") %>%
+  mutate(ToxIndex.area = signif(ToxIndex.area, 2)) %>%
+  select(Crop, Period, Timing, Type, ToxIndex.area) %>%
+  arrange(Crop, Type, Timing, Period) %>%
+  pivot_wider(id_cols = c(Crop, Timing, Type),
+              names_from = Period,
+              values_from = ToxIndex.area) %>%
   ungroup() 
+
 ```
 
-Over time, insecticide use in corn has shifted from primarily PRE applications to a mix of PRE and POST applications (Table 2). During the period 2000 to 2005, `r round(evl.SummaryTab[[1,4]]/(evl.SummaryTab[[1,4]] + evl.SummaryTab[[2,4]])*100)`% of the honey bee *TI* from insecticides was applied before crop emergence, whereas more recently, from 2015 to 2020, approximately `r round(evl.SummaryTab[[1,5]]/(evl.SummaryTab[[1,5]]+evl.SummaryTab[[2,5]])*100)`% of honey bee toxicity index was applied before crop emergence. In corn, the toxicity index applied POST has increased approximately `r round(evl.SummaryTab[[2,5]]/evl.SummaryTab[[2,4]], 1)`-fold, from `r evl.SummaryTab[[2,4]]` to `r evl.SummaryTab[[2,5]]`. In soybeans, insecticide use was not reported before 2004, suggesting very limited use in that crop (Figure 2). Since 2005, insecticide applications in soybean have been mostly applied POST, and the honey bee acute toxicity index associated with POST applications has increased `r round(evl.SummaryTab[[4,5]]/evl.SummaryTab[[4,4]])`-fold since the early 2000s.
-In corn and soybean combined, during the period 2015 to 2020, approximately `r round(sum(evl.SummaryTab[5]),2)` billion honey bee $LD_{50}$s were applied annually, compared to `r round(sum(evl.SummaryTab[4]),2)` billion that were applied annually between 2000 and 2005, a reduction of `r round((sum(evl.SummaryTab[4]) - sum(evl.SummaryTab[5])) / sum(evl.SummaryTab[4]) *100)`%.
+Over time, the insecticide $TI$ in corn has shifted from primarily PRE applications to a mix of PRE and POST applications (Table 2). During the period 2000 to 2005, `r round(evl.SummaryTab[[1,4]]/(evl.SummaryTab[[1,4]] + evl.SummaryTab[[2,4]])*100)`% of the honey bee $TI$ from insecticides was applied in corn before crop emergence, whereas more recently, from 2015 to 2020, approximately `r round(evl.SummaryTab[[1,5]]/(evl.SummaryTab[[1,5]]+evl.SummaryTab[[2,5]])*100)`% of honey bee $TI$ was applied before crop emergence. In corn, the toxicity index applied POST has increased approximately `r round(evl.SummaryTab[[2,5]]/evl.SummaryTab[[2,4]], 1)`-fold, from `r evl.SummaryTab[[2,4]]` to `r evl.SummaryTab[[2,5]]`. 
+
+In soybeans, insecticides were not surveyed before 2004, suggesting very limited usage in that crop (Figure 2). During the period 2005 to 2010, `r round(evl.SummaryTab[[4,4]] / (evl.SummaryTab[[3,4]] + evl.SummaryTab[[4,4]]) *100)`% of the insecticide $TI$ was applied after crop emergence, although the total $TI$ was still relatively low (Table 2). More recently, between 2015 to 2020, `r round(evl.SummaryTab[[4,5]] / (evl.SummaryTab[[3,5]] + evl.SummaryTab[[4,5]]) *100)`% of soybean insecticide $TI$ was applied POST, and exceeded the $TI$ associated with corn insecticide usage.
 
 -------------------------------------------------
 
-**Table 2. Area-adjusted acute toxicity index values for insecticides applied before (PRE) and after (POST) crop emergence for the periods 2000 to 2005, and from 2015 to 2020.**
+**Table 2. Area-adjusted acute toxicity index values for insecticides applied before (PRE) and after (POST) crop emergence for early survey periods vs the most recent 6-year survey period.**
 
 ```{r, echo = FALSE, message = FALSE, warning = FALSE}
 knitr::kable(evl.SummaryTab)
 ```
+^†^ The 'Early' period is 2000 to 2005 for corn pesticides, and 2005 to 2010 for soybeans. The 'Recent' period is 2015 to 2020 for both crops. 
 
 -------------------------------------------------
 
-```{r, echo = FALSE, warning = FALSE, message = FALSE, fig.width = 7, fig.height = 4.5, fig.cap = "**Figure 2. Honey bee adult acute contact toxicity index for insecticides applied to corn or soybean before (PRE) or after (POST) crop emergence.**"}
+```{r, echo = FALSE, warning = FALSE, message = FALSE, fig.width = 7, fig.height = 4.5, fig.cap = "**Figure 2. Honey bee adult acute contact toxicity index for insecticides applied to corn or soybean before (PRE) or after (POST) crop emergence. Insecticide surveys for soybean began in 2004.**"}
 ggplot(data = ToxIndex.summary.yr %>%
          filter(Type == "Insecticide"),
        aes(y = ToxIndex.area, x = Year)) +
@@ -458,11 +524,11 @@ ggplot(data = ToxIndex.summary.yr %>%
 
 -------------------------------------------------
 
-Two pesticides, fipronil and chlorpyrifos, were responsible for a majority of the *TI* applied PRE to corn until approximately 2010 (Figure 3A). After 2010, bifenthrin became the largest contributor to *TI* in both PRE (Figure 3B) and POST (FIgure 3C) application timings in corn. Insecticide application was relatively rare in soybean before 2004. Three insecticides, bifenthrin, chlorpyrifos, and cyhalothrin-lambda, accounted for a majority of the *TI* applied POST to soybean since 2005 (Figure 3D).
+Two pesticides, fipronil and chlorpyrifos, were responsible for a majority of the $TI$ applied PRE to corn until approximately 2010, when all uses of fipronil on corn were cancelled in the United States (Figure 3A). After 2010, bifenthrin became the largest contributor to $TI$ in both PRE (Figure 3B) and POST (FIgure 3C) application timings in corn. Insecticide application was relatively rare in soybean before 2004. Three insecticides, bifenthrin, chlorpyrifos, and cyhalothrin-lambda, accounted for a majority of the $TI$ applied POST to soybean since 2005 (Figure 3D).
 
 -------------------------------------------------
 
-```{r, echo = FALSE, warning = FALSE, message = FALSE, fig.width = 8, fig.height = 9, fig.cap = paste0("**Figure 3. Contribution of insecticide active ingredients to honey bee adult acute contact toxicity index applied PRE to corn (A, B), POST to corn (C), or POST to soybean (D). Panel B shows the period from 2012 to 2020 for corn PRE on a zoomed-in y-axis scale. The 'All Other Insecticides' category includes ", 100-cornPre.top7prop, "% of the total corn toxicity index applied PRE, ", 100-corn.top7prop, "% of the total corn toxicity index applied POST, and ", 100-soy.top7prop, "% of the total soybean toxicity index. **")}
+```{r, echo = FALSE, warning = FALSE, message = FALSE, fig.width = 8, fig.height = 9, fig.cap = paste0("**Figure 3. Contribution of insecticide active ingredients to honey bee adult acute contact toxicity index applied PRE to corn (A, B), POST to corn (C), or POST to soybean (D). Panel B shows the period from 2012 to 2020 for corn PRE on a zoomed-in y-axis scale. The 'All Other Insecticides' category includes ", 100-cornPre.top7prop, "% of the total corn toxicity index applied PRE, ", 100-corn.top7prop, "% of the total corn toxicity index applied POST, and ", 100-soy.top7prop, "% of the total soybean toxicity index. Insecticide surveys for soybean began in 2004.**")}
 
 cornPre.90list <- AgroTrak.ecotox %>%
   filter(Type == "Insecticide" &
@@ -708,9 +774,9 @@ cornPost.lm.summary <- broom::tidy(summary(cornPost.taxa.lm)) %>%
   select(Crop, TaxonGroup, estimate, std.error, pval.display)
 ```
 
-In corn, insect pests from the orders Coleoptera and Lepidoptera contributed most to the overall *TI* (Figure 4), followed by Hemipteran insects and spider mites (Trombidiformes). In corn, there was a decreasing trend for Coleoptera (P `r cornPost.lm.summary$pval.display[cornPost.lm.summary$TaxonGroup == "Coleoptera"]`) and Lepidoptera (P `r cornPost.lm.summary$pval.display[cornPost.lm.summary$TaxonGroup == "Lepidoptera"]`) contributions to the $TI_{pest}$ over time. Hemiptera increased in importance as a pesticide target over time (P `r cornPost.lm.summary$pval.display[cornPost.lm.summary$TaxonGroup == "Hemiptera"]`). There was an increase in the contribution of the 'Unknown' pest target category (P `r cornPost.lm.summary$pval.display[cornPost.lm.summary$TaxonGroup == "Unknown"]`), which included survey responses that did not answer the question of which pest species was being targeted. Temporal trends for other taxa were not statistically obvious in corn (Figure 4).
+In corn, insect pests from the orders Coleoptera and Lepidoptera contributed most to the overall $TI$ (Figure 4), followed by Hemipteran insects and spider mites (Trombidiformes). In corn, there was a decreasing trend for Coleoptera (P `r cornPost.lm.summary$pval.display[cornPost.lm.summary$TaxonGroup == "Coleoptera"]`) and Lepidoptera (P `r cornPost.lm.summary$pval.display[cornPost.lm.summary$TaxonGroup == "Lepidoptera"]`) contributions to the $TI_{pest}$ over time. Hemiptera increased in importance as a pesticide target over time (P `r cornPost.lm.summary$pval.display[cornPost.lm.summary$TaxonGroup == "Hemiptera"]`). There was an increase in the contribution of the 'Unknown' pest target category (P `r cornPost.lm.summary$pval.display[cornPost.lm.summary$TaxonGroup == "Unknown"]`), which included survey responses that did not answer the question of which pest species was being targeted. Temporal trends for other taxa were not statistically significant in corn (Figure 4).
 
-For PRE applications in corn since 2015, corn rootworm beetles, wireworms, and grubs were the most important Coleoptera pest targets, while cutworms of various species were the most important Lepidopteran pest. The *TI* from POST applications in corn was driven by corn rootworm beetles and Japanese beetles (Coleoptera) and stink bugs (Hemiptera), presumably due to potential for silk feeding. Aphids (Hemiptera) and cutworm species (Lepidoptera) were also important drivers of the corn *TI* from POST applications since 2015. 
+For PRE applications in corn since 2015, corn rootworm beetles, wireworms, and grubs were the most important Coleoptera pest targets, while cutworms of various species were the most important Lepidopteran pest. The $TI$ from POST applications in corn was driven by corn rootworm beetles and Japanese beetles (Coleoptera) and stink bugs (Hemiptera), presumably due to potential for silk feeding. Aphids (Hemiptera) and cutworm species (Lepidoptera) were also important drivers of the corn $TI$ from POST applications since 2015. 
 
 -------------------------------------------------
 
@@ -755,7 +821,7 @@ soyPost.lm.summary <- broom::tidy(summary(soyPost.taxa.lm)) %>%
   select(Crop, TaxonGroup, estimate, std.error, pval.display)
 ```
 
-In soybean, Hemiptera pests were the greatest contributor to the overall $TI_{pest}$, although there was a significant decrease in its contribution over time (P `r soyPost.lm.summary$pval.display[soyPost.lm.summary$TaxonGroup == "Hemiptera"]`). Stink bugs and aphid species were the greatest contributors to the *TI* among hemipteran pest species. Lepidopteran pest contribution to $TI_{pest}$ increased over time (P `r soyPost.lm.summary$pval.display[soyPost.lm.summary$TaxonGroup == "Lepidoptera"]`). Since 2015, the most important Lepidoptera were various species referred to as 'worms' (including corn earworm and boll worm), 'loopers' (cabbage and soybean), and armyworms. Leaf beetles and Japanese beetles were the most important Coleoptera pest species that contributed to the *TI* from POST applications to soybean since 2015. Similar to corn, the 'Unknown' category also increased in importance (P `r soyPost.lm.summary$pval.display[soyPost.lm.summary$TaxonGroup == "Unknown"]`) due to survey respondents not answering the question about the targeted pest(s).
+In soybean, Hemiptera pests were the greatest contributor to the overall $TI_{pest}$, although there was a significant decrease in its contribution over time (P `r soyPost.lm.summary$pval.display[soyPost.lm.summary$TaxonGroup == "Hemiptera"]`). Stink bugs and aphid species were the greatest contributors to the $TI$ among hemipteran pest species. Lepidopteran pest contribution to $TI_{pest}$ increased over time (P `r soyPost.lm.summary$pval.display[soyPost.lm.summary$TaxonGroup == "Lepidoptera"]`). Since 2015, the most impactful Lepidoptera were various species referred to as 'worms' (including corn earworm and boll worm), 'loopers' (cabbage and soybean), and armyworms. Leaf beetles and Japanese beetles were the most impactful Coleoptera pest species that contributed to the $TI$ from POST applications to soybean since 2015. Similar to corn, the 'Unknown' category also increased in importance (P `r soyPost.lm.summary$pval.display[soyPost.lm.summary$TaxonGroup == "Unknown"]`) due to survey respondents not answering the question about the targeted pest(s).
 
 -------------------------------------------------
 
@@ -781,7 +847,9 @@ ggplot(soyPostPestTox.summary %>%
 
 ## Eco-efficiency
 
-Corn and soybean yields have steadily increased in the United States between 1998 and 2020 (Figure 6A, 6D). Corn production eco-efficiency for both yield (Figure 6B) and value (Figure 6C) increased substantially between 1998 through 2011, in part due to the observed yield increase. However, in 2012, a substantial drop in eco-efficiency was observed, and corn eco-efficiency decreased through 2020. In soybean production, eco-efficiency declined slowly throughout the period 2005 through 2020 (Figures 6C; 6D). Because both corn and soybean yield continued to increase throughout this period, the reduction in eco-efficiency in recent years suggests that the relative increase observed in the honey bee *TI* is out-pacing the relative increases in corn yields since 2012, at least on the national scale.
+Corn and soybean yields have steadily increased in the United States between 1998 and 2020 (Figure 6A, 6D). Corn production eco-efficiency for both yield (Figure 6B) and value (Figure 6C) increased substantially between 1998 through 2011, due to the observed yield increase and concurrent reduction in $TI$. However, even though corn yield continued to increase, a substantial drop in corn eco-efficiency was observed in 2012. Corn eco-efficiency decreased from 2012 through 2020, largely due to increased $TI$ from bifenthrin usage. In spite of increasing soybean yields, eco-efficiency declined slowly throughout the period 2005 through 2020 (Figures 6C; 6D) due to increasing $TI$. 
+
+The units associated with eco-efficiency (crop yield per $TI$) are difficult to interpret in a practical way, but the trend over time provides insight into whether the observed increases in yield are out-pacing changes in hazard to honey bees. Because both corn and soybean yield continued to increase throughout this period, the flat to declining trend in eco-efficiency in recent years suggests that the relative increase observed in the honey bee $TI$ is out-pacing the relative increases in corn yields since 2012, at least on the national scale.
 
 -------------------------------------------------
 
@@ -889,36 +957,26 @@ plot_grid(yieldCorn.gg, Corn.EcoY.gg, Corn.EcoV.gg,
 
 # Discussion
 
-Probable points to cover here:
+The eco-effiency results here suggest that the honey bee hazard from recent insecticide usage in corn and soybean is increasing more rapidly than the yield gains observed over the same period. There has also been a shift for increased proportion of honey bee insecticide hazard to be applied after crop emergence, when there is likely to be greater exposure potential to honey bees and other pollinators. In corn, the increased insecticide hazard applied after crop emergence has been offset by a substantial decrease in insecticide hazard applied before crop emergence, and therefore, the total hazard may be negligible. But in soybean, insecticide usage went from nearly non-existent before 2004 to greater insecticide hazard to honey bees than corn in the period 2015 to 2020. Soybeans are more attractive to pollinating bees for the collection of nectar than corn [@usdaAttractivenessAgriculturalCrops2017]. While corn pollen can be consumed, overall visitation per hectare is likely to be much higher in soybeans when the crops are flowering. 
 
--   Important caveat that this data doesn't include seed treatments - that is a separate source of potential risk to non-target organisms. 
--   There's a lot less honey bee toxicity being applied to corn in recent years (2015-2020) compared to earlier (2000-2005). This is mostly due to a drastic decrease in PRE instecticide use over this period. 
--   However, there has been an overall increase in the amount of honey bee toxicity being applied POST over that time period. In corn, this was a 1.8-fold increase, from 0.12 to 0.22. In soybeans, it went from approximately zero before 2004 to 0.59. More honey bee toxicity is being applied POST in soybeans than in corn in the more recent period (2015 to 2020). 
--   Bifenthrin is probably the most obvious recent contributor to the increases in POST insecticide use for both crops. The pests that appear to drive the most bifenthrin risk to honeybees are:
-    +   spider mites, corn rootworm, and Western bean cutworm in corn.
-    +   stink bugs and soybean aphids in soybean.
-- Given all of this, future research should be aimed at
-    + investigating *why* POST insecticides are increasing; is it due to a perceived increase in pest pressure, or the cost of pesticides decreasing, or something else?
-    + finding alternative pest control measures for the pest targets that contribute most to the honey bee *TI*:
-        + root worm species, and other silk-eating critters, as well as cutworms in corn.
-        + stink bugs and aphids in soybeans.
-    + these four pest species represent a large proportion of the relative risk to honey bees in corn and soybean production in the US, so efforts to reduce the need for pesticides to control them (or education efforst on whether treatments are actually needed) would probably pay dividends in reducing non-target risks to insects like honey bees.
+This analysis, like most others published before, does not include pesticides applied as seed treatments. Public data (such as USDA surveys and census data) as well as proprietary sources like the AgroTrak data do not include seed treatments. The impact of this data limitation is an underestimate of the hazard applied PRE; however, because honey bee exposure to pesticides applied as seed treatments will be lower than those applied after crop emergence, the magnitude of this underestimate is difficult to ascertain.
+
+Broadly, it is important to understand *why* POST insecticide usage has been increasing in recent years. Is the increase due to a perceived increase in pest pressure, or a perceived increase in the economic damage caused by insect pests? Or perhaps the cost of certain pesticides has decreased, and increased their use as a preemptive yield protection practice. The underlying cause of increased non-target hazards must be understood to develop research programs or devise policy actions that have a positive impact [@Osteen2013Economic].
+
+To our knowledge, this analysis is the first to estimate the relative contribution of different pest species to non-target impacts of pesticide usage. The information gleaned from this approach provides multiple avenues for future research that could benefit non-target insect species like honey bees. For example, bifenthrin appears to be the active ingredient that has contributed most to recent increases in insecticide hazard to honey bees in both corn and soybean. The pests that appear to drive bifenthrin usage include spider mites, corn rootworm, and Western bean cutworm in corn; and stink bugs and soybean aphids in soybean. Finding an efficacious pesticide with reduced non-target toxicity, or developing non-chemical approaches to manage these pests may reduce the overall hazard from insecticides.
+
+Coleoptera and Lepidoptera (rootworm species, silk-eating insects, and cutworms) were the greatest contributors to the corn insecticide $TI$, and therefore research efforts targeting these species are likely to have the greatest impact on lowering the non-target hazard to honey bees. Conversely, Hemipteran pests (stink bugs and aphid species) are the pest targets causing the greatest insecticide hazard to honey bees in soybean. Insecticides targeting these few pests represent an out-sized proportion of the relative insecticide hazard to honey bees in the US. Efforts to reduce the need for pesticides to control these species, or education efforts on whether treatments are actually needed, would probably pay  dividends in reducing non-target risks to insects like honey bees.
 
 
-# Supplemental Information
-
-
-*Supplemental Table: Pest species from taxa mentioned above as either being major contributors or having a significant trend up or down in the $TI_{pest}$. Total from years 2015 through 2020.*
-
-```{r, echo = FALSE, message = FALSE, warning = FALSE}
-knitr::kable(PestTable)
+```{r, include = FALSE, message = FALSE, warning = FALSE}
+## Supplemental Table: Pest species from taxa mentioned above as either being
+## major contributors or having a significant trend up or down in the 
+## $TI_{pest}$. Total from years 2015 through 2020.
+write_csv(PestTable, "Supp_PestTable.csv")
 ```
 
-----------------------------
-
-*Bifenthrin Pest Targets*
-
-```{r, echo = FALSE, message = FALSE, warning = FALSE}
+```{r, include = FALSE, message = FALSE, warning = FALSE}
+## Bifenthrin Pest Targets*
 bifenthrin.Pests <- AgroTrak.PestToxIndex %>%
   filter(ai == "BIFENTHRIN" &
            Timing == "POST" &
@@ -929,11 +987,8 @@ bifenthrin.Pests <- AgroTrak.PestToxIndex %>%
   ungroup() %>% group_by(Crop, Timing) %>%
   slice_max(pestToxIndex, n = 8)
 
-knitr::kable(bifenthrin.Pests)
+write_csv(bifenthrin.Pests, "SUPP_bifenthrin.csv")
 
-```
-
-```{r, include = FALSE}
 ### Bifenthrin:
 bifenthrin.Taxa <- AgroTrak.PestToxIndex %>%
   filter(ai == "BIFENTHRIN") %>%
@@ -1020,50 +1075,7 @@ AgroTrak.PestToxIndex %>%
 ```
 
 
-
-This is some data I pulled from USDA - it is not specific to a crop, but estimates chemical expenses and all expenses for crop production operations. I'm unsure whether non-pesticides are included in "chemicals" here (fertilizer seems to not be included). I'm also unsure whether it is useful in any way... Panel B, chemicals as a proportion of total expenses seems to show the same (inverse) pattern that one might expect given the efficiency pattern in corn; but I'm not convinced those things are related very closely. Might be best to ignore this. 
-
-```{r, echo = FALSE, warning = FALSE, message = FALSE, fig.width = 7, fig.height = 2.5, fig.cap = "**Figure X. Chemical expenses in billion USD (A) and as a proportion of total crop production operation expenses (B).**"}
-
-usda.exp <- read_csv("DATA/USDA-Expenses_1998-2020.csv") %>%
-  select(Program, Year, Period, Geo.Level = `Geo Level`, State,
-         Commodity, Data.Item = `Data Item`, 
-         Domain, Category = `Domain Category`,
-         Value) %>%
-  filter(Category == "TYPE OF OPERATION: (CROP)")
-
-usda.cropExp <- usda.exp %>%
-  select(Year, Data.Item, Value) %>%
-  pivot_wider(id_cols = Year,
-              names_from = Data.Item,
-              values_from = Value) %>%
-  rename(ChemicalTotal = `CHEMICAL TOTALS - EXPENSE, MEASURED IN $`,
-         ExpenseTotals = `EXPENSE TOTALS, PRODUCTION - EXPENSE, MEASURED IN $`,
-         FertilizerTotal = 
-           `FERTILIZER TOTALS, INCL LIME & SOIL CONDITIONERS - EXPENSE, MEASURED IN $`) %>%
-  mutate(chemPct = ChemicalTotal / ExpenseTotals,
-         fertPct = FertilizerTotal / ExpenseTotals)
-  #right_join(plantedAcres.dat) %>%
-  #mutate(costEff = ProductionBUSD / (ChemicalTotal/(1*10^9)))
-#glimpse(usda.cropExp)
-
-plot_grid(
-ggplot(usda.cropExp, aes(y = ChemicalTotal / (10^9), x = Year)) +
-  geom_point() +
-  geom_smooth(se = FALSE) +
-  ylab("Total chemical expenses \n(Billion USD)") +
-  xlab(element_blank()) +
-  ylim(c(0, NA)),
-ggplot(usda.cropExp, aes(y = chemPct, x = Year)) +
-  geom_point() +
-  geom_smooth(se = FALSE) +
-  ylab("Chemical proportion of \ntotal expenses") +
-  xlab(element_blank()) +
-  ylim(c(0, NA)),
-labels = LETTERS)
-
-```
-
 -------------------------------------------------------------------------
 
 # **Literature Cited**
+
