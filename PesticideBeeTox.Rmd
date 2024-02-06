@@ -4,9 +4,9 @@ title: "Honey bee toxicity of pesticides used in United States corn and soybean
 author: "Andrew R. Kniss & Andrea De Stefano"
 date: "DRAFT -- last updated on `r Sys.Date()`"
 output:
+  html_document: default
   word_document:
     reference_docx: PesticideBeeTox_Styles.docx
-  html_document: default
 bibliography: references.bib
 csl: "WSSA-Journals.csl"
 ---
