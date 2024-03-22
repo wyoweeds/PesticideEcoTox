@@ -1,6 +1,14 @@
 library("tidyverse")
 library("readxl")
 
+aiRanks <- FarmTrak.ecotox %>%
+  group_by(Crop, Type, ai) %>%
+  summarize(TotalVolume.kg = sum(Volume.kg)) %>%
+  arrange(Crop, Type, desc(TotalVolume.kg)) %>%
+  mutate(rank = dense_rank(desc(TotalVolume.kg)))
+aiRanks.big2 %>% filter(ai %in% 
+                     c("ETHALFLURALIN", "TEBUPIRIMPHOS"))
+
 ## Clayton Grub question
 cornPrePestTox.summary <- AgroTrak.PestToxIndex %>%
   filter(Type == "Insecticide" & 
