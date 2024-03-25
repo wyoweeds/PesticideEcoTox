@@ -1,6 +1,35 @@
 library("tidyverse")
 library("readxl")
 
+glimpse(ToxIndex.summary)
+
+ToxIndex.summary %>%
+  filter(Timing == "POST" & Crop == "Corn") %>%
+  summarize(cornPostTI = sum(ToxIndex.area))
+ToxIndex.summary %>%
+  filter(Timing == "POST" & Crop == "Soybeans") %>%
+  summarize(soyPostTI = sum(ToxIndex.area)) 
+
+### Table 2 removed from manuscript.
+-------------------------------------------------
+  **Table 2. Area-adjusted acute toxicity index values for insecticides applied before (PRE) and after (POST) crop emergence for early survey periods vs the most recent 6-year survey period.**
+  
+  ```{r, echo = FALSE, message = FALSE, warning = FALSE}
+knitr::kable(evl.SummaryTab)
+```
+^†^ The 'Early' period is 2000 to 2005 for corn pesticides, and 2005 to 2010 for soybeans. The 'Recent' period is 2015 to 2020 for both crops. 
+-------------------------------------------------
+  
+
+tisum.rate.gg <- ggplot(ToxIndex.summary, 
+       aes(x = ToxIndex.rate, y = Type)) +
+  facet_grid(Crop ~ Timing) + 
+  geom_bar(stat = "identity",
+           aes(fill = Crop)) +
+  ylab(element_blank()) +
+  xlab("Rate-adjusted honey bee acute toxicity index") +
+  theme_minimal_grid() +
+  theme(legend.position = "none")
 aiRanks <- FarmTrak.ecotox %>%
   group_by(Crop, Type, ai) %>%
   summarize(TotalVolume.kg = sum(Volume.kg)) %>%
