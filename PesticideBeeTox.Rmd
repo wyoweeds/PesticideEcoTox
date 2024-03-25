@@ -3,9 +3,9 @@ title: "Honey bee toxicity of pesticides used in United States corn and soybean
   production, 1998 -- 2020"
 date: "DRAFT -- last updated on `r Sys.Date()`"
 output:
+  html_document: default
   word_document:
     reference_docx: PesticideBeeTox_Styles.docx
-  html_document: default
 bibliography: references.bib
 csl: "nature-communications.csl"
 ---
@@ -500,7 +500,7 @@ ggplot(data = ToxIndex.summary.yr %>%
 
 In soybeans, insecticides were not not present in the FarmTrak Chemical Use dataset before 2004. During the period 2005 to 2010, `r round(evl.SummaryTab[[4,4]] / (evl.SummaryTab[[3,4]] + evl.SummaryTab[[4,4]]) *100)`% of the insecticide $TI$ resulted from applications after crop emergence, although the total insecticide $TI$ was still comparatively low. More recently, between 2015 to 2020, `r round(evl.SummaryTab[[4,5]] / (evl.SummaryTab[[3,5]] + evl.SummaryTab[[4,5]]) *100)`% of soybean insecticide $TI$ resulted from POST applications, and exceeded the insecticide $TI$ associated with POST corn insecticide usage.
 
-Two pesticides, fipronil and chlorpyrifos, were responsible for a majority of the total insecticide $TI$ from PRE applications to corn until approximately 2010 (FIgure 3A), when all uses of fipronil on corn were cancelled in the United States [@usepaFipronilProductCancellation2010]. After 2010, bifenthrin became the largest contributor to $TI$ in both PRE (Figure 3B) and POST (Figure 3C) application timings in corn. Insecticide $TI$ resulting from PRE applications to soybeans remained low throughout the study period (Figure 2). Insecticide applications were relatively uncommon in soybean before 2006, with annual average volume of less than 1 million kg applied dating back to 1994 [@coupeTrendsPesticideUse2016]. Three insecticides (bifenthrin, chlorpyrifos, and lambda-cyhalothrin) accounted for a majority of the insecticide $TI$ resulting from POST applications to soybean since 2006 (Figure 3D).
+Two pesticides, fipronil and chlorpyrifos, were responsible for a majority of the total insecticide $TI$ from PRE applications to corn until approximately 2010 (Figure 3A), when all uses of fipronil on corn were cancelled in the United States [@usepaFipronilProductCancellation2010]. After 2010, bifenthrin became the largest contributor to $TI$ in both PRE (Figure 3B) and POST (Figure 3C) application timings in corn. Insecticide $TI$ resulting from PRE applications to soybeans remained low throughout the study period (Figure 2). Insecticide applications were relatively uncommon in soybean before 2006, with annual average volume of less than 1 million kg applied dating back to 1994 [@coupeTrendsPesticideUse2016]. Three insecticides (bifenthrin, chlorpyrifos, and lambda-cyhalothrin) accounted for a majority of the insecticide $TI$ resulting from POST applications to soybean since 2006 (Figure 3D).
 
 -------------------------------------------------
 
